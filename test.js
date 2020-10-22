@@ -34,6 +34,18 @@ function updateSelect(){
 	}
 }
 
+function listAllLocalesAsArray(){
+
+	var returnedLocalsArray = [];
+
+	for(var i = 0; i < selectionnableLanguages.length; i++){
+
+		returnedLocalsArray.push(selectionnableLanguages[i].value);
+	}
+
+	return returnedLocalsArray;
+}
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -47,11 +59,16 @@ app.get('/', function(req, res) {
   currentLocale = negotiator.language(browserLanguages);
   currentLocale = currentLocale.toLowerCase();
 
-  updateSelect();
+  var truc = listAllLocalesAsArray();
 
-  res.setLocale(currentLocale);
+  if(truc.includes(currentLocale)){
+	
+	updateSelect();
 
-  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages});
+  	res.setLocale(currentLocale);
+
+  	res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages});
+  }
 });
 
 app.post('/', function(req, res) {
