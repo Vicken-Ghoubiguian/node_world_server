@@ -45,6 +45,7 @@ app.get('/', function(req, res) {
   negotiator = new Negotiator(req);
   var browserLanguages = negotiator.languages();
   currentLocale = negotiator.language(browserLanguages);
+  currentLocale = currentLocale.toLowerCase();
 
   updateSelect();
 
@@ -56,6 +57,7 @@ app.get('/', function(req, res) {
 app.post('/', function(req, res) {
 
   currentLocale = req.body.choosen_language;
+  currentLocale = currentLocale.toLowerCase();
 
   updateSelect();
 
