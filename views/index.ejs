@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>node, express and i18n</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+  <div>
+	<p>
+		<form id="choosen_language_form" method="post" action="/">
+  			<%= __('Language_choice')%> :
+  			<select class="choosen_language" name="choosen_language">
+				<% for(var i = 0; i < selectionnableLanguages.length; i++){ %>
+					<option value="<%= selectionnableLanguages[i].value %>" <%= selectionnableLanguages[i].selected %>><%= __(selectionnableLanguages[i].text)%></option>
+				<% } %>
+  			</select>
+		</form>
+  		<h1><%= __('Hello')%></h1>
+  	</p>
+  </div>
+  <script>
+	console.log("Ici, c'est le top du top de la mére...");
+	$("select").change(function(){
+
+		console.log("Ici, c'est le top du top de la mére...");
+		$("#choosen_language_form").submit();
+	});
+  </script>
+</body>
+</html>
