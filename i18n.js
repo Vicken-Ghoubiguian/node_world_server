@@ -4,7 +4,7 @@ var currentLocale;
 
 i18n.configure({
   // setup some locales - other locales default to en silently
-  locales:['en-us', 'es-es', 'fr-fr', 'ca-fr'],
+  locales:['en-us', 'es-es', 'fr-fr', 'ca'],
 
   // where to store json files - defaults to './locales' relative to modules directory
   directory: __dirname + '/locales',

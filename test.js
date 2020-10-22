@@ -12,7 +12,7 @@ var selectionnableLanguages = [
 	{value: "fr-fr", selected: "", text: "French"},
 	{value: "en-us", selected: "", text: "English"},
 	{value: "es-es", selected: "selected", text: "Spanish"},
-	{value: "ca-fr", selected: "", text: "Catalan"}
+	{value: "ca", selected: "", text: "Catalan"}
 ];
 
 function updateSelect(){
