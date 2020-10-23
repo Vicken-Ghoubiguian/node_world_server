@@ -36,7 +36,7 @@ function updateSelect(){
 
 function listAllLocalesAsArray(){
 
-	var returnedLocalsArray = ["fr"];
+	var returnedLocalsArray = [];
 
 	for(var i = 0; i < selectionnableLanguages.length; i++){
 
@@ -60,6 +60,11 @@ app.get('/', function(req, res) {
   currentLocale = currentLocale.toLowerCase();
 
   var listOfAllLocales = listAllLocalesAsArray();
+
+  if(currentLocale === "fr") {
+
+	currentLocale = "fr-fr";
+  }
 
   if(!listOfAllLocales.includes(currentLocale)){
 	
