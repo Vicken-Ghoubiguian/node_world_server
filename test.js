@@ -36,7 +36,7 @@ function updateSelect(){
 
 function listAllLocalesAsArray(){
 
-	var returnedLocalsArray = [];
+	var returnedLocalsArray = ["fr"];
 
 	for(var i = 0; i < selectionnableLanguages.length; i++){
 
