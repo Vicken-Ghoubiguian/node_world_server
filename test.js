@@ -59,16 +59,19 @@ app.get('/', function(req, res) {
   currentLocale = negotiator.language(browserLanguages);
   currentLocale = currentLocale.toLowerCase();
 
-  var truc = listAllLocalesAsArray();
+  var listOfAllLocales = listAllLocalesAsArray();
 
-  if(truc.includes(currentLocale)){
+  if(!listOfAllLocales.includes(currentLocale)){
 	
-	updateSelect();
-
-  	res.setLocale(currentLocale);
-
-  	res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages});
+	currentLocale = "en-us";
   }
+
+  updateSelect();
+
+  res.setLocale(currentLocale);
+
+  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages});
+
 });
 
 app.post('/', function(req, res) {
