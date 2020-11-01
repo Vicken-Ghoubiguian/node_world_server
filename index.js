@@ -20,13 +20,47 @@ var selectionnableLanguages = [
 // Array containing all timezones with relatives datas...
 var timezones = [
 
+	//Africa timezones...
 	{timezone: "Africa/Abidjan", country_code: "CI", timezone: 0},
 	{timezone: "Africa/Accra", country_code: "GH", timezone: 0},
 	{timezone: "Africa/Addis_Ababa", country_code: "ET", timezone: 0},
 
+	//Europe timezones...
+
 	{timezone: "Europe/Oslo", country_code: "NO", timezone: 0},
 	{timezone: "Europe/Paris", country_code: "FR", timezone: 0},
 
+	//Pacific timezones...
+	{timezone: "Pacific/Apia", country_code: "WS", timezone: 0},
+	{timezone: "Pacific/Auckland", country_code: "NZ", timezone: 0},
+	{timezone: "Pacific/Bougainville", country_code: "PG", timezone: 0},
+	{timezone: "Pacific/Chatham", country_code: "NZ", timezone: 0},
+	{timezone: "Pacific/Chuuk", country_code: "FM", timezone: 0},
+	{timezone: "Pacific/Easter", country_code: "CL", timezone: 0},
+	{timezone: "Pacific/Efate", country_code: "VU", timezone: 0},
+	{timezone: "Pacific/Enderbury", country_code: "KI", timezone: 0},
+	{timezone: "Pacific/Fakaofo", country_code: "TK", timezone: 0},
+	{timezone: "Pacific/Fiji", country_code: "FJ", timezone: 0},
+	{timezone: "Pacific/Funafuti", country_code: "TV", timezone: 0},
+	{timezone: "Pacific/Galapagos", country_code: "EC", timezone: 0},
+	{timezone: "Pacific/Gambier", country_code: "PF", timezone: 0},
+	{timezone: "Pacific/Guadalcanal", country_code: "SB", timezone: 0},
+	{timezone: "Pacific/Guam", country_code: "GU", timezone: 0},
+	{timezone: "Pacific/Honolulu", country_code: "US", timezone: 0},
+	{timezone: "Pacific/Kiritimati", country_code: "KI", timezone: 0},
+	{timezone: "Pacific/Kosrae", country_code: "FM", timezone: 0},
+	{timezone: "Pacific/Kwajalein", country_code: "MH", timezone: 0},
+	{timezone: "Pacific/Majuro", country_code: "MH", timezone: 0},
+	{timezone: "Pacific/Marquesas", country_code: "PF", timezone: 0},
+	{timezone: "Pacific/Midway", country_code: "UM", timezone: 0},
+	{timezone: "Pacific/Nauru", country_code: "NR", timezone: 0},
+	{timezone: "Pacific/Niue", country_code: "NU", timezone: 0},
+	{timezone: "Pacific/Norfolk", country_code: "NF", timezone: 0},
+	{timezone: "Pacific/Noumea", country_code: "NC", timezone: 0},
+	{timezone: "Pacific/Pago_Pago", country_code: "AS", timezone: 0},
+	{timezone: "Pacific/Palau", country_code: "PW", timezone: 0},
+	{timezone: "Pacific/Pitcairn", country_code: "PN", timezone: 0},
+	{timezone: "Pacific/Pohnpei", country_code: "FM", timezone: 0},
 	{timezone: "Pacific/Port_Moresby", country_code: "PG", timezone: 0},
 	{timezone: "Pacific/Rarotonga", country_code: "CK", timezone: 0},
 	{timezone: "Pacific/Saipan", country_code: "MP", timezone: 0},
