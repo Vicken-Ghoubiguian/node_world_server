@@ -1,12 +1,14 @@
 var express = require('express');
 var Negotiator = require('negotiator');
 var bodyParser = require('body-parser');
+var moment = require('moment-timezone');
 var i18n = require('./i18n');
 
 var app = express();
 var negotiator;
 var currentLocale;
 
+// Array containing all languages with relatives datas...
 var selectionnableLanguages = [
 
 	{value: "fr-fr", selected: "", text: "French"},
@@ -15,6 +17,27 @@ var selectionnableLanguages = [
 	{value: "ca", selected: "", text: "Catalan"}
 ];
 
+// Array containing all timezones with relatives datas...
+var timezones = [
+
+	{timezone: "Africa/Abidjan", country_code: "CI", timezone: 0},
+	{timezone: "Africa/Accra", country_code: "GH", timezone: 0},
+	{timezone: "Africa/Addis_Ababa", country_code: "ET", timezone: 0},
+
+	{timezone: "Europe/Oslo", country_code: "NO", timezone: 0},
+	{timezone: "Europe/Paris", country_code: "FR", timezone: 0},
+
+	{timezone: "Pacific/Port_Moresby", country_code: "PG", timezone: 0},
+	{timezone: "Pacific/Rarotonga", country_code: "CK", timezone: 0},
+	{timezone: "Pacific/Saipan", country_code: "MP", timezone: 0},
+	{timezone: "Pacific/Tahiti", country_code: "PF", timezone: 0},
+	{timezone: "Pacific/Tarawa", country_code: "KI", timezone: 0},
+	{timezone: "Pacific/Tongatapu", country_code: "TO", timezone: 0},
+	{timezone: "Pacific/Wake", country_code: "UM", timezone: 0},
+	{timezone: "Pacific/Wallis", country_code: "WF", timezone: 0}
+];
+
+// Function to update the "selected" field of the corresponding language's JSON depending on whether the language is selected or not...
 function updateSelect(){
 
 	for(var i = 0; i < selectionnableLanguages.length; i++){
@@ -34,6 +57,7 @@ function updateSelect(){
 	}
 }
 
+// Function to list all language locales ("value" field of each JSON) in a to-returned array...
 function listAllLocalesAsArray(){
 
 	var returnedLocalsArray = [];
