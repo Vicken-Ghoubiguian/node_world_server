@@ -20,7 +20,7 @@
   </div>
   <div>
 	<% for(var i = 0; i < timezones.length; i++){ %>
-		<p> <%= timezones[i].timezone %> (<%= timezones[i].country_code %>): <%= timezones[i].timestamp %></p>
+		<p style="color: <%= timezones[i].color %>"><%= timezones[i].timezone %> (<%= timezones[i].country_code %>): <%= timezones[i].timestamp %></p>
 	<% } %>
   </div>
   <script>
