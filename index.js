@@ -21,54 +21,54 @@ var selectionnableLanguages = [
 var timezones = [
 
 	//Africa timezones...
-	{timezone: "Africa/Abidjan", country_code: "CI", timezone: 0},
-	{timezone: "Africa/Accra", country_code: "GH", timezone: 0},
-	{timezone: "Africa/Addis_Ababa", country_code: "ET", timezone: 0},
+	{timezone: "Africa/Abidjan", country_code: "CI", timestamp: 0},
+	{timezone: "Africa/Accra", country_code: "GH", timestamp: 0},
+	{timezone: "Africa/Addis_Ababa", country_code: "ET", timestamp: 0},
 
 	//Europe timezones...
 
-	{timezone: "Europe/Oslo", country_code: "NO", timezone: 0},
-	{timezone: "Europe/Paris", country_code: "FR", timezone: 0},
+	{timezone: "Europe/Oslo", country_code: "NO", timestamp: 0},
+	{timezone: "Europe/Paris", country_code: "FR", timestamp: 0},
 
 	//Pacific timezones...
-	{timezone: "Pacific/Apia", country_code: "WS", timezone: 0},
-	{timezone: "Pacific/Auckland", country_code: "NZ", timezone: 0},
-	{timezone: "Pacific/Bougainville", country_code: "PG", timezone: 0},
-	{timezone: "Pacific/Chatham", country_code: "NZ", timezone: 0},
-	{timezone: "Pacific/Chuuk", country_code: "FM", timezone: 0},
-	{timezone: "Pacific/Easter", country_code: "CL", timezone: 0},
-	{timezone: "Pacific/Efate", country_code: "VU", timezone: 0},
-	{timezone: "Pacific/Enderbury", country_code: "KI", timezone: 0},
-	{timezone: "Pacific/Fakaofo", country_code: "TK", timezone: 0},
-	{timezone: "Pacific/Fiji", country_code: "FJ", timezone: 0},
-	{timezone: "Pacific/Funafuti", country_code: "TV", timezone: 0},
-	{timezone: "Pacific/Galapagos", country_code: "EC", timezone: 0},
-	{timezone: "Pacific/Gambier", country_code: "PF", timezone: 0},
-	{timezone: "Pacific/Guadalcanal", country_code: "SB", timezone: 0},
-	{timezone: "Pacific/Guam", country_code: "GU", timezone: 0},
-	{timezone: "Pacific/Honolulu", country_code: "US", timezone: 0},
-	{timezone: "Pacific/Kiritimati", country_code: "KI", timezone: 0},
-	{timezone: "Pacific/Kosrae", country_code: "FM", timezone: 0},
-	{timezone: "Pacific/Kwajalein", country_code: "MH", timezone: 0},
-	{timezone: "Pacific/Majuro", country_code: "MH", timezone: 0},
-	{timezone: "Pacific/Marquesas", country_code: "PF", timezone: 0},
-	{timezone: "Pacific/Midway", country_code: "UM", timezone: 0},
-	{timezone: "Pacific/Nauru", country_code: "NR", timezone: 0},
-	{timezone: "Pacific/Niue", country_code: "NU", timezone: 0},
-	{timezone: "Pacific/Norfolk", country_code: "NF", timezone: 0},
-	{timezone: "Pacific/Noumea", country_code: "NC", timezone: 0},
-	{timezone: "Pacific/Pago_Pago", country_code: "AS", timezone: 0},
-	{timezone: "Pacific/Palau", country_code: "PW", timezone: 0},
-	{timezone: "Pacific/Pitcairn", country_code: "PN", timezone: 0},
-	{timezone: "Pacific/Pohnpei", country_code: "FM", timezone: 0},
-	{timezone: "Pacific/Port_Moresby", country_code: "PG", timezone: 0},
-	{timezone: "Pacific/Rarotonga", country_code: "CK", timezone: 0},
-	{timezone: "Pacific/Saipan", country_code: "MP", timezone: 0},
-	{timezone: "Pacific/Tahiti", country_code: "PF", timezone: 0},
-	{timezone: "Pacific/Tarawa", country_code: "KI", timezone: 0},
-	{timezone: "Pacific/Tongatapu", country_code: "TO", timezone: 0},
-	{timezone: "Pacific/Wake", country_code: "UM", timezone: 0},
-	{timezone: "Pacific/Wallis", country_code: "WF", timezone: 0}
+	{timezone: "Pacific/Apia", country_code: "WS", timestamp: 0},
+	{timezone: "Pacific/Auckland", country_code: "NZ", timestamp: 0},
+	{timezone: "Pacific/Bougainville", country_code: "PG", timestamp: 0},
+	{timezone: "Pacific/Chatham", country_code: "NZ", timestamp: 0},
+	{timezone: "Pacific/Chuuk", country_code: "FM", timestamp: 0},
+	{timezone: "Pacific/Easter", country_code: "CL", timestamp: 0},
+	{timezone: "Pacific/Efate", country_code: "VU", timestamp: 0},
+	{timezone: "Pacific/Enderbury", country_code: "KI", timestamp: 0},
+	{timezone: "Pacific/Fakaofo", country_code: "TK", timestamp: 0},
+	{timezone: "Pacific/Fiji", country_code: "FJ", timestamp: 0},
+	{timezone: "Pacific/Funafuti", country_code: "TV", timestamp: 0},
+	{timezone: "Pacific/Galapagos", country_code: "EC", timestamp: 0},
+	{timezone: "Pacific/Gambier", country_code: "PF", timestamp: 0},
+	{timezone: "Pacific/Guadalcanal", country_code: "SB", timestamp: 0},
+	{timezone: "Pacific/Guam", country_code: "GU", timestamp: 0},
+	{timezone: "Pacific/Honolulu", country_code: "US", timestamp: 0},
+	{timezone: "Pacific/Kiritimati", country_code: "KI", timestamp: 0},
+	{timezone: "Pacific/Kosrae", country_code: "FM", timestamp: 0},
+	{timezone: "Pacific/Kwajalein", country_code: "MH", timestamp: 0},
+	{timezone: "Pacific/Majuro", country_code: "MH", timestamp: 0},
+	{timezone: "Pacific/Marquesas", country_code: "PF", timestamp: 0},
+	{timezone: "Pacific/Midway", country_code: "UM", timestamp: 0},
+	{timezone: "Pacific/Nauru", country_code: "NR", timestamp: 0},
+	{timezone: "Pacific/Niue", country_code: "NU", timestamp: 0},
+	{timezone: "Pacific/Norfolk", country_code: "NF", timestamp: 0},
+	{timezone: "Pacific/Noumea", country_code: "NC", timestamp: 0},
+	{timezone: "Pacific/Pago_Pago", country_code: "AS", timestamp: 0},
+	{timezone: "Pacific/Palau", country_code: "PW", timestamp: 0},
+	{timezone: "Pacific/Pitcairn", country_code: "PN", timestamp: 0},
+	{timezone: "Pacific/Pohnpei", country_code: "FM", timestamp: 0},
+	{timezone: "Pacific/Port_Moresby", country_code: "PG", timestamp: 0},
+	{timezone: "Pacific/Rarotonga", country_code: "CK", timestamp: 0},
+	{timezone: "Pacific/Saipan", country_code: "MP", timestamp: 0},
+	{timezone: "Pacific/Tahiti", country_code: "PF", timestamp: 0},
+	{timezone: "Pacific/Tarawa", country_code: "KI", timestamp: 0},
+	{timezone: "Pacific/Tongatapu", country_code: "TO", timestamp: 0},
+	{timezone: "Pacific/Wake", country_code: "UM", timestamp: 0},
+	{timezone: "Pacific/Wallis", country_code: "WF", timestamp: 0}
 ];
 
 // Function to update the "selected" field of the corresponding language's JSON depending on whether the language is selected or not...
@@ -133,7 +133,7 @@ app.get('/', function(req, res) {
 
   res.setLocale(currentLocale);
 
-  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages});
+  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones});
 
 });
 
@@ -146,7 +146,7 @@ app.post('/', function(req, res) {
 
   res.setLocale(currentLocale);
 
-  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages});
+  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones});
 });
 
 app.listen('3000');
