@@ -72,7 +72,7 @@ var timezones = [
 	{timezone: "Pacific/Wallis", country_code: "WF", moment: moment.tz("Pacific/Wallis"), color: "#4B0082"}
 ];
 
-//
+// Function to update the current date and time of all timezones...
 function updateDateAndTime(){
 
 	for(var i = 0; i < timezones.length; i++){
