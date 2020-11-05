@@ -72,6 +72,15 @@ var timezones = [
 	{timezone: "Pacific/Wallis", country_code: "WF", moment: moment.tz("Pacific/Wallis"), color: "#4B0082"}
 ];
 
+//
+function updateDateAndTime(){
+
+	for(var i = 0; i < timezones.length; i++){
+
+		timezones[i].moment = moment.tz(timezones[i].timezone)
+	}
+}
+
 // Function to update the "selected" field of the corresponding language's JSON depending on whether the language is selected or not...
 function updateSelect(){
 
@@ -118,6 +127,9 @@ app.get('/', function(req, res) {
   currentLocale = negotiator.language(browserLanguages);
   currentLocale = currentLocale.toLowerCase();
 
+  moment.locale(currentLocale);
+  updateDateAndTime();
+
   var listOfAllLocales = listAllLocalesAsArray();
 
   if(currentLocale === "fr") {
@@ -142,6 +154,9 @@ app.post('/', function(req, res) {
 
   currentLocale = req.body.choosen_language;
   currentLocale = currentLocale.toLowerCase();
+
+  moment.locale(currentLocale);
+  updateDateAndTime();
 
   updateSelect();
 
