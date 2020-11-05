@@ -7,6 +7,7 @@ var i18n = require('./i18n');
 var app = express();
 var negotiator;
 var currentLocale;
+var currentDateAndTimeFormat = "MMMM Do YYYY, h:mm:ss a";
 
 // Array containing all languages with relatives datas...
 var selectionnableLanguages = [
@@ -133,7 +134,7 @@ app.get('/', function(req, res) {
 
   res.setLocale(currentLocale);
 
-  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones});
+  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat});
 
 });
 
@@ -146,7 +147,7 @@ app.post('/', function(req, res) {
 
   res.setLocale(currentLocale);
 
-  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones});
+  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat});
 });
 
 app.listen('3000');
