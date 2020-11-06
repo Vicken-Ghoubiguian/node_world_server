@@ -18,7 +18,9 @@
 		<form id="" method="post" action="/">
 			<%= __('Date_and_time_format_choice')%> :
 			<select class="choosen_date_and_time_format" name="choosen_date_and_time_format">
-
+				<% for(var i = 0; i < formats.length; i++){ %>
+					<option value="<%= formats[i].id %>" <%= formats[i].selected %>><%= formats[i].format %></option>
+				<% } %>
 			</select>
 		</form>
   		<h1><%= __('Hello')%></h1>

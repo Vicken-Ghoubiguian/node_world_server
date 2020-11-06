@@ -7,7 +7,7 @@ var i18n = require('./i18n');
 var app = express();
 var negotiator;
 var currentLocale;
-var currentDateAndTimeFormat = "MMMM Do YYYY, h:mm:ss a";
+var currentDateAndTimeFormat = "MMMM Do YYYY, hh:mm:ss a";
 
 // Array containing all languages with relatives datas...
 var selectionnableLanguages = [
@@ -75,12 +75,12 @@ var timezones = [
 // Array containing all defined formats to display current date and time...
 var formats = [
 
-	{format: "DD/MM/YYYY h:mm:ss a", id: 0},
-	{format: "DD - MM - YYYY h:mm:ss a", id: 1},
-	{format: "The Do of MMMM h:mm:ss a", id: 2},
-	{format: "dddd MMM YYYY h:mm:ss a", id: 3},
-	{format: "dddd MMMM YYYY h:mm:ss a", id: 4},
-	{format: "MMMM Do YYYY, h:mm:ss a", id: 5}
+	{format: "DD/MM/YYYY HH:mm:ss", id: 0, selected: ""},
+	{format: "DD - MM - YYYY hh:mm:ss a", id: 1, selected: ""},
+	{format: "The Do of MMMM hh:mm:ss a", id: 2, selected: ""},
+	{format: "dddd MMM YYYY HH:mm:ss", id: 3, selected: ""},
+	{format: "dddd MMMM YYYY HH:mm:ss", id: 4, selected: ""},
+	{format: "MMMM Do YYYY, hh:mm:ss a", id: 5, selected: ""},
 ];
 
 // Function to update the current date and time of all timezones...
@@ -157,7 +157,7 @@ app.get('/', function(req, res) {
 
   res.setLocale(currentLocale);
 
-  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat});
+  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
 
 });
 
@@ -173,7 +173,7 @@ app.post('/', function(req, res) {
 
   res.setLocale(currentLocale);
 
-  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat});
+  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
 });
 
 app.listen('3000');
