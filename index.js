@@ -72,6 +72,17 @@ var timezones = [
 	{timezone: "Pacific/Wallis", country_code: "WF", moment: moment.tz("Pacific/Wallis"), color: "#4B0082"}
 ];
 
+// Array containing all defined formats to display current date and time...
+var formats = [
+
+	{format: "DD/MM/YYYY h:mm:ss a", id: 0},
+	{format: "DD - MM - YYYY h:mm:ss a", id: 1},
+	{format: "The Do of MMMM h:mm:ss a", id: 2},
+	{format: "dddd MMM YYYY h:mm:ss a", id: 3},
+	{format: "dddd MMMM YYYY h:mm:ss a", id: 4},
+	{format: "MMMM Do YYYY, h:mm:ss a", id: 5}
+];
+
 // Function to update the current date and time of all timezones...
 function updateDateAndTime(){
 
