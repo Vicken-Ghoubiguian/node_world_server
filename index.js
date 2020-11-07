@@ -75,12 +75,12 @@ var timezones = [
 // Array containing all defined formats to display current date and time...
 var formats = [
 
-	{format: "DD/MM/YYYY HH:mm:ss", selected: ""},
-	{format: "DD - MM - YYYY hh:mm:ss a", selected: ""},
-	{format: "The Do of MMMM hh:mm:ss a", selected: ""},
-	{format: "dddd MMM YYYY HH:mm:ss", selected: ""},
-	{format: "dddd MMMM YYYY HH:mm:ss", selected: "selected"},
-	{format: "MMMM Do YYYY, hh:mm:ss a", selected: ""}
+	{format: "DD/MM/YYYY HH:mm:ss", id: 0, selected: ""},
+	{format: "DD - MM - YYYY hh:mm:ss a", id: 1, selected: ""},
+	{format: "The Do of MMMM hh:mm:ss a", id: 2, selected: ""},
+	{format: "dddd MMM YYYY HH:mm:ss", id: 3, selected: ""},
+	{format: "dddd MMMM YYYY HH:mm:ss", id: 4, selected: "selected"},
+	{format: "MMMM Do YYYY, hh:mm:ss a", id: 5, selected: ""}
 ];
 
 // Function to update the current date and time of all timezones...
@@ -113,7 +113,7 @@ function updateLanguageSelect(){
 }
 
 // Function to update the "selected" field of the corresponding date and time format's JSON depending on whether the format is selected or not...
-function updateDaTSelect() {
+function updateDaTSelect(formatDaTId) {
 
 	for(var i = 0; i < formats.length; i++){
 
@@ -125,7 +125,7 @@ function updateDaTSelect() {
 
 	for(var i = 0; i < formats.length; i++){
 
-		if(formats[i].value === currentDateAndTimeFormat){
+		if(formats[i].id === formatDaTId){
 
 			formats[i].selected = "selected";
 		}
@@ -198,8 +198,8 @@ app.post('/', function(req, res) {
 
   } else if(req.body.current_form === "choosen_format_form"){
 
-	currentDateAndTimeFormat = req.body.choosen_date_and_time_format;
-	updateDaTSelect();
+	currentDateAndTimeFormat = formats[parseInt(req.body.choosen_date_and_time_format)].format;
+	updateDaTSelect(parseInt(req.body.choosen_date_and_time_format));
 
 	console.log(req.body.choosen_date_and_time_format);
   }
