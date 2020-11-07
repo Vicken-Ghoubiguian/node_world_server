@@ -186,16 +186,22 @@ app.get('/', function(req, res) {
 
 app.post('/', function(req, res) {
 
-  currentLocale = req.body.choosen_language;
-  currentLocale = currentLocale.toLowerCase();
+  if(req.body.current_form === "choosen_language_form"){
 
-  moment.locale(currentLocale);
+  	currentLocale = req.body.choosen_language;
+  	currentLocale = currentLocale.toLowerCase();
+
+  	moment.locale(currentLocale);
+  	updateLanguageSelect();
+
+  	res.setLocale(currentLocale);
+
+  } else if(req.body.current_form === "choosen_format_form"){
+
+	console.log("Test....");	
+  }
+
   updateDateAndTime();
-
-  updateLanguageSelect();
-
-  res.setLocale(currentLocale);
-
   res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
 });
 

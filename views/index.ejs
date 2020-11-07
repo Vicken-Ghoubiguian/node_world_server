@@ -10,16 +10,16 @@
 		<form id="choosen_language_form" method="post" action="/">
 			<input type="hidden" name="current_form" value="choosen_language_form">
   			<%= __('Language_choice')%> :
-  			<select class="choosen_language" name="choosen_language">
+  			<select id="choosen_language" name="choosen_language">
 				<% for(var i = 0; i < selectionnableLanguages.length; i++){ %>
 					<option value="<%= selectionnableLanguages[i].value %>" <%= selectionnableLanguages[i].selected %>><%= __(selectionnableLanguages[i].text)%></option>
 				<% } %>
   			</select>
 		</form>
-		<form id="" method="post" action="/">
+		<form id="choosen_format_form" method="post" action="/">
 			<input type="hidden" name="current_form" value="choosen_format_form">
 			<%= __('Date_and_time_format_choice')%> :
-			<select class="choosen_date_and_time_format" name="choosen_date_and_time_format">
+			<select id="choosen_date_and_time_format" name="choosen_date_and_time_format">
 				<% for(var i = 0; i < formats.length; i++){ %>
 					<option value="<%= formats[i].format %>" <%= formats[i].selected %>><%= formats[i].format %></option>
 				<% } %>
@@ -34,9 +34,14 @@
 	<% } %>
   </div>
   <script>
-	$("select").change(function(){
+	$("#choosen_language").change(function(){
 
 		$("#choosen_language_form").submit();
+	});
+
+	$("#choosen_date_and_time_format").change(function(){
+
+		$("#choosen_format_form").submit();
 	});
   </script>
 </body>
