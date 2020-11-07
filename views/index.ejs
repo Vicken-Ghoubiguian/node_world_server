@@ -8,6 +8,7 @@
   <div>
 	<p>
 		<form id="choosen_language_form" method="post" action="/">
+			<input type="hidden" name="current_form" value="choosen_language_form">
   			<%= __('Language_choice')%> :
   			<select class="choosen_language" name="choosen_language">
 				<% for(var i = 0; i < selectionnableLanguages.length; i++){ %>
@@ -16,6 +17,7 @@
   			</select>
 		</form>
 		<form id="" method="post" action="/">
+			<input type="hidden" name="current_form" value="choosen_format_form">
 			<%= __('Date_and_time_format_choice')%> :
 			<select class="choosen_date_and_time_format" name="choosen_date_and_time_format">
 				<% for(var i = 0; i < formats.length; i++){ %>

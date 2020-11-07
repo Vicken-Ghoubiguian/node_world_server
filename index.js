@@ -112,6 +112,26 @@ function updateLanguageSelect(){
 	}
 }
 
+// Function to update the "selected" field of the corresponding date and time format's JSON depending on whether the format is selected or not...
+function updateDaTSelect() {
+
+	for(var i = 0; i < formats.length; i++){
+
+		if(formats[i].selected === "selected"){
+
+			formats[i].selected = "";
+		}
+	}
+
+	for(var i = 0; i < formats.length; i++){
+
+		if(formats[i].value === currentDateAndTimeFormat){
+
+			formats[i].selected = "selected";
+		}
+	}
+}
+
 // Function to list all language locales ("value" field of each JSON) in a to-returned array...
 function listAllLocalesAsArray(){
 
