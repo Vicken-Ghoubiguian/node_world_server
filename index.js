@@ -198,7 +198,10 @@ app.post('/', function(req, res) {
 
   } else if(req.body.current_form === "choosen_format_form"){
 
-	console.log("Test....");	
+	currentDateAndTimeFormat = req.body.choosen_date_and_time_format;
+	updateDaTSelect();
+
+	console.log(req.body.choosen_date_and_time_format);
   }
 
   updateDateAndTime();
