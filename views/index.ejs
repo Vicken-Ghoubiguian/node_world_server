@@ -28,7 +28,7 @@
   		<h1><%= __('Hello')%></h1>
   	</p>
   </div>
-  <div>
+  <div id="timezones_displayer">
 	<% for(var i = 0; i < timezones.length; i++){ %>
 		<p style="color: <%= timezones[i].color %>"><%= timezones[i].timezone %> (<%= timezones[i].country_code %>): <%= timezones[i].moment.format(currentDateAndTimeFormat) %></p>
 	<% } %>

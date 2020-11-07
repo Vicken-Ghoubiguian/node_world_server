@@ -164,7 +164,6 @@ app.get('/', function(req, res) {
   	moment.locale(currentLocale);
   }
 
-  //updateDateAndTime();
   setInterval(updateDateAndTime, 1000);
 
   var listOfAllLocales = listAllLocalesAsArray();
@@ -209,7 +208,6 @@ app.post('/', function(req, res) {
 
   setInterval(updateDateAndTime, 1000);
 
-  //updateDateAndTime();
   res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
 });
 
