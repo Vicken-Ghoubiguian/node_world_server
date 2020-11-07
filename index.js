@@ -6,7 +6,7 @@ var i18n = require('./i18n');
 
 var app = express();
 var negotiator;
-var currentLocale;
+var currentLocale = null;
 var currentDateAndTimeFormat = "MMMM Do YYYY, hh:mm:ss a";
 
 // Array containing all languages with relatives datas...
@@ -75,12 +75,12 @@ var timezones = [
 // Array containing all defined formats to display current date and time...
 var formats = [
 
-	{format: "DD/MM/YYYY HH:mm:ss", id: 0, selected: ""},
-	{format: "DD - MM - YYYY hh:mm:ss a", id: 1, selected: ""},
-	{format: "The Do of MMMM hh:mm:ss a", id: 2, selected: ""},
-	{format: "dddd MMM YYYY HH:mm:ss", id: 3, selected: ""},
-	{format: "dddd MMMM YYYY HH:mm:ss", id: 4, selected: "selected"},
-	{format: "MMMM Do YYYY, hh:mm:ss a", id: 5, selected: ""}
+	{format: "DD/MM/YYYY HH:mm:ss", selected: ""},
+	{format: "DD - MM - YYYY hh:mm:ss a", selected: ""},
+	{format: "The Do of MMMM hh:mm:ss a", selected: ""},
+	{format: "dddd MMM YYYY HH:mm:ss", selected: ""},
+	{format: "dddd MMMM YYYY HH:mm:ss", selected: "selected"},
+	{format: "MMMM Do YYYY, hh:mm:ss a", selected: ""}
 ];
 
 // Function to update the current date and time of all timezones...
@@ -133,12 +133,15 @@ app.use(i18n);
 
 app.get('/', function(req, res) {
 
-  negotiator = new Negotiator(req);
-  var browserLanguages = negotiator.languages();
-  currentLocale = negotiator.language(browserLanguages);
-  currentLocale = currentLocale.toLowerCase();
+  if(currentLocale === null) {
+  	negotiator = new Negotiator(req);
+  	var browserLanguages = negotiator.languages();
+  	currentLocale = negotiator.language(browserLanguages);
+  	currentLocale = currentLocale.toLowerCase();
 
-  moment.locale(currentLocale);
+  	moment.locale(currentLocale);
+  }
+
   updateDateAndTime();
 
   var listOfAllLocales = listAllLocalesAsArray();
