@@ -93,7 +93,7 @@ function updateDateAndTime(){
 }
 
 // Function to update the "selected" field of the corresponding language's JSON depending on whether the language is selected or not...
-function updateSelect(){
+function updateLanguageSelect(){
 
 	for(var i = 0; i < selectionnableLanguages.length; i++){
 
@@ -156,7 +156,7 @@ app.get('/', function(req, res) {
 	currentLocale = "en-us";
   }
 
-  updateSelect();
+  updateLanguageSelect();
 
   res.setLocale(currentLocale);
 
@@ -172,7 +172,7 @@ app.post('/', function(req, res) {
   moment.locale(currentLocale);
   updateDateAndTime();
 
-  updateSelect();
+  updateLanguageSelect();
 
   res.setLocale(currentLocale);
 
