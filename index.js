@@ -79,8 +79,8 @@ var formats = [
 	{format: "DD - MM - YYYY hh:mm:ss a", id: 1, selected: ""},
 	{format: "The Do of MMMM hh:mm:ss a", id: 2, selected: ""},
 	{format: "dddd MMM YYYY HH:mm:ss", id: 3, selected: ""},
-	{format: "dddd MMMM YYYY HH:mm:ss", id: 4, selected: ""},
-	{format: "MMMM Do YYYY, hh:mm:ss a", id: 5, selected: ""},
+	{format: "dddd MMMM YYYY HH:mm:ss", id: 4, selected: "selected"},
+	{format: "MMMM Do YYYY, hh:mm:ss a", id: 5, selected: ""}
 ];
 
 // Function to update the current date and time of all timezones...
