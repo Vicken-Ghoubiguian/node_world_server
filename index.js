@@ -90,6 +90,8 @@ function updateDateAndTime(){
 
 		timezones[i].moment = moment.tz(timezones[i].timezone)
 	}
+
+	console.log("TYTY...");
 }
 
 // Function to update the "selected" field of the corresponding language's JSON depending on whether the language is selected or not...
@@ -162,7 +164,8 @@ app.get('/', function(req, res) {
   	moment.locale(currentLocale);
   }
 
-  updateDateAndTime();
+  //updateDateAndTime();
+  setInterval(updateDateAndTime, 1000);
 
   var listOfAllLocales = listAllLocalesAsArray();
 
@@ -204,7 +207,9 @@ app.post('/', function(req, res) {
 	console.log(req.body.choosen_date_and_time_format);
   }
 
-  updateDateAndTime();
+  setInterval(updateDateAndTime, 1000);
+
+  //updateDateAndTime();
   res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
 });
 
