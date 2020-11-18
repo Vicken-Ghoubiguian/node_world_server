@@ -22,7 +22,7 @@ RUN npm install body-parser
 RUN npm install moment-timezone
 
 #Expose the docker container listening port
-EXPOSE 3000
+EXPOSE 80
 
 #Container instruction as entrypoint: 'node index.js'
 ENTRYPOINT ["node", "index.js"]
