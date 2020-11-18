@@ -203,7 +203,7 @@ app.post('/', function(req, res) {
 	currentDateAndTimeFormat = formats[parseInt(req.body.choosen_date_and_time_format)].format;
 	updateDaTSelect(parseInt(req.body.choosen_date_and_time_format));
 
-	console.log(req.body.choosen_date_and_time_format);
+	res.setLocale(currentLocale);
   }
 
   setInterval(updateDateAndTime, 1000);
