@@ -10,6 +10,9 @@ COPY . /node_world_server
 #Change work directory for the node_world_server project one
 WORKDIR /node_world_server
 
+#Update the npm utility
+RUN npm update
+
 #Install all the needed npm packages to run the node_world_server project
 RUN npm install ejs
 RUN npm install i18n
