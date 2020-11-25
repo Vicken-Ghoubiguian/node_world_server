@@ -48,14 +48,23 @@ var timezones = [
 	{timezone: "Europe/Isle_of_Man", country_code: "IM", moment: moment.tz("Europe/Isle_of_Man"), color: "#006400"},
 	{timezone: "Europe/Istanbul", country_code: "TR", moment: moment.tz("Europe/Istanbul"), color: "#006400"},
 	{timezone: "Europe/Jersey", country_code: "JE", moment: moment.tz("Europe/Jersey"), color: "#006400"},
-
-
+	{timezone: "Europe/Kaliningrad", country_code: "RU", moment: moment.tz("Europe/Kaliningrad"), color: "#006400"},
+	{timezone: "Europe/Kiev", country_code: "UA", moment: moment.tz("Europe/Kiev"), color: "#006400"},
+	{timezone: "Europe/Kirov", country_code: "RU", moment: moment.tz("Europe/Kirov"), color: "#006400"},
+	{timezone: "Europe/Lisbon", country_code: "PT", moment: moment.tz("Europe/Lisbon"), color: "#006400"},
+	{timezone: "Europe/Ljubljana", country_code: "SL", moment: moment.tz("Europe/Ljubljana"), color: "#006400"},
+	{timezone: "Europe/London", country_code: "GB", moment: moment.tz("Europe/London"), color: "#006400"},
+	{timezone: "Europe/Luxembourg", country_code: "LU", moment: moment.tz("Europe/Luxembourg"), color: "#006400"},
+	{timezone: "Europe/Madrid", country_code: "ES", moment: moment.tz("Europe/Madrid"), color: "#006400"},
+	{timezone: "Europe/Malta", country_code: "MT", moment: moment.tz("Europe/Malta"), color: "#006400"},
+	{timezone: "Europe/Mariehamn", country_code: "AX", moment: moment.tz("Europe/Mariehamn"), color: "#006400"},
 	{timezone: "Europe/Minsk", country_code: "BY", moment: moment.tz("Europe/Minsk"), color: "#006400"},
 	{timezone: "Europe/Monaco", country_code: "MC", moment: moment.tz("Europe/Monaco"), color: "#006400"},
 	{timezone: "Europe/Moscow", country_code: "RU", moment: moment.tz("Europe/Moscow"), color: "#006400"},
 	{timezone: "Europe/Nicosia", country_code: "CY", moment: moment.tz("Europe/Nicosia"), color: "#006400"},
 	{timezone: "Europe/Oslo", country_code: "NO", moment: moment.tz("Europe/Oslo"), color: "#006400"},
 	{timezone: "Europe/Paris", country_code: "FR", moment: moment.tz("Europe/Paris"), color: "#006400"},
+	{timezone: "Europe/Podgorica", country_code: "ME", moment: moment.tz("Europe/Podgorica"), color: "#006400"},
 
 	//Pacific timezones...
 	{timezone: "Pacific/Apia", country_code: "WS", moment: moment.tz("Pacific/Apia"), color: "#4B0082"},
