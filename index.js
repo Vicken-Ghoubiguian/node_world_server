@@ -21,6 +21,11 @@ var selectionnableLanguages = [
 // Array containing all timezones with relatives datas...
 var timezones = [
 
+	//Universal and conventional timezones...
+	{timezone: "Etc/UTC", country_code: "No country", moment: moment.tz("Etc/UTC"), color: "#1c4966"},
+	{timezone: "Etc/GMT", country_code: "No country", moment: moment.tz("Etc/GMT"), color: "#1c4966"},
+	{timezone: "Factory", country_code: "No country", moment: moment.tz("Factory"), color: "#1c4966"},
+
 	//Africa timezones...
 	{timezone: "Africa/Abidjan", country_code: "CI", moment: moment.tz("Africa/Abidjan"), color: "#ffdf00"},
 	{timezone: "Africa/Accra", country_code: "GH", moment: moment.tz("Africa/Accra"), color: "#ffdf00"},
