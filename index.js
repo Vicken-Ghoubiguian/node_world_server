@@ -27,7 +27,33 @@ var timezones = [
 	{timezone: "Africa/Addis_Ababa", country_code: "ET", moment: moment.tz("Africa/Addis_Ababa"), color: "#ffdf00"},
 
 	//Europe timezones...
+	{timezone: "Europe/Amsterdam", country_code: "NL", moment: moment.tz("Europe/Amsterdam"), color: "#006400"},
+	{timezone: "Europe/Andorra", country_code: "AD", moment: moment.tz("Europe/Andorra"), color: "#006400"},
+	{timezone: "Europe/Astrakhan", country_code: "RU", moment: moment.tz("Europe/Astrakhan"), color: "#006400"},
+	{timezone: "Europe/Athens", country_code: "GR", moment: moment.tz("Europe/Athens"), color: "#006400"},
+	{timezone: "Europe/Belgrade", country_code: "RS", moment: moment.tz("Europe/Belgrade"), color: "#006400"},
+	{timezone: "Europe/Berlin", country_code: "DE", moment: moment.tz("Europe/Berlin"), color: "#006400"},
+	{timezone: "Europe/Bratislava", country_code: "SK", moment: moment.tz("Europe/Bratislava"), color: "#006400"},
+	{timezone: "Europe/Brussels", country_code: "BE", moment: moment.tz("Europe/Brussels"), color: "#006400"},
+	{timezone: "Europe/Bucharest", country_code: "RO", moment: moment.tz("Europe/Bucharest"), color: "#006400"},
+	{timezone: "Europe/Budapest", country_code: "HU", moment: moment.tz("Europe/Budapest"), color: "#006400"},
+	{timezone: "Europe/Busingen", country_code: "DE", moment: moment.tz("Europe/Busingen"), color: "#006400"},
+	{timezone: "Europe/Chisinau", country_code: "MD", moment: moment.tz("Europe/Chisinau"), color: "#006400"},
+	{timezone: "Europe/Copenhagen", country_code: "DK", moment: moment.tz("Europe/Copenhagen"), color: "#006400"},
+	{timezone: "Europe/Dublin", country_code: "IE", moment: moment.tz("Europe/Dublin"), color: "#006400"},
+	{timezone: "Europe/Dublin", country_code: "IE", moment: moment.tz("Europe/Dublin"), color: "#006400"},
+	{timezone: "Europe/Gibraltar", country_code: "GI", moment: moment.tz("Europe/Gibraltar"), color: "#006400"},
+	{timezone: "Europe/Guernsey", country_code: "GG", moment: moment.tz("Europe/Guernsey"), color: "#006400"},
+	{timezone: "Europe/Helsinki", country_code: "FI", moment: moment.tz("Europe/Helsinki"), color: "#006400"},
+	{timezone: "Europe/Isle_of_Man", country_code: "IM", moment: moment.tz("Europe/Isle_of_Man"), color: "#006400"},
+	{timezone: "Europe/Istanbul", country_code: "TR", moment: moment.tz("Europe/Istanbul"), color: "#006400"},
+	{timezone: "Europe/Jersey", country_code: "JE", moment: moment.tz("Europe/Jersey"), color: "#006400"},
 
+
+	{timezone: "Europe/Minsk", country_code: "BY", moment: moment.tz("Europe/Minsk"), color: "#006400"},
+	{timezone: "Europe/Monaco", country_code: "MC", moment: moment.tz("Europe/Monaco"), color: "#006400"},
+	{timezone: "Europe/Moscow", country_code: "RU", moment: moment.tz("Europe/Moscow"), color: "#006400"},
+	{timezone: "Europe/Nicosia", country_code: "CY", moment: moment.tz("Europe/Nicosia"), color: "#006400"},
 	{timezone: "Europe/Oslo", country_code: "NO", moment: moment.tz("Europe/Oslo"), color: "#006400"},
 	{timezone: "Europe/Paris", country_code: "FR", moment: moment.tz("Europe/Paris"), color: "#006400"},
 
