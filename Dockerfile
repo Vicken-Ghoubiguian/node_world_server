@@ -14,12 +14,7 @@ WORKDIR /node_world_server
 RUN npm update
 
 #Install all the needed npm packages to run the node_world_server project
-RUN npm install ejs
-RUN npm install i18n
-RUN npm install express
-RUN npm install negotiator
-RUN npm install body-parser
-RUN npm install moment-timezone
+RUN npm install
 
 #Expose the docker container listening port
 EXPOSE 80
