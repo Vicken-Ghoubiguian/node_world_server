@@ -1,0 +1,28 @@
+{
+  "name": "node_world_server",
+  "version": "1.0.0",
+  "description": "Web application written in NodeJS to display current time and date around the world for every timezones in every countries in four languages (French, English, Spanish and Catalan).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vicken-Ghoubiguian/node_world_server.git"
+  },
+  "author": "Vicken-Ghoubiguian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vicken-Ghoubiguian/node_world_server/issues"
+  },
+  "homepage": "https://github.com/Vicken-Ghoubiguian/node_world_server#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "i18n": "^0.13.2",
+    "moment-timezone": "^0.5.32",
+    "negotiator": "^0.6.2"
+  }
+}
