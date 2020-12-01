@@ -11,7 +11,7 @@ var currentLocale = null;
 var currentDateAndTimeFormat = "MMMM Do YYYY, hh:mm:ss a";
 
 //
-app.use(favicon("views/favicon.png"));
+app.use(favicon("assets/images/favicon.png"));
 
 // Array containing all languages with relatives datas...
 var selectionnableLanguages = [
