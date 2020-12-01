@@ -3,7 +3,7 @@ var favicon = require('serve-favicon');
 var Negotiator = require('negotiator');
 var bodyParser = require('body-parser');
 var moment = require('moment-timezone');
-var i18n = require('./i18n');
+var i18n = require('./config/modules/i18n');
 
 var app = express();
 var negotiator;
