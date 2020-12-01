@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>Node world server</title>
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
   <div id="forms_displayer">
@@ -30,10 +32,17 @@
   </div>
   <div id="timezones_displayer">
 	<% for(var i = 0; i < timezones.length; i++){ %>
-		<p style="color: <%= timezones[i].color %>"><%= timezones[i].timezone %> (<%= timezones[i].country_code %>): <%= timezones[i].moment.format(currentDateAndTimeFormat) %></p>
+		
+		<h3 style="color: <%= timezones[i].color %>"><%= timezones[i].timezone %> (<%= timezones[i].country_code %>): <%= timezones[i].moment.format(currentDateAndTimeFormat) %></h3>
+		<div>
+			<p>
+				Here weather awaits like Ragnarök...
+			</p>
+		</div>
 	<% } %>
   </div>
   <script>
+	$("#timezones_displayer").accordion();
 	$("#choosen_language").change(function(){
 
 		$("#choosen_language_form").submit();
