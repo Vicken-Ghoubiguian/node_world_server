@@ -1,4 +1,5 @@
 var express = require('express');
+var favicon = require('serve-favicon');
 var Negotiator = require('negotiator');
 var bodyParser = require('body-parser');
 var moment = require('moment-timezone');
@@ -8,6 +9,9 @@ var app = express();
 var negotiator;
 var currentLocale = null;
 var currentDateAndTimeFormat = "MMMM Do YYYY, hh:mm:ss a";
+
+//
+app.use(favicon("views/favicon.png"));
 
 // Array containing all languages with relatives datas...
 var selectionnableLanguages = [
@@ -190,6 +194,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.set('views', __dirname + '/views');
+
 app.use(i18n);
 
 app.get('/', function(req, res) {
