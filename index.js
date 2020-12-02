@@ -2,7 +2,6 @@ var express = require('express');
 var favicon = require('serve-favicon');
 var Negotiator = require('negotiator');
 var bodyParser = require('body-parser');
-var moment = require('moment-timezone');
 
 var i18n = require('./config/modules/i18n');
 var selectionnableLanguages = require('./config/modules/selectionnableLanguages');
@@ -20,9 +19,9 @@ app.use(favicon("assets/images/favicon.png"));
 // Function to update the current date and time of all timezones...
 function updateDateAndTime(){
 
-	for(var i = 0; i < timezones.length; i++){
+	for(var i = 0; i < timezones.timezones.length; i++){
 
-		timezones[i].moment = moment.tz(timezones[i].timezone)
+		timezones.timezones[i].moment = timezones.moment.tz(timezones.timezones[i].timezone)
 	}
 
 	console.log("TYTY...");
@@ -96,7 +95,7 @@ app.get('/', function(req, res) {
   	currentLocale = negotiator.language(browserLanguages);
   	currentLocale = currentLocale.toLowerCase();
 
-  	moment.locale(currentLocale);
+  	timezones.moment.locale(currentLocale);
   }
 
   setInterval(updateDateAndTime, 1000);
@@ -117,7 +116,7 @@ app.get('/', function(req, res) {
 
   res.setLocale(currentLocale);
 
-  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
+  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones.timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
 
 });
 
@@ -128,7 +127,7 @@ app.post('/', function(req, res) {
   	currentLocale = req.body.choosen_language;
   	currentLocale = currentLocale.toLowerCase();
 
-  	moment.locale(currentLocale);
+  	timezones.moment.locale(currentLocale);
   	updateLanguageSelect();
 
   	res.setLocale(currentLocale);
@@ -143,7 +142,7 @@ app.post('/', function(req, res) {
 
   setInterval(updateDateAndTime, 1000);
 
-  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
+  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones.timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
 });
 
 app.listen('80');

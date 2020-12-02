@@ -7,5 +7,5 @@ var selectionnableLanguages = [
         {value: "ca", selected: "", text: "Catalan"}
 ];
 
-//
+// Export the 'selectionnableLanguages' array...
 module.exports = selectionnableLanguages;

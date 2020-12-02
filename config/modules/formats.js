@@ -9,5 +9,5 @@ var formats = [
         {format: "MMMM Do YYYY, hh:mm:ss a", id: 5, selected: ""}
 ];
 
-//
+// Export the 'formats' array...
 module.exports = formats;

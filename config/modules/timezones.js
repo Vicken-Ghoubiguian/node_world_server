@@ -118,5 +118,8 @@ var timezones = [
 	{timezone: "Pacific/Wallis", country_code: "WF", moment: moment.tz("Pacific/Wallis"), color: "#4B0082"}
 ];
 
-//
-module.exports = timezones;
+// Export the 'timezones' array and the 'moment' object...
+module.exports = {
+	'timezones': timezones,
+	'moment': moment
+}
