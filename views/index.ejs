@@ -7,41 +7,54 @@
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
-  <div id="forms_displayer">
-	<p>
-		<form id="choosen_language_form" method="post" action="/">
-			<input type="hidden" name="current_form" value="choosen_language_form">
-  			<%= __('Language_choice')%> :
-  			<select id="choosen_language" name="choosen_language">
-				<% for(var i = 0; i < selectionnableLanguages.length; i++){ %>
-					<option value="<%= selectionnableLanguages[i].value %>" <%= selectionnableLanguages[i].selected %>><%= __(selectionnableLanguages[i].text)%></option>
-				<% } %>
-  			</select>
-		</form>
-		<form id="choosen_format_form" method="post" action="/">
-			<input type="hidden" name="current_form" value="choosen_format_form">
-			<%= __('Date_and_time_format_choice')%> :
-			<select id="choosen_date_and_time_format" name="choosen_date_and_time_format">
-				<% for(var i = 0; i < formats.length; i++){ %>
-					<option value="<%= formats[i].id %>" <%= formats[i].selected %>><%= formats[i].format %></option>
-				<% } %>
-			</select>
-		</form>
-  		<h1><%= __('Hello')%></h1>
-  	</p>
-  </div>
-  <div id="timezones_displayer">
-	<% for(var i = 0; i < timezones.length; i++){ %>
-		
-		<h3 style="color: <%= timezones[i].color %>"><%= timezones[i].timezone %> (<%= timezones[i].country_code %>): <%= timezones[i].moment.format(currentDateAndTimeFormat) %></h3>
-		<div>
+	<div id="functionalities">
+  	<ul>
+    	<li><a href="#timezones_view">Timezones view</a></li>
+    	<li><a href="#github_view">GitHub view</a></li>
+  	</ul>
+  	<div id="timezones_view">
+		<div id="forms_displayer">
 			<p>
-				<%= __('Ragnarok')%>
+				<form id="choosen_language_form" method="post" action="/">
+					<input type="hidden" name="current_form" value="choosen_language_form">
+					<%= __('Language_choice')%> :
+					<select id="choosen_language" name="choosen_language">
+						<% for(var i = 0; i < selectionnableLanguages.length; i++){ %>
+							<option value="<%= selectionnableLanguages[i].value %>" <%= selectionnableLanguages[i].selected %>><%= __(selectionnableLanguages[i].text)%></option>
+						<% } %>
+					</select>
+				</form>
+				<form id="choosen_format_form" method="post" action="/">
+					<input type="hidden" name="current_form" value="choosen_format_form">
+					<%= __('Date_and_time_format_choice')%> :
+					<select id="choosen_date_and_time_format" name="choosen_date_and_time_format">
+						<% for(var i = 0; i < formats.length; i++){ %>
+							<option value="<%= formats[i].id %>" <%= formats[i].selected %>><%= formats[i].format %></option>
+						<% } %>
+					</select>
+				</form>
+				<h1><%= __('Hello')%></h1>
 			</p>
 		</div>
-	<% } %>
+		<div id="timezones_displayer">
+			<% for(var i = 0; i < timezones.length; i++){ %>
+				<h3 style="color: <%= timezones[i].color %>"><%= timezones[i].timezone %> (<%= timezones[i].country_code %>): <%= timezones[i].moment.format(currentDateAndTimeFormat) %></h3>
+				<div>
+					<p>
+						<%= __('Ragnarok')%>
+					</p>
+				</div>
+					<% } %>
+		</div>
   </div>
+  <div id="github_view">
+    <p>
+    	<%= __('Ragnarok')%>
+    </p>
+  </div>
+</div>
   <script>
+  	$("#functionalities").tabs();
 	$("#timezones_displayer").accordion();
 	$("#choosen_language").change(function(){
 
