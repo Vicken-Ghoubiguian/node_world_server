@@ -16,6 +16,7 @@ var currentDateAndTimeFormat = "MMMM Do YYYY, hh:mm:ss a";
 
 //
 app.use(favicon("assets/images/favicon.png"));
+app.use(express.static("assets"));
 
 // Function to update the current date and time of all timezones...
 function updateDateAndTime(){
