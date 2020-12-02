@@ -4,9 +4,10 @@ var Negotiator = require('negotiator');
 var bodyParser = require('body-parser');
 
 var i18n = require('./config/modules/i18n');
-var selectionnableLanguages = require('./config/modules/selectionnableLanguages');
-var formats = require('./config/modules/formats');
-var timezones = require('./config/modules/timezones');
+
+var selectionnableLanguages = require('./config/seeds/selectionnableLanguages');
+var formats = require('./config/seeds/formats');
+var timezones = require('./config/seeds/timezones');
 
 var app = express();
 var negotiator;
