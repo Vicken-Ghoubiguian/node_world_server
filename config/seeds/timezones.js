@@ -13,7 +13,21 @@ var timezones = [
 	{timezone: "Africa/Accra", country_code: "GH", moment: moment.tz("Africa/Accra"), color: "#ffdf00"},
 	{timezone: "Africa/Addis_Ababa", country_code: "ET", moment: moment.tz("Africa/Addis_Ababa"), color: "#ffdf00"},
 
-	//
+	//Antarctica timezones...
+	{timezone: "Antarctica/Casey", country_code: "AQ", moment: moment.tz("Antarctica/Casey"), color: "#7FFF00"},
+	{timezone: "Antarctica/Davis", country_code: "AQ", moment: moment.tz("Antarctica/Davis"), color: "#7FFF00"},
+	{timezone: "Antarctica/DumontDUrville", country_code: "AQ", moment: moment.tz("Antarctica/DumontDUrville"), color: "#7FFF00"},
+	{timezone: "Antarctica/Macquarie", country_code: "AU", moment: moment.tz("Antarctica/Macquarie"), color: "#7FFF00"},
+	{timezone: "Antarctica/Mawson", country_code: "AQ", moment: moment.tz("Antarctica/Mawson"), color: "#7FFF00"},
+	{timezone: "Antarctica/McMurdo", country_code: "AQ", moment: moment.tz("Antarctica/McMurdo"), color: "#7FFF00"},
+	{timezone: "Antarctica/Palmer", country_code: "AQ", moment: moment.tz("Antarctica/Palmer"), color: "#7FFF00"},
+	{timezone: "Antarctica/Rothera", country_code: "AQ", moment: moment.tz("Antarctica/Rothera"), color: "#7FFF00"},
+	{timezone: "Antarctica/Syowa", country_code: "AQ", moment: moment.tz("Antarctica/Syowa"), color: "#7FFF00"},
+	{timezone: "Antarctica/Troll", country_code: "AQ", moment: moment.tz("Antarctica/Troll"), color: "#7FFF00"},
+	{timezone: "Antarctica/Vostok", country_code: "AQ", moment: moment.tz("Antarctica/Vostok"), color: "#7FFF00"},
+
+	//Arctic timezones...
+	{timezone: "Arctic/Longyearbyen", country_code: "SJ", moment: moment.tz("Arctic/Longyearbyen"), color: "#E7F9F3"},
 
 	//Atlantic timezones...
 	{timezone: "Atlantic/Azores", country_code: "PT", moment: moment.tz("Atlantic/Azores"), color: "#00FF00"},
@@ -28,6 +42,7 @@ var timezones = [
 	{timezone: "Atlantic/Stanley", country_code: "FK", moment: moment.tz("Atlantic/Stanley"), color: "#00FF00"},
 
 	//Australia timezones...
+	
 
 	//Europe timezones...
 	{timezone: "Europe/Amsterdam", country_code: "NL", moment: moment.tz("Europe/Amsterdam"), color: "#006400"},
