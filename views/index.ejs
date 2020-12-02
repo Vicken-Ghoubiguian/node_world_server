@@ -50,6 +50,15 @@
   </div>
   <div id="github_view">
   	<p>
+  		<form id="second_choosen_language_form" method="post" action="/">
+					<input type="hidden" name="current_form" value="choosen_language_form">
+					<%= __('Language_choice')%> :
+					<select id="second_choosen_language" name="choosen_language">
+						<% for(var i = 0; i < selectionnableLanguages.length; i++){ %>
+							<option value="<%= selectionnableLanguages[i].value %>" <%= selectionnableLanguages[i].selected %>><%= __(selectionnableLanguages[i].text)%></option>
+						<% } %>
+					</select>
+		</form>
   		<h1><%= __('Hello')%></h1>
   	</p>
     <p>
