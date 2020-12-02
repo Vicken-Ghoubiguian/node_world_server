@@ -13,6 +13,22 @@ var timezones = [
 	{timezone: "Africa/Accra", country_code: "GH", moment: moment.tz("Africa/Accra"), color: "#ffdf00"},
 	{timezone: "Africa/Addis_Ababa", country_code: "ET", moment: moment.tz("Africa/Addis_Ababa"), color: "#ffdf00"},
 
+	//
+
+	//Atlantic timezones...
+	{timezone: "Atlantic/Azores", country_code: "PT", moment: moment.tz("Atlantic/Azores"), color: "#00FF00"},
+	{timezone: "Atlantic/Bermuda", country_code: "BM", moment: moment.tz("Atlantic/Bermuda"), color: "#00FF00"},
+	{timezone: "Atlantic/Canary", country_code: "ES", moment: moment.tz("Atlantic/Canary"), color: "#00FF00"},
+	{timezone: "Atlantic/Cape_Verde", country_code: "CV", moment: moment.tz("Atlantic/Cape_Verde"), color: "#00FF00"},
+	{timezone: "Atlantic/Faroe", country_code: "FO", moment: moment.tz("Atlantic/Faroe"), color: "#00FF00"},
+	{timezone: "Atlantic/Madeira", country_code: "PT", moment: moment.tz("Atlantic/Madeira"), color: "#00FF00"},
+	{timezone: "Atlantic/Reykjavik", country_code: "IS", moment: moment.tz("Atlantic/Reykjavik"), color: "#00FF00"},
+	{timezone: "Atlantic/South_Georgia", country_code: "GS", moment: moment.tz("Atlantic/South_Georgia"), color: "#00FF00"},
+	{timezone: "Atlantic/St_Helena", country_code: "SH", moment: moment.tz("Atlantic/St_Helena"), color: "#00FF00"},
+	{timezone: "Atlantic/Stanley", country_code: "FK", moment: moment.tz("Atlantic/Stanley"), color: "#00FF00"},
+
+	//Australia timezones...
+
 	//Europe timezones...
 	{timezone: "Europe/Amsterdam", country_code: "NL", moment: moment.tz("Europe/Amsterdam"), color: "#006400"},
 	{timezone: "Europe/Andorra", country_code: "AD", moment: moment.tz("Europe/Andorra"), color: "#006400"},
