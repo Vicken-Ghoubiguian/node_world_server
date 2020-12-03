@@ -19,43 +19,59 @@ async function getWeather(citiesAndCountries, apiKey) {
         // Configuring the URL for using the Openweathermap API to launch the weather retrieval request for the current city...
         var url = "https://api.openweathermap.org/data/2.5/weather?q=".concat(city, ",", citiesAndCountries[city], "&appid=", apiKey);
 
-        // Establishment and execution of the request thanks to 'axios'...
-        var response_body = await axios(url);
+        //
+        try {
 
-        // Creation of the 'openWeather' structure which contains all the data concerning the current city...
-        var openWeather = {
+            // Establishment and execution of the request thanks to 'axios'...
+            var response_body = await axios(url);
 
-            longitude: response_body.data.coord.lon,
-            latitude: response_body.data.coord.lat,
-            weather_id: response_body.data.weather[0].id,
-            weather_main: response_body.data.weather[0].main,
-            weather_description: response_body.data.weather[0].description,
-            weather_icon: "https://openweathermap.org/img/wn/".concat(response_body.data.weather[0].icon, ".png"),
-            base: response_body.data.base,
-            main_temp: response_body.data.main.temp,
-            main_feels_like: response_body.data.main.feels_like,
-            main_temp_min: response_body.data.main.temp_min,
-            main_temp_max: response_body.data.main.temp_max,
-            main_pressure: response_body.data.main.pressure,
-            main_humidity: response_body.data.main.humidity,
-            visibility: response_body.data.visibility,
-            wind_speed: response_body.data.wind.speed,
-            wind_deg: response_body.data.wind.deg,
-            clouds_all: response_body.data.clouds.all,
-            dt: response_body.data.dt,
-            sys_type: response_body.data.sys.type,
-            sys_id: response_body.data.sys.id,
-            sys_country: response_body.data.sys.country,
-            sys_sunrise: response_body.data.sys.sunrise,
-            sys_sunset: response_body.data.sys.sunset,
-            timezone: response_body.data.timezone,
-            city: response_body.data.name,
-            id: response_body.data.id,
-            cod: response_body.data.cod
-        };
+            // Creation of the 'openWeather' structure which contains all the data concerning the current city...
+            var openWeather = {
 
-        // Push in the array...
-        weather_data.push(openWeather);
+                longitude: response_body.data.coord.lon,
+                latitude: response_body.data.coord.lat,
+                weather_id: response_body.data.weather[0].id,
+                weather_main: response_body.data.weather[0].main,
+                weather_description: response_body.data.weather[0].description,
+                weather_icon: "https://openweathermap.org/img/wn/".concat(response_body.data.weather[0].icon, ".png"),
+                base: response_body.data.base,
+                main_temp: response_body.data.main.temp,
+                main_feels_like: response_body.data.main.feels_like,
+                main_temp_min: response_body.data.main.temp_min,
+                main_temp_max: response_body.data.main.temp_max,
+                main_pressure: response_body.data.main.pressure,
+                main_humidity: response_body.data.main.humidity,
+                visibility: response_body.data.visibility,
+                wind_speed: response_body.data.wind.speed,
+                wind_deg: response_body.data.wind.deg,
+                clouds_all: response_body.data.clouds.all,
+                dt: response_body.data.dt,
+                sys_type: response_body.data.sys.type,
+                sys_id: response_body.data.sys.id,
+                sys_country: response_body.data.sys.country,
+                sys_sunrise: response_body.data.sys.sunrise,
+                sys_sunset: response_body.data.sys.sunset,
+                timezone: response_body.data.timezone,
+                city: response_body.data.name,
+                id: response_body.data.id,
+                cod: response_body.data.cod
+            };
+
+            // Push in the array...
+            weather_data.push(openWeather);
+
+        } catch(weatherProcessError) {
+
+            // Creation of the 'weatherError' structure which contains all the data concerning the occured error from openWeather...
+            var weatherError = {
+
+                cod: weatherProcessError.response.data.cod,
+                message: weatherProcessError.response.data.message,
+            };
+
+            //Push in the array...
+            weather_data.push(weatherError);
+        }
     }
 
     // Returns the 'weather_data' array for display in the web application template...
