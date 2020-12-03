@@ -1,16 +1,23 @@
+//
 var axios = require('axios');
 
 var cities = ["Paris", "Oslo", "Yerevan"];
 var apiKey = "5222a1c311ca31001b0877137d584c36";
 
+// Definition of the asynchronous 'getWeather' function which returns the weather for all the cities that are part of the array passed as a parameter...
 async function getWeather(cities, apiKey) {
     var weather_data = [];
 
+    // Browse the 'cities' table containing all the names of all the cities for which the weather forecast is requested...
     for (var city of cities) {
+
+        // Configuring the URL for using the Openweathermap API to launch the weather retrieval request for the current city...
         var url = "https://api.openweathermap.org/data/2.5/weather?q=".concat(city, "&appid=", apiKey);
 
+        // Establishment and execution of the request thanks to 'axios'...
         var response_body = await axios(url);
 
+        // Creation of the 'openWeather' structure which contains all the data concerning the current city...
         var openWeather = {
 
             longitude: response_body.data.coord.lon,
@@ -42,9 +49,11 @@ async function getWeather(cities, apiKey) {
             cod: response_body.data.cod
         };
 
+        // Push in the array...
         weather_data.push(openWeather);
     }
 
+    // Returns the 'weather_data' array for display in the web application template...
     return weather_data;
 }
 
