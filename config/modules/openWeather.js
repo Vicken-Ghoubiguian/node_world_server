@@ -10,16 +10,14 @@ async function getWeather(cities, apiKey) {
         var url = "https://api.openweathermap.org/data/2.5/weather?q=".concat(city, "&appid=", apiKey);
 
         var response_body = await axios(url);
-		//var weather_json = JSON.parse(response_body);
 
-        /*var weather = {
-            city : weather_json.name,
-            temperature : Math.round(weather_json.main.temp),
-            description : weather_json.weather[0].description,
-            icon : weather_json.weather[0].icon
-        };*/
+        var openWeather = {
+            city : response_body.data.name,
+            description: response_body.data.weather[0].description,
+            icon: "https://openweathermap.org/img/wn/".concat(response_body.data.weather[0].icon, ".png")
+        };
 
-        weather_data.push(response_body.data);
+        weather_data.push(openWeather);
     }
 
     return weather_data;
