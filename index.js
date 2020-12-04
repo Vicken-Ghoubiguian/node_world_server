@@ -118,6 +118,15 @@ app.get('/', function(req, res) {
 
   res.setLocale(currentLocale);
 
+  var weatherReferencesHashTable = new Object();
+
+  for(var i = 0; i < timezones.timezones.length; i++)
+  {
+  	weatherReferencesHashTable[timezones.timezones[i].weather_reference] = timezones.timezones[i].country_code;
+  }
+
+  console.log(weatherReferencesHashTable);
+
   res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones.timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
 
 });
