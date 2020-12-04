@@ -42,7 +42,19 @@ var timezones = [
 	{timezone: "Atlantic/Stanley", country_code: "FK", weather_reference: "Stanley", moment: moment.tz("Atlantic/Stanley"), color: "#00FF00"},
 
 	//Australia timezones...
-	
+	{timezone: "Australia/Adelaide", country_code: "AU", weather_reference: "Adelaide", moment: moment.tz("Australia/Adelaide"), color: "#0091AD"},
+	{timezone: "Australia/Brisbane", country_code: "AU", weather_reference: "Brisbane", moment: moment.tz("Australia/Brisbane"), color: "#0091AD"},
+	{timezone: "Australia/Broken_Hill", country_code: "AU", weather_reference: "Broken_Hill", moment: moment.tz("Australia/Broken_Hill"), color: "#0091AD"},
+	{timezone: "Australia/Currie", country_code: "AU", weather_reference: "Currie", moment: moment.tz("Australia/Currie"), color: "#0091AD"},
+	{timezone: "Australia/Darwin", country_code: "AU", weather_reference: "Darwin", moment: moment.tz("Australia/Darwin"), color: "#0091AD"},
+	{timezone: "Australia/Eucla", country_code: "AU", weather_reference: "Eucla", moment: moment.tz("Australia/Eucla"), color: "#0091AD"},
+	{timezone: "Australia/Hobart", country_code: "AU", weather_reference: "Hobart", moment: moment.tz("Australia/Hobart"), color: "#0091AD"},
+	{timezone: "Australia/Lindeman", country_code: "AU", weather_reference: "No weather reference", moment: moment.tz("Australia/Lindeman"), color: "#0091AD"},
+	{timezone: "Australia/Lord_Howe", country_code: "AU", weather_reference: "Lord_Howe", moment: moment.tz("Australia/Lord_Howe"), color: "#0091AD"},
+	{timezone: "Australia/Melbourne", country_code: "AU", weather_reference: "Melbourne", moment: moment.tz("Australia/Melbourne"), color: "#0091AD"},
+	{timezone: "Australia/Perth", country_code: "AU", weather_reference: "Perth", moment: moment.tz("Australia/Perth"), color: "#0091AD"},
+	{timezone: "Australia/Sydney", country_code: "AU", weather_reference: "Sydney", moment: moment.tz("Australia/Sydney"), color: "#0091AD"},
+	{timezone: "Antarctica/Macquarie", country_code: "AU", weather_reference: "Macquarie", moment: moment.tz("Antarctica/Macquarie"), color: "#0091AD"},
 
 	//Europe timezones...
 	{timezone: "Europe/Amsterdam", country_code: "NL", weather_reference: "Amsterdam", moment: moment.tz("Europe/Amsterdam"), color: "#006400"},
