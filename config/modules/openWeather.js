@@ -6,6 +6,7 @@ var citiesAndCountries = new Object();
 citiesAndCountries["Paris"] = "FR";
 citiesAndCountries["Oslo"] = "NO";
 citiesAndCountries["Yerevan"] = "AM";
+citiesAndCountries["Nauru"] = "NR";
 
 var apiKey = "5222a1c311ca31001b0877137d584c36";
 
