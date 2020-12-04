@@ -157,7 +157,7 @@ var timezones = [
 	{timezone: "Pacific/Tarawa", country_code: "KI", moment: moment.tz("Pacific/Tarawa"), color: "#4B0082"},
 	{timezone: "Pacific/Tongatapu", country_code: "TO", moment: moment.tz("Pacific/Tongatapu"), color: "#4B0082"},
 	{timezone: "Pacific/Wake", country_code: "UM", moment: moment.tz("Pacific/Wake"), color: "#4B0082"},
-	{timezone: "Pacific/Wallis", country_code: "WF", moment: moment.tz("Pacific/Wallis"), color: "#4B0082"}
+	{timezone: "Pacific/Wallis", country_code: "WF", weather_reference: "Mata-Utu", moment: moment.tz("Pacific/Wallis"), color: "#4B0082"}
 ];
 
 // Export the 'timezones' array and the 'moment' object...
