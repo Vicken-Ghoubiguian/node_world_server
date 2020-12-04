@@ -9,51 +9,6 @@ citiesAndCountries["Yerevan"] = "AM";
 
 var apiKey = "5222a1c311ca31001b0877137d584c36";
 
-// Definition of the asynchronous 'getUltraViolet' function which returns the completed weather with all UV values...
-async function getUltraViolet(weather_data, apiKey) {
-
-    // Definition of the 'weather_data' array which will return all completed weather contained in the 'weather_data' array with UV datas...
-    var weather_new_data = [];
-
-    // Browse the 'weather_data' table containing all the weathers...
-    for(var weather in weather_data) {
-
-        // Configuring the URL for using the Openweathermap API to launch the ultraviolet retrieval request for latitude and longitude for the current weather with API key...
-        var url = "http://api.openweathermap.org/data/2.5/uvi?lat=".concat(weather.latitude, "&lon=", weather.longitude, "&appid=", apiKey);
-
-        // Definition of bloc 'try' to define the code which should execute normally without any error...
-        try {
-
-            // Establishment and execution of the request thanks to 'axios'...
-            var response_body = await axios(url);
-
-            // Completion of the current weather with all UV datas...
-            weather.uv_date_iso = response_body.data.date_iso;
-            weather.uv_date = response_body.data.date;
-            weather.uv_value = response_body.data.value;
-
-            // Push in the array...
-            weather_new_data.push(weather);
-
-        // Definition of bloc 'catch' to catch any occured error...
-        } catch(UVProcessError) {
-
-            // Implementation of the 'UVError' structure which contains all the data concerning the occured error for ultraviolet from openWeather...
-            var UVError = {
-
-                cod: UVProcessError.response.data.cod,
-                message: UVProcessError.response.data.message,
-            };
-
-            // Push in the array...
-            weather_new_data.push(UVError);
-        }
-    }
-
-    // Returns the 'weather_new_data' array for display in the web application template...
-    return weather_new_data;
-}
-
 // Definition of the asynchronous 'getWeather' function which returns the weather for all the cities that are part of the array passed as a parameter...
 async function getWeather(citiesAndCountries, apiKey) {
 
@@ -64,13 +19,13 @@ async function getWeather(citiesAndCountries, apiKey) {
     for (var city in citiesAndCountries) {
 
         // Configuring the URL for using the Openweathermap API to launch the weather retrieval request for the current city...
-        var url = "https://api.openweathermap.org/data/2.5/weather?q=".concat(city, ",", citiesAndCountries[city], "&appid=", apiKey);
+        var weather_url = "https://api.openweathermap.org/data/2.5/weather?q=".concat(city, ",", citiesAndCountries[city], "&appid=", apiKey);
 
         // Definition of bloc 'try' to define the code which should execute normally without any error...
         try {
 
             // Establishment and execution of the request thanks to 'axios'...
-            var response_body = await axios(url);
+            var response_body = await axios(weather_url);
 
             // Definition of the 'openWeather' structure which contains all the data concerning the current city...
             var openWeather = {
@@ -109,6 +64,17 @@ async function getWeather(citiesAndCountries, apiKey) {
                 uv_date: "",
                 uv_value: ""
             };
+
+            // Configuring the URL for using the Openweathermap API to launch the ultraviolet retrieval request for latitude and longitude for the current weather with API key...
+            var ultraviolet_url = "http://api.openweathermap.org/data/2.5/uvi?lat=".concat(openWeather.latitude, "&lon=", openWeather.longitude, "&appid=", apiKey);
+
+            // Establishment and execution of the request thanks to 'axios'...
+            var response_body = await axios(ultraviolet_url);
+
+            // Completion of the current weather with all UV datas...
+            openWeather.uv_date_iso = response_body.data.date_iso;
+            openWeather.uv_date = response_body.data.date;
+            openWeather.uv_value = response_body.data.value;
 
             // Push in the array...
             weather_data.push(openWeather);
