@@ -38,8 +38,8 @@
 					<input type="hidden" name="current_form" value="choosen_countrycode_form">
 					<%= __('countrycode_timezone_choice')%> :
 					<select>
-						<% for(var i = 0; i < globalTimezones.length; i++){ %>
-							<option value="<%= globalTimezones[i].country_code %>"><%= globalTimezones[i].country_code %></option>
+						<% for(var countryCode in globalTimezones){ %>
+							<option value="<%= countryCode %>" <%= globalTimezones[countryCode] %>><%= countryCode %></option>
 						<% } %>
 					</select>
 				</form>
