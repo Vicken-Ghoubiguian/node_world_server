@@ -163,7 +163,7 @@ app.get('/', function(req, res) {
 
   	console.log(results);
 
-  	res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "globalTimezones": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
+  	res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
   });
 });
 
