@@ -153,7 +153,7 @@ app.get('/', function(req, res) {
 // 
 app.post('/', function(req, res) {
 
-  if(req.body.current_form === "choosen_language_form"){
+  if(req.body.current_form === "choosen_language_form") {
 
   	currentLocale = req.body.choosen_language;
   	currentLocale = currentLocale.toLowerCase();
@@ -165,10 +165,10 @@ app.post('/', function(req, res) {
 
   } else if(req.body.current_form === "choosen_format_form"){
 
-	currentDateAndTimeFormat = formats[parseInt(req.body.choosen_date_and_time_format)].format;
-	updateDaTSelect(parseInt(req.body.choosen_date_and_time_format));
+  	currentDateAndTimeFormat = formats[parseInt(req.body.choosen_date_and_time_format)].format;
+  	updateDaTSelect(parseInt(req.body.choosen_date_and_time_format));
 
-	res.setLocale(currentLocale);
+  	res.setLocale(currentLocale);
   }
 
   setInterval(updateDateAndTime, 1000);
