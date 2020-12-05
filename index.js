@@ -170,6 +170,35 @@ app.get('/', function(req, res) {
 // 
 app.post('/', function(req, res) {
 
+  // Defining a series of array and hash table for treatments in templates...
+  var weatherReferencesHashTable = new Object();
+  var countryCodeHashTable = new Object();
+  var renderTimezonesArray = [];
+
+  // Configuration of all tables and hash tables...
+  for(var i = 0; i < timezones.timezones.length; i++) {
+
+    // Configuration of 'weatherReferencesHashTable' hash table and 'renderTimezonesArray' array...
+    if(timezones.timezones[i].timezone === Intl.DateTimeFormat().resolvedOptions().timeZone) {
+
+      weatherReferencesHashTable[timezones.timezones[i].weather_reference] = timezones.timezones[i].country_code;
+      renderTimezonesArray.push(timezones.timezones[i]);
+    }
+
+    // Configuration of 'countryCodeHashTable' hash table...
+    if(!countryCodeHashTable.hasOwnProperty(timezones.timezones[i].country_code)) {
+
+      if(timezones.timezones[i].timezone === Intl.DateTimeFormat().resolvedOptions().timeZone) {
+
+          countryCodeHashTable[timezones.timezones[i].country_code] = 'selected';
+
+      } else {
+
+          countryCodeHashTable[timezones.timezones[i].country_code] = '';
+      }
+    }
+  }
+
   if(req.body.current_form === "choosen_language_form") {
 
   	currentLocale = req.body.choosen_language;
@@ -190,7 +219,15 @@ app.post('/', function(req, res) {
 
   setInterval(updateDateAndTime, 1000);
 
-  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones.timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
+  //res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones.timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
+
+  // Calling the 'getWeather' method from the 'openWeather' module 
+  openWeather.getWeather(weatherReferencesHashTable, "5222a1c311ca31001b0877137d584c36").then(function(results) {
+
+    console.log(results);
+
+    res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
+  });
 });
 
 // Defining the listening port for the 'node_world_server' application...
