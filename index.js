@@ -1,21 +1,25 @@
+// Importation of NPM modules...
 var express = require('express');
 var favicon = require('serve-favicon');
 var Negotiator = require('negotiator');
 var bodyParser = require('body-parser');
 
+// Importation of internal modules...
 var i18n = require('./config/modules/i18n');
 var openWeather = require('./config/modules/openWeather');
 
+// Importation of seeds...
 var selectionnableLanguages = require('./config/seeds/selectionnableLanguages');
 var formats = require('./config/seeds/formats');
 var timezones = require('./config/seeds/timezones');
 
+// Declaration of all required variables for the 'node_world_server' app...
 var app = express();
 var negotiator;
 var currentLocale = null;
 var currentDateAndTimeFormat = "MMMM Do YYYY, hh:mm:ss a";
 
-//
+// Declaration of static files and favicon image...
 app.use(favicon("assets/images/favicon.png"));
 app.use(express.static("assets"));
 
@@ -83,16 +87,22 @@ function listAllLocalesAsArray(){
 	return returnedLocalsArray;
 }
 
+// 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+// Declaration of views files...
 app.set('views', __dirname + '/views');
 
+// Declaration of using 'i18n' module...
 app.use(i18n);
 
+// 
 app.get('/', function(req, res) {
 
+  // Defining the current locale at the call the 'node_world_server' application in your browser ...
   if(currentLocale === null) {
+
   	negotiator = new Negotiator(req);
   	var browserLanguages = negotiator.languages();
   	currentLocale = negotiator.language(browserLanguages);
@@ -119,8 +129,10 @@ app.get('/', function(req, res) {
 
   res.setLocale(currentLocale);
 
+  // Defining of the 'weatherReferencesHashTable' hash table...
   var weatherReferencesHashTable = new Object();
 
+  // Configuration of the 'weatherReferencesHashTable' hash table for the bellow treatment with the 'getWeather' function...
   for(var i = 0; i < timezones.timezones.length; i++) {
 
   	if(timezones.timezones[i].weather_reference != "No weather reference") {
@@ -129,6 +141,7 @@ app.get('/', function(req, res) {
   	}
   }
 
+  // Calling the 'getWeather' method from the 'openWeather' module 
   openWeather.getWeather(weatherReferencesHashTable, "5222a1c311ca31001b0877137d584c36").then(function(results) {
 
   	console.log(results);
@@ -137,6 +150,7 @@ app.get('/', function(req, res) {
   });
 });
 
+// 
 app.post('/', function(req, res) {
 
   if(req.body.current_form === "choosen_language_form"){
@@ -162,4 +176,5 @@ app.post('/', function(req, res) {
   res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones.timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
 });
 
+// Defining the listening port for the 'node_world_server' application...
 app.listen('80');
