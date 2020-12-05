@@ -129,15 +129,17 @@ app.get('/', function(req, res) {
 
   res.setLocale(currentLocale);
 
-  // Defining of the 'weatherReferencesHashTable' hash table...
+  // Defining of the 'weatherReferencesHashTable' hash table and the 'renderTimezonesArray' array...
   var weatherReferencesHashTable = new Object();
+  var renderTimezonesArray = [];
 
   // Configuration of the 'weatherReferencesHashTable' hash table for the bellow treatment with the 'getWeather' function...
   for(var i = 0; i < timezones.timezones.length; i++) {
 
-  	if(timezones.timezones[i].weather_reference != "No weather reference") {
+    if(timezones.timezones[i].timezone === Intl.DateTimeFormat().resolvedOptions().timeZone) {
 
   		weatherReferencesHashTable[timezones.timezones[i].weather_reference] = timezones.timezones[i].country_code;
+      renderTimezonesArray.push(timezones.timezones[i]);
   	}
   }
 
@@ -146,7 +148,7 @@ app.get('/', function(req, res) {
 
   	console.log(results);
 
-  	res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones.timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
+  	res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "globalTimezones": timezones.timezones, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
   });
 });
 
