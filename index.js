@@ -120,9 +120,12 @@ app.get('/', function(req, res) {
 
   var weatherReferencesHashTable = new Object();
 
-  for(var i = 0; i < timezones.timezones.length; i++)
-  {
-  	weatherReferencesHashTable[timezones.timezones[i].weather_reference] = timezones.timezones[i].country_code;
+  for(var i = 0; i < timezones.timezones.length; i++) {
+
+  	if(timezones.timezones[i].weather_reference != "No weather reference") {
+
+  		weatherReferencesHashTable[timezones.timezones[i].weather_reference] = timezones.timezones[i].country_code;
+  	}
   }
 
   console.log(weatherReferencesHashTable);
