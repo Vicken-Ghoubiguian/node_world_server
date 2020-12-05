@@ -10,14 +10,20 @@ citiesAndCountries["Nauru"] = "NR";
 
 var apiKey = "5222a1c311ca31001b0877137d584c36";
 
-// Definition of the 'temperatureConversionFunction' function to convert the 'temperatureValue' temperature value in the wished 'temperatureUnit' unit...
-function temperatureConversionFunction(temperatureValue, temperatureUnit = "Kelvin") {
+// Definition of the 'temperatureConversionFunction' function to convert the 'temperatureValue' temperature value in a current 'currentTemperatureUnit' unit in the wished 'wishedTemperatureUnit' unit...
+function temperatureConversionFunction(temperatureValue, currentTemperatureUnit = "Kelvin", wishedTemperatureUnit = "Kelvin") {
 
 
 }
 
-// Definition of the 'pressureConversionFunction' function to convert the 'pressureValue' pressure value in the wished 'Hectopascal' unit...
-function pressureConversionFunction(pressureValue, pressureUnit = "Hectopascal") {
+// Definition of the 'pressureConversionFunction' function to convert the 'pressureValue' pressure value in a current 'currentPressureUnit' unit in the wished 'wishedPressureUnit' unit...
+function pressureConversionFunction(pressureValue, currentPressureUnit = "Hectopascal", wishedPressureUnit = "Hectopascal") {
+
+
+}
+
+// Definition of the 'dateAndTimeFormatConversionFunction' function to convert the 'dateAndTime' dateAndTime value in a current 'currentDateAndTimeFormat' format in the wished 'wishedDateAndTimeFormat' format...
+function dateAndTimeFormatConversionFunction(dateAndTime, currentDateAndTimeFormat = "timestamp", wishedDateAndTimeFormat = "timestamp") {
 
 
 }
