@@ -4,6 +4,7 @@ var Negotiator = require('negotiator');
 var bodyParser = require('body-parser');
 
 var i18n = require('./config/modules/i18n');
+var openWeather = require('./config/modules/openWeather');
 
 var selectionnableLanguages = require('./config/seeds/selectionnableLanguages');
 var formats = require('./config/seeds/formats');
@@ -128,10 +129,12 @@ app.get('/', function(req, res) {
   	}
   }
 
-  console.log(weatherReferencesHashTable);
+  openWeather.getWeather(weatherReferencesHashTable, "5222a1c311ca31001b0877137d584c36").then(function(results) {
 
-  res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones.timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
+  	console.log(results);
 
+  	res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones.timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
+  });
 });
 
 app.post('/', function(req, res) {

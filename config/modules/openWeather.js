@@ -1,15 +1,6 @@
 //
 var axios = require('axios');
 
-// Definition of Hash Table 'citiesAndCountries' and adding all of its values...
-var citiesAndCountries = new Object();
-citiesAndCountries["Paris"] = "FR";
-citiesAndCountries["Oslo"] = "NO";
-citiesAndCountries["Yerevan"] = "AM";
-citiesAndCountries["Nauru"] = "NR";
-
-var apiKey = "5222a1c311ca31001b0877137d584c36";
-
 // Definition of the 'temperatureConversionFunction' function to convert the 'temperatureValue' temperature value in a current 'currentTemperatureUnit' unit in the wished 'wishedTemperatureUnit' unit...
 function temperatureConversionFunction(temperatureValue, currentTemperatureUnit = "Kelvin", wishedTemperatureUnit = "Kelvin") {
 
@@ -117,9 +108,10 @@ async function getWeather(citiesAndCountries, apiKey) {
     return weather_data;
 }
 
-getWeather(citiesAndCountries, apiKey).then(function(results) {
+module.exports = {
 
-            var weather_data = {weather_data : results};
-
-            console.log(weather_data);
-});
+        getWeather: getWeather,
+        dateAndTimeFormatConversionFunction: dateAndTimeFormatConversionFunction,
+        pressureConversionFunction: pressureConversionFunction,
+        temperatureConversionFunction: temperatureConversionFunction
+}
