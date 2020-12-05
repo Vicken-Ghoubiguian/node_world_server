@@ -10,6 +10,18 @@ citiesAndCountries["Nauru"] = "NR";
 
 var apiKey = "5222a1c311ca31001b0877137d584c36";
 
+// Definition of the 'temperatureConversionFunction' function to convert the 'temperatureValue' temperature value in the wished 'temperatureUnit' unit...
+function temperatureConversionFunction(temperatureValue, temperatureUnit = "Kelvin") {
+
+
+}
+
+// Definition of the 'pressureConversionFunction' function to convert the 'pressureValue' pressure value in the wished 'Hectopascal' unit...
+function pressureConversionFunction(pressureValue, pressureUnit = "Hectopascal") {
+
+
+}
+
 // Definition of the asynchronous 'getWeather' function which returns the weather for all the cities that are part of the array passed as a parameter...
 async function getWeather(citiesAndCountries, apiKey) {
 
