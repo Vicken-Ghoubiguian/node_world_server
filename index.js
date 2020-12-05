@@ -18,6 +18,7 @@ var app = express();
 var negotiator;
 var currentLocale = null;
 var currentDateAndTimeFormat = "MMMM Do YYYY, hh:mm:ss a";
+var currentTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 // Declaration of static files and favicon image...
 app.use(favicon("assets/images/favicon.png"));
@@ -138,7 +139,7 @@ app.get('/', function(req, res) {
   for(var i = 0; i < timezones.timezones.length; i++) {
 
     // Configuration of 'weatherReferencesHashTable' hash table and 'renderTimezonesArray' array...
-    if(timezones.timezones[i].timezone === Intl.DateTimeFormat().resolvedOptions().timeZone) {
+    if(timezones.timezones[i].timezone === currentTimezone) {
 
   		weatherReferencesHashTable[timezones.timezones[i].weather_reference] = timezones.timezones[i].country_code;
       renderTimezonesArray.push(timezones.timezones[i]);
@@ -147,7 +148,7 @@ app.get('/', function(req, res) {
     // Configuration of 'countryCodeHashTable' hash table...
     if(!countryCodeHashTable.hasOwnProperty(timezones.timezones[i].country_code)) {
 
-      if(timezones.timezones[i].timezone === Intl.DateTimeFormat().resolvedOptions().timeZone) {
+      if(timezones.timezones[i].timezone === currentTimezone) {
 
           countryCodeHashTable[timezones.timezones[i].country_code] = 'selected';
 
@@ -179,7 +180,7 @@ app.post('/', function(req, res) {
   for(var i = 0; i < timezones.timezones.length; i++) {
 
     // Configuration of 'weatherReferencesHashTable' hash table and 'renderTimezonesArray' array...
-    if(timezones.timezones[i].timezone === Intl.DateTimeFormat().resolvedOptions().timeZone) {
+    if(timezones.timezones[i].timezone === currentTimezone) {
 
       weatherReferencesHashTable[timezones.timezones[i].weather_reference] = timezones.timezones[i].country_code;
       renderTimezonesArray.push(timezones.timezones[i]);
@@ -188,7 +189,7 @@ app.post('/', function(req, res) {
     // Configuration of 'countryCodeHashTable' hash table...
     if(!countryCodeHashTable.hasOwnProperty(timezones.timezones[i].country_code)) {
 
-      if(timezones.timezones[i].timezone === Intl.DateTimeFormat().resolvedOptions().timeZone) {
+      if(timezones.timezones[i].timezone === currentTimezone) {
 
           countryCodeHashTable[timezones.timezones[i].country_code] = 'selected';
 
