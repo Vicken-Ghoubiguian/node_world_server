@@ -129,22 +129,22 @@ app.get('/', function(req, res) {
 
   res.setLocale(currentLocale);
 
-  // Defining of the 'weatherReferencesHashTable' hash table and the 'renderTimezonesArray' array...
+  // Defining a series of array and hash table for treatments in templates...
   var weatherReferencesHashTable = new Object();
   var countryCodeHashTable = new Object();
   var renderTimezonesArray = [];
 
-  // Configuration of the 'weatherReferencesHashTable' hash table for the bellow treatment with the 'getWeather' function...
+  // Configuration of all tables and hash tables...
   for(var i = 0; i < timezones.timezones.length; i++) {
 
-    //
+    // Configuration of 'weatherReferencesHashTable' hash table and 'renderTimezonesArray' array...
     if(timezones.timezones[i].timezone === Intl.DateTimeFormat().resolvedOptions().timeZone) {
 
   		weatherReferencesHashTable[timezones.timezones[i].weather_reference] = timezones.timezones[i].country_code;
       renderTimezonesArray.push(timezones.timezones[i]);
     }
 
-    //
+    // Configuration of 'countryCodeHashTable' hash table...
     if(!countryCodeHashTable.hasOwnProperty(timezones.timezones[i].country_code)) {
 
       if(timezones.timezones[i].timezone === Intl.DateTimeFormat().resolvedOptions().timeZone) {
