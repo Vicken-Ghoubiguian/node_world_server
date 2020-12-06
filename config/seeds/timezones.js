@@ -80,7 +80,7 @@ var timezones = [
 	{timezone: "Europe/Kiev", country_code: "UA", weather_reference: "Kiev", moment: moment.tz("Europe/Kiev"), color: "#006400"},
 	{timezone: "Europe/Kirov", country_code: "RU", weather_reference: "Kirov", moment: moment.tz("Europe/Kirov"), color: "#006400"},
 	{timezone: "Europe/Lisbon", country_code: "PT", weather_reference: "Lisbon", moment: moment.tz("Europe/Lisbon"), color: "#006400"},
-	{timezone: "Europe/Ljubljana", country_code: "SL", weather_reference: "Ljubljana", moment: moment.tz("Europe/Ljubljana"), color: "#006400"},
+	{timezone: "Europe/Ljubljana", country_code: "SI", weather_reference: "Ljubljana", moment: moment.tz("Europe/Ljubljana"), color: "#006400"},
 	{timezone: "Europe/London", country_code: "GB", weather_reference: "London", moment: moment.tz("Europe/London"), color: "#006400"},
 	{timezone: "Europe/Luxembourg", country_code: "LU", weather_reference: "Luxembourg", moment: moment.tz("Europe/Luxembourg"), color: "#006400"},
 	{timezone: "Europe/Madrid", country_code: "ES", weather_reference: "Madrid", moment: moment.tz("Europe/Madrid"), color: "#006400"},
