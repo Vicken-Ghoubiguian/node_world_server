@@ -22,6 +22,13 @@
 	"Minimum_temperature": "Minimum temperature",
 	"Feeling_like_temperature": "Feeling like temperature",
 
+	"Clouds": "Clouds",
+	"Wind_speed": "Wind speed",
+	"Wind_deg": "Wind deg",
+	"Offset_from_UTC": "Offset from UTC",
+	"In_seconds": "in seconds",
+	"Humidity": "Humidity",
+
 	"French": "French",
 	"English": "English",
 	"Spanish": "Spanish",

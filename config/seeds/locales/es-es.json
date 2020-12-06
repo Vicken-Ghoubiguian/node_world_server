@@ -22,6 +22,13 @@
 	"Minimum_temperature": "Temperatura mínima",
 	"Feeling_like_temperature": "Temperatura de fieltro",
 
+	"Clouds": "Nubes",
+	"Wind_speed": "Velocidad del viento",
+	"Wind_deg": "Grado de viento",
+	"Offset_from_UTC": "Desplazamiento de UTC",
+	"In_seconds": "en segundos",
+	"Humidity": "Humedad",
+
 	"French": "Francés",
 	"English": "Inglés",
 	"Spanish": "Español",
