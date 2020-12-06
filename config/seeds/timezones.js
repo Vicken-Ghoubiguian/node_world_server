@@ -5,8 +5,8 @@ var moment = require('moment-timezone');
 var timezones = [
 
 	//Universal and conventional timezones...
-	{timezone: "Etc/UTC", country_code: "No country", weather_reference: "No weather reference", moment: moment.tz("Etc/UTC"), color: "#1c4966"},
-	{timezone: "Etc/GMT", country_code: "No country", weather_reference: "No weather reference", moment: moment.tz("Etc/GMT"), color: "#1c4966"},
+	{timezone: "Etc/UTC", country_code: "No country", weather_reference: "No_weather_reference", moment: moment.tz("Etc/UTC"), color: "#1c4966"},
+	{timezone: "Etc/GMT", country_code: "No country", weather_reference: "No_weather_reference", moment: moment.tz("Etc/GMT"), color: "#1c4966"},
 
 	//Africa timezones...
 	{timezone: "Africa/Abidjan", country_code: "CI", weather_reference: "Abidjan", moment: moment.tz("Africa/Abidjan"), color: "#ffdf00"},
@@ -14,17 +14,17 @@ var timezones = [
 	{timezone: "Africa/Addis_Ababa", country_code: "ET", weather_reference: "Addis_Ababa", moment: moment.tz("Africa/Addis_Ababa"), color: "#ffdf00"},
 
 	//Antarctica timezones...
-	{timezone: "Antarctica/Casey", country_code: "AQ", weather_reference: "No weather reference", moment: moment.tz("Antarctica/Casey"), color: "#FFC0CB"},
-	{timezone: "Antarctica/Davis", country_code: "AQ", weather_reference: "No weather reference", moment: moment.tz("Antarctica/Davis"), color: "#FFC0CB"},
-	{timezone: "Antarctica/DumontDUrville", country_code: "AQ", weather_reference: "No weather reference", moment: moment.tz("Antarctica/DumontDUrville"), color: "#FFC0CB"},
-	{timezone: "Antarctica/Macquarie", country_code: "AU", weather_reference: "No weather reference", moment: moment.tz("Antarctica/Macquarie"), color: "#FFC0CB"},
-	{timezone: "Antarctica/Mawson", country_code: "AQ", weather_reference: "No weather reference", moment: moment.tz("Antarctica/Mawson"), color: "#FFC0CB"},
-	{timezone: "Antarctica/McMurdo", country_code: "AQ", weather_reference: "No weather reference", moment: moment.tz("Antarctica/McMurdo"), color: "#FFC0CB"},
-	{timezone: "Antarctica/Palmer", country_code: "AQ", weather_reference: "No weather reference", moment: moment.tz("Antarctica/Palmer"), color: "#FFC0CB"},
-	{timezone: "Antarctica/Rothera", country_code: "AQ", weather_reference: "No weather reference", moment: moment.tz("Antarctica/Rothera"), color: "#FFC0CB"},
-	{timezone: "Antarctica/Syowa", country_code: "AQ", weather_reference: "No weather reference", moment: moment.tz("Antarctica/Syowa"), color: "#FFC0CB"},
-	{timezone: "Antarctica/Troll", country_code: "AQ", weather_reference: "No weather reference", moment: moment.tz("Antarctica/Troll"), color: "#FFC0CB"},
-	{timezone: "Antarctica/Vostok", country_code: "AQ", weather_reference: "No weather reference", moment: moment.tz("Antarctica/Vostok"), color: "#FFC0CB"},
+	{timezone: "Antarctica/Casey", country_code: "AQ", weather_reference: "No_weather_reference", moment: moment.tz("Antarctica/Casey"), color: "#FFC0CB"},
+	{timezone: "Antarctica/Davis", country_code: "AQ", weather_reference: "No_weather_reference", moment: moment.tz("Antarctica/Davis"), color: "#FFC0CB"},
+	{timezone: "Antarctica/DumontDUrville", country_code: "AQ", weather_reference: "No_weather_reference", moment: moment.tz("Antarctica/DumontDUrville"), color: "#FFC0CB"},
+	{timezone: "Antarctica/Macquarie", country_code: "AU", weather_reference: "No_weather_reference", moment: moment.tz("Antarctica/Macquarie"), color: "#FFC0CB"},
+	{timezone: "Antarctica/Mawson", country_code: "AQ", weather_reference: "No_weather_reference", moment: moment.tz("Antarctica/Mawson"), color: "#FFC0CB"},
+	{timezone: "Antarctica/McMurdo", country_code: "AQ", weather_reference: "No_weather_reference", moment: moment.tz("Antarctica/McMurdo"), color: "#FFC0CB"},
+	{timezone: "Antarctica/Palmer", country_code: "AQ", weather_reference: "No_weather_reference", moment: moment.tz("Antarctica/Palmer"), color: "#FFC0CB"},
+	{timezone: "Antarctica/Rothera", country_code: "AQ", weather_reference: "No_weather_reference", moment: moment.tz("Antarctica/Rothera"), color: "#FFC0CB"},
+	{timezone: "Antarctica/Syowa", country_code: "AQ", weather_reference: "No_weather_reference", moment: moment.tz("Antarctica/Syowa"), color: "#FFC0CB"},
+	{timezone: "Antarctica/Troll", country_code: "AQ", weather_reference: "No_weather_reference", moment: moment.tz("Antarctica/Troll"), color: "#FFC0CB"},
+	{timezone: "Antarctica/Vostok", country_code: "AQ", weather_reference: "No_weather_reference", moment: moment.tz("Antarctica/Vostok"), color: "#FFC0CB"},
 
 	//Arctic timezones...
 	{timezone: "Arctic/Longyearbyen", country_code: "SJ", weather_reference: "Longyearbyen", moment: moment.tz("Arctic/Longyearbyen"), color: "#FD6C9E"},
@@ -49,7 +49,7 @@ var timezones = [
 	{timezone: "Australia/Darwin", country_code: "AU", weather_reference: "Darwin", moment: moment.tz("Australia/Darwin"), color: "#0091AD"},
 	{timezone: "Australia/Eucla", country_code: "AU", weather_reference: "Eucla", moment: moment.tz("Australia/Eucla"), color: "#0091AD"},
 	{timezone: "Australia/Hobart", country_code: "AU", weather_reference: "Hobart", moment: moment.tz("Australia/Hobart"), color: "#0091AD"},
-	{timezone: "Australia/Lindeman", country_code: "AU", weather_reference: "No weather reference", moment: moment.tz("Australia/Lindeman"), color: "#0091AD"},
+	{timezone: "Australia/Lindeman", country_code: "AU", weather_reference: "Lindeman", moment: moment.tz("Australia/Lindeman"), color: "#0091AD"},
 	{timezone: "Australia/Lord_Howe", country_code: "AU", weather_reference: "Lord_Howe", moment: moment.tz("Australia/Lord_Howe"), color: "#0091AD"},
 	{timezone: "Australia/Melbourne", country_code: "AU", weather_reference: "Melbourne", moment: moment.tz("Australia/Melbourne"), color: "#0091AD"},
 	{timezone: "Australia/Perth", country_code: "AU", weather_reference: "Perth", moment: moment.tz("Australia/Perth"), color: "#0091AD"},
