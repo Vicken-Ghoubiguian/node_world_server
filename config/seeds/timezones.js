@@ -54,7 +54,6 @@ var timezones = [
 	{timezone: "Australia/Melbourne", country_code: "AU", weather_reference: "Melbourne", moment: moment.tz("Australia/Melbourne"), color: "#0091AD"},
 	{timezone: "Australia/Perth", country_code: "AU", weather_reference: "Perth", moment: moment.tz("Australia/Perth"), color: "#0091AD"},
 	{timezone: "Australia/Sydney", country_code: "AU", weather_reference: "Sydney", moment: moment.tz("Australia/Sydney"), color: "#0091AD"},
-	{timezone: "Antarctica/Macquarie", country_code: "AU", weather_reference: "Macquarie", moment: moment.tz("Antarctica/Macquarie"), color: "#0091AD"},
 
 	//Europe timezones...
 	{timezone: "Europe/Amsterdam", country_code: "NL", weather_reference: "Amsterdam", moment: moment.tz("Europe/Amsterdam"), color: "#006400"},
