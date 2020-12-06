@@ -57,7 +57,7 @@
 								<div style="float: left;">
 									<img src="<%= weatherResults[i].weather_icon %>" alt="weather illustration">
 								</div>
-								<div class="weather_tab" id="dt_tab" style="float: left; margin-left: 10px;">
+								<div class="weather_tab" id="gm_tab" style="float: left; margin-left: 10px;">
 									<table>
 										<tbody>
 											<tr>
@@ -78,7 +78,7 @@
 									    </tbody>
 									</table>
 								</div>
-								<div class="weather_tab" id="temp_tab" style="float: left; margin-left: 10px;">
+								<div class="weather_tab" id="tp_tab" style="float: left; margin-left: 10px;">
 									<table>
 										<tbody>
 											<tr>
@@ -95,6 +95,27 @@
 									        </tr>
 									        <tr>
 									        	<td>Feeling like temperature (K): <%= weatherResults[i].main_feels_like %></td>
+									        </tr>
+									    </tbody>
+									</table>
+								</div>
+								<div class="weather_tab" id="ot_tab" style="float: left; margin-left: 10px;">
+									<table>
+										<tbody>
+											<tr>
+												<td>Clouds: <%= weatherResults[i].clouds_all %></td>
+											</tr>
+									        <tr>
+									            <td>Wind speed: <%= weatherResults[i].wind_speed %></td>
+									        </tr>
+									        <tr>
+									        	<td>Wind deg: <%= weatherResults[i].wind_deg %></td>
+									        </tr>
+									        <tr>
+									            <td>Offset from UTC (in seconds): <%= weatherResults[i].timezone %></td>
+									        </tr>
+									        <tr>
+									        	<td>Humidity: <%= weatherResults[i].main_humidity %></td>
 									        </tr>
 									    </tbody>
 									</table>
