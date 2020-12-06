@@ -163,6 +163,7 @@ app.get('/', function(req, res) {
   openWeather.getWeather(weatherReferencesHashTable, "5222a1c311ca31001b0877137d584c36").then(function(results) {
 
   	res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
+    
   });
 });
 
@@ -228,9 +229,8 @@ app.post('/', function(req, res) {
   // Calling the 'getWeather' method from the 'openWeather' module 
   openWeather.getWeather(weatherReferencesHashTable, "5222a1c311ca31001b0877137d584c36").then(function(results) {
 
-    console.log(results);
-
     res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
+
   });
 });
 
