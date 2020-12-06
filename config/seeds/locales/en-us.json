@@ -10,6 +10,12 @@
 	"Timezones_visualization": "Timezones visualization",
 	"GitHub_visualization": "GitHub visualization",
 
+	"Description": "Description",
+	"Localisation": "Localisation",
+	"UV": "UV index",
+	"Sunrise": "Sunrise time",
+	"Sunset": "Sunset time",
+
 	"French": "French",
 	"English": "English",
 	"Spanish": "Spanish",

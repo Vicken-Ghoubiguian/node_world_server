@@ -61,19 +61,19 @@
 									<table>
 										<tbody>
 											<tr>
-									        	<td>Description: <%= weatherResults[i].weather_description %></td>
+									        	<td><%= __('Description')%>: <%= weatherResults[i].weather_description %></td>
 									        </tr>
 									        <tr>
-									        	<td>Localisation: (<%= weatherResults[i].longitude %>, <%= weatherResults[i].latitude %>)</td>
+									        	<td><%= __('Localisation')%>: (<%= weatherResults[i].longitude %>, <%= weatherResults[i].latitude %>)</td>
 									        </tr>
 									        <tr>
-									        	<td>UV: <%= weatherResults[i].uv_value %></td>
+									        	<td><%= __('UV')%>: <%= weatherResults[i].uv_value %></td>
 									        </tr>
 									        <tr>
-									            <td>Sunrise time: <%= weatherResults[i].sys_sunrise %></td>
+									            <td><%= __('Sunrise')%>: <%= weatherResults[i].sys_sunrise %></td>
 									        </tr>
 									        <tr>
-									        	<td>Sunset time: <%= weatherResults[i].sys_sunset %></td>
+									        	<td><%= __('Sunset')%>: <%= weatherResults[i].sys_sunset %></td>
 									        </tr>
 									    </tbody>
 									</table>
