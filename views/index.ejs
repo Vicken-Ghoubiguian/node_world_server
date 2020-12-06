@@ -51,7 +51,15 @@
 				<h3 style="color: <%= timezones[i].color %>"><%= timezones[i].timezone %> (<%= timezones[i].country_code %>): <%= timezones[i].moment.format(currentDateAndTimeFormat) %></h3>
 				<div>
 					<p>
-						<%= weatherResults[i] %>
+						<% if(weatherResults[i].cod === 200) { %>
+
+							<img src="<%= weatherResults[i].weather_icon %>" alt="weather illustration">
+
+						<% } else { %>
+
+							<%= __('Ragnarok')%>
+
+						<% } %>
 					</p>
 				</div>
 			<% } %>
