@@ -57,7 +57,15 @@
 
 						<% } else { %>
 
-							<%= __('Ragnarok')%>
+							<% if(weatherResults[i].message === "city not found"){ %>
+
+								<%= __('City_not_found')%>
+
+							<% } else if(weatherResults[i].message === "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info.") { %>
+
+								<%= __('Invalid_api_key')%>
+
+							<% } %>
 
 						<% } %>
 					</p>
