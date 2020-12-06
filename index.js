@@ -179,6 +179,8 @@ app.post('/', function(req, res) {
   {
     currentCountryCode = req.body.choosen_country_code;
 
+    res.setLocale(currentLocale);
+
   } else if(req.body.current_form === "choosen_language_form") {
 
   	currentLocale = req.body.choosen_language;
