@@ -82,19 +82,19 @@
 									<table>
 										<tbody>
 											<tr>
-												<td>Pressure (hPa): <%= weatherResults[i].main_pressure %></td>
+												<td><%= __('Pressure')%> (hPa): <%= weatherResults[i].main_pressure %></td>
 											</tr>
 									        <tr>
-									            <td>Temperature (K): <%= weatherResults[i].main_temp %></td>
+									            <td><%= __('Temperature')%> (K): <%= weatherResults[i].main_temp %></td>
 									        </tr>
 									        <tr>
-									        	<td>Maximum temperature (K): <%= weatherResults[i].main_temp_max %></td>
+									        	<td><%= __('Maximum_temperature')%> (K): <%= weatherResults[i].main_temp_max %></td>
 									        </tr>
 									        <tr>
-									            <td>Minimum temperature (K): <%= weatherResults[i].main_temp_min %></td>
+									            <td><%= __('Minimum_temperature')%> (K): <%= weatherResults[i].main_temp_min %></td>
 									        </tr>
 									        <tr>
-									        	<td>Feeling like temperature (K): <%= weatherResults[i].main_feels_like %></td>
+									        	<td><%= __('Feeling_like_temperature')%> (K): <%= weatherResults[i].main_feels_like %></td>
 									        </tr>
 									    </tbody>
 									</table>

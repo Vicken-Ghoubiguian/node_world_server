@@ -16,6 +16,12 @@
 	"Sunrise": "Hora de sortida del sol",
 	"Sunset": "Hora de posta de sol",
 
+	"Pressure": "Presió",
+	"Temperature": "Temperatura",
+	"Maximum_temperature": "Temperatura màxima",
+	"Minimum_temperature": "Temperatura mínima",
+	"Feeling_like_temperature": "Temperatura del feltre",
+
 	"French": "Francès",
 	"English": "Anglès",
 	"Spanish": "Espanyol",

@@ -16,6 +16,12 @@
 	"Sunrise": "Sunrise time",
 	"Sunset": "Sunset time",
 
+	"Pressure": "Pressure",
+	"Temperature": "Temperature",
+	"Maximum_temperature": "Maximum temperature",
+	"Minimum_temperature": "Minimum temperature",
+	"Feeling_like_temperature": "Feeling like temperature",
+
 	"French": "French",
 	"English": "English",
 	"Spanish": "Spanish",

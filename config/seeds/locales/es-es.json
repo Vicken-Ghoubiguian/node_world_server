@@ -16,6 +16,12 @@
 	"Sunrise": "Hora del amanecer",
 	"Sunset": "Hora del atardecer",
 
+	"Pressure": "Presión",
+	"Temperature": "Temperatura",
+	"Maximum_temperature": "Temperatura máxima",
+	"Minimum_temperature": "Temperatura mínima",
+	"Feeling_like_temperature": "Temperatura de fieltro",
+
 	"French": "Francés",
 	"English": "Inglés",
 	"Spanish": "Español",
