@@ -16,4 +16,9 @@ $( function() {
 
 		$("#choosen_format_form").submit();
 	});
+
+	$("#choosen_country_code").change(function(){
+
+		$("#choosen_country_code_form").submit();
+	});
 });

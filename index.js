@@ -176,6 +176,29 @@ app.post('/', function(req, res) {
   var countryCodeHashTable = new Object();
   var renderTimezonesArray = [];
 
+  //
+  if(req.body.current_form === "choosen_country_code_form")
+  {
+    currentCountryCode = req.body.choosen_country_code;
+
+  } else if(req.body.current_form === "choosen_language_form") {
+
+  	currentLocale = req.body.choosen_language;
+  	currentLocale = currentLocale.toLowerCase();
+
+  	timezones.moment.locale(currentLocale);
+  	updateLanguageSelect();
+
+  	res.setLocale(currentLocale);
+
+  } else if(req.body.current_form === "choosen_format_form"){
+
+  	currentDateAndTimeFormat = formats[parseInt(req.body.choosen_date_and_time_format)].format;
+  	updateDaTSelect(parseInt(req.body.choosen_date_and_time_format));
+
+  	res.setLocale(currentLocale);
+  }
+
   // Configuration of all tables and hash tables...
   for(var i = 0; i < timezones.timezones.length; i++) {
 
@@ -200,26 +223,8 @@ app.post('/', function(req, res) {
     }
   }
 
-  if(req.body.current_form === "choosen_language_form") {
-
-  	currentLocale = req.body.choosen_language;
-  	currentLocale = currentLocale.toLowerCase();
-
-  	timezones.moment.locale(currentLocale);
-  	updateLanguageSelect();
-
-  	res.setLocale(currentLocale);
-
-  } else if(req.body.current_form === "choosen_format_form"){
-
-  	currentDateAndTimeFormat = formats[parseInt(req.body.choosen_date_and_time_format)].format;
-  	updateDaTSelect(parseInt(req.body.choosen_date_and_time_format));
-
-  	res.setLocale(currentLocale);
-  }
-
   setInterval(updateDateAndTime, 1000);
-  
+
   // Calling the 'getWeather' method from the 'openWeather' module 
   openWeather.getWeather(weatherReferencesHashTable, "5222a1c311ca31001b0877137d584c36").then(function(results) {
 

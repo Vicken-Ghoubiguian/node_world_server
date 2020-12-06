@@ -34,10 +34,10 @@
 						<% } %>
 					</select>
 				</form>
-				<form id="choosen_countrycode_form" method="post" action="/">
-					<input type="hidden" name="current_form" value="choosen_countrycode_form">
+				<form id="choosen_country_code_form" method="post" action="/">
+					<input type="hidden" name="current_form" value="choosen_country_code_form">
 					<%= __('countrycode_timezone_choice')%> :
-					<select>
+					<select id="choosen_country_code" name="choosen_country_code">
 						<% for(var countryCode in countryCodeHashTable){ %>
 							<option value="<%= countryCode %>" <%= countryCodeHashTable[countryCode] %>><%= countryCode %></option>
 						<% } %>
