@@ -110,8 +110,8 @@ async function getWeather(citiesAndCountries, apiKey) {
 
 module.exports = {
 
-        getWeather: getWeather,
-        dateAndTimeFormatConversionFunction: dateAndTimeFormatConversionFunction,
-        pressureConversionFunction: pressureConversionFunction,
-        temperatureConversionFunction: temperatureConversionFunction
+        'getWeather': getWeather,
+        'dateAndTimeFormatConversionFunction': dateAndTimeFormatConversionFunction,
+        'pressureConversionFunction': pressureConversionFunction,
+        'temperatureConversionFunction': temperatureConversionFunction
 }
