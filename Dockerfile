@@ -20,4 +20,4 @@ RUN npm install
 EXPOSE 80
 
 #Container instruction as entrypoint: 'node index.js'
-ENTRYPOINT ["node", "index.js"]
+ENTRYPOINT ["npm", "start"]
