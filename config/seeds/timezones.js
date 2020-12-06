@@ -160,8 +160,32 @@ var timezones = [
 	{timezone: "Pacific/Wallis", country_code: "WF", weather_reference: "Mata-Utu", moment: moment.tz("Pacific/Wallis"), color: "#4B0082"}
 ];
 
+// Definition of the 'getCountryCodeFromTimezone' function to identify and return the country code of the 'wishedTimezone' timezone...
+function getCountryCodeFromTimezone(wishedTimezone) {
+
+	// Definition of the 'wishedCountryCode' variable which will contain the found country code...
+	var wishedCountryCode = "";
+
+	// Browse for each element contained in the 'timezones' array...
+	for(var i = 0; i < timezones.length; i++)
+	{
+		// If the current element of the 'timezones' array corresponds to the desired timezone...
+		if(timezones[i].timezone === wishedTimezone) {
+
+			// Affectation of the found country code to the 'wishedCountryCode' variable...
+			wishedCountryCode = timezones[i].country_code;
+
+			// Leaving the loop...
+			break;
+		}
+	}
+
+	return wishedCountryCode;
+}
+
 // Export the 'timezones' array and the 'moment' object...
 module.exports = {
 	'timezones': timezones,
+	'getCountryCodeFromTimezone': getCountryCodeFromTimezone,
 	'moment': moment
 }

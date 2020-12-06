@@ -18,7 +18,7 @@ var app = express();
 var negotiator;
 var currentLocale = null;
 var currentDateAndTimeFormat = "MMMM Do YYYY, hh:mm:ss a";
-var currentCountryCode = "FR";
+var currentCountryCode = timezones.getCountryCodeFromTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
 
 // Declaration of static files and favicon image...
 app.use(favicon("assets/images/favicon.png"));
@@ -219,9 +219,7 @@ app.post('/', function(req, res) {
   }
 
   setInterval(updateDateAndTime, 1000);
-
-  //res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "timezones": timezones.timezones, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats});
-
+  
   // Calling the 'getWeather' method from the 'openWeather' module 
   openWeather.getWeather(weatherReferencesHashTable, "5222a1c311ca31001b0877137d584c36").then(function(results) {
 
