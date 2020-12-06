@@ -53,7 +53,53 @@
 					<p>
 						<% if(weatherResults[i].cod === 200) { %>
 
-							<img src="<%= weatherResults[i].weather_icon %>" alt="weather illustration">
+							<div>
+								<div style="float: left;">
+									<img src="<%= weatherResults[i].weather_icon %>" alt="weather illustration">
+								</div>
+								<div class="weather_tab" id="dt_tab" style="float: left; margin-left: 10px;">
+									<table>
+										<tbody>
+											<tr>
+									        	<td>Description: <%= weatherResults[i].weather_description %></td>
+									        </tr>
+									        <tr>
+									        	<td>Localisation: (<%= weatherResults[i].longitude %>, <%= weatherResults[i].latitude %>)</td>
+									        </tr>
+									        <tr>
+									        	<td>UV: <%= weatherResults[i].uv_value %></td>
+									        </tr>
+									        <tr>
+									            <td>Sunrise time: <%= weatherResults[i].sys_sunrise %></td>
+									        </tr>
+									        <tr>
+									        	<td>Sunset time: <%= weatherResults[i].sys_sunset %></td>
+									        </tr>
+									    </tbody>
+									</table>
+								</div>
+								<div class="weather_tab" id="temp_tab" style="float: left; margin-left: 10px;">
+									<table>
+										<tbody>
+											<tr>
+												<td>Pressure (hPa): <%= weatherResults[i].main_pressure %></td>
+											</tr>
+									        <tr>
+									            <td>Temperature (K): <%= weatherResults[i].main_temp %></td>
+									        </tr>
+									        <tr>
+									        	<td>Maximum temperature (K): <%= weatherResults[i].main_temp_max %></td>
+									        </tr>
+									        <tr>
+									            <td>Minimum temperature (K): <%= weatherResults[i].main_temp_min %></td>
+									        </tr>
+									        <tr>
+									        	<td>Feeling like temperature (K): <%= weatherResults[i].main_feels_like %></td>
+									        </tr>
+									    </tbody>
+									</table>
+								</div>
+							</div>
 
 						<% } else { %>
 
