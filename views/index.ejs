@@ -103,19 +103,19 @@
 									<table>
 										<tbody>
 											<tr>
-												<td>Clouds: <%= weatherResults[i].clouds_all %></td>
+												<td><%= __('Clouds')%>: <%= weatherResults[i].clouds_all %></td>
 											</tr>
 									        <tr>
-									            <td>Wind speed: <%= weatherResults[i].wind_speed %></td>
+									            <td><%= __('Wind_speed')%>: <%= weatherResults[i].wind_speed %></td>
 									        </tr>
 									        <tr>
-									        	<td>Wind deg: <%= weatherResults[i].wind_deg %></td>
+									        	<td><%= __('Wind_deg')%>: <%= weatherResults[i].wind_deg %></td>
 									        </tr>
 									        <tr>
-									            <td>Offset from UTC (in seconds): <%= weatherResults[i].timezone %></td>
+									            <td><%= __('Offset_from_UTC')%> (<%= __('In_seconds')%>): <%= weatherResults[i].timezone %></td>
 									        </tr>
 									        <tr>
-									        	<td>Humidity: <%= weatherResults[i].main_humidity %></td>
+									        	<td><%= __('Humidity')%>: <%= weatherResults[i].main_humidity %></td>
 									        </tr>
 									    </tbody>
 									</table>
