@@ -4,12 +4,17 @@
 	"Hello": "Hello",
 	"countrycode_timezone_choice": "Please, choose the country you wish",
 	"Ragnarok": "Here weather awaits like Ragnarök...",
+	"City_not_found": "City not found",
+	"Invalid_api_key": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info",
+
 	"Timezones_visualization": "Timezones visualization",
 	"GitHub_visualization": "GitHub visualization",
+
 	"French": "French",
 	"English": "English",
 	"Spanish": "Spanish",
 	"Catalan": "Catalan",
+
 	"No country": "No country",
 	"CI": "CI",
 	"GH": "GH",
