@@ -46,7 +46,7 @@ async function getWeather(citiesAndCountries, apiKey) {
                 weather_id: response_body.data.weather[0].id,
                 weather_main: response_body.data.weather[0].main,
                 weather_description: response_body.data.weather[0].description,
-                weather_icon: "https://openweathermap.org/img/wn/".concat(response_body.data.weather[0].icon, ".png"),
+                weather_icon: "https://openweathermap.org/img/wn/".concat(response_body.data.weather[0].icon, "@2x.png"),
                 base: response_body.data.base,
                 main_temp: response_body.data.main.temp,
                 main_feels_like: response_body.data.main.feels_like,
