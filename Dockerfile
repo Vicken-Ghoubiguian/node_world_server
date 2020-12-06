@@ -19,5 +19,5 @@ RUN npm install
 #Expose the docker container listening port
 EXPOSE 80
 
-#Container instruction as entrypoint: 'node index.js'
+#Container instruction as entrypoint: 'npm start'
 ENTRYPOINT ["npm", "start"]
