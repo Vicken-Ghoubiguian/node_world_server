@@ -67,7 +67,7 @@
 									        	<td><%= __('Localisation')%>: (<%= weatherResults[i].longitude %>, <%= weatherResults[i].latitude %>)</td>
 									        </tr>
 									        <tr>
-									        	<td><%= __('UV')%>: <%= weatherResults[i].uv_value %></td>
+									        	<td><%= __('Country')%>: <%= weatherResults[i].sys_country %></td>
 									        </tr>
 									        <tr>
 									            <td><%= __('Sunrise')%>: <%= weatherResults[i].sys_sunrise %></td>
@@ -119,6 +119,9 @@
 									        </tr>
 									    </tbody>
 									</table>
+								</div>
+								<div class="weather_tab" id="uv_tab" style="float: left; margin-left: 10px;">
+
 								</div>
 							</div>
 
