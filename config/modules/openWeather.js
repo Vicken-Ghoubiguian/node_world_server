@@ -19,6 +19,12 @@ function dateAndTimeFormatConversionFunction(dateAndTime, currentDateAndTimeForm
 
 }
 
+//
+function getUVRisk() {
+
+    
+}
+
 // Definition of the asynchronous 'getWeather' function which returns the weather for all the cities that are part of the array passed as a parameter...
 async function getWeather(citiesAndCountries, apiKey) {
 
@@ -84,7 +90,7 @@ async function getWeather(citiesAndCountries, apiKey) {
             // Completion of the current weather with all UV datas...
             openWeather.uv_date_iso = response_body.data.date_iso;
             openWeather.uv_date = response_body.data.date;
-            openWeather.uv_value = response_body.data.value;
+            openWeather.uv_value = Math.round(response_body.data.value);
 
             // Push in the array...
             weather_data.push(openWeather);
