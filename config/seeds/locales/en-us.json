@@ -12,7 +12,8 @@
 
 	"Description": "Description",
 	"Localisation": "Localisation",
-	"UV": "UV index",
+	"UV_index": "UV index",
+	"UV_risk": "UV Risk",
 	"Sunrise": "Sunrise time",
 	"Sunset": "Sunset time",
 

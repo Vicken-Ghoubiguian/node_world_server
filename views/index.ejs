@@ -121,7 +121,16 @@
 									</table>
 								</div>
 								<div class="weather_tab" id="uv_tab" style="float: left; margin-left: 10px;">
-
+									<table>
+										<tbody>
+											<tr>
+												<td><%= __('UV_index')%>: <%= weatherResults[i].uv_value %></td>
+											</tr>
+											<tr>
+												<td><%= __('UV_risk')%>: <%= weatherResults[i].uv_risk %></td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 
