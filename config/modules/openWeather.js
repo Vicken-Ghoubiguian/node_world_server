@@ -19,7 +19,7 @@ function dateAndTimeFormatConversionFunction(dateAndTime, currentDateAndTimeForm
 
 }
 
-//
+// Definition of the 'getUVRisk' function to determine and return the UV risk from the 'uvValue' value...
 function getUVRisk(uvValue) {
 
     var determiedUVRisk = "";
