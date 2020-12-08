@@ -20,9 +20,32 @@ function dateAndTimeFormatConversionFunction(dateAndTime, currentDateAndTimeForm
 }
 
 //
-function getUVRisk() {
+function getUVRisk(uvValue) {
 
-    
+    var determiedUVRisk = "";
+
+    if (uvValue <= 2) {
+
+        determiedUVRisk = "Low";
+
+    } else if (3 <= uvValue && uvValue <= 5) {
+
+        determiedUVRisk = "Moderate";
+
+    } else if (6 <= uvValue && uvValue <= 7) {
+
+        determiedUVRisk = "High";
+
+    } else if (8 <= uvValue && uvValue <= 10) {
+
+        determiedUVRisk = "Very high";
+
+    } else {
+
+        determiedUVRisk = "Extreme";
+    }
+
+    return determiedUVRisk;
 }
 
 // Definition of the asynchronous 'getWeather' function which returns the weather for all the cities that are part of the array passed as a parameter...
@@ -78,7 +101,8 @@ async function getWeather(citiesAndCountries, apiKey) {
                 // Ultraviolet section...
                 uv_date_iso: "",
                 uv_date: "",
-                uv_value: ""
+                uv_value: "",
+                uv_risk: ""
             };
 
             // Configuring the URL for using the Openweathermap API to launch the ultraviolet retrieval request for latitude and longitude for the current weather with API key...
@@ -91,6 +115,7 @@ async function getWeather(citiesAndCountries, apiKey) {
             openWeather.uv_date_iso = response_body.data.date_iso;
             openWeather.uv_date = response_body.data.date;
             openWeather.uv_value = Math.round(response_body.data.value);
+            openWeather.uv_risk = getUVRisk(Math.round(response_body.data.value));
 
             // Push in the array...
             weather_data.push(openWeather);
