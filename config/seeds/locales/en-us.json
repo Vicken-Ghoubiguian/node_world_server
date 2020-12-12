@@ -1,4 +1,5 @@
 {
+	// General...
 	"Language_choice": "Choose the language you want",
 	"Date_and_time_format_choice": "Choose the format you want for the date and time",
 	"Hello": "Hello",
@@ -7,22 +8,22 @@
 	"City_not_found": "City not found",
 	"Invalid_api_key": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info",
 
+	// Tabs presentation text...
 	"Timezones_visualization": "Timezones visualization",
 	"GitHub_visualization": "GitHub visualization",
 
+	// Weather datas...
 	"Description": "Description",
 	"Localisation": "Localisation",
 	"UV_index": "UV index",
 	"UV_risk": "UV Risk",
 	"Sunrise": "Sunrise time",
 	"Sunset": "Sunset time",
-
 	"Pressure": "Pressure",
 	"Temperature": "Temperature",
 	"Maximum_temperature": "Maximum temperature",
 	"Minimum_temperature": "Minimum temperature",
 	"Feeling_like_temperature": "Feeling like temperature",
-
 	"Clouds": "Clouds",
 	"Wind_speed": "Wind speed",
 	"Wind_deg": "Wind deg",
@@ -31,6 +32,7 @@
 	"Humidity": "Humidity",
 	"Country": "Country",
 
+	// Weather description...
 	"Clear_sky": "Clear sky",
 	"Few_clouds": "Few clouds",
 	"Scattered_clouds": "Scattered clouds",
@@ -41,6 +43,7 @@
 	"Snow": "Snow",
 	"Mist": "Mist",
 
+	// Languages...
 	"French": "French",
 	"English": "English",
 	"Spanish": "Spanish",

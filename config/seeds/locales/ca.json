@@ -1,4 +1,5 @@
 {
+	// General...
 	"Hello": "Hola",
 	"Language_choice": "Trieu l'idioma que vulgueu",
 	"Date_and_time_format_choice": "Trieu el format que vulgueu per a la data i l'hora",
@@ -7,22 +8,22 @@
 	"City_not_found": "Ciutat no trobada",
 	"Invalid_api_key": "La clau de l'API no és vàlida. Consulteu http://openweathermap.org/faq#error401 per obtenir més informació",
 
+	// Tabs presentation text...
 	"Timezones_visualization": "Visualització de zones horàries",
 	"GitHub_visualization": "Visualització de Github",
 
+	// Weather datas...
 	"Description": "Descripció",
 	"Localisation": "Localització",
 	"UV_index": "Índex UV",
 	"UV_risk": "Risc UV",
 	"Sunrise": "Hora de sortida del sol",
 	"Sunset": "Hora de posta de sol",
-
 	"Pressure": "Presió",
 	"Temperature": "Temperatura",
 	"Maximum_temperature": "Temperatura màxima",
 	"Minimum_temperature": "Temperatura mínima",
 	"Feeling_like_temperature": "Temperatura del feltre",
-
 	"Clouds": "Núvols",
 	"Wind_speed": "Velocitat del vent",
 	"Wind_deg": "Grau de vent",
@@ -31,6 +32,7 @@
 	"Humidity": "Humitat",
 	"Country": "País",
 
+	// Weather description...
 	"Clear_sky": "Cel clar",
 	"Few_clouds": "Pocs núvols",
 	"Scattered_clouds": "Núvols dispersos",
@@ -41,6 +43,7 @@
 	"Snow": "Neu",
 	"Mist": "Boira",
 
+	// Languages...
 	"French": "Francès",
 	"English": "Anglès",
 	"Spanish": "Espanyol",
