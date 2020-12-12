@@ -61,7 +61,7 @@
 									<table>
 										<tbody>
 											<tr>
-									        	<td><%= __('Description')%>: <%= weatherResults[i].weather_description %></td>
+									        	<td><%= __('Description')%>: <%= __(weatherResults[i].weather_description)%></td>
 									        </tr>
 									        <tr>
 									        	<td><%= __('Localisation')%>: (<%= weatherResults[i].longitude %>, <%= weatherResults[i].latitude %>)</td>
@@ -127,7 +127,7 @@
 												<td><%= __('UV_index')%>: <%= weatherResults[i].uv_value %></td>
 											</tr>
 											<tr>
-												<td><%= __('UV_risk')%>: <%= weatherResults[i].uv_risk %></td>
+												<td><%= __('UV_risk')%>: <%= __(weatherResults[i].uv_risk)%></td>
 											</tr>
 										</tbody>
 									</table>
