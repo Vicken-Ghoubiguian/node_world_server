@@ -162,6 +162,22 @@ app.get('/', function(req, res) {
   // Calling the 'getWeather' method from the 'openWeather' module 
   openWeather.getWeather(weatherReferencesHashTable, "5222a1c311ca31001b0877137d584c36").then(function(results) {
 
+    //
+    for(i = 0; i < results.length; i++)
+    {
+      // In the case that the current element is a valable weather structure...
+      if(results[i].cod === 200) {
+
+        // Treatment of 'weather_description' field for translation...
+        results[i].weather_description = results[i].weather_description.charAt(0).toUpperCase() + results[i].weather_description.slice(1);
+        results[i].weather_description = results[i].weather_description.split(' ').join('_');
+
+        // Treatment of 'uv_risk' field for translation...
+        results[i].uv_risk = results[i].uv_risk.charAt(0).toUpperCase() + results[i].uv_risk.slice(1);
+        results[i].uv_risk = results[i].uv_risk.split(' ').join('_');
+      }
+    }
+
   	res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
     
   });
@@ -228,6 +244,22 @@ app.post('/', function(req, res) {
 
   // Calling the 'getWeather' method from the 'openWeather' module 
   openWeather.getWeather(weatherReferencesHashTable, "5222a1c311ca31001b0877137d584c36").then(function(results) {
+
+    //
+    for(i = 0; i < results.length; i++)
+    {
+      // In the case that the current element is a valable weather structure...
+      if(results[i].cod === 200) {
+
+        // Treatment of 'weather_description' field for translation...
+        results[i].weather_description = results[i].weather_description.charAt(0).toUpperCase() + results[i].weather_description.slice(1);
+        results[i].weather_description = results[i].weather_description.split(' ').join('_');
+
+        // Treatment of 'uv_risk' field for translation...
+        results[i].uv_risk = results[i].uv_risk.charAt(0).toUpperCase() + results[i].uv_risk.slice(1);
+        results[i].uv_risk = results[i].uv_risk.split(' ').join('_');
+      }
+    }
 
     res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
 
