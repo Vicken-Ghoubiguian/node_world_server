@@ -1,5 +1,4 @@
 {
-	// General...
 	"Language_choice": "Choisissez la langue que vous voulez",
 	"Date_and_time_format_choice": "Choisissez le format que vous voulez pour la date et l'heure",
 	"Hello": "Salut",
@@ -8,11 +7,9 @@
 	"City_not_found": "Ville introuvable",
 	"Invalid_api_key": "Clé API non valide. Veuillez consulter http://openweathermap.org/faq#error401 pour plus d'informations",
 
-	// Tabs presentation text...
 	"Timezones_visualization": "Visualisation des fuseaux horaires",
 	"GitHub_visualization": "Visualisation de GitHub",
 
-	// Weather datas...
 	"Description": "Description",
 	"Localisation": "Localisation",
 	"UV_index": "Indice UV",
@@ -32,7 +29,6 @@
 	"Humidity": "Humidité",
 	"Country": "Pays",
 
-	// Weather description...
 	"Clear_sky": "Ciel clair",
 	"Few_clouds": "Quelques nuages",
 	"Scattered_clouds": "Nuages ​​dispersés",
@@ -43,14 +39,12 @@
 	"Snow": "Neige",
 	"Mist": "Brouillard",
 
-	// UV levels...
 	"Low": "faible",
 	"Moderate": "modéré",
 	"High": "élevé",
 	"Very_high": "très élevé",
 	"Extreme": "extrême",
 
-	// Languages...
 	"French": "Français",
 	"English": "Anglais",
 	"Spanish": "Espagnol",
