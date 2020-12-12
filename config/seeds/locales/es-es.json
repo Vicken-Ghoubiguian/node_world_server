@@ -31,6 +31,16 @@
 	"Humidity": "Humedad",
 	"Country": "País",
 
+	"Clear_sky": "",
+	"Few_clouds": "",
+	"Scattered_clouds": "",
+	"Broken_clouds": "",
+	"Shower_rain": "",
+	"Rain": "",
+	"Thunderstorm": "",
+	"Snow": "",
+	"Mist": "",
+
 	"French": "Francés",
 	"English": "Inglés",
 	"Spanish": "Español",
