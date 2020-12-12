@@ -43,6 +43,13 @@
 	"Snow": "Snow",
 	"Mist": "Mist",
 
+	// UV levels...
+	"Low": "low",
+	"Moderate": "moderate",
+	"High": "high",
+	"Very_high": "very high",
+	"Extreme": "extreme",
+
 	// Languages...
 	"French": "French",
 	"English": "English",

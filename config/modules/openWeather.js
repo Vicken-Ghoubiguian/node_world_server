@@ -26,23 +26,23 @@ function getUVRisk(uvValue) {
 
     if (uvValue <= 2) {
 
-        determiedUVRisk = "Low";
+        determiedUVRisk = "low";
 
     } else if (3 <= uvValue && uvValue <= 5) {
 
-        determiedUVRisk = "Moderate";
+        determiedUVRisk = "moderate";
 
     } else if (6 <= uvValue && uvValue <= 7) {
 
-        determiedUVRisk = "High";
+        determiedUVRisk = "high";
 
     } else if (8 <= uvValue && uvValue <= 10) {
 
-        determiedUVRisk = "Very high";
+        determiedUVRisk = "very high";
 
     } else {
 
-        determiedUVRisk = "Extreme";
+        determiedUVRisk = "extreme";
     }
 
     return determiedUVRisk;

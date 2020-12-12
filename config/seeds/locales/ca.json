@@ -43,6 +43,13 @@
 	"Snow": "Neu",
 	"Mist": "Boira",
 
+	// UV levels...
+	"Low": "baix",
+	"Moderate": "moderat",
+	"High": "elevat",
+	"Very_high": "molt elevat",
+	"Extreme": "extrem",
+
 	// Languages...
 	"French": "Francès",
 	"English": "Anglès",
