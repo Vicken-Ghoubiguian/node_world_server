@@ -48,8 +48,8 @@ function getUVRisk(uvValue) {
     return determiedUVRisk;
 }
 
-// Definition of the asynchronous 'getWeather' function which returns the weather for all the cities that are part of the array passed as a parameter...
-async function getWeather(citiesAndCountries, apiKey) {
+// Definition of the asynchronous 'getWeather' function which returns the weather for all the cities that are part of the array passed as a parameter with all the wished measurements units passed as parameters...
+async function getWeather(citiesAndCountries, apiKey, temperatureUnit = "Kelvin", pressureUnit = "HectoPascal", dateAndTimeFormat = "Timestamp") {
 
     // Definition of the 'weather_data' array which will return all weather from all the cities contained in the 'citiesAndCountries' array...
     var weather_data = [];
