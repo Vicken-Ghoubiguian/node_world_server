@@ -6,8 +6,10 @@
 	"Ragnarok": "Ici le temps vous attend comme Ragnarök...",
 	"City_not_found": "Ville introuvable",
 	"Invalid_api_key": "Clé API non valide. Veuillez consulter http://openweathermap.org/faq#error401 pour plus d'informations",
+	
 	"Timezones_visualization": "Visualisation des fuseaux horaires",
 	"GitHub_visualization": "Visualisation de GitHub",
+
 	"Description": "Description",
 	"Localisation": "Localisation",
 	"UV_index": "Indice UV",
@@ -26,6 +28,7 @@
 	"In_seconds": "en secondes",
 	"Humidity": "Humidité",
 	"Country": "Pays",
+
 	"Clear_sky": "Ciel clair",
 	"Few_clouds": "Quelques nuages",
 	"Scattered_clouds": "Nuages ​​dispersés",
@@ -35,15 +38,15 @@
 	"Thunderstorm": "Orage",
 	"Snow": "Neige",
 	"Mist": "Brouillard",
+
 	"Low": "faible",
 	"Moderate": "modéré",
 	"High": "élevé",
 	"Very_high": "très élevé",
 	"Extreme": "extrême",
+
 	"French": "Français",
 	"English": "Anglais",
 	"Spanish": "Espagnol",
 	"Catalan": "Catalan",
-	"weatherResults[i].weather_description": "weatherResults[i].weather_description",
-	"weatherResults[i].weather_description.valueOf()": "weatherResults[i].weather_description.valueOf()"
 }
