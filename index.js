@@ -118,12 +118,12 @@ app.get('/', function(req, res) {
 
   if(currentLocale === "fr") {
 
-	currentLocale = "fr-fr";
+	   currentLocale = "fr-fr";
   }
 
   if(!listOfAllLocales.includes(currentLocale)){
 	
-	currentLocale = "en-us";
+	   currentLocale = "en-us";
   }
 
   updateLanguageSelect();
@@ -191,7 +191,26 @@ app.post('/', function(req, res) {
   var countryCodeHashTable = new Object();
   var renderTimezonesArray = [];
 
-  currentLocale = "fr-fr";
+  /* Block of provisional solution... */
+  negotiator = new Negotiator(req);
+  var browserLanguages = negotiator.languages();
+  currentLocale = negotiator.language(browserLanguages);
+  currentLocale = currentLocale.toLowerCase();
+
+  timezones.moment.locale(currentLocale);
+
+  var listOfAllLocales = listAllLocalesAsArray();
+
+  if(currentLocale === "fr") {
+
+    currentLocale = "fr-fr";
+  }
+
+  if(!listOfAllLocales.includes(currentLocale)){
+  
+    currentLocale = "en-us";
+  }
+
   updateLanguageSelect();
 
   //
