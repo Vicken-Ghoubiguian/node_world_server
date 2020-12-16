@@ -191,6 +191,8 @@ app.post('/', function(req, res) {
   var countryCodeHashTable = new Object();
   var renderTimezonesArray = [];
 
+  currentLocale = "en-us";
+
   //
   if(req.body.current_form === "choosen_country_code_form")
   {
