@@ -105,7 +105,7 @@ var timezones = [
 	{timezone: "Europe/Sofia", country_code: "BG", weather_reference: "Sofia", moment: moment.tz("Europe/Sofia"), color: "#006400"},
 	{timezone: "Europe/Stockholm", country_code: "SE", weather_reference: "Stockholm", moment: moment.tz("Europe/Stockholm"), color: "#006400"},
 	{timezone: "Europe/Tallinn", country_code: "EE", weather_reference: "Tallinn", moment: moment.tz("Europe/Tallinn"), color: "#006400"},
-	{timezone: "Europe/Tirane", country_code: "AL", weather_reference: "Tirane", moment: moment.tz("Europe/Tirane"), color: "#006400"},
+	{timezone: "Europe/Tirane", country_code: "AL", weather_reference: "Tirana", moment: moment.tz("Europe/Tirane"), color: "#006400"},
 	{timezone: "Europe/Ulyanovsk", country_code: "RU", weather_reference: "Ulyanovsk", moment: moment.tz("Europe/Ulyanovsk"), color: "#006400"},
 	{timezone: "Europe/Uzhgorod", country_code: "UA", weather_reference: "Uzhgorod", moment: moment.tz("Europe/Uzhgorod"), color: "#006400"},
 	{timezone: "Europe/Vaduz", country_code: "LI", weather_reference: "Vaduz", moment: moment.tz("Europe/Vaduz"), color: "#006400"},
