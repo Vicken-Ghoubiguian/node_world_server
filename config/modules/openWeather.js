@@ -4,7 +4,7 @@ var axios = require('axios');
 // Definition of the 'temperatureConversionFunction' function to convert the 'temperatureValue' temperature value in a current 'currentTemperatureUnit' unit in the wished 'wishedTemperatureUnit' unit...
 function temperatureConversionFunction(temperatureValue, currentTemperatureUnit = "Kelvin", wishedTemperatureUnit = "Kelvin") {
 
-    var convertedTemperatureValue = temperatureValue;
+    var convertedTemperatureValue;
 
     // 'switch' instruction to treat all cases about 'currentTemperatureUnit' value...
     switch(currentTemperatureUnit) {
@@ -16,7 +16,12 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
             switch(wishedTemperatureUnit) {
 
                 // In the case where 'Celsius' is passed as 'wishedTemperatureUnit' value...
-                case "Celsius": break;
+                case "Celsius": 
+
+                    console.log("\x1b[31m" + "Temperature already in Celsius (°C)..." + "\x1b[1m");
+                    convertedTemperatureValue = temperatureValue;
+
+                    break;
 
                 // In the case where 'Fahrenheit' is passed as 'wishedTemperatureUnit' value...
                 case "Fahrenheit": break;
@@ -26,6 +31,9 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
 
                 // In the case where anything else is passed as 'wishedTemperatureUnit' value...
                 default: 
+
+                    console.log("\x1b[31m" + "Unknown wished temperature unit..." + "\x1b[1m");
+                    convertedTemperatureValue = temperatureValue;
 
                     break; 
             }
@@ -42,13 +50,21 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
                 case "Celsius": break;
 
                 // In the case where 'Fahrenheit' is passed as 'wishedTemperatureUnit' value...
-                case "Fahrenheit": break;
+                case "Fahrenheit": 
+
+                    console.log("\x1b[31m" + "Temperature already in Fahrenheit (°F)..." + "\x1b[1m");
+                    convertedTemperatureValue = temperatureValue;
+
+                    break;
 
                 // In the case where 'Kelvin' is passed as 'wishedTemperatureUnit' value...
                 case "Kelvin": break;
 
                 // In the case where anything else is passed as 'wishedTemperatureUnit' value...
-                default: 
+                default:
+
+                    console.log("\x1b[31m" + "Unknown wished temperature unit..." + "\x1b[1m");
+                    convertedTemperatureValue = temperatureValue;
 
                     break; 
             }
@@ -68,10 +84,18 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
                 case "Fahrenheit": break;
 
                 // In the case where 'Kelvin' is passed as 'wishedTemperatureUnit' value...
-                case "Kelvin": break;
+                case "Kelvin": 
+
+                    console.log("\x1b[31m" + "Temperature already in Kelvin (K)..." + "\x1b[1m");
+                    convertedTemperatureValue = temperatureValue;
+
+                    break;
 
                 // In the case where anything else is passed as 'wishedTemperatureUnit' value...
-                default: 
+                default:
+
+                    console.log("\x1b[31m" + "Unknown wished temperature unit..." + "\x1b[1m");
+                    convertedTemperatureValue = temperatureValue;
 
                     break; 
             }
@@ -80,6 +104,9 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
 
         // In the case where anything else is passed as 'currentTemperatureUnit' value...
         default:
+
+            console.log("\x1b[31m" + "Unknown current temperature scale..." + "\x1b[1m");
+            convertedTemperatureValue = temperatureValue;
 
             break;
     }
