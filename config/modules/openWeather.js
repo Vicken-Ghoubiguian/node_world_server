@@ -26,6 +26,7 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
                 // In the case where 'Fahrenheit' is passed as 'wishedTemperatureUnit' value...
                 case "Fahrenheit": 
 
+                    convertedTemperatureValue = (temperatureValue * (9.0/5.0)) + 32;
                     console.log("\x1b[32m" + "Temperature converted successfully in Fahrenheit (°F)..." + "\x1b[1m");
 
                     break;
@@ -33,6 +34,7 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
                 // In the case where 'Kelvin' is passed as 'wishedTemperatureUnit' value...
                 case "Kelvin": 
 
+                    convertedTemperatureValue = temperatureValue + 273.15;
                     console.log("\x1b[32m" + "Temperature converted successfully in Kelvin (K)..." + "\x1b[1m");
 
                     break;
@@ -57,6 +59,7 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
                 // In the case where 'Celsius' is passed as 'wishedTemperatureUnit' value...
                 case "Celsius": 
 
+                    convertedTemperatureValue = (temperatureValue - 32) * (5.0/9.0);
                     console.log("\x1b[32m" + "Temperature converted successfully in Celsius (°C)..." + "\x1b[1m");
 
                     break;
@@ -72,6 +75,7 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
                 // In the case where 'Kelvin' is passed as 'wishedTemperatureUnit' value...
                 case "Kelvin": 
 
+                    convertedTemperatureValue = (temperatureValue - 32) * (5.0/9.0) + 273.15;
                     console.log("\x1b[32m" + "Temperature converted successfully in Kelvin (K)..." + "\x1b[1m");
 
                     break;
@@ -96,6 +100,7 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
                 // In the case where 'Celsius' is passed as 'wishedTemperatureUnit' value...
                 case "Celsius":
 
+                    convertedTemperatureValue = temperatureValue - 273.15;
                     console.log("\x1b[32m" + "Temperature converted successfully in Celsius (°C)..." + "\x1b[1m");
 
                     break;
@@ -103,6 +108,7 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
                 // In the case where 'Fahrenheit' is passed as 'wishedTemperatureUnit' value...
                 case "Fahrenheit":
 
+                    convertedTemperatureValue = (temperatureValue - 273.15) * (9.0/5.0) + 32;
                     console.log("\x1b[31m" + "Temperature already in Fahrenheit (°F)..." + "\x1b[1m");
 
                     break;
