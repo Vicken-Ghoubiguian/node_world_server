@@ -24,10 +24,18 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
                     break;
 
                 // In the case where 'Fahrenheit' is passed as 'wishedTemperatureUnit' value...
-                case "Fahrenheit": break;
+                case "Fahrenheit": 
+
+                    console.log("\x1b[32m" + "Temperature converted successfully in Fahrenheit (°F)..." + "\x1b[1m");
+
+                    break;
 
                 // In the case where 'Kelvin' is passed as 'wishedTemperatureUnit' value...
-                case "Kelvin": break;
+                case "Kelvin": 
+
+                    console.log("\x1b[32m" + "Temperature converted successfully in Kelvin (K)..." + "\x1b[1m");
+
+                    break;
 
                 // In the case where anything else is passed as 'wishedTemperatureUnit' value...
                 default: 
@@ -47,7 +55,11 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
             switch(wishedTemperatureUnit) {
 
                 // In the case where 'Celsius' is passed as 'wishedTemperatureUnit' value...
-                case "Celsius": break;
+                case "Celsius": 
+
+                    console.log("\x1b[32m" + "Temperature converted successfully in Celsius (°C)..." + "\x1b[1m");
+
+                    break;
 
                 // In the case where 'Fahrenheit' is passed as 'wishedTemperatureUnit' value...
                 case "Fahrenheit": 
@@ -58,7 +70,11 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
                     break;
 
                 // In the case where 'Kelvin' is passed as 'wishedTemperatureUnit' value...
-                case "Kelvin": break;
+                case "Kelvin": 
+
+                    console.log("\x1b[32m" + "Temperature converted successfully in Kelvin (K)..." + "\x1b[1m");
+
+                    break;
 
                 // In the case where anything else is passed as 'wishedTemperatureUnit' value...
                 default:
@@ -78,10 +94,18 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
             switch(wishedTemperatureUnit) {
 
                 // In the case where 'Celsius' is passed as 'wishedTemperatureUnit' value...
-                case "Celsius": break;
+                case "Celsius":
+
+                    console.log("\x1b[32m" + "Temperature converted successfully in Celsius (°C)..." + "\x1b[1m");
+
+                    break;
 
                 // In the case where 'Fahrenheit' is passed as 'wishedTemperatureUnit' value...
-                case "Fahrenheit": break;
+                case "Fahrenheit":
+
+                    console.log("\x1b[31m" + "Temperature already in Fahrenheit (°F)..." + "\x1b[1m");
+
+                    break;
 
                 // In the case where 'Kelvin' is passed as 'wishedTemperatureUnit' value...
                 case "Kelvin": 
