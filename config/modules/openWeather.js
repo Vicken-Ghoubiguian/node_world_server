@@ -6,26 +6,80 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
 
     var convertedTemperatureValue = temperatureValue;
 
-    // 'switch' instruction to treat all cases 
+    // 'switch' instruction to treat all cases about 'currentTemperatureUnit' value...
     switch(currentTemperatureUnit) {
 
         // In the case where 'Celsius' is passed as 'currentTemperatureUnit' value...
         case "Celsius":
+
+            // 'switch' instruction to treat all cases about 'wishedTemperatureUnit' value...
+            switch(wishedTemperatureUnit) {
+
+                // In the case where 'Celsius' is passed as 'wishedTemperatureUnit' value...
+                case "Celsius": break;
+
+                // In the case where 'Fahrenheit' is passed as 'wishedTemperatureUnit' value...
+                case "Fahrenheit": break;
+
+                // In the case where 'Kelvin' is passed as 'wishedTemperatureUnit' value...
+                case "Kelvin": break;
+
+                // In the case where anything else is passed as 'wishedTemperatureUnit' value...
+                default: 
+
+                    break; 
+            }
 
             break;
 
         // In the case where 'Fahrenheit' is passed as 'currentTemperatureUnit' value...
         case "Fahrenheit":
 
+            // 'switch' instruction to treat all cases about 'wishedTemperatureUnit' value...
+            switch(wishedTemperatureUnit) {
+
+                // In the case where 'Celsius' is passed as 'wishedTemperatureUnit' value...
+                case "Celsius": break;
+
+                // In the case where 'Fahrenheit' is passed as 'wishedTemperatureUnit' value...
+                case "Fahrenheit": break;
+
+                // In the case where 'Kelvin' is passed as 'wishedTemperatureUnit' value...
+                case "Kelvin": break;
+
+                // In the case where anything else is passed as 'wishedTemperatureUnit' value...
+                default: 
+
+                    break; 
+            }
+
             break;
 
         // In the case where 'Kelvin' is passed as 'currentTemperatureUnit' value...
         case "Kelvin":
 
+            // 'switch' instruction to treat all cases about 'wishedTemperatureUnit' value...
+            switch(wishedTemperatureUnit) {
+
+                // In the case where 'Celsius' is passed as 'wishedTemperatureUnit' value...
+                case "Celsius": break;
+
+                // In the case where 'Fahrenheit' is passed as 'wishedTemperatureUnit' value...
+                case "Fahrenheit": break;
+
+                // In the case where 'Kelvin' is passed as 'wishedTemperatureUnit' value...
+                case "Kelvin": break;
+
+                // In the case where anything else is passed as 'wishedTemperatureUnit' value...
+                default: 
+
+                    break; 
+            }
+
             break;
 
         // In the case where anything else is passed as 'currentTemperatureUnit' value...
-        default: 
+        default:
 
             break;
     }
