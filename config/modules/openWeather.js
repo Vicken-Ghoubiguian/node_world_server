@@ -4,7 +4,33 @@ var axios = require('axios');
 // Definition of the 'temperatureConversionFunction' function to convert the 'temperatureValue' temperature value in a current 'currentTemperatureUnit' unit in the wished 'wishedTemperatureUnit' unit...
 function temperatureConversionFunction(temperatureValue, currentTemperatureUnit = "Kelvin", wishedTemperatureUnit = "Kelvin") {
 
+    var convertedTemperatureValue = temperatureValue;
 
+    // 'switch' instruction to treat all cases 
+    switch(currentTemperatureUnit) {
+
+        // In the case where 'Celsius' is passed as 'currentTemperatureUnit' value...
+        case "Celsius":
+
+            break;
+
+        // In the case where 'Fahrenheit' is passed as 'currentTemperatureUnit' value...
+        case "Fahrenheit":
+
+            break;
+
+        // In the case where 'Kelvin' is passed as 'currentTemperatureUnit' value...
+        case "Kelvin":
+
+            break;
+
+        // In the case where anything else is passed as 'currentTemperatureUnit' value...
+        default: 
+
+            break;
+    }
+
+    return convertedTemperatureValue;
 }
 
 // Definition of the 'pressureConversionFunction' function to convert the 'pressureValue' pressure value in a current 'currentPressureUnit' unit in the wished 'wishedPressureUnit' unit...
