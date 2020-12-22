@@ -10,6 +10,7 @@ var openWeather = require('./config/modules/openWeather');
 
 // Importation of seeds...
 var selectionnableLanguages = require('./config/seeds/selectionnableLanguages');
+var selectionnableTemperatureUnits = require('./config/seeds/temperatureUnits');
 var formats = require('./config/seeds/formats');
 var timezones = require('./config/seeds/timezones');
 
@@ -178,7 +179,7 @@ app.get('/', function(req, res) {
       }
     }
 
-  	res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
+  	res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
     
   });
 });
@@ -283,7 +284,7 @@ app.post('/', function(req, res) {
       }
     }
 
-    res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
+    res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
 
   });
 });
