@@ -1,9 +1,9 @@
 // Array containing all temperature units with relatives datas...
 var selectionnableTemperatureUnits = [
 
-        {value: "Celsius", selected: ""},
-        {value: "Fahrenheit", selected: ""},
-        {value: "Kelvin", selected: "selected"}
+        {unit: "Celsius", symbol: "°C", selected: ""},
+        {unit: "Fahrenheit", symbol: "°F", selected: ""},
+        {unit: "Kelvin", symbol: "K", selected: "selected"}
 ];
 
 // Export the 'selectionnableTemperatureUnits' array...
