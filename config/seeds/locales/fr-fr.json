@@ -1,6 +1,7 @@
 {
 	"Language_choice": "Choisissez la langue que vous voulez",
 	"Date_and_time_format_choice": "Choisissez le format que vous voulez pour la date et l'heure",
+	"temperature_unit_choice": "Choisissez l'unité de température que vous voulez",
 	"Hello": "Salut",
 	"countrycode_timezone_choice": "Veuillez choisir le pays que vous souhaitez",
 	"Ragnarok": "Ici le temps vous attend comme Ragnarök...",
