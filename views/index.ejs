@@ -47,9 +47,9 @@
 					<input type="hidden" name="current_form" value="choosen_temperature_unit_form">
 					<%= __('temperature_unit_choice')%> :
 					<select id="choosen_temperature_unit" name="choosen_temperature_unit">
-						<option value="Celsius">Celsius (°C)</option>
-						<option value="Fahrenheit">Fahrenheit (°F)</option>
-						<option value="Kelvin">Kelvin (K)</option>
+						<% for(var i = 0; i < selectionnableTemperatureUnits.length; i++){ %>
+							<option value="<%= selectionnableTemperatureUnits[i].unit %>" <%= selectionnableTemperatureUnits[i].selected %>><%= selectionnableTemperatureUnits[i].unit %> (<%= selectionnableTemperatureUnits[i].symbol %>)</option>
+						<% } %>
 					</select>
 				</form>
 				<h1><%= __('Hello')%></h1>
