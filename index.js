@@ -20,6 +20,7 @@ var negotiator;
 var currentLocale = null;
 var currentDateAndTimeFormat = "MMMM Do YYYY, hh:mm:ss a";
 var currentCountryCode = timezones.getCountryCodeFromTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
+var currentTemperatureUnit = "Kelvin";
 
 // Declaration of static files and favicon image...
 app.use(favicon("assets/images/favicon.png"));
@@ -36,7 +37,7 @@ function updateDateAndTime(){
 	console.log("TYTY...");
 }
 
-// Function to update the "selected" field of the corresponding language's JSON depending on whether the language is selected or not...
+// Function to update the "selected" field of the corresponding language's JSON depending on whether the current is selected or not...
 function updateLanguageSelect(){
 
 	for(var i = 0; i < selectionnableLanguages.length; i++){
@@ -56,7 +57,7 @@ function updateLanguageSelect(){
 	}
 }
 
-// Function to update the "selected" field of the corresponding date and time format's JSON depending on whether the format is selected or not...
+// Function to update the "selected" field of the corresponding date and time format's JSON depending on whether the current is selected or not...
 function updateDaTSelect(formatDaTId) {
 
 	for(var i = 0; i < formats.length; i++){
@@ -74,6 +75,28 @@ function updateDaTSelect(formatDaTId) {
 			formats[i].selected = "selected";
 		}
 	}
+}
+
+// Function to update the "selected" field of the corresponding temperature unit's JSON depending on whether the current is selected or not...
+function updateTemperatureUnit(currentTemperatureUnit) {
+
+  for(var i = 0; i < selectionnableTemperatureUnits.length; i++){
+
+    if(selectionnableTemperatureUnits[i].selected === "selected"){
+
+      selectionnableTemperatureUnits[i].selected = "";
+    }
+  }
+
+  for(var i = 0; i < selectionnableTemperatureUnits.length; i++){
+
+    if(selectionnableTemperatureUnits[i].unit === currentTemperatureUnit){
+
+      console.log("Ici " + currentTemperatureUnit);
+
+      selectionnableTemperatureUnits[i].selected = "selected";
+    }
+  }
 }
 
 // Function to list all language locales ("value" field of each JSON) in a to-returned array...
@@ -127,9 +150,12 @@ app.get('/', function(req, res) {
 	   currentLocale = "en-us";
   }
 
+  //
   updateLanguageSelect();
-
   res.setLocale(currentLocale);
+
+  //
+  updateTemperatureUnit(currentTemperatureUnit);
 
   // Defining a series of array and hash table for treatments in templates...
   var weatherReferencesHashTable = new Object();
@@ -231,12 +257,17 @@ app.post('/', function(req, res) {
 
   	res.setLocale(currentLocale);
 
-  } else if(req.body.current_form === "choosen_format_form"){
+  } else if(req.body.current_form === "choosen_format_form") {
 
   	currentDateAndTimeFormat = formats[parseInt(req.body.choosen_date_and_time_format)].format;
   	updateDaTSelect(parseInt(req.body.choosen_date_and_time_format));
 
   	res.setLocale(currentLocale);
+
+  } else if(req.body.current_form === "choosen_temperature_unit_form") {
+
+    currentTemperatureUnit = req.body.choosen_temperature_unit;
+    updateTemperatureUnit(currentTemperatureUnit);
   }
 
   // Configuration of all tables and hash tables...

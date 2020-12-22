@@ -34,4 +34,11 @@ $( function() {
 		// The form 'choosen_country_code_form' is then submitted with all of its datas...
 		$("#choosen_country_code_form").submit();
 	});
+
+	// Triggering an action when an element of the 'choosen_temperature_unit' <select> is chosen...
+	$("#choosen_temperature_unit").change(function(){
+
+		// The form 'choosen_temperature_unit_form' is then submitted with all of its datas...
+		$("#choosen_temperature_unit_form").submit();
+	});
 });
