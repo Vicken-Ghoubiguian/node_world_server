@@ -78,7 +78,7 @@ function updateDaTSelect(formatDaTId) {
 }
 
 // Function to update the "selected" field of the corresponding temperature unit's JSON depending on whether the current is selected or not...
-function updateTemperatureUnit(currentTemperatureUnit) {
+function updateTemperatureUnit(wishedCurrentTemperatureUnit) {
 
   for(var i = 0; i < selectionnableTemperatureUnits.length; i++){
 
@@ -90,9 +90,7 @@ function updateTemperatureUnit(currentTemperatureUnit) {
 
   for(var i = 0; i < selectionnableTemperatureUnits.length; i++){
 
-    if(selectionnableTemperatureUnits[i].unit === currentTemperatureUnit){
-
-      console.log("Ici " + currentTemperatureUnit);
+    if(selectionnableTemperatureUnits[i].unit === wishedCurrentTemperatureUnit){
 
       selectionnableTemperatureUnits[i].selected = "selected";
     }
