@@ -5,13 +5,14 @@
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script src="https://kit.fontawesome.com/<%= fontAwesomeKit %>.js" crossorigin="anonymous"></script>
   	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 	<div id="functionalities">
   	<ul>
-    	<li><a href="#timezones_view"><%= __('Timezones_visualization')%></a></li>
-    	<li><a href="#github_view"><%= __('GitHub_visualization')%></a></li>
+    	<li><a href="#timezones_view"><i class="fa fa-globe fa-1x"></i>&nbsp;<%= __('Timezones_visualization')%></a></li>
+    	<li><a href="#github_view"><i class="fa fa-github fa-1x"></i>&nbsp;<%= __('GitHub_visualization')%></a></li>
   	</ul>
   	<div id="timezones_view">
 		<div id="forms_displayer">

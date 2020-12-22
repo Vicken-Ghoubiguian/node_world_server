@@ -14,13 +14,17 @@ var selectionnableTemperatureUnits = require('./config/seeds/temperatureUnits');
 var formats = require('./config/seeds/formats');
 var timezones = require('./config/seeds/timezones');
 
-// Declaration of all required variables for the 'node_world_server' app...
+// Declaration of all required variables for the 'node_world_server' app with their default values...
 var app = express();
 var negotiator;
 var currentLocale = null;
 var currentDateAndTimeFormat = "MMMM Do YYYY, hh:mm:ss a";
 var currentCountryCode = timezones.getCountryCodeFromTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
 var currentTemperatureUnit = "Kelvin";
+
+// Definition of 
+var openWeatherAPIKey = "5222a1c311ca31001b0877137d584c36";
+var fontAwesomeKit = "3d96bbc4fa";
 
 // Declaration of static files and favicon image...
 app.use(favicon("assets/images/favicon.png"));
@@ -206,7 +210,7 @@ app.get('/', function(req, res) {
   }
 
   // Calling the 'getWeather' method from the 'openWeather' module 
-  openWeather.getWeather(weatherReferencesHashTable, "5222a1c311ca31001b0877137d584c36").then(function(results) {
+  openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(function(results) {
 
     //
     for(i = 0; i < results.length; i++)
@@ -224,7 +228,7 @@ app.get('/', function(req, res) {
       }
     }
 
-  	res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
+  	res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
     
   });
 });
@@ -316,7 +320,7 @@ app.post('/', function(req, res) {
   setInterval(updateDateAndTime, 1000);
 
   // Calling the 'getWeather' method from the 'openWeather' module 
-  openWeather.getWeather(weatherReferencesHashTable, "5222a1c311ca31001b0877137d584c36").then(function(results) {
+  openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(function(results) {
 
     //
     for(i = 0; i < results.length; i++)
@@ -334,7 +338,7 @@ app.post('/', function(req, res) {
       }
     }
 
-    res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
+    res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
 
   });
 });
