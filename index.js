@@ -98,7 +98,7 @@ function updateTemperatureUnit(wishedCurrentTemperatureUnit) {
 }
 
 // Function to list all language locales ("value" field of each JSON) in a to-returned array...
-function listAllLocalesAsArray(){
+function listAllLocalesAsArray() {
 
 	var returnedLocalsArray = [];
 
@@ -108,6 +108,24 @@ function listAllLocalesAsArray(){
 	}
 
 	return returnedLocalsArray;
+}
+
+// Function to identify the format id passed as a parameter in the JSON...
+function identificationIDParDaTFormat(formatDaT) {
+
+  var DaTFormatId = 0;
+
+  for(var i = 0; i < formats.length; i++){
+
+    if(formats[i].format === formatDaT) {
+
+      DaTFormatId = formats[i].id;
+
+      break;
+    }
+  }
+
+  return DaTFormatId;
 }
 
 // 
@@ -151,6 +169,9 @@ app.get('/', function(req, res) {
   //
   updateLanguageSelect();
   res.setLocale(currentLocale);
+
+  //
+  updateDaTSelect(identificationIDParDaTFormat(currentDateAndTimeFormat));
 
   //
   updateTemperatureUnit(currentTemperatureUnit);
