@@ -46,6 +46,11 @@
 				<form id="choosen_temperature_unit_form" method="post" action="/">
 					<input type="hidden" name="current_form" value="choosen_temperature_unit_form">
 					<%= __('temperature_unit_choice')%> :
+					<select id="choosen_temperature_unit" name="choosen_temperature_unit">
+						<option value="Celsius">Celsius (°C)</option>
+						<option value="Fahrenheit">Fahrenheit (°F)</option>
+						<option value="Kelvin">Kelvin (K)</option>
+					</select>
 				</form>
 				<h1><%= __('Hello')%></h1>
 			</p>
