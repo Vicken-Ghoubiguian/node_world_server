@@ -263,13 +263,14 @@ app.post('/', function(req, res) {
 
   updateLanguageSelect();
 
-  //
+  // If the submit form is the "choosen_country_code_form" one...
   if(req.body.current_form === "choosen_country_code_form")
   {
     currentCountryCode = req.body.choosen_country_code;
 
     res.setLocale(currentLocale);
 
+  // If the submit form is the "choosen_language_form" one...
   } else if(req.body.current_form === "choosen_language_form") {
 
   	currentLocale = req.body.choosen_language;
@@ -280,6 +281,7 @@ app.post('/', function(req, res) {
 
   	res.setLocale(currentLocale);
 
+  // If the submit form is the "choosen_format_form" one...
   } else if(req.body.current_form === "choosen_format_form") {
 
   	currentDateAndTimeFormat = formats[parseInt(req.body.choosen_date_and_time_format)].format;
@@ -287,6 +289,7 @@ app.post('/', function(req, res) {
 
   	res.setLocale(currentLocale);
 
+  // If the submit form is the "choosen_temperature_unit_form" one...
   } else if(req.body.current_form === "choosen_temperature_unit_form") {
 
     currentTemperatureUnit = req.body.choosen_temperature_unit;
@@ -322,7 +325,7 @@ app.post('/', function(req, res) {
   // Calling the 'getWeather' method from the 'openWeather' module 
   openWeather.getWeather(weatherReferencesHashTable, openWeatherAPIKey).then(function(results) {
 
-    //
+    // Loop to cover all of multiple weathers...
     for(i = 0; i < results.length; i++)
     {
       // In the case that the current element is a valable weather structure...
@@ -332,10 +335,10 @@ app.post('/', function(req, res) {
         results[i].weather_description = results[i].weather_description.charAt(0).toUpperCase() + results[i].weather_description.slice(1);
         results[i].weather_description = results[i].weather_description.split(' ').join('_');
 
-        //
+        // If the submit form is the "choosen_temperature_unit_form" one...
         if(req.body.current_form === "choosen_temperature_unit_form") {
 
-          //
+          // Treatment for all temperatures...
           results[i].main_temp = openWeather.temperatureConversionFunction(results[i].main_temp, "Kelvin", currentTemperatureUnit);
           results[i].main_feels_like = openWeather.temperatureConversionFunction(results[i].main_feels_like, "Kelvin", currentTemperatureUnit);
           results[i].main_temp_min = openWeather.temperatureConversionFunction(results[i].main_temp_min, "Kelvin", currentTemperatureUnit);
