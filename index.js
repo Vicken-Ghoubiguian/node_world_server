@@ -21,6 +21,7 @@ var currentLocale = null;
 var currentDateAndTimeFormat = "MMMM Do YYYY, hh:mm:ss a";
 var currentCountryCode = timezones.getCountryCodeFromTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
 var currentTemperatureUnit = "Kelvin";
+var currentTemperatureUnitSymbol = "";
 
 // Definition of 
 var openWeatherAPIKey = "5222a1c311ca31001b0877137d584c36";
@@ -196,6 +197,7 @@ app.get('/', function(req, res) {
   updateDaTSelect(identificationIDParDaTFormat(currentDateAndTimeFormat));
 
   //
+  currentTemperatureUnitSymbol = getTemperatureUnitSymbol(currentTemperatureUnit);
   updateTemperatureUnit(currentTemperatureUnit);
 
   // Defining a series of array and hash table for treatments in templates...
@@ -246,7 +248,7 @@ app.get('/', function(req, res) {
       }
     }
 
-  	res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
+  	res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
     
   });
 });
@@ -311,6 +313,8 @@ app.post('/', function(req, res) {
   } else if(req.body.current_form === "choosen_temperature_unit_form") {
 
     currentTemperatureUnit = req.body.choosen_temperature_unit;
+    currentTemperatureUnitSymbol = getTemperatureUnitSymbol(currentTemperatureUnit);
+
     updateTemperatureUnit(currentTemperatureUnit);
   }
 
@@ -369,7 +373,7 @@ app.post('/', function(req, res) {
       }
     }
 
-    res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
+    res.render('index.ejs', {"selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
 
   });
 });
