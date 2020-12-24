@@ -132,6 +132,24 @@ function identificationIDParDaTFormat(formatDaT) {
   return DaTFormatId;
 }
 
+// Function to identify the temperature unit symbol of the 'wishedTemperatureUnit' temperature unit passed in parameter...
+function getTemperatureUnitSymbol(wishedTemperatureUnit) {
+
+  var temperatureUnitSymbol = "";
+
+  for(var i = 0; i < selectionnableTemperatureUnits.length; i++){
+
+    if(selectionnableTemperatureUnits[i].unit === wishedTemperatureUnit) {
+
+      temperatureUnitSymbol = selectionnableTemperatureUnits[i].symbol;
+
+      break;
+    }
+  }
+
+  return temperatureUnitSymbol;
+}
+
 // 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
