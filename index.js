@@ -357,15 +357,11 @@ app.post('/', function(req, res) {
         results[i].weather_description = results[i].weather_description.charAt(0).toUpperCase() + results[i].weather_description.slice(1);
         results[i].weather_description = results[i].weather_description.split(' ').join('_');
 
-        // If the submit form is the "choosen_temperature_unit_form" one...
-        if(req.body.current_form === "choosen_temperature_unit_form") {
-
-          // Treatment for all temperatures...
-          results[i].main_temp = openWeather.temperatureConversionFunction(results[i].main_temp, "Kelvin", currentTemperatureUnit);
-          results[i].main_feels_like = openWeather.temperatureConversionFunction(results[i].main_feels_like, "Kelvin", currentTemperatureUnit);
-          results[i].main_temp_min = openWeather.temperatureConversionFunction(results[i].main_temp_min, "Kelvin", currentTemperatureUnit);
-          results[i].main_temp_max = openWeather.temperatureConversionFunction(results[i].main_temp_max, "Kelvin", currentTemperatureUnit);
-        }
+        // Treatment for all temperatures...
+        results[i].main_temp = openWeather.temperatureConversionFunction(results[i].main_temp, "Kelvin", currentTemperatureUnit);
+        results[i].main_feels_like = openWeather.temperatureConversionFunction(results[i].main_feels_like, "Kelvin", currentTemperatureUnit);
+        results[i].main_temp_min = openWeather.temperatureConversionFunction(results[i].main_temp_min, "Kelvin", currentTemperatureUnit);
+        results[i].main_temp_max = openWeather.temperatureConversionFunction(results[i].main_temp_max, "Kelvin", currentTemperatureUnit);
 
         // Treatment of 'uv_risk' field for translation...
         results[i].uv_risk = results[i].uv_risk.charAt(0).toUpperCase() + results[i].uv_risk.slice(1);
