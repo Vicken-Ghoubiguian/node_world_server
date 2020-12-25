@@ -27,7 +27,7 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
                 // In the case where 'Fahrenheit' is passed as 'wishedTemperatureUnit' value...
                 case "Fahrenheit": 
 
-                    //
+                    // Conversion of temperature to 'Fahrenheit'...
                     convertedTemperatureValue = temperatureValue * (9/5); 
                     convertedTemperatureValue = convertedTemperatureValue + 32;
                     convertedTemperatureValue = convertedTemperatureValue.toFixed(2);
@@ -39,7 +39,7 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
                 // In the case where 'Kelvin' is passed as 'wishedTemperatureUnit' value...
                 case "Kelvin": 
 
-                    //
+                    // Conversion of temperature to 'Kelvin'...
                     convertedTemperatureValue = temperatureValue + 273.15;
                     convertedTemperatureValue = convertedTemperatureValue.toFixed(2);
 
@@ -68,7 +68,7 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
                 // In the case where 'Celsius' is passed as 'wishedTemperatureUnit' value...
                 case "Celsius": 
 
-                    //
+                    // Conversion of temperature to 'Celsius'...
                     convertedTemperatureValue = temperatureValue - 32; 
                     convertedTemperatureValue = convertedTemperatureValue * (5.0/9.0);
                     convertedTemperatureValue = convertedTemperatureValue.toFixed(2);
@@ -89,7 +89,7 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
                 // In the case where 'Kelvin' is passed as 'wishedTemperatureUnit' value...
                 case "Kelvin": 
 
-                    // 
+                    // Conversion of temperature to 'Kelvin'... 
                     convertedTemperatureValue = temperatureValue - 32;
                     convertedTemperatureValue = convertedTemperatureValue * (5/9);
                     convertedTemperatureValue = convertedTemperatureValue+ 273.15;
@@ -131,7 +131,7 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
                 // In the case where 'Fahrenheit' is passed as 'wishedTemperatureUnit' value...
                 case "Fahrenheit":
 
-                    //
+                    // Conversion of temperature to 'Fahrenheit'...
                     convertedTemperatureValue = (temperatureValue - 273.15);
                     convertedTemperatureValue = convertedTemperatureValue * (9/5);
                     convertedTemperatureValue = convertedTemperatureValue + 32;
