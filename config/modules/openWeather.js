@@ -172,7 +172,7 @@ function temperatureConversionFunction(temperatureValue, wishedTemperatureUnit, 
             break;
     }
 
-    // 
+    // Returning the converted temperature value...
     return convertedTemperatureValue;
 }
 
@@ -338,7 +338,7 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
             break;        
     }
 
-    //
+    // Returning the converted pressure value...
     return convertedPressureValue;
 }
 
