@@ -2,7 +2,7 @@
 var axios = require('axios');
 
 // Definition of the 'temperatureConversionFunction' function to convert the 'temperatureValue' temperature value in a current 'currentTemperatureUnit' unit in the wished 'wishedTemperatureUnit' unit...
-function temperatureConversionFunction(temperatureValue, currentTemperatureUnit = "Kelvin", wishedTemperatureUnit = "Kelvin") {
+function temperatureConversionFunction(temperatureValue, wishedTemperatureUnit, currentTemperatureUnit = "Kelvin") {
 
     var convertedTemperatureValue;
 
@@ -176,13 +176,13 @@ function temperatureConversionFunction(temperatureValue, currentTemperatureUnit 
 }
 
 // Definition of the 'pressureConversionFunction' function to convert the 'pressureValue' pressure value in a current 'currentPressureUnit' unit in the wished 'wishedPressureUnit' unit...
-function pressureConversionFunction(pressureValue, currentPressureUnit = "Hectopascal", wishedPressureUnit = "Hectopascal") {
+function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPressureUnit = "Hectopascal") {
 
 
 }
 
 // Definition of the 'dateAndTimeFormatConversionFunction' function to convert the 'dateAndTime' dateAndTime value in a current 'currentDateAndTimeFormat' format in the wished 'wishedDateAndTimeFormat' format...
-function dateAndTimeFormatConversionFunction(dateAndTime, currentDateAndTimeFormat = "timestamp", wishedDateAndTimeFormat = "timestamp") {
+function dateAndTimeFormatConversionFunction(dateAndTime, wishedDateAndTimeFormat, currentDateAndTimeFormat = "timestamp") {
 
 
 }
