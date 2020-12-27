@@ -176,9 +176,40 @@ function temperatureConversionFunction(temperatureValue, wishedTemperatureUnit, 
 }
 
 // Definition of the 'pressureConversionFunction' function to convert the 'pressureValue' pressure value in a current 'currentPressureUnit' unit in the wished 'wishedPressureUnit' unit...
-function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPressureUnit = "Hectopascal") {
+function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPressureUnit = "HectoPascal") {
 
+    var convertedPressureValue;
 
+    // 'switch' instruction to treat all cases about 'currentPressureUnit' value...
+    switch(currentPressureUnit) {
+
+        // In the case where 'HectoPascal' is passed as 'currentPressureUnit' value...
+        case "HectoPascal": break;
+
+        // In the case where 'Pascal' is passed as 'currentPressureUnit' value...
+        case "Pascal": break;
+
+        // In the case where 'Bar' is passed as 'currentPressureUnit' value...
+        case "Bar": break;
+
+        // In the case where 'Atmosphere' is passed as 'currentPressureUnit' value...
+        case "Atmosphere": break;
+
+        // In the case where 'Torr' is passed as 'currentPressureUnit' value...
+        case "Torr": break;
+
+        // In the case where 'PoundsPerSquareInch' is passed as 'currentPressureUnit' value...
+        case "PoundsPerSquareInch": break;
+
+        // In the case where anything else is passed as 'currentPressureUnit' value...
+        default:
+
+            console.log("\x1b[31m" + "Unknown current pressure scale..." + "\x1b[0m");
+
+            convertedTemperatureValue = temperatureValue;
+
+            break;        
+    }
 }
 
 // Definition of the 'dateAndTimeFormatConversionFunction' function to convert the 'dateAndTime' dateAndTime value in a current 'currentDateAndTimeFormat' format in the wished 'wishedDateAndTimeFormat' format...
