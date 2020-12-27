@@ -191,19 +191,25 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
             switch(wishedPressureUnit) {
 
                 // In the case where 'HectoPascal' is passed as 'wishedTemperatureUnit' value...
+                case "HectoPascal": break;
 
                 // In the case where 'Pascal' is passed as 'wishedTemperatureUnit' value...
+                case "Pascal": break;
 
                 // In the case where 'Bar' is passed as 'wishedTemperatureUnit' value...
+                case "Bar": break;
 
                 // In the case where 'Atmosphere' is passed as 'wishedTemperatureUnit' value...
+                case "Atmosphere": break;
 
                 // In the case where 'Torr' is passed as 'wishedTemperatureUnit' value...
+                case "Torr": break;
 
                 // In the case where 'PoundsPerSquareInch' is passed as 'wishedTemperatureUnit' value...
+                case "PoundsPerSquareInch": break;
 
                 // In the case where anything else is passed as 'wishedPressureUnit' value...
-
+                default: break;
             }
 
             break;
@@ -215,19 +221,25 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
             switch(wishedPressureUnit) {
 
                 // In the case where 'HectoPascal' is passed as 'wishedTemperatureUnit' value...
+                case "HectoPascal": break;
 
                 // In the case where 'Pascal' is passed as 'wishedTemperatureUnit' value...
+                case "Pascal": break;
 
                 // In the case where 'Bar' is passed as 'wishedTemperatureUnit' value...
+                case "Bar": break;
 
                 // In the case where 'Atmosphere' is passed as 'wishedTemperatureUnit' value...
+                case "Atmosphere": break;
 
                 // In the case where 'Torr' is passed as 'wishedTemperatureUnit' value...
+                case "Torr": break;
 
                 // In the case where 'PoundsPerSquareInch' is passed as 'wishedTemperatureUnit' value...
+                case "PoundsPerSquareInch": break;
 
                 // In the case where anything else is passed as 'wishedPressureUnit' value...
-
+                default: break;
             }
 
             break;
@@ -239,19 +251,25 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
             switch(wishedPressureUnit) {
 
                 // In the case where 'HectoPascal' is passed as 'wishedTemperatureUnit' value...
+                case "HectoPascal": break;
 
                 // In the case where 'Pascal' is passed as 'wishedTemperatureUnit' value...
+                case "Pascal": break;
 
                 // In the case where 'Bar' is passed as 'wishedTemperatureUnit' value...
+                case "Bar": break;
 
                 // In the case where 'Atmosphere' is passed as 'wishedTemperatureUnit' value...
+                case "Atmosphere": break;
 
                 // In the case where 'Torr' is passed as 'wishedTemperatureUnit' value...
+                case "Torr": break;
 
                 // In the case where 'PoundsPerSquareInch' is passed as 'wishedTemperatureUnit' value...
+                case "PoundsPerSquareInch": break;
 
                 // In the case where anything else is passed as 'wishedPressureUnit' value...
-
+                default: break;
             }
 
             break;
@@ -263,19 +281,25 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
             switch(wishedPressureUnit) {
 
                 // In the case where 'HectoPascal' is passed as 'wishedTemperatureUnit' value...
+                case "HectoPascal": break;
 
                 // In the case where 'Pascal' is passed as 'wishedTemperatureUnit' value...
+                case "Pascal": break;
 
                 // In the case where 'Bar' is passed as 'wishedTemperatureUnit' value...
+                case "Bar": break;
 
                 // In the case where 'Atmosphere' is passed as 'wishedTemperatureUnit' value...
+                case "Atmosphere": break;
 
                 // In the case where 'Torr' is passed as 'wishedTemperatureUnit' value...
+                case "Torr": break;
 
                 // In the case where 'PoundsPerSquareInch' is passed as 'wishedTemperatureUnit' value...
+                case "PoundsPerSquareInch": break;
 
                 // In the case where anything else is passed as 'wishedPressureUnit' value...
-
+                default: break;
             }
 
             break;
@@ -287,19 +311,25 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
             switch(wishedPressureUnit) {
 
                 // In the case where 'HectoPascal' is passed as 'wishedTemperatureUnit' value...
+                case "HectoPascal": break;
 
                 // In the case where 'Pascal' is passed as 'wishedTemperatureUnit' value...
+                case "Pascal": break;
 
                 // In the case where 'Bar' is passed as 'wishedTemperatureUnit' value...
+                case "Bar": break;
 
                 // In the case where 'Atmosphere' is passed as 'wishedTemperatureUnit' value...
+                case "Atmosphere": break;
 
                 // In the case where 'Torr' is passed as 'wishedTemperatureUnit' value...
+                case "Torr": break;
 
                 // In the case where 'PoundsPerSquareInch' is passed as 'wishedTemperatureUnit' value...
+                case "PoundsPerSquareInch": break;
 
                 // In the case where anything else is passed as 'wishedPressureUnit' value...
-
+                default: break;
             }
 
             break;
@@ -311,19 +341,25 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
             switch(wishedPressureUnit) {
 
                 // In the case where 'HectoPascal' is passed as 'wishedTemperatureUnit' value...
+                case "HectoPascal": break;
 
                 // In the case where 'Pascal' is passed as 'wishedTemperatureUnit' value...
+                case "Pascal": break;
 
                 // In the case where 'Bar' is passed as 'wishedTemperatureUnit' value...
+                case "Bar": break;
 
                 // In the case where 'Atmosphere' is passed as 'wishedTemperatureUnit' value...
+                case "Atmosphere": break;
 
                 // In the case where 'Torr' is passed as 'wishedTemperatureUnit' value...
+                case "Torr": break;
 
                 // In the case where 'PoundsPerSquareInch' is passed as 'wishedTemperatureUnit' value...
+                case "PoundsPerSquareInch": break;
 
                 // In the case where anything else is passed as 'wishedPressureUnit' value...
-
+                default: break;
             }
 
             break;
