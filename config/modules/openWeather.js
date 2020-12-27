@@ -184,22 +184,46 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
     switch(currentPressureUnit) {
 
         // In the case where 'HectoPascal' is passed as 'currentPressureUnit' value...
-        case "HectoPascal": break;
+        case "HectoPascal":
+
+
+
+            break;
 
         // In the case where 'Pascal' is passed as 'currentPressureUnit' value...
-        case "Pascal": break;
+        case "Pascal":
+
+
+
+            break;
 
         // In the case where 'Bar' is passed as 'currentPressureUnit' value...
-        case "Bar": break;
+        case "Bar":
+
+
+
+            break;
 
         // In the case where 'Atmosphere' is passed as 'currentPressureUnit' value...
-        case "Atmosphere": break;
+        case "Atmosphere": 
+
+
+
+            break;
 
         // In the case where 'Torr' is passed as 'currentPressureUnit' value...
-        case "Torr": break;
+        case "Torr": 
+
+
+
+            break;
 
         // In the case where 'PoundsPerSquareInch' is passed as 'currentPressureUnit' value...
-        case "PoundsPerSquareInch": break;
+        case "PoundsPerSquareInch":
+
+            
+
+            break;
 
         // In the case where anything else is passed as 'currentPressureUnit' value...
         default:
