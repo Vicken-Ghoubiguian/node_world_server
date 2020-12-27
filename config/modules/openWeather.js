@@ -200,19 +200,39 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
                     break;
 
                 // In the case where 'Pascal' is passed as 'wishedTemperatureUnit' value...
-                case "Pascal": break;
+                case "Pascal": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in Pascal (Pa)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where 'Bar' is passed as 'wishedTemperatureUnit' value...
-                case "Bar": break;
+                case "Bar": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in Bar (bar)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where 'Atmosphere' is passed as 'wishedTemperatureUnit' value...
-                case "Atmosphere": break;
+                case "Atmosphere": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in Atmosphere (atm)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where 'Torr' is passed as 'wishedTemperatureUnit' value...
-                case "Torr": break;
+                case "Torr": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in Torr (torr)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where 'PoundsPerSquareInch' is passed as 'wishedTemperatureUnit' value...
-                case "PoundsPerSquareInch": break;
+                case "PoundsPerSquareInch": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in PoundsPerSquareInch (Psi)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where anything else is passed as 'wishedPressureUnit' value...
                 default: 
@@ -233,7 +253,11 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
             switch(wishedPressureUnit) {
 
                 // In the case where 'HectoPascal' is passed as 'wishedTemperatureUnit' value...
-                case "HectoPascal": break;
+                case "HectoPascal": 
+
+                    console.log("\x1b[31m" + "Temperature converted successfully in HectoPascal (hPa)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where 'Pascal' is passed as 'wishedTemperatureUnit' value...
                 case "Pascal": 
@@ -245,16 +269,32 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
                     break;
 
                 // In the case where 'Bar' is passed as 'wishedTemperatureUnit' value...
-                case "Bar": break;
+                case "Bar": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in Bar (bar)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where 'Atmosphere' is passed as 'wishedTemperatureUnit' value...
-                case "Atmosphere": break;
+                case "Atmosphere": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in Atmosphere (atm)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where 'Torr' is passed as 'wishedTemperatureUnit' value...
-                case "Torr": break;
+                case "Torr": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in Torr (torr)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where 'PoundsPerSquareInch' is passed as 'wishedTemperatureUnit' value...
-                case "PoundsPerSquareInch": break;
+                case "PoundsPerSquareInch": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in PoundsPerSquareInch (Psi)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where anything else is passed as 'wishedPressureUnit' value...
                 default: 
@@ -275,10 +315,18 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
             switch(wishedPressureUnit) {
 
                 // In the case where 'HectoPascal' is passed as 'wishedTemperatureUnit' value...
-                case "HectoPascal": break;
+                case "HectoPascal": 
+
+                    console.log("\x1b[31m" + "Temperature converted successfully in HectoPascal (hPa)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where 'Pascal' is passed as 'wishedTemperatureUnit' value...
-                case "Pascal": break;
+                case "Pascal": 
+
+                    console.log("\x1b[31m" + "Temperature converted successfully in Pascal (Pa)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where 'Bar' is passed as 'wishedTemperatureUnit' value...
                 case "Bar": 
@@ -290,13 +338,25 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
                     break;
 
                 // In the case where 'Atmosphere' is passed as 'wishedTemperatureUnit' value...
-                case "Atmosphere": break;
+                case "Atmosphere": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in Atmosphere (atm)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where 'Torr' is passed as 'wishedTemperatureUnit' value...
-                case "Torr": break;
+                case "Torr": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in Torr (torr)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where 'PoundsPerSquareInch' is passed as 'wishedTemperatureUnit' value...
-                case "PoundsPerSquareInch": break;
+                case "PoundsPerSquareInch": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in PoundsPerSquareInch (Psi)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where anything else is passed as 'wishedPressureUnit' value...
                 default: 
@@ -317,13 +377,25 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
             switch(wishedPressureUnit) {
 
                 // In the case where 'HectoPascal' is passed as 'wishedTemperatureUnit' value...
-                case "HectoPascal": break;
+                case "HectoPascal": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in HectoPascal (hPa)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where 'Pascal' is passed as 'wishedTemperatureUnit' value...
-                case "Pascal": break;
+                case "Pascal": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in Pascal (Pa)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where 'Bar' is passed as 'wishedTemperatureUnit' value...
-                case "Bar": break;
+                case "Bar": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in Bar (bar)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where 'Atmosphere' is passed as 'wishedTemperatureUnit' value...
                 case "Atmosphere": 
@@ -335,10 +407,18 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
                     break;
 
                 // In the case where 'Torr' is passed as 'wishedTemperatureUnit' value...
-                case "Torr": break;
+                case "Torr": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in Torr (torr)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where 'PoundsPerSquareInch' is passed as 'wishedTemperatureUnit' value...
-                case "PoundsPerSquareInch": break;
+                case "PoundsPerSquareInch": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in PoundsPerSquareInch (Psi)..." + "\x1b[0m");
+
+                    break;
 
                 // In the case where anything else is passed as 'wishedPressureUnit' value...
                 default: 
@@ -359,22 +439,30 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
             switch(wishedPressureUnit) {
 
                 // In the case where 'HectoPascal' is passed as 'wishedTemperatureUnit' value...
-                case "HectoPascal": 
+                case "HectoPascal":
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in HectoPascal (hPa)..." + "\x1b[0m");
 
                     break;
 
                 // In the case where 'Pascal' is passed as 'wishedTemperatureUnit' value...
                 case "Pascal": 
 
+                    console.log("\x1b[32m" + "Pressure converted successfully in Pascal (Pa)..." + "\x1b[0m");
+
                     break;
 
                 // In the case where 'Bar' is passed as 'wishedTemperatureUnit' value...
                 case "Bar": 
 
+                    console.log("\x1b[32m" + "Pressure converted successfully in Bar (bar)..." + "\x1b[0m");
+
                     break;
 
                 // In the case where 'Atmosphere' is passed as 'wishedTemperatureUnit' value...
                 case "Atmosphere": 
+
+                    console.log("\x1b[31m" + "Temperature converted successfully in Atmosphere (atm)..." + "\x1b[0m");
 
                     break;
 
@@ -389,6 +477,8 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
 
                 // In the case where 'PoundsPerSquareInch' is passed as 'wishedTemperatureUnit' value...
                 case "PoundsPerSquareInch": 
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in PoundsPerSquareInch (Psi)..." + "\x1b[0m");
 
                     break;
 
@@ -413,25 +503,35 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
                 // In the case where 'HectoPascal' is passed as 'wishedTemperatureUnit' value...
                 case "HectoPascal": 
 
+                    console.log("\x1b[32m" + "Pressure converted successfully in HectoPascal (hPa)..." + "\x1b[0m");
+
                     break;
 
                 // In the case where 'Pascal' is passed as 'wishedTemperatureUnit' value...
-                case "Pascal": 
+                case "Pascal":
+
+                    console.log("\x1b[32m" + "Pressure converted successfully in Pascal (Pa)..." + "\x1b[0m");
 
                     break;
 
                 // In the case where 'Bar' is passed as 'wishedTemperatureUnit' value...
-                case "Bar": 
+                case "Bar":
+
+                     console.log("\x1b[32m" + "Pressure converted successfully in Bar (bar)..." + "\x1b[0m");
 
                     break;
 
                 // In the case where 'Atmosphere' is passed as 'wishedTemperatureUnit' value...
-                case "Atmosphere": 
+                case "Atmosphere":
+
+                    console.log("\x1b[31m" + "Temperature converted successfully in Atmosphere (atm)..." + "\x1b[0m");
 
                     break;
 
                 // In the case where 'Torr' is passed as 'wishedTemperatureUnit' value...
-                case "Torr": 
+                case "Torr":
+
+                    console.log("\x1b[31m" + "Temperature converted successfully in Torr (torr)..." + "\x1b[0m");
 
                     break;
 
