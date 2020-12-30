@@ -205,6 +205,9 @@ app.get('/', function(req, res) {
   var countryCodeHashTable = new Object();
   var renderTimezonesArray = [];
 
+  // Definition of the array 'keysOfCountryCodeHashTable' which will contain all the keys used in the associative array 'countryCodeHashTable'...
+  var keysOfCountryCodeHashTable = [];
+
   // Configuration of all tables and hash tables...
   for(var i = 0; i < timezones.timezones.length; i++) {
 
@@ -215,18 +218,28 @@ app.get('/', function(req, res) {
       renderTimezonesArray.push(timezones.timezones[i]);
     }
 
-    // Configuration of 'countryCodeHashTable' hash table...
-    if(!countryCodeHashTable.hasOwnProperty(timezones.timezones[i].country_code)) {
+    // Fill in all the country codes entered in the JSON file of the timezones in the intermediate table 'keysOfCountryCodeHashTable'...
+    if(!keysOfCountryCodeHashTable.includes(timezones.timezones[i].country_code)) {
 
-      if(timezones.timezones[i].country_code === currentCountryCode) {
+      keysOfCountryCodeHashTable.push(timezones.timezones[i].country_code);
+    }
+  }
 
-          countryCodeHashTable[timezones.timezones[i].country_code] = 'selected';
+  // Sort all country codes alphabetically...
+  keysOfCountryCodeHashTable.sort();
 
-      } else {
+  // Browse of the array 'keysOfCountryCodeHashTable' containing the future keys of the future associative array 'countryCodeHashTable'...
+  for(var i = 0; i < keysOfCountryCodeHashTable.length; i++) {
 
-          countryCodeHashTable[timezones.timezones[i].country_code] = '';
-      }
-  	}
+    // Configuration of the 'selected' element...
+    if(keysOfCountryCodeHashTable[i] === currentCountryCode) {
+
+      countryCodeHashTable[keysOfCountryCodeHashTable[i]] = 'selected';
+
+    } else {
+
+       countryCodeHashTable[keysOfCountryCodeHashTable[i]] = '';
+    }
   }
 
   // Calling the 'getWeather' method from the 'openWeather' module 
