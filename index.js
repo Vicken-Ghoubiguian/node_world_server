@@ -274,26 +274,35 @@ app.post('/', function(req, res) {
   var countryCodeHashTable = new Object();
   var renderTimezonesArray = [];
 
-  /* Block of provisional solution... */
+  // Definition of the array 'keysOfCountryCodeHashTable' which will contain all the keys used in the associative array 'countryCodeHashTable'...
+  var keysOfCountryCodeHashTable = [];
+
+  // Configuration of 'negociator' and 'browserLanguages' variables...
   negotiator = new Negotiator(req);
   var browserLanguages = negotiator.languages();
+
+  // Configuration of 'currentLocale' variable...
   currentLocale = negotiator.language(browserLanguages);
   currentLocale = currentLocale.toLowerCase();
 
+  // Affectation of 'currentLocale' at the locale for timezones...
   timezones.moment.locale(currentLocale);
 
   var listOfAllLocales = listAllLocalesAsArray();
 
+  // Particular case of french language...
   if(currentLocale === "fr") {
 
     currentLocale = "fr-fr";
   }
 
+  // Particular case of 'currentLocale' value not in list of predefined locales...
   if(!listOfAllLocales.includes(currentLocale)){
   
     currentLocale = "en-us";
   }
 
+  // Updating the languages 'select' for the corresponding form...
   updateLanguageSelect();
 
   // If the submit form is the "choosen_country_code_form" one...
