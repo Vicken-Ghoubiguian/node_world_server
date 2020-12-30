@@ -167,37 +167,48 @@ app.get('/', function(req, res) {
   // Defining the current locale at the call the 'node_world_server' application in your browser ...
   if(currentLocale === null) {
 
+    // Configuration of 'negociator' and 'browserLanguages' variables...
   	negotiator = new Negotiator(req);
   	var browserLanguages = negotiator.languages();
+
+    // Configuration of 'currentLocale' variable...
   	currentLocale = negotiator.language(browserLanguages);
   	currentLocale = currentLocale.toLowerCase();
 
+    // Affectation of 'currentLocale' at the locale for timezones...
   	timezones.moment.locale(currentLocale);
   }
 
   setInterval(updateDateAndTime, 1000);
 
+  // Listing all locales and put all of them in the 'listOfAllLocales' array...
   var listOfAllLocales = listAllLocalesAsArray();
 
+  // Particular case of french language...
   if(currentLocale === "fr") {
 
 	   currentLocale = "fr-fr";
   }
 
+  // Particular case of 'currentLocale' value not in list of predefined locales...
   if(!listOfAllLocales.includes(currentLocale)){
 	
 	   currentLocale = "en-us";
   }
 
-  //
+  // Updating the languages 'select' for the corresponding form...
   updateLanguageSelect();
+
+  //
   res.setLocale(currentLocale);
 
-  //
+  // 
   updateDaTSelect(identificationIDParDaTFormat(currentDateAndTimeFormat));
 
-  //
+  // Defining the temperature unit symbol from the  'currentTemperatureUnit' variable...
   currentTemperatureUnitSymbol = getTemperatureUnitSymbol(currentTemperatureUnit);
+
+  // Updating the temperature unit 'select' for the corresponding form...
   updateTemperatureUnit(currentTemperatureUnit);
 
   // Defining a series of array and hash table for treatments in templates...
@@ -273,6 +284,7 @@ app.post('/', function(req, res) {
   var weatherReferencesHashTable = new Object();
   var countryCodeHashTable = new Object();
   var renderTimezonesArray = [];
+  var listOfAllLocales = [];
 
   // Definition of the array 'keysOfCountryCodeHashTable' which will contain all the keys used in the associative array 'countryCodeHashTable'...
   var keysOfCountryCodeHashTable = [];
@@ -288,7 +300,8 @@ app.post('/', function(req, res) {
   // Affectation of 'currentLocale' at the locale for timezones...
   timezones.moment.locale(currentLocale);
 
-  var listOfAllLocales = listAllLocalesAsArray();
+  // Listing all locales and put all of them in the 'listOfAllLocales' array...
+  listOfAllLocales = listAllLocalesAsArray();
 
   // Particular case of french language...
   if(currentLocale === "fr") {
