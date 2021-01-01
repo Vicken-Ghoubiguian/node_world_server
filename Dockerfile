@@ -31,5 +31,5 @@ RUN npm install
 #Expose the docker container listening port
 EXPOSE 80
 
-#Container instruction as entrypoint: 'npm start'
-ENTRYPOINT ["npm", "start"]
+#Container instruction as entrypoint: 'npm start -- --openWeatherAPIKey="api_owm_key" --fontAwesomeKit="fa_kit"'
+CMD npm start -- --openWeatherAPIKey="${api_owm_key}" --fontAwesomeKit="${fa_kit}"
