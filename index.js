@@ -23,7 +23,7 @@ var currentCountryCode = timezones.getCountryCodeFromTimezone(Intl.DateTimeForma
 var currentTemperatureUnit = "Kelvin";
 var currentTemperatureUnitSymbol = "";
 
-// 
+// Catching, treating and getting passed arguments to the 'passedArguments' constant...
 const passedArguments = require('minimist')(process.argv.slice(2));
 
 // Definition of all variables containing all values (openweathermap apio key and Font Awesome Kit) to work the web app...
