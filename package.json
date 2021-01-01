@@ -23,6 +23,7 @@
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "i18n": "^0.13.2",
+    "minimist": "^1.2.5",
     "moment-timezone": "^0.5.32",
     "negotiator": "^0.6.2",
     "nodemon": "^2.0.6",

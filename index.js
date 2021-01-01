@@ -23,9 +23,12 @@ var currentCountryCode = timezones.getCountryCodeFromTimezone(Intl.DateTimeForma
 var currentTemperatureUnit = "Kelvin";
 var currentTemperatureUnitSymbol = "";
 
-// Definition of 
-var openWeatherAPIKey = "5222a1c311ca31001b0877137d584c36";
-var fontAwesomeKit = "3d96bbc4fa";
+// 
+const passedArguments = require('minimist')(process.argv.slice(2));
+
+// Definition of all variables containing all values (openweathermap apio key and Font Awesome Kit) to work the web app...
+var openWeatherAPIKey = passedArguments['openWeatherAPIKey'];
+var fontAwesomeKit = passedArguments['fontAwesomeKit'];
 
 // Declaration of static files and favicon image...
 app.use(favicon("assets/images/favicon.png"));
