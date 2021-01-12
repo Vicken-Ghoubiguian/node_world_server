@@ -18,10 +18,14 @@ $ cd node_world_server
 # Installing all required NPM packages listed in the 'package.json'...
 $ npm install
 
-# Running the web app passing in parameter `openWeatherAPIKey` (corresponding to the openweather API key) and `fontAwesomeKit` (corresponding to the font awesome kit) both required to run it...
+# Running the web app passing in parameter `openWeatherAPIKey` (corresponding to the OpenWeather API key) and `fontAwesomeKit` (corresponding to the Font Awesome kit) both required to run it...
 $ npm start -- --openWeatherAPIKey="<your_openweather_API_key>" --fontAwesomeKit="<your_font_awesome_kit>"
 ```
 
 #### For more informations:
+
+* **How to get an OpenWeather API key ?**
+
+* **How to get a Font Awesome Kit ?**
 
 ### by Docker...
