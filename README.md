@@ -4,7 +4,7 @@
 
 ### by source code...
 
-````bash
+```bash
 $ git clone https://github.com/Vicken-Ghoubiguian/node_world_server     #
 
 $ cd node_world_server     #
