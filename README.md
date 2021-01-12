@@ -4,8 +4,8 @@
 
 ### by the source code...
 
-The source code of the `node_world_server` web app is available [here](https://github.com/Vicken-Ghoubiguian/node_world_server) on `GitHub`.
-You must install the latest versions of [Node.js](https://nodejs.org/en/) and [NPM](https://www.npmjs.com). For more information, go to the `Requirements and installation` section.
+The source code of the [`node_world_server`](https://github.com/Vicken-Ghoubiguian/node_world_server) web app is available on `GitHub`.
+You must install the latest versions of [`Node.js`](https://nodejs.org/en/) and [`NPM`](https://www.npmjs.com). For more information, go to the `Requirements and installation` section.
 To install and run the node_world_server web app, please run these following commands in order:
 
 ```bash
