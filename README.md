@@ -21,6 +21,10 @@ $ npm install
 # Running the web app passing in parameter `openWeatherAPIKey` (corresponding to the OpenWeather API key) and `fontAwesomeKit` (corresponding to the Font Awesome kit) both required to run it...
 $ npm start -- --openWeatherAPIKey="<your_openweather_API_key>" --fontAwesomeKit="<your_font_awesome_kit>"
 ```
+Congratulations, now the `node_world_server web` application is working.
+To access this application, type the following address in the bar of your browser: `http://localhost/`.
+
+It's now your turn to play. Now enjoy...
 
 #### For more informations:
 
@@ -51,7 +55,6 @@ For more informations, you can read the documentation still on the official webs
 ```bash
 
 ```
-
 ### from Docker Hub
 
 ```bash
