@@ -22,7 +22,7 @@ $ npm install
 $ npm start -- --openWeatherAPIKey="<your_openweather_API_key>" --fontAwesomeKit="<your_font_awesome_kit>"
 ```
 Congratulations, now the `node_world_server web` application is working.
-To access this application, type the following address in the bar of your browser: `http://localhost/`.
+To access this application, type the following address in the bar of your browser: [`http://localhost/`](http://localhost/).
 
 It's now your turn to play. Now enjoy...
 
