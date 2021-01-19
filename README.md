@@ -26,12 +26,17 @@ $ npm start -- --openWeatherAPIKey="<your_openweather_API_key>" --fontAwesomeKit
 
 * **How to get an OpenWeather API key ?**
 
+To have an OpenWeather Map API key, you must first create an account from the official website [just here](https://fontawesome.com).
+It is from this newly created account that you can generate and manage as many OpenWeather Map API keys as you want.
 
+If you don't have an account, you can create it while creating your free Font Awesome kit from [right here](https://home.openweathermap.org/users/sign_up).
+
+For more informations, you can read the documentation still on the official website.
 
 * **How to get a Font Awesome Kit ?**
 
 To have a Font Awesome kit, you must first create an account from the official website [just here](https://fontawesome.com).
-It's It is from this newly created account that you can generate and manage as many Font Awesome kits as you want.
+It is from this newly created account that you can generate and manage as many Font Awesome kits as you want.
 
 If you don't have an account, you can create it while creating your free Font Awesome kit from [right here](https://fontawesome.com/start).
 
