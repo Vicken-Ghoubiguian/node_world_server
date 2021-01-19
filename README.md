@@ -29,3 +29,17 @@ $ npm start -- --openWeatherAPIKey="<your_openweather_API_key>" --fontAwesomeKit
 * **How to get a Font Awesome Kit ?**
 
 ### by Docker...
+
+### requirements
+
+### from the Dockerfile
+
+```bash
+
+```
+
+### from Docker Hub
+
+```bash
+
+```
