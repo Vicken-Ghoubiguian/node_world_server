@@ -40,6 +40,16 @@
 	"Snow": "Snow",
 	"Mist": "Mist",
 
+	"Drizzle": "Drizzle",
+	"Light_intensity_drizzle": "Light intensity drizzle",
+	"Heavy_intensity_drizzle": "Heavy intensity drizzle",
+	"Light_intensity_drizzle_rain": "Light intensity drizzle rain",
+	"Drizzle_rain": "Drizzle rain",
+	"Shower_drizzle": "Shower drizzle",
+	"Heavy_intensity_drizzle_rain": "Heavy intensity drizzle rain",
+	"Shower_rain_and_drizzle": "Shower rain and drizzle",
+	"Heavy_shower_rain_and_drizzle": "Heavy shower rain and drizzle",
+
 	"Thunderstorm_with_light_rain": "Thunderstorm with light rain",
 	"Thunderstorm_with_rain": "Thunderstorm with rain",
 	"Thunderstorm_with_heavy_rain": "Thunderstorm with heavy rain",
