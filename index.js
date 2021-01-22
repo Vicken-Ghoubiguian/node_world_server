@@ -277,7 +277,7 @@ app.get('/', function(req, res) {
     }
 
     //
-    currentCountryFlagURL = "https://dynamospanish.com/wp-content/uploads/flags/images/France/1/small/France.png"
+    currentCountryFlagURL = "https://dynamospanish.com/wp-content/uploads/flags/images/" + currentCountry + "/1/small/" + currentCountry + ".png";
 
   	res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
     
@@ -422,7 +422,7 @@ app.post('/', function(req, res) {
     }
 
     //
-    currentCountryFlagURL = "https://dynamospanish.com/wp-content/uploads/flags/images/France/1/small/France.png"
+    currentCountryFlagURL = "https://dynamospanish.com/wp-content/uploads/flags/images/" + currentCountry + "/1/small/" + currentCountry + ".png";
 
     res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
 
