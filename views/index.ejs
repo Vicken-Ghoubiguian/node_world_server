@@ -20,7 +20,7 @@
 				<form id="choosen_language_form" method="post" action="/">
 					<input type="hidden" name="current_form" value="choosen_language_form">
 					<%= __('Language_choice')%> :
-					<select id="choosen_language" name="choosen_language">
+					<select class="select_menu" id="choosen_language" name="choosen_language">
 						<% for(var i = 0; i < selectionnableLanguages.length; i++){ %>
 							<option value="<%= selectionnableLanguages[i].value %>" <%= selectionnableLanguages[i].selected %>><%= __(selectionnableLanguages[i].text)%></option>
 						<% } %>
@@ -29,7 +29,7 @@
 				<form id="choosen_format_form" method="post" action="/">
 					<input type="hidden" name="current_form" value="choosen_format_form">
 					<%= __('Date_and_time_format_choice')%> :
-					<select id="choosen_date_and_time_format" name="choosen_date_and_time_format">
+					<select class="select_menu" id="choosen_date_and_time_format" name="choosen_date_and_time_format">
 						<% for(var i = 0; i < formats.length; i++){ %>
 							<option value="<%= formats[i].id %>" <%= formats[i].selected %>><%= formats[i].format %></option>
 						<% } %>
@@ -38,7 +38,7 @@
 				<form id="choosen_country_code_form" method="post" action="/">
 					<input type="hidden" name="current_form" value="choosen_country_code_form">
 					<%= __('countrycode_timezone_choice')%> :
-					<select id="choosen_country_code" name="choosen_country_code">
+					<select class="select_menu" id="choosen_country_code" name="choosen_country_code">
 						<% for(var countryCode in countryCodeHashTable){ %>
 							<option value="<%= countryCode %>" <%= countryCodeHashTable[countryCode] %>><%= countryCode %></option>
 						<% } %>
@@ -47,7 +47,7 @@
 				<form id="choosen_temperature_unit_form" method="post" action="/">
 					<input type="hidden" name="current_form" value="choosen_temperature_unit_form">
 					<%= __('temperature_unit_choice')%> :
-					<select id="choosen_temperature_unit" name="choosen_temperature_unit">
+					<select class="select_menu" id="choosen_temperature_unit" name="choosen_temperature_unit">
 						<% for(var i = 0; i < selectionnableTemperatureUnits.length; i++){ %>
 							<option value="<%= selectionnableTemperatureUnits[i].unit %>" <%= selectionnableTemperatureUnits[i].selected %>><%= selectionnableTemperatureUnits[i].unit %> (<%= selectionnableTemperatureUnits[i].symbol %>)</option>
 						<% } %>
@@ -181,7 +181,7 @@
   		<form id="second_choosen_language_form" method="post" action="/">
 					<input type="hidden" name="current_form" value="choosen_language_form">
 					<%= __('Language_choice')%> :
-					<select id="second_choosen_language" name="choosen_language">
+					<select class="select_menu" id="second_choosen_language" name="choosen_language">
 						<% for(var i = 0; i < selectionnableLanguages.length; i++){ %>
 							<option value="<%= selectionnableLanguages[i].value %>" <%= selectionnableLanguages[i].selected %>><%= __(selectionnableLanguages[i].text)%></option>
 						<% } %>

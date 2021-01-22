@@ -41,4 +41,7 @@ $( function() {
 		// The form 'choosen_temperature_unit_form' is then submitted with all of its datas...
 		$("#choosen_temperature_unit_form").submit();
 	});
+
+	//
+	$(".select_menu").selectmenu();
 });
