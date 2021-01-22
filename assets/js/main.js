@@ -43,5 +43,5 @@ $( function() {
 	});
 
 	// Application of jQuery UI to selectboxes...
-	$(".select_menu").selectmenu();
+	//$(".select_menu").selectmenu();
 });
