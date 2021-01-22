@@ -42,6 +42,6 @@ $( function() {
 		$("#choosen_temperature_unit_form").submit();
 	});
 
-	//
+	// Application of jQuery UI to selectboxes...
 	$(".select_menu").selectmenu();
 });
