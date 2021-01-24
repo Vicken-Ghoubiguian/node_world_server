@@ -90,8 +90,8 @@ var timezones = [
 	{timezone: "Europe/Monaco", country_code: "MC", weather_reference: "Monaco", moment: moment.tz("Europe/Monaco"), color: "#006400"},
 	{timezone: "Europe/Moscow", country_code: "RU", weather_reference: "Moscow", moment: moment.tz("Europe/Moscow"), color: "#006400"},
 	{timezone: "Europe/Nicosia", country_code: "CY", weather_reference: "Nicosia", moment: moment.tz("Europe/Nicosia"), color: "#006400"},
-	{timezone: "Europe/Oslo", country_code: "NO", weather_reference: "Oslo", moment: moment.tz("Europe/Oslo"), color: "#006400"},
-	{timezone: "Europe/Paris", country_code: "FR", weather_reference: "Paris", moment: moment.tz("Europe/Paris"), color: "#006400"},
+	{timezone: "Europe/Oslo", country: "Norway", country_code: "NO", weather_reference: "Oslo", moment: moment.tz("Europe/Oslo"), color: "#006400"},
+	{timezone: "Europe/Paris", country: "France", country_code: "FR", weather_reference: "Paris", moment: moment.tz("Europe/Paris"), color: "#006400"},
 	{timezone: "Europe/Podgorica", country_code: "ME", weather_reference: "Podgorica", moment: moment.tz("Europe/Podgorica"), color: "#006400"},
 	{timezone: "Europe/Prague", country_code: "CZ", weather_reference: "Prague", moment: moment.tz("Europe/Prague"), color: "#006400"},
 	{timezone: "Europe/Riga", country_code: "LV", weather_reference: "Riga", moment: moment.tz("Europe/Riga"), color: "#006400"},
@@ -182,9 +182,32 @@ function getCountryCodeFromTimezone(wishedTimezone) {
 	return wishedCountryCode;
 }
 
+// Definition of the 'getCountryFromTimezone' function to identify and return the country code of the 'wishedTimezone' timezone...
+function getCountryFromTimezone(wishedTimezone) {
+
+	// Definition of the 'wishedCountry' variable which will contain the found country...
+	var wishedCountry = "";
+
+	// Browse for each element contained in the 'timezones' array...
+	for(var i = 0; i < timezones.length; i++)
+	{
+		// If the current element of the 'timezones' array corresponds to the desired timezone...
+		if(timezones[i].timezone === wishedTimezone) {
+
+			// Affectation of the found country to the 'wishedCountry' variable...
+			wishedCountry = timezones[i].country;
+
+			// Leaving the loop...
+			break;
+	}
+
+	return wishedCountry;
+}
+
 // Export the 'timezones' array and the 'moment' object...
 module.exports = {
 	'timezones': timezones,
 	'getCountryCodeFromTimezone': getCountryCodeFromTimezone,
+	'getCountryFromTimezone': getCountryFromTimezone,
 	'moment': moment
 }
