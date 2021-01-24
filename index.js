@@ -20,9 +20,9 @@ var negotiator;
 var currentLocale = null;
 var currentDateAndTimeFormat = "MMMM Do YYYY, hh:mm:ss a";
 var currentCountryCode = timezones.getCountryCodeFromTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
+var currentCountry = timezones.getCountryFromTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
 var currentTemperatureUnit = "Kelvin";
 var currentTemperatureUnitSymbol = "";
-var currentCountry = "France";
 
 // Catching, treating and getting passed arguments to the 'passedArguments' constant...
 const passedArguments = require('minimist')(process.argv.slice(2));
