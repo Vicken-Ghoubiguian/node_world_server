@@ -182,9 +182,13 @@ function getCountryCodeFromTimezone(wishedTimezone) {
 	return wishedCountryCode;
 }
 
-function getCountryFromTimezone()
+// Definition of the 'getCountryFromTimezone' function to identify and return the country code of the 'wishedTimezone' timezone...
+function getCountryFromTimezone(wishedTimezone)
 {
-	return "France";
+	// Definition of the 'wishedCountry' variable which will contain the found country code...
+	var wishedCountry = "France";
+
+	return wishedCountry;
 }
 
 // Export the 'timezones' array and the 'moment' object...
