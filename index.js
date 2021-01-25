@@ -20,7 +20,6 @@ var negotiator;
 var currentLocale = null;
 var currentDateAndTimeFormat = "MMMM Do YYYY, hh:mm:ss a";
 var currentCountryCode = timezones.getCountryCodeFromTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
-var currentCountry = timezones.getCountryFromTimezone(currentCountryCode);
 var currentTemperatureUnit = "Kelvin";
 var currentTemperatureUnitSymbol = "";
 
@@ -277,7 +276,7 @@ app.get('/', function(req, res) {
     }
 
     // Configuration of the 'currentCountryFlagURL' to get and display current country's flag...
-    currentCountryFlagURL = "https://flagcdn.com/112x84/fr.png";
+    currentCountryFlagURL = "https://flagcdn.com/112x84/" + currentCountryCode.toLowerCase() + ".png";
 
   	res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
     
@@ -330,7 +329,7 @@ app.post('/', function(req, res) {
   {
     currentCountryCode = req.body.choosen_country_code;
 
-    currentCountry = timezones.getCountryFromTimezone(currentCountryCode);
+    //currentCountry = timezones.getCountryFromTimezone(currentCountryCode);
 
     res.setLocale(currentLocale);
 
@@ -424,7 +423,7 @@ app.post('/', function(req, res) {
     }
 
     // Configuration of the 'currentCountryFlagURL' to get and display current country's flag...
-    currentCountryFlagURL = "https://flagcdn.com/112x84/fr.png";
+    currentCountryFlagURL = "https://flagcdn.com/112x84/" + currentCountryCode.toLowerCase() + ".png";
 
     res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
 

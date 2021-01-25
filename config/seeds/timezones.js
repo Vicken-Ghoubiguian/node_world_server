@@ -182,33 +182,9 @@ function getCountryCodeFromTimezone(wishedTimezone) {
 	return wishedCountryCode;
 }
 
-// Definition of the 'getCountryFromTimezone' function to identify and return the country of the 'wishedCountryCode' country code...
-function getCountryFromTimezone(wishedCountryCode)
-{
-	// Definition of the 'wishedCountry' variable which will contain the found country code...
-	var wishedCountry = "";
-
-	// Browse for each element contained in the 'timezones' array...
-	for(var i = 0; i < timezones.length; i++)
-	{
-		// If the current element of the 'timezones' array corresponds to the desired timezone...
-		if(timezones[i].country_code === wishedCountryCode) {
-
-			// Affectation of the found country code to the 'wishedCountry' variable...
-			wishedCountry = timezones[i].country;
-
-			// Leaving the loop...
-			break;
-		}
-	}
-
-	return wishedCountry;
-}
-
 // Export the 'timezones' array and the 'moment' object...
 module.exports = {
 	'timezones': timezones,
 	'getCountryCodeFromTimezone': getCountryCodeFromTimezone,
-	'getCountryFromTimezone': getCountryFromTimezone,
 	'moment': moment
 }
