@@ -20,7 +20,7 @@ var negotiator;
 var currentLocale = null;
 var currentDateAndTimeFormat = "MMMM Do YYYY, hh:mm:ss a";
 var currentCountryCode = timezones.getCountryCodeFromTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
-var currentCountry = timezones.getCountryFromTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
+var currentCountry = timezones.getCountryFromTimezone(currentCountryCode);
 var currentTemperatureUnit = "Kelvin";
 var currentTemperatureUnitSymbol = "";
 

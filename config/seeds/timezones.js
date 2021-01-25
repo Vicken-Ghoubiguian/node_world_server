@@ -182,8 +182,8 @@ function getCountryCodeFromTimezone(wishedTimezone) {
 	return wishedCountryCode;
 }
 
-// Definition of the 'getCountryFromTimezone' function to identify and return the country code of the 'wishedTimezone' timezone...
-function getCountryFromTimezone(wishedTimezone)
+// Definition of the 'getCountryFromTimezone' function to identify and return the country of the 'wishedCountryCode' country code...
+function getCountryFromTimezone(wishedCountryCode)
 {
 	// Definition of the 'wishedCountry' variable which will contain the found country code...
 	var wishedCountry = "";
@@ -192,7 +192,7 @@ function getCountryFromTimezone(wishedTimezone)
 	for(var i = 0; i < timezones.length; i++)
 	{
 		// If the current element of the 'timezones' array corresponds to the desired timezone...
-		if(timezones[i].timezone === wishedTimezone) {
+		if(timezones[i].country_code === wishedCountryCode) {
 
 			// Affectation of the found country code to the 'wishedCountry' variable...
 			wishedCountry = timezones[i].country;
