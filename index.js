@@ -329,8 +329,6 @@ app.post('/', function(req, res) {
   {
     currentCountryCode = req.body.choosen_country_code;
 
-    //currentCountry = timezones.getCountryFromTimezone(currentCountryCode);
-
     res.setLocale(currentLocale);
 
   // If the submit form is the "choosen_language_form" one...
