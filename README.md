@@ -6,26 +6,30 @@
 
 2. [How is it structured ?](#how_to_use_it)
 
-3. [How to run this web app ?](#running_with_docker)
+3. [How to run this web app ?](#how_to_run_this_app)
 
-	* [by the source code...](#pull_image_from_dockerhub)
+	* [by the source code...](#by_source_code)
 
-	* [by Docker...](#build_image_from_dockerfile)
+		* [For more informations](#for_more_informations)
 
-		* [requirements]()
+	* [by Docker...](#by_docker)
 
-		* [from the Dockerfile]()
+		* [requirements](#requirements)
 
-		* [from Docker Hub]()
+		* [from the Dockerfile](#from_the_Dockerfile)
+
+		* [from Docker Hub](#from_Docker_Hub)
 
 5. [A few usefull links](#a_few_usefull_links)
 
-6. [What is used in this project ?]()
+6. [What is used in this project ?](#what_is_used_in_this_project)
 
 7. [Conclusion](#conclusion)
 
+<a name="how_to_run_this_app"/></a>
 ## How to run this web app ?
 
+<a name="by_source_code"/></a>
 ### by the source code...
 
 The source code of the [`node_world_server`](https://github.com/Vicken-Ghoubiguian/node_world_server) web app is available on `GitHub`.
@@ -50,7 +54,8 @@ To access this application, type the following address in the bar of your browse
 
 It's now your turn to play. Now enjoy...
 
-#### For more informations:
+<a name="for_more_informations"/></a>
+#### For more informations
 
 * **How to get an OpenWeather API key ?**
 
@@ -70,15 +75,19 @@ If you don't have an account, you can create it while creating your free Font Aw
 
 For more informations, you can read the documentation still on the official website.
 
+<a name="by_docker"></a>
 ### by Docker...
 
+<a name="requirements"/></a>
 ### requirements
 
+<a name="from_the_Dockerfile"/></a>
 ### from the Dockerfile
 
 ```bash
 
 ```
+<a name="from_Docker_Hub"/></a>
 ### from Docker Hub
 
 ```bash
