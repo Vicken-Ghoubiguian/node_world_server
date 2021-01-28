@@ -26,6 +26,12 @@
 
 7. [Conclusion](#conclusion)
 
+<a name="what_is_this_project"/></a>
+## What is this project ?
+
+<a name="how_to_use_it"/></a>
+### How is it structured  ?
+
 <a name="how_to_run_this_app"/></a>
 ## How to run this web app ?
 
@@ -93,3 +99,11 @@ For more informations, you can read the documentation still on the official webs
 ```bash
 
 ```
+<a name="a_few_usefull_links"/></a>
+### A few usefull links
+
+<a name="what_is_used_in_this_project"/></a>
+### What is used in this project ?
+
+<a name="conclusion"/></a>
+### Conclusion
