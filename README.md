@@ -91,7 +91,7 @@ For more informations, you can read the documentation still on the official webs
 ### from the Dockerfile
 
 ```bash
-docker build . -t node_world_server:latest --build-arg user_own_api_key="<wished_openWeatherMap_API_key>" --build-arg user_fa_kit="<wished_font_awesome_kit>" #
+docker build . -t node_world_server:latest --build-arg user_owm_api_key="<wished_openWeatherMap_API_key>" --build-arg user_fa_kit="<wished_font_awesome_kit>" #
 
 docker image history node_world_server:latest #
 
