@@ -59,9 +59,6 @@
 				<h1><%= __('Hello')%></h1>
 			</p>
 		</div>
-		<!--<div>
-			<img src="<%= currentCountryFlagURL %>">
-		</div>-->
 		<div id="timezones_displayer">
 			<% for(var i = 0; i < timezones.length; i++){ %>
 				<h3 style="color: <%= timezones[i].color %>"><%= timezones[i].timezone %> (<%= timezones[i].country_code %>): <%= timezones[i].moment.format(currentDateAndTimeFormat) %></h3>
@@ -82,9 +79,6 @@
 										</tbody>
 									</table>
 								</div>
-								<!-- <div style="float: left;">
-									<img src="<%= weatherResults[i].weather_icon %>" alt="weather illustration">
-								</div> -->
 								<div class="weather_tab" id="gm_tab" style="float: left; margin-left: 10px;">
 									<table>
 										<tbody>
