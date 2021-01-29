@@ -91,6 +91,8 @@ For more informations, you can read the documentation still on the official webs
 ### from the Dockerfile
 
 ```bash
+sudo docker build . -t node_world_server:latest --build-arg user_own_api_key="<wished_openWeatherMap_API_key>" --build-arg user_fa_kit="<wished_font_awesome_kit>" #
+
 
 ```
 <a name="from_Docker_Hub"/></a>
