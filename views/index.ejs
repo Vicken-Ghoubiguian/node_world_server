@@ -67,21 +67,26 @@
 						<% if(weatherResults[i].cod === 200) { %>
 
 							<div>
-								<div style="float: left;">
-									<table>
+								<!--<div style="float: left;">-->
+									<div style="float: left; width: 100px;">
+									<!--<table>
 										<tbody>
 											<td>
-												<tr>
-													<img src="<%= weatherResults[i].weather_icon %>" alt="weather illustration">
-												</tr>
+												<tr style="position: absolute; text-align: center;">-->
+													<div style="float: left; width: 100px;">
+														<img src="<%= weatherResults[i].weather_icon %>" alt="weather illustration">
+													</div>
+												<!--</tr>
 											</td>
 											<td>
-												<tr>
-													<img src="<%= currentCountryFlagURL %>" alt="location's flag">
-												</tr>
+												<tr style="position: absolute; text-align: center;">-->
+													<div style="float: left; width: 100px;">
+														<img src="<%= currentCountryFlagURL %>" alt="location's flag">
+													</div>
+												<!--</tr>
 											</td>
 										</tbody>
-									</table>
+									</table>-->
 								</div>
 								<div class="weather_tab" id="gm_tab" style="float: left; margin-left: 10px;">
 									<table>
