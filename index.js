@@ -357,6 +357,8 @@ app.post('/', function(req, res) {
     currentTemperatureUnitSymbol = getTemperatureUnitSymbol(currentTemperatureUnit);
 
     updateTemperatureUnit(currentTemperatureUnit);
+
+    res.setLocale(currentLocale);
   }
 
   // Configuration of all tables and hash tables...
