@@ -91,16 +91,16 @@ For more informations, you can read the documentation still on the official webs
 ### from the Dockerfile
 
 ```bash
-#
+# Creating the Go_world_server Docker image with all the values ​​for the defined parameters "user_owm_api_key" (corresponding to the user's OpenWeatherMap API key) and "user_fa_kit" (corresponding to the user's Font Awesome kit)...
 docker build . -t node_world_server:latest --build-arg user_owm_api_key="<wished_openWeatherMap_API_key>" --build-arg user_fa_kit="<wished_font_awesome_kit>"
 
-#
+# Seeing the list of all the executed instructions to create the node_world_server Docker image...
 docker image history node_world_server:latest
 
-#
+# Running the Docker container node_world_server from the Docker image of the same name...
 docker container run -d --name node_world_server -p 80:8080 node_world_server:latest
 
-#
+# Checking the IP address of the Docker container of the node_world_server application...
 docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' node_world_server
 ```
 <a name="from_Docker_Hub"/></a>
