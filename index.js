@@ -295,13 +295,18 @@ app.post('/', function(req, res) {
   // Definition of the array 'keysOfCountryCodeHashTable' which will contain all the keys used in the associative array 'countryCodeHashTable'...
   var keysOfCountryCodeHashTable = [];
 
-  // Configuration of 'negociator' and 'browserLanguages' variables...
-  negotiator = new Negotiator(req);
-  var browserLanguages = negotiator.languages();
+  // If (or in the case) the 'currentLocale' variable is null so...
+  if(currentLocale === null){
 
-  // Configuration of 'currentLocale' variable...
-  currentLocale = negotiator.language(browserLanguages);
-  currentLocale = currentLocale.toLowerCase();
+    // Configuration of 'negociator' and 'browserLanguages' variables...
+    negotiator = new Negotiator(req);
+    var browserLanguages = negotiator.languages();
+
+    // Configuration of 'currentLocale' variable...
+    currentLocale = negotiator.language(browserLanguages);
+    currentLocale = currentLocale.toLowerCase();
+
+  }
 
   // Affectation of 'currentLocale' at the locale for timezones...
   timezones.moment.locale(currentLocale);
