@@ -42,7 +42,7 @@
 					<%= __('countrycode_timezone_choice')%> :
 					<select class="select_menu" id="choosen_country_code" name="choosen_country_code">
 						<% for(var countryCode in countryCodeHashTable){ %>
-							<option value="<%= countryCode %>" <%= countryCodeHashTable[countryCode] %>><%= countryCode %></option>
+							<option value="<%= countryCode %>" <%= countryCodeHashTable[countryCode] %>><%= __(countryCode)%> (<%= countryCode %>)</option>
 						<% } %>
 					</select>
 				</form>
