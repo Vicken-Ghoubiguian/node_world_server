@@ -278,7 +278,7 @@ app.get('/', function(req, res) {
     // Configuration of the 'currentCountryFlagURL' to get and display current country's flag...
     currentCountryFlagURL = "https://flagcdn.com/h40/" + currentCountryCode.toLowerCase() + ".png";
 
-  	res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
+  	res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": true, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
     
   });
 });
@@ -430,7 +430,7 @@ app.post('/', function(req, res) {
     // Configuration of the 'currentCountryFlagURL' to get and display current country's flag...
     currentCountryFlagURL = "https://flagcdn.com/h40/" + currentCountryCode.toLowerCase() + ".png";
 
-    res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
+    res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": true, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
 
   });
 });

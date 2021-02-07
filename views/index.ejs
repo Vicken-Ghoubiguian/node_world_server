@@ -71,7 +71,13 @@
 										<img src="<%= weatherResults[i].weather_icon %>" alt="weather illustration">
 									</div>
 									<div style="text-align: center; width: 100px;">
-										<img src="<%= currentCountryFlagURL %>" alt="location's flag">
+
+										<% if(isAvailableFlag) { %>
+											<img src="<%= currentCountryFlagURL %>" alt="location's flag">
+										<% } else { %>
+											<p><%= __('Flag_not_available')%></p>
+										<% } %>
+
 									</div>
 								</div>
 								<div class="weather_tab" id="gm_tab" style="float: left; margin-left: 10px;">
