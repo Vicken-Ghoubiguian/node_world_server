@@ -167,6 +167,8 @@ app.use(i18n);
 // 
 app.get('/', function(req, res) {
 
+  console.log(Intl.DateTimeFormat().resolvedOptions().timeZone + " : " + currentCountryCode);
+
   // Defining the current locale at the call the 'node_world_server' application in your browser ...
   if(currentLocale === null) {
 
@@ -299,8 +301,6 @@ app.get('/', function(req, res) {
       currentCountryFlagURL = "https://flagcdn.com/h40/" + currentCountryCode.toLowerCase() + ".png";
     }
 
-    console.log("Value: " + isAvailableFlag);
-
   	res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": isAvailableFlag, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
     
   });
@@ -308,6 +308,8 @@ app.get('/', function(req, res) {
 
 // 
 app.post('/', function(req, res) {
+
+  console.log(Intl.DateTimeFormat().resolvedOptions().timeZone + " : " + currentCountryCode);
 
   // Defining a series of array and hash table for treatments in templates...
   var weatherReferencesHashTable = new Object();
@@ -473,8 +475,6 @@ app.post('/', function(req, res) {
       // Configuration of the 'currentCountryFlagURL' to get and display current country's flag...
       currentCountryFlagURL = "https://flagcdn.com/h40/" + currentCountryCode.toLowerCase() + ".png";
     }
-
-    console.log("Value: " + isAvailableFlag);
 
     res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": isAvailableFlag, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
 
