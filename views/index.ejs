@@ -72,7 +72,7 @@
 									</div>
 									<div style="text-align: center; width: 100px;">
 
-										<% if(isAvailableFlag) { %>
+										<% if(isAvailableFlag === true) { %>
 											<img src="<%= currentCountryFlagURL %>" alt="location's flag">
 										<% } else { %>
 											<p><%= __('Flag_not_available')%></p>
@@ -167,7 +167,13 @@
 											<img src="images/image.png" alt="weather illustration" width="60" height="60">
 										</div>
 										<div style="text-align: center; width: 100px;">
-											<img src="<%= currentCountryFlagURL %>" alt="location's flag">
+
+											<% if(isAvailableFlag === true) { %>
+												<img src="<%= currentCountryFlagURL %>" alt="location's flag">
+											<% } else { %>
+												<p><%= __('Flag_not_available')%></p>
+											<% } %>
+
 										</div>
 									</div>
 									<div style="float: left; margin-left: 10px;  margin-top: 20px;">
@@ -183,7 +189,13 @@
 											<img src="images/image.png" alt="weather illustration" width="60" height="60">
 										</div>
 										<div style="text-align: center; width: 100px;">
-											<img src="<%= currentCountryFlagURL %>" alt="location's flag">
+
+											<% if(isAvailableFlag === true) { %>
+												<img src="<%= currentCountryFlagURL %>" alt="location's flag">
+											<% } else { %>
+												<p><%= __('Flag_not_available')%></p>
+											<% } %>
+											
 										</div>
 									</div>
 									<div style="float: left; margin-left: 10px;  margin-top: 20px;">

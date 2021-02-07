@@ -275,10 +275,33 @@ app.get('/', function(req, res) {
       }
     }
 
-    // Configuration of the 'currentCountryFlagURL' to get and display current country's flag...
-    currentCountryFlagURL = "https://flagcdn.com/h40/" + currentCountryCode.toLowerCase() + ".png";
+    //
+    var isAvailableFlag = true;
 
-  	res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": true, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
+    //
+    var currentCountryFlagURL = "";
+
+    //
+    if(currentCountryCode === "NaNC") {
+
+      //
+      isAvailableFlag = false;
+
+      //
+      currentCountryFlagURL = "";
+
+    } else {
+
+      //
+      isAvailableFlag = true;
+
+      // Configuration of the 'currentCountryFlagURL' to get and display current country's flag...
+      currentCountryFlagURL = "https://flagcdn.com/h40/" + currentCountryCode.toLowerCase() + ".png";
+    }
+
+    console.log("Value: " + isAvailableFlag);
+
+  	res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": isAvailableFlag, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
     
   });
 });
@@ -427,10 +450,33 @@ app.post('/', function(req, res) {
       }
     }
 
-    // Configuration of the 'currentCountryFlagURL' to get and display current country's flag...
-    currentCountryFlagURL = "https://flagcdn.com/h40/" + currentCountryCode.toLowerCase() + ".png";
+    //
+    var isAvailableFlag = true;
 
-    res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": true, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
+    //
+    var currentCountryFlagURL = "";
+
+    //
+    if(currentCountryCode === "NaNC") {
+
+      //
+      isAvailableFlag = false;
+
+      //
+      currentCountryFlagURL = "";
+
+    } else {
+
+      //
+      isAvailableFlag = true;
+
+      // Configuration of the 'currentCountryFlagURL' to get and display current country's flag...
+      currentCountryFlagURL = "https://flagcdn.com/h40/" + currentCountryCode.toLowerCase() + ".png";
+    }
+
+    console.log("Value: " + isAvailableFlag);
+
+    res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": isAvailableFlag, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
 
   });
 });
