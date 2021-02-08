@@ -11,7 +11,7 @@ var timezones = [
 	//Africa timezones...
 	{timezone: "Africa/Abidjan", country_code: "CI", weather_reference: "Abidjan", moment: moment.tz("Africa/Abidjan"), color: "#ffdf00"},
 	{timezone: "Africa/Accra", country_code: "GH", weather_reference: "Accra", moment: moment.tz("Africa/Accra"), color: "#ffdf00"},
-	{timezone: "Africa/Addis_Ababa", country_code: "ET", weather_reference: "Addis_Ababa", moment: moment.tz("Africa/Addis_Ababa"), color: "#ffdf00"},
+	{timezone: "Africa/Addis_Ababa", country_code: "ET", weather_reference: "Addis Ababa", moment: moment.tz("Africa/Addis_Ababa"), color: "#ffdf00"},
 
 	//Antarctica timezones...
 	{timezone: "Antarctica/Casey", country_code: "AQ", weather_reference: "Casey", moment: moment.tz("Antarctica/Casey"), color: "#FFC0CB"},
@@ -124,13 +124,13 @@ var timezones = [
 	{timezone: "Pacific/Bougainville", country_code: "PG", weather_reference: "Bougainville", moment: moment.tz("Pacific/Bougainville"), color: "#4B0082"},
 	{timezone: "Pacific/Chatham", country_code: "NZ", weather_reference: "Waitangi", moment: moment.tz("Pacific/Chatham"), color: "#4B0082"},
 	{timezone: "Pacific/Chuuk", country_code: "FM", weather_reference: "Chuuk", moment: moment.tz("Pacific/Chuuk"), color: "#4B0082"},
-	{timezone: "Pacific/Easter", country_code: "CL", weather_reference: "Hanga-Roa", moment: moment.tz("Pacific/Easter"), color: "#4B0082"},
+	{timezone: "Pacific/Easter", country_code: "CL", weather_reference: "Hanga Roa", moment: moment.tz("Pacific/Easter"), color: "#4B0082"},
 	{timezone: "Pacific/Efate", country_code: "VU", weather_reference: "Port-Vila", moment: moment.tz("Pacific/Efate"), color: "#4B0082"},
 	{timezone: "Pacific/Enderbury", country_code: "KI", weather_reference: "Port-Vila", moment: moment.tz("Pacific/Enderbury"), color: "#4B0082"},
 	{timezone: "Pacific/Fakaofo", country_code: "TK", weather_reference: "Fakaofo", moment: moment.tz("Pacific/Fakaofo"), color: "#4B0082"},
 	{timezone: "Pacific/Fiji", country_code: "FJ", weather_reference: "Suva", moment: moment.tz("Pacific/Fiji"), color: "#4B0082"},
 	{timezone: "Pacific/Funafuti", country_code: "TV", weather_reference: "Funafuti", moment: moment.tz("Pacific/Funafuti"), color: "#4B0082"},
-	{timezone: "Pacific/Galapagos", country_code: "EC", weather_reference: "Galapagos", moment: moment.tz("Pacific/Galapagos"), color: "#4B0082"},
+	{timezone: "Pacific/Galapagos", country_code: "EC", weather_reference: "Puerto Baquerizo Moreno", moment: moment.tz("Pacific/Galapagos"), color: "#4B0082"},
 	{timezone: "Pacific/Gambier", country_code: "PF", weather_reference: "Rikitea", moment: moment.tz("Pacific/Gambier"), color: "#4B0082"},
 	{timezone: "Pacific/Guadalcanal", country_code: "SB", weather_reference: "Honiara", moment: moment.tz("Pacific/Guadalcanal"), color: "#4B0082"},
 	{timezone: "Pacific/Guam", country_code: "GU", weather_reference: "Hagåtña", moment: moment.tz("Pacific/Guam"), color: "#4B0082"},
