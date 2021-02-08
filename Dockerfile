@@ -7,7 +7,7 @@ LABEL maintainer="ericghoubiguian@live.fr"
 #Copy all the files and directories in the newly created directory node_world_server
 COPY . /node_world_server
 
-#Definition of the timezone Docker image
+#Definition of the timezone Docker image for the "Europe/Paris" one
 RUN ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime
 
 #Define the Dockerfile argument 'user_owm_api_key' to specify the user's owm api key
