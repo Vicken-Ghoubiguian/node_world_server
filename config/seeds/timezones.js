@@ -145,7 +145,7 @@ var timezones = [
 	{timezone: "Pacific/Niue", country_code: "NU", weather_reference: "Niue", moment: moment.tz("Pacific/Niue"), color: "#4B0082"},
 	{timezone: "Pacific/Norfolk", country_code: "NF", weather_reference: "Norfolk", moment: moment.tz("Pacific/Norfolk"), color: "#4B0082"},
 	{timezone: "Pacific/Noumea", country_code: "NC", weather_reference: "Noumea", moment: moment.tz("Pacific/Noumea"), color: "#4B0082"},
-	{timezone: "Pacific/Pago_Pago", country_code: "AS", weather_reference: "Pago-Pago", moment: moment.tz("Pacific/Pago_Pago"), color: "#4B0082"},
+	{timezone: "Pacific/Pago_Pago", country_code: "AS", weather_reference: "Pago Pago", moment: moment.tz("Pacific/Pago_Pago"), color: "#4B0082"},
 	{timezone: "Pacific/Palau", country_code: "PW", weather_reference: "Palau", moment: moment.tz("Pacific/Palau"), color: "#4B0082"},
 	{timezone: "Pacific/Pitcairn", country_code: "PN", weather_reference: "Pitcairn", moment: moment.tz("Pacific/Pitcairn"), color: "#4B0082"},
 	{timezone: "Pacific/Pohnpei", country_code: "FM", weather_reference: "Pohnpei", moment: moment.tz("Pacific/Pohnpei"), color: "#4B0082"},
