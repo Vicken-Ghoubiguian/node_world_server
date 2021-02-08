@@ -167,8 +167,6 @@ app.use(i18n);
 // 
 app.get('/', function(req, res) {
 
-  console.log(Intl.DateTimeFormat().resolvedOptions().timeZone + " : " + currentCountryCode);
-
   // Defining the current locale at the call the 'node_world_server' application in your browser ...
   if(currentLocale === null) {
 
@@ -308,8 +306,6 @@ app.get('/', function(req, res) {
 
 // 
 app.post('/', function(req, res) {
-
-  console.log(Intl.DateTimeFormat().resolvedOptions().timeZone + " : " + currentCountryCode);
 
   // Defining a series of array and hash table for treatments in templates...
   var weatherReferencesHashTable = new Object();
