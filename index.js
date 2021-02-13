@@ -11,6 +11,7 @@ var openWeather = require('./config/modules/openWeather');
 // Importation of seeds...
 var selectionnableLanguages = require('./config/seeds/selectionnableLanguages');
 var selectionnableTemperatureUnits = require('./config/seeds/temperatureUnits');
+var selectionnablePressureUnits = require('./config/seeds/pressureUnits');
 var formats = require('./config/seeds/formats');
 var timezones = require('./config/seeds/timezones');
 
@@ -22,6 +23,8 @@ var currentDateAndTimeFormat = "MMMM Do YYYY, hh:mm:ss a";
 var currentCountryCode = timezones.getCountryCodeFromTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
 var currentTemperatureUnit = "Kelvin";
 var currentTemperatureUnitSymbol = "";
+var currentPressureUnit = "hectoPascal";
+var currentPressureUnitSymbol = "hPa";
 
 // Catching, treating and getting passed arguments to the 'passedArguments' constant...
 const passedArguments = require('minimist')(process.argv.slice(2));
