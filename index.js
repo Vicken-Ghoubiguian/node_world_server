@@ -385,6 +385,11 @@ app.post('/', function(req, res) {
     updateTemperatureUnit(currentTemperatureUnit);
 
     res.setLocale(currentLocale);
+
+  // If the submit form is the "choosen_pressure_unit_form" one...
+  } else if(req.body.current_form === "choosen_pressure_unit_form") {
+
+    res.setLocale(currentLocale);
   }
 
   // Configuration of all tables and hash tables...
