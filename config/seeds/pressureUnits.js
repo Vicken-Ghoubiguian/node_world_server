@@ -1,12 +1,12 @@
 // Array containing all pressure units with relatives datas...
 var selectionnablePressureUnits = [
 
-        {unit: "hectoPascal", id: 0, symbol: "hPa", selected: ""},
-        {unit: "Pascal", id: 1, symbol: "Pa", selected: ""},
-        {unit: "Bar", id: 2, symbol: "Bar", selected: ""},
-        {unit: "Atmosphere", id: 3, symbol: "Atm", selected: ""},
-        {unit: "Torr", id: 4, symbol: "Torr", selected: ""},
-        {unit: "Pounds per square inch", id: 5, symbol: "Psi", selected: ""}
+        {id: 0, unit: "hectoPascal", symbol: "hPa", selected: ""},
+        {id: 1, unit: "Pascal", symbol: "Pa", selected: ""},
+        {id: 2, unit: "Bar", symbol: "Bar", selected: ""},
+        {id: 3, unit: "Atmosphere", symbol: "Atm", selected: ""},
+        {id: 4, unit: "Torr", symbol: "Torr", selected: ""},
+        {id: 5, unit: "Pounds per square inch", symbol: "Psi", selected: ""}
 ];
 
 // Export the 'selectionnablePressureUnits' array...
