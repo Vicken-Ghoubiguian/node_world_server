@@ -10,6 +10,13 @@
 	margin-left: 10px;
 }
 
+.main_image_displayer {
+
+	float: left;
+	text-align: center;
+	width: 100px;
+}
+
 .weather_image_displayer {
 
 	text-align: center;

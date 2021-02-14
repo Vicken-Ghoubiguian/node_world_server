@@ -76,7 +76,7 @@
 						<% if(weatherResults[i].cod === 200) { %>
 
 							<div>
-								<div style="float: left; text-align: center; width: 100px;">
+								<div class="main_image_displayer">
 									<div class="weather_image_displayer">
 										<img src="<%= weatherResults[i].weather_icon %>" alt="weather illustration">
 									</div>
@@ -172,7 +172,7 @@
 							<% if(weatherResults[i].message === "city not found"){ %>
 
 								<div>
-									<div style="float: left; text-align: center; width: 100px;">
+									<div class="main_image_displayer">
 										<div class="weather_image_displayer error_image_displayer">
 											<img src="images/image.png" alt="weather illustration" width="60" height="60">
 										</div>
@@ -194,7 +194,7 @@
 							<% } else if(weatherResults[i].message === "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info.") { %>
 
 								<div>
-									<div style="margin-bottom: 27px; float: left; text-align: center; width: 100px;">
+									<div class="error_image_displayer main_image_displayer">
 										<div class="weather_image_displayer error_image_displayer">
 											<img src="images/image.png" alt="weather illustration" width="60" height="60">
 										</div>
