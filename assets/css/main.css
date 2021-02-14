@@ -10,6 +10,17 @@
 	margin-left: 10px;
 }
 
+.weather_image_displayer {
+
+	text-align: center;
+	width: 100px;
+}
+
+.error_image_displayer {
+
+	margin-bottom: 27px;
+}
+
 .error_div {
 
 	float: left;
