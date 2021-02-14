@@ -3,6 +3,7 @@
 <head>
 	<title>Node world server</title>
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   	<script src="https://kit.fontawesome.com/<%= fontAwesomeKit %>.js" crossorigin="anonymous"></script>
@@ -56,7 +57,7 @@
 						<% } %>
 					</select>
 				</form>
-				<form id="choosen_pressure_unit_form" method="post" action="/" style="margin-top: 18px;">
+				<form id="choosen_pressure_unit_form" method="post" action="/">
 					<input type="hidden" name="current_form" value="choosen_pressure_unit_form">
 					<%= __('pressure_unit_choice')%> :
 					<select class="select_menu" id="choosen_pressure_unit" name="choosen_pressure_unit">
