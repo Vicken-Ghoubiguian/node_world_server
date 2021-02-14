@@ -60,7 +60,9 @@
 					<input type="hidden" name="current_form" value="choosen_pressure_unit_form">
 					<%= __('pressure_unit_choice')%> :
 					<select class="select_menu" id="choosen_pressure_unit" name="choosen_pressure_unit">
-
+						<% for(var i = 0; i < selectionnablePressureUnits.length; i++){ %>
+							<option value="<%= selectionnablePressureUnits[i].unit %>" <%= selectionnablePressureUnits[i].selected %>><%= selectionnablePressureUnits[i].unit %> (<%= selectionnablePressureUnits[i].symbol %>)</option>
+						<% } %>
 					</select>
 				</form>
 				<h1><%= __('Hello')%></h1>
