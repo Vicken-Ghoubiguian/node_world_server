@@ -41,4 +41,11 @@ $( function() {
 		// The form 'choosen_temperature_unit_form' is then submitted with all of its datas...
 		$("#choosen_temperature_unit_form").submit();
 	}});
+
+	// Triggering an action when an element of the 'choosen_pressure_unit' <select> is chosen...
+	$("#choosen_pressure_unit").selectmenu({ change: function(event, ui){
+
+		// The form 'choosen_pressure_unit_form' is then submitted with all of its datas...
+		//$("#choosen_pressure_unit_form").submit();
+	}});
 });
