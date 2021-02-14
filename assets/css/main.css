@@ -1,3 +1,23 @@
+#displaying_flag_div {
+
+	text-align: center;
+	width: 100px;
+}
+
+.weather_tab{
+
+	float: left;
+	margin-left: 10px;
+}
+
+.error_div {
+
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
 #choosen_pressure_unit_form {
+
 	margin-top: 18px;
 }

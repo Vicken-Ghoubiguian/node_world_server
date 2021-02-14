@@ -80,7 +80,7 @@
 									<div style="text-align: center; width: 100px;">
 										<img src="<%= weatherResults[i].weather_icon %>" alt="weather illustration">
 									</div>
-									<div style="text-align: center; width: 100px;">
+									<div id="displaying_flag_div">
 
 										<% if(isAvailableFlag === true) { %>
 											<img src="<%= currentCountryFlagURL %>" alt="location's flag">
@@ -90,7 +90,7 @@
 
 									</div>
 								</div>
-								<div class="weather_tab" id="gm_tab" style="float: left; margin-left: 10px;">
+								<div class="weather_tab" id="gm_tab">
 									<table>
 										<tbody>
 											<tr>
@@ -111,7 +111,7 @@
 									    </tbody>
 									</table>
 								</div>
-								<div class="weather_tab" id="tp_tab" style="float: left; margin-left: 10px;">
+								<div class="weather_tab" id="tp_tab">
 									<table>
 										<tbody>
 											<tr>
@@ -132,7 +132,7 @@
 									    </tbody>
 									</table>
 								</div>
-								<div class="weather_tab" id="ot_tab" style="float: left; margin-left: 10px;">
+								<div class="weather_tab" id="ot_tab">
 									<table>
 										<tbody>
 											<tr>
@@ -153,7 +153,7 @@
 									    </tbody>
 									</table>
 								</div>
-								<div class="weather_tab" id="uv_tab" style="float: left; margin-left: 10px;">
+								<div class="weather_tab" id="uv_tab">
 									<table>
 										<tbody>
 											<tr>
@@ -176,7 +176,7 @@
 										<div style="margin-bottom: 27px; text-align: center; width: 100px;">
 											<img src="images/image.png" alt="weather illustration" width="60" height="60">
 										</div>
-										<div style="text-align: center; width: 100px;">
+										<div id="displaying_flag_div">
 
 											<% if(isAvailableFlag === true) { %>
 												<img src="<%= currentCountryFlagURL %>" alt="location's flag">
@@ -186,7 +186,7 @@
 
 										</div>
 									</div>
-									<div style="float: left; margin-left: 10px;  margin-top: 20px;">
+									<div class="error_div">
 										<%= __('City_not_found')%>
 									</div>
 								</div>
@@ -198,7 +198,7 @@
 										<div style="text-align: center; width: 100px;">
 											<img src="images/image.png" alt="weather illustration" width="60" height="60">
 										</div>
-										<div style="text-align: center; width: 100px;">
+										<div id="displaying_flag_div">
 
 											<% if(isAvailableFlag === true) { %>
 												<img src="<%= currentCountryFlagURL %>" alt="location's flag">
@@ -208,7 +208,7 @@
 											
 										</div>
 									</div>
-									<div style="float: left; margin-left: 10px;  margin-top: 20px;">
+									<div class="error_div">
 										<%= __('Invalid_api_key')%>
 									</div>
 								</div>
