@@ -296,24 +296,25 @@ app.get('/', function(req, res) {
       }
     }
 
-    //
+    // Definition of the 'isAvailableFlag' variable with the 'true' default value...
     var isAvailableFlag = true;
 
-    //
+    // Definition of the 'currentCountryFlagURL' variable, an empty variable...
     var currentCountryFlagURL = "";
 
-    //
+    // In the case where the country code is "NaNC" (no identified country), so...
     if(currentCountryCode === "NaNC") {
 
-      //
+      // There is not available flag, the value of the 'isAvailableFlag' variable is set to 'false'...
       isAvailableFlag = false;
 
-      //
+      // Configuration of the 'currentCountryFlagURL' without any flag to display...
       currentCountryFlagURL = "";
 
+    // In the contrary case ("else")...
     } else {
 
-      //
+      // There is an available flag, the value of the 'isAvailableFlag' variable is set to 'true'...
       isAvailableFlag = true;
 
       // Configuration of the 'currentCountryFlagURL' to get and display current country's flag...
