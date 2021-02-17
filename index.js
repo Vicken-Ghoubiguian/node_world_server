@@ -157,6 +157,24 @@ function getTemperatureUnitSymbol(wishedTemperatureUnit) {
   return temperatureUnitSymbol;
 }
 
+// Function to identify the pressure unit symbol of the 'wishedPressureUnit' pressure unit passed in parameter...
+function getPressureUnitSymbol(wishedPressureUnit) {
+
+  var pressureUnitSymbol = "";
+
+  for(var i = 0; i < selectionnablePressureUnits.length; i++){
+
+    if(selectionnablePressureUnits[i].unit === wishedPressureUnit) {
+
+      pressureUnitSymbol = selectionnablePressureUnits[i].symbol;      
+
+      break;
+    }
+  }
+
+  return pressureUnitSymbol;
+}
+
 // 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
