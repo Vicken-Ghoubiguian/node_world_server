@@ -46,6 +46,6 @@ $( function() {
 	$("#choosen_pressure_unit").selectmenu({ change: function(event, ui){
 
 		// The form 'choosen_pressure_unit_form' is then submitted with all of its datas...
-		//$("#choosen_pressure_unit_form").submit();
+		$("#choosen_pressure_unit_form").submit();
 	}});
 });
