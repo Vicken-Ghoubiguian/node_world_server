@@ -22,6 +22,12 @@ This is a web application to display current time, date and weather around the w
 
 		* [from Docker Hub](#from_Docker_Hub)
 
+	* [with Balena...](#with_Balena)
+
+		* [What is Balena ?](#what_is_balena)
+
+		* [Deployment procedure](#deployment_procedure)
+
 5. [A few usefull links](#a_few_usefull_links)
 
 6. [What is used in this project ?](#what_is_used_in_this_project)
@@ -111,6 +117,15 @@ docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}
 ```bash
 
 ```
+<a name="with_Balena"/></a>
+### with Balena...
+
+<a name="what_is_balena"/></a>
+### What is Balena ?
+
+<a name="deployment_procedure"/></a>
+### Deployment procedure
+
 <a name="a_few_usefull_links"/></a>
 ### A few usefull links
 
