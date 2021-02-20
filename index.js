@@ -255,6 +255,9 @@ app.get('/', function(req, res) {
   // Updating the temperature unit 'select' for the corresponding form...
   updateTemperatureUnit(currentTemperatureUnit);
 
+  // Updating the pressure unit 'select' for the corresponding form...
+  updatePressureUnit(currentPressureUnit);
+
   // Defining the pressure unit symbol from the  'currentTemperatureUnit' variable...
   currentPressureUnitSymbol = getPressureUnitSymbol(currentPressureUnit);
 
