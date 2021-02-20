@@ -111,7 +111,21 @@ function updateTemperatureUnit(wishedCurrentTemperatureUnit) {
 // Function to update the "selected" field of the corresponding pressure unit's JSON depending on whether the current is selected or not...
 function updatePressureUnit(wishedCurrentPressureUnit) {
 
-  
+  for(var i = 0; i < selectionnablePressureUnits.length; i++){
+
+    if(selectionnablePressureUnits[i].selected === "selected"){
+
+      selectionnablePressureUnits[i].selected = "";
+    }
+  }
+
+  for(var i = 0; i < selectionnablePressureUnits.length; i++){
+
+    if(selectionnablePressureUnits[i].unit === wishedCurrentPressureUnit){
+
+      selectionnablePressureUnits[i].selected = "selected";
+    }
+  }
 }
 
 // Function to list all language locales ("value" field of each JSON) in a to-returned array...
