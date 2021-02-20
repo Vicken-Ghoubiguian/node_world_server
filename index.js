@@ -437,7 +437,10 @@ app.post('/', function(req, res) {
   // If the submit form is the "choosen_pressure_unit_form" one...
   } else if(req.body.current_form === "choosen_pressure_unit_form") {
 
+    //===>>
     currentPressureUnitSymbol = getPressureUnitSymbol(currentPressureUnit);
+
+    //===>> 
 
     res.setLocale(currentLocale);
   }
@@ -496,6 +499,9 @@ app.post('/', function(req, res) {
         results[i].main_feels_like = openWeather.temperatureConversionFunction(results[i].main_feels_like, currentTemperatureUnit);
         results[i].main_temp_min = openWeather.temperatureConversionFunction(results[i].main_temp_min, currentTemperatureUnit);
         results[i].main_temp_max = openWeather.temperatureConversionFunction(results[i].main_temp_max, currentTemperatureUnit);
+
+        //Treatment for the pressure...
+        //===>> 
 
         // Treatment of 'uv_risk' field for translation...
         results[i].uv_risk = results[i].uv_risk.charAt(0).toUpperCase() + results[i].uv_risk.slice(1);
