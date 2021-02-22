@@ -48,4 +48,10 @@ $( function() {
 		// The form 'choosen_pressure_unit_form' is then submitted with all of its datas...
 		$("#choosen_pressure_unit_form").submit();
 	}});
+
+	//
+	$("#choosen_time_format_form").selectmenu({ change: function(event, ui){
+
+		
+	}});
 });
