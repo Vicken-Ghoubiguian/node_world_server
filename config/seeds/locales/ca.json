@@ -3,6 +3,7 @@
 	"Language_choice": "Trieu l'idioma que vulgueu",
 	"temperature_unit_choice": "Trieu la unitat de temperatura que vulgueu",
 	"pressure_unit_choice": "Trieu la unitat de pressió que vulgueu",
+	"time_format_choice": "Trieu el format d’hora que voleu per a la visualització de l’hora de sortida i posta de sol",
 	"Date_and_time_format_choice": "Trieu el format que vulgueu per a la data i l'hora",
 	"countrycode_timezone_choice": "Si us plau, trieu el país que desitgeu",
 	"Ragnarok": "Aquí us espera el temps com Ragnarök...",
