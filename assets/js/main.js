@@ -50,7 +50,7 @@ $( function() {
 	}});
 
 	// Triggering an action when an element of the 'choosen_time_format_form' <select> is chosen...
-	$("#choosen_time_format_form").selectmenu({ change: function(event, ui){
+	$("#choosen_time_format").selectmenu({ change: function(event, ui){
 
 		
 	}});
