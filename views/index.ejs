@@ -66,11 +66,14 @@
 						<% } %>
 					</select>
 				</form>
+				<br>
 				<form id="choosen_time_format_form" method="post" action="/">
 					<input type="hidden" name="current_form" value="choosen_time_format_form">
 					<%= __('time_format_choice')%> :
 					<select class="select_menu" id="choosen_time_format" name="choosen_time_format">
-						<option value="the_only_choice">?????</option>
+						<% for(var i = 0; i < 10; i++){ %>
+							<option value="<%= i %>">?????</option>
+						<% } %>
 					</select>
 				</form>
 				<h1><%= __('Hello')%></h1>
