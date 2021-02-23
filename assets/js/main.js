@@ -49,7 +49,7 @@ $( function() {
 		$("#choosen_pressure_unit_form").submit();
 	}});
 
-	// Triggering an action when an element of the 'choosen_time_format_form' <select> is chosen...
+	// Triggering an action when an element of the 'choosen_time_format' <select> is chosen...
 	$("#choosen_time_format").selectmenu({ change: function(event, ui){
 
 		
