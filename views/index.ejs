@@ -18,7 +18,7 @@
   	<div id="timezones_view">
 		<div id="forms_displayer">
 			<p>
-				<form id="choosen_language_form" method="post" action="/">
+				<form id="choosen_language_form" class="node_world_server_form" method="post" action="/">
 					<input type="hidden" name="current_form" value="choosen_language_form">
 					<%= __('Language_choice')%> :
 					<select class="select_menu" id="choosen_language" name="choosen_language">
@@ -27,8 +27,7 @@
 						<% } %>
 					</select>
 				</form>
-				<br>
-				<form id="choosen_format_form" method="post" action="/">
+				<form id="choosen_format_form" class="node_world_server_form" method="post" action="/">
 					<input type="hidden" name="current_form" value="choosen_format_form">
 					<%= __('Date_and_time_format_choice')%> :
 					<select class="select_menu" id="choosen_date_and_time_format" name="choosen_date_and_time_format">
@@ -37,8 +36,7 @@
 						<% } %>
 					</select>
 				</form>
-				<br>
-				<form id="choosen_country_code_form" method="post" action="/">
+				<form id="choosen_country_code_form" class="node_world_server_form" method="post" action="/">
 					<input type="hidden" name="current_form" value="choosen_country_code_form">
 					<%= __('countrycode_timezone_choice')%> :
 					<select class="select_menu" id="choosen_country_code" name="choosen_country_code">
@@ -47,8 +45,7 @@
 						<% } %>
 					</select>
 				</form>
-				<br>
-				<form id="choosen_temperature_unit_form" method="post" action="/">
+				<form id="choosen_temperature_unit_form" class="node_world_server_form" method="post" action="/">
 					<input type="hidden" name="current_form" value="choosen_temperature_unit_form">
 					<%= __('temperature_unit_choice')%> :
 					<select class="select_menu" id="choosen_temperature_unit" name="choosen_temperature_unit">
@@ -57,7 +54,7 @@
 						<% } %>
 					</select>
 				</form>
-				<form id="choosen_pressure_unit_form" method="post" action="/">
+				<form id="choosen_pressure_unit_form" class="node_world_server_form" method="post" action="/">
 					<input type="hidden" name="current_form" value="choosen_pressure_unit_form">
 					<%= __('pressure_unit_choice')%> :
 					<select class="select_menu" id="choosen_pressure_unit" name="choosen_pressure_unit">
@@ -66,8 +63,7 @@
 						<% } %>
 					</select>
 				</form>
-				<br>
-				<form id="choosen_time_format_form" method="post" action="/">
+				<form id="choosen_time_format_form" class="node_world_server_form" method="post" action="/">
 					<input type="hidden" name="current_form" value="choosen_time_format_form">
 					<%= __('time_format_choice')%> :
 					<select class="select_menu" id="choosen_time_format" name="choosen_time_format">
