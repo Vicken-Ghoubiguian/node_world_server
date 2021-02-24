@@ -19,7 +19,7 @@ var timezones = require('./config/seeds/timezones');
 var app = express();
 var negotiator;
 var currentLocale = null;
-var currentDateAndTimeFormat = "MMMM Do YYYY, hh:mm:ss a";
+var currentDateAndTimeFormat = "X";
 var currentCountryCode = timezones.getCountryCodeFromTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
 var currentTemperatureUnit = "Kelvin";
 var currentTemperatureUnitSymbol = "";
