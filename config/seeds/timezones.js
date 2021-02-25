@@ -29,6 +29,15 @@ var timezones = [
 	//Arctic timezones...
 	{timezone: "Arctic/Longyearbyen", country_code: "SJ", weather_reference: "Longyearbyen", moment: moment.tz("Arctic/Longyearbyen"), color: "#FD6C9E"},
 
+	//Asia timezones...
+	{timezone: "Asia/Almaty", country_code: "KZ", weather_reference: "Almaty", moment: moment.tz("Asia/Almaty"), color: "#79F8F8"},
+	{timezone: "Asia/Amman", country_code: "JO", weather_reference: "Amman", moment: moment.tz("Asia/Amman"), color: "##79F8F8"},
+	{timezone: "Asia/Anadyr", country_code: "RU", weather_reference: "Anadyr", moment: moment.tz("Asia/Anadyr"), color: "##79F8F8"},
+	{timezone: "Asia/Aqtau", country_code: "KZ", weather_reference: "Aktau", moment: moment.tz("Asia/Aqtau"), color: "#79F8F8"},
+	{timezone: "Asia/Aqtobe", country_code: "KZ", weather_reference: "Aqtobe", moment: moment.tz("Asia/Aqtobe"), color: "#79F8F8"},
+	{timezone: "Asia/Ashgabat", country_code: "TM", weather_reference: "Ashgabat", moment: moment.tz("Asia/Ashgabat"), color: "#79F8F8"},
+	{timezone: "Asia/Atyrau", country_code: "KZ", weather_reference: "Atyrau", moment: moment.tz("Asia/Atyrau"), color: "#79F8F8"},
+
 	//Atlantic timezones...
 	{timezone: "Atlantic/Azores", country_code: "PT", weather_reference: "Azores", moment: moment.tz("Atlantic/Azores"), color: "#00FF00"},
 	{timezone: "Atlantic/Bermuda", country_code: "BM", weather_reference: "Bermuda", moment: moment.tz("Atlantic/Bermuda"), color: "#00FF00"},
