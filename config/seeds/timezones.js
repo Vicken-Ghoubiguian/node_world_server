@@ -127,6 +127,19 @@ var timezones = [
 	{timezone: "Europe/Zaporozhye", country_code: "UA", weather_reference: "Zaporozhye", moment: moment.tz("Europe/Zaporozhye"), color: "#006400"},
 	{timezone: "Europe/Zurich", country_code: "CH", weather_reference: "Zurich", moment: moment.tz("Europe/Zurich"), color: "#006400"},
 
+	//Indian timezones...
+	{timezone: "Indian/Antananarivo", country_code: "MG", weather_reference: "Antananarivo", moment: moment.tz("Indian/Antananarivo"), color: "#33FFA2"},
+	{timezone: "Indian/Chagos", country_code: "IO", weather_reference: "Camp Thunder Cove", moment: moment.tz("Indian/Chagos"), color: "#33FFA2"},
+	{timezone: "Indian/Christmas", country_code: "CX", weather_reference: "Flying Fish Cove", moment: moment.tz("Indian/Christmas"), color: "#33FFA2"},
+	{timezone: "Indian/Cocos", country_code: "CC", weather_reference: "West Island", moment: moment.tz("Indian/Cocos"), color: "#33FFA2"},
+	{timezone: "Indian/Comoro", country_code: "KM", weather_reference: "Moroni", moment: moment.tz("Indian/Comoro"), color: "#33FFA2"},
+	{timezone: "Indian/Kerguelen", country_code: "TF", weather_reference: "Kerguelen", moment: moment.tz("Indian/Kerguelen"), color: "#33FFA2"},
+	{timezone: "Indian/Mahe", country_code: "SC", weather_reference: "Victoria", moment: moment.tz("Indian/Mahe"), color: "#33FFA2"},
+	{timezone: "Indian/Maldives", country_code: "MV", weather_reference: "Male", moment: moment.tz("Indian/Maldives"), color: "#33FFA2"},
+	{timezone: "Indian/Mauritius", country_code: "MU", weather_reference: "Port Louis", moment: moment.tz("Indian/Mauritius"), color: "#33FFA2"},
+	{timezone: "Indian/Mayotte", country_code: "YT", weather_reference: "Mamoudzou", moment: moment.tz("Indian/Mayotte"), color: "#33FFA2"},
+	{timezone: "Indian/Reunion", country_code: "RE", weather_reference: "Saint-Denis", moment: moment.tz("Indian/Reunion"), color: "#33FFA2"},
+
 	//Pacific timezones...
 	{timezone: "Pacific/Apia", country_code: "WS", weather_reference: "Apia", moment: moment.tz("Pacific/Apia"), color: "#4B0082"},
 	{timezone: "Pacific/Auckland", country_code: "NZ", weather_reference: "Auckland", moment: moment.tz("Pacific/Auckland"), color: "#4B0082"},
