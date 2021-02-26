@@ -8,12 +8,12 @@ var timezones = [
 	{timezone: "Etc/UTC", country_code: "NaNC", weather_reference: "UTC", moment: moment.tz("Etc/UTC"), color: "#1c4966"},
 	{timezone: "Etc/GMT", country_code: "NaNC", weather_reference: "GMT", moment: moment.tz("Etc/GMT"), color: "#1c4966"},
 
-	//Africa timezones...
+	//African timezones...
 	{timezone: "Africa/Abidjan", country_code: "CI", weather_reference: "Abidjan", moment: moment.tz("Africa/Abidjan"), color: "#ffdf00"},
 	{timezone: "Africa/Accra", country_code: "GH", weather_reference: "Accra", moment: moment.tz("Africa/Accra"), color: "#ffdf00"},
 	{timezone: "Africa/Addis_Ababa", country_code: "ET", weather_reference: "Addis Ababa", moment: moment.tz("Africa/Addis_Ababa"), color: "#ffdf00"},
 
-	//Antarctica timezones...
+	//Antarctican timezones...
 	{timezone: "Antarctica/Casey", country_code: "AQ", weather_reference: "Casey", moment: moment.tz("Antarctica/Casey"), color: "#FFC0CB"},
 	{timezone: "Antarctica/Davis", country_code: "AQ", weather_reference: "Davis", moment: moment.tz("Antarctica/Davis"), color: "#FFC0CB"},
 	{timezone: "Antarctica/DumontDUrville", country_code: "AQ", weather_reference: "DumontDUrville", moment: moment.tz("Antarctica/DumontDUrville"), color: "#FFC0CB"},
@@ -26,10 +26,10 @@ var timezones = [
 	{timezone: "Antarctica/Troll", country_code: "AQ", weather_reference: "Troll", moment: moment.tz("Antarctica/Troll"), color: "#FFC0CB"},
 	{timezone: "Antarctica/Vostok", country_code: "AQ", weather_reference: "Vostok", moment: moment.tz("Antarctica/Vostok"), color: "#FFC0CB"},
 
-	//Arctic timezones...
+	//Arctic ocean's timezones...
 	{timezone: "Arctic/Longyearbyen", country_code: "SJ", weather_reference: "Longyearbyen", moment: moment.tz("Arctic/Longyearbyen"), color: "#FD6C9E"},
 
-	//Asia timezones...
+	//Asian timezones...
 	{timezone: "Asia/Almaty", country_code: "KZ", weather_reference: "Almaty", moment: moment.tz("Asia/Almaty"), color: "#79F8F8"},
 	{timezone: "Asia/Amman", country_code: "JO", weather_reference: "Amman", moment: moment.tz("Asia/Amman"), color: "##79F8F8"},
 	{timezone: "Asia/Anadyr", country_code: "RU", weather_reference: "Anadyr", moment: moment.tz("Asia/Anadyr"), color: "##79F8F8"},
@@ -38,7 +38,7 @@ var timezones = [
 	{timezone: "Asia/Ashgabat", country_code: "TM", weather_reference: "Ashgabat", moment: moment.tz("Asia/Ashgabat"), color: "#79F8F8"},
 	{timezone: "Asia/Atyrau", country_code: "KZ", weather_reference: "Atyrau", moment: moment.tz("Asia/Atyrau"), color: "#79F8F8"},
 
-	//Atlantic timezones...
+	//Atlantic ocean's timezones...
 	{timezone: "Atlantic/Azores", country_code: "PT", weather_reference: "Azores", moment: moment.tz("Atlantic/Azores"), color: "#00FF00"},
 	{timezone: "Atlantic/Bermuda", country_code: "BM", weather_reference: "Bermuda", moment: moment.tz("Atlantic/Bermuda"), color: "#00FF00"},
 	{timezone: "Atlantic/Canary", country_code: "ES", weather_reference: "Canary", moment: moment.tz("Atlantic/Canary"), color: "#00FF00"},
@@ -50,7 +50,7 @@ var timezones = [
 	{timezone: "Atlantic/St_Helena", country_code: "SH", weather_reference: "Jamestown", moment: moment.tz("Atlantic/St_Helena"), color: "#00FF00"},
 	{timezone: "Atlantic/Stanley", country_code: "FK", weather_reference: "Stanley", moment: moment.tz("Atlantic/Stanley"), color: "#00FF00"},
 
-	//Australia timezones...
+	//Australian timezones...
 	{timezone: "Australia/Adelaide", country_code: "AU", weather_reference: "Adelaide", moment: moment.tz("Australia/Adelaide"), color: "#0091AD"},
 	{timezone: "Australia/Brisbane", country_code: "AU", weather_reference: "Brisbane", moment: moment.tz("Australia/Brisbane"), color: "#0091AD"},
 	{timezone: "Australia/Broken_Hill", country_code: "AU", weather_reference: "Broken_Hill", moment: moment.tz("Australia/Broken_Hill"), color: "#0091AD"},
@@ -64,7 +64,7 @@ var timezones = [
 	{timezone: "Australia/Perth", country_code: "AU", weather_reference: "Perth", moment: moment.tz("Australia/Perth"), color: "#0091AD"},
 	{timezone: "Australia/Sydney", country_code: "AU", weather_reference: "Sydney", moment: moment.tz("Australia/Sydney"), color: "#0091AD"},
 
-	//Europe timezones...
+	//European timezones...
 	{timezone: "Europe/Amsterdam", country_code: "NL", weather_reference: "Amsterdam", moment: moment.tz("Europe/Amsterdam"), color: "#006400"},
 	{timezone: "Europe/Andorra", country_code: "AD", weather_reference: "Andorra", moment: moment.tz("Europe/Andorra"), color: "#006400"},
 	{timezone: "Europe/Astrakhan", country_code: "RU", weather_reference: "Astrakhan", moment: moment.tz("Europe/Astrakhan"), color: "#006400"},
@@ -127,7 +127,7 @@ var timezones = [
 	{timezone: "Europe/Zaporozhye", country_code: "UA", weather_reference: "Zaporozhye", moment: moment.tz("Europe/Zaporozhye"), color: "#006400"},
 	{timezone: "Europe/Zurich", country_code: "CH", weather_reference: "Zurich", moment: moment.tz("Europe/Zurich"), color: "#006400"},
 
-	//Indian timezones...
+	//Indian ocean's timezones...
 	{timezone: "Indian/Antananarivo", country_code: "MG", weather_reference: "Antananarivo", moment: moment.tz("Indian/Antananarivo"), color: "#33FFA2"},
 	{timezone: "Indian/Chagos", country_code: "IO", weather_reference: "Camp Thunder Cove", moment: moment.tz("Indian/Chagos"), color: "#33FFA2"},
 	{timezone: "Indian/Christmas", country_code: "CX", weather_reference: "Flying Fish Cove", moment: moment.tz("Indian/Christmas"), color: "#33FFA2"},
@@ -140,7 +140,7 @@ var timezones = [
 	{timezone: "Indian/Mayotte", country_code: "YT", weather_reference: "Mamoudzou", moment: moment.tz("Indian/Mayotte"), color: "#33FFA2"},
 	{timezone: "Indian/Reunion", country_code: "RE", weather_reference: "Saint-Denis", moment: moment.tz("Indian/Reunion"), color: "#33FFA2"},
 
-	//Pacific timezones...
+	//Pacific ocean's timezones...
 	{timezone: "Pacific/Apia", country_code: "WS", weather_reference: "Apia", moment: moment.tz("Pacific/Apia"), color: "#4B0082"},
 	{timezone: "Pacific/Auckland", country_code: "NZ", weather_reference: "Auckland", moment: moment.tz("Pacific/Auckland"), color: "#4B0082"},
 	{timezone: "Pacific/Bougainville", country_code: "PG", weather_reference: "Bougainville", moment: moment.tz("Pacific/Bougainville"), color: "#4B0082"},
