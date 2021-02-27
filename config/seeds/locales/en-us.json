@@ -1,4 +1,9 @@
 {
+	"French": "French",
+	"English": "English",
+	"Spanish": "Spanish",
+	"Catalan": "Catalan",
+	
 	"Language_choice": "Please, choose the language you want",
 	"Date_and_time_format_choice": "Please, choose the format you want for the date and time",
 	"temperature_unit_choice": "Please, choose the temperature unit you want",
@@ -214,10 +219,5 @@
 	"TO": "Tonga",
 	"UM": "United States Minor Outlying Islands",
 	"WF": "Wallis and Futuna",
-	"YT": "Mayotte",
-
-	"French": "French",
-	"English": "English",
-	"Spanish": "Spanish",
-	"Catalan": "Catalan"
+	"YT": "Mayotte"
 }

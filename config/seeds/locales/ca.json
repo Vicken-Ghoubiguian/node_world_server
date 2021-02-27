@@ -1,4 +1,9 @@
 {
+	"French": "Francès",
+	"English": "Anglès",
+	"Spanish": "Espanyol",
+	"Catalan": "Català",
+	
 	"Language_choice": "Si us plau, trieu l'idioma que vulgueu",
 	"temperature_unit_choice": "Si us plau, trieu la unitat de temperatura que vulgueu",
 	"pressure_unit_choice": "Si us plau, trieu la unitat de pressió que vulgueu",
@@ -214,10 +219,5 @@
 	"TO": "Tonga",
 	"UM": "Illes Perifèriques Menors dels EUA",
 	"WF": "Wallis i Futuna",
-	"YT": "Mayotte",
-
-	"French": "Francès",
-	"English": "Anglès",
-	"Spanish": "Espanyol",
-	"Catalan": "Català"
+	"YT": "Mayotte"
 }

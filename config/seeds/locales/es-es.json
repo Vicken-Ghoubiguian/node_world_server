@@ -1,4 +1,9 @@
 {
+	"French": "Francés",
+	"English": "Inglés",
+	"Spanish": "Español",
+	"Catalan": "Catalán",
+	
 	"Language_choice": "Por favor, elija el idioma que desee",
 	"Date_and_time_format_choice": "Por favor, elija el formato que desee para la fecha y la hora",
 	"temperature_unit_choice": "Por favor, elija la unidad de temperatura que desee",
@@ -214,10 +219,5 @@
 	"TO": "Tonga",
 	"UM": "Islas Ultramarinas Menores de los Estados Unidos",
 	"WF": "Wallis y Futuna",
-	"YT": "Mayotte",
-
-	"French": "Francés",
-	"English": "Inglés",
-	"Spanish": "Español",
-	"Catalan": "Catalán"
+	"YT": "Mayotte"
 }
