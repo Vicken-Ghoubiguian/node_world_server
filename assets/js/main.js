@@ -54,4 +54,7 @@ $( function() {
 
 		
 	}});
+
+	// Define the tooltip's effects...
+	$('[data-toggle="tooltip"]').tooltip();
 });
