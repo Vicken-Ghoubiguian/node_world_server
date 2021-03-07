@@ -3,6 +3,11 @@ body {
 	font-size: 0.9em;
 }
 
+.ui-widget {
+
+	font-family: Sofia;
+}
+
 #displaying_flag_div {
 
 	text-align: center;
