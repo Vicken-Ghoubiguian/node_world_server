@@ -25,6 +25,7 @@ var currentTemperatureUnit = "Kelvin";
 var currentTemperatureUnitSymbol = "";
 var currentPressureUnit = "hectoPascal";
 var currentPressureUnitSymbol = "hPa";
+var currentFontFamily = "https://fonts.googleapis.com/css?family=Sofia";
 
 // Catching, treating and getting passed arguments to the 'passedArguments' constant...
 const passedArguments = require('minimist')(process.argv.slice(2));
@@ -347,7 +348,7 @@ app.get('/', function(req, res) {
       currentCountryFlagURL = "https://flagcdn.com/h40/" + currentCountryCode.toLowerCase() + ".png";
     }
 
-  	res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": isAvailableFlag, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "currentPressureUnitSymbol": currentPressureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "selectionnablePressureUnits": selectionnablePressureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
+  	res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": isAvailableFlag, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "currentPressureUnitSymbol": currentPressureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "selectionnablePressureUnits": selectionnablePressureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results, "currentFontFamily": currentFontFamily});
     
   });
 });
@@ -534,7 +535,7 @@ app.post('/', function(req, res) {
       currentCountryFlagURL = "https://flagcdn.com/h40/" + currentCountryCode.toLowerCase() + ".png";
     }
 
-    res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": isAvailableFlag, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "currentPressureUnitSymbol": currentPressureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "selectionnablePressureUnits": selectionnablePressureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results});
+    res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": isAvailableFlag, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "currentPressureUnitSymbol": currentPressureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "selectionnablePressureUnits": selectionnablePressureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results, "currentFontFamily": currentFontFamily});
 
   });
 });
