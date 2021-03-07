@@ -14,6 +14,7 @@ var selectionnableTemperatureUnits = require('./config/seeds/temperatureUnits');
 var selectionnablePressureUnits = require('./config/seeds/pressureUnits');
 var formats = require('./config/seeds/formats');
 var timezones = require('./config/seeds/timezones');
+var fontFamilies = require('./config/seeds/fontFamilies');
 
 // Declaration of all required variables for the 'node_world_server' app with their default values...
 var app = express();
