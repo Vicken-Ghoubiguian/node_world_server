@@ -3,7 +3,7 @@
 <head>
 	<title>Node world server</title>
 	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -19,55 +19,55 @@
   	<div id="timezones_view">
 		<div id="forms_displayer">
 			<p>
-				<form id="choosen_language_form" class="first_node_world_server_form" method="post" action="/">
+				<form id="choosen_language_form" class="first_node_world_server_form" method="post" action="/" data-toggle="tooltip" data-placement="top">
 					<input type="hidden" name="current_form" value="choosen_language_form">
 					<%= __('Language_choice')%> :
-					<select class="select_menu" id="choosen_language" name="choosen_language" data-toggle="tooltip" data-placement="top" title="===">
+					<select class="select_menu" id="choosen_language" name="choosen_language" title="===">
 						<% for(var i = 0; i < selectionnableLanguages.length; i++){ %>
 							<option value="<%= selectionnableLanguages[i].value %>" <%= selectionnableLanguages[i].selected %>><%= __(selectionnableLanguages[i].text)%></option>
 						<% } %>
 					</select>
 				</form>
-				<form id="choosen_format_form" class="node_world_server_form" method="post" action="/">
+				<form id="choosen_format_form" class="node_world_server_form" method="post" action="/" data-toggle="tooltip" data-placement="top">
 					<input type="hidden" name="current_form" value="choosen_format_form">
 					<%= __('Date_and_time_format_choice')%> :
-					<select class="select_menu" id="choosen_date_and_time_format" name="choosen_date_and_time_format" data-toggle="tooltip" data-placement="top" title="===">
+					<select class="select_menu" id="choosen_date_and_time_format" name="choosen_date_and_time_format" title="===">
 						<% for(var i = 0; i < formats.length; i++){ %>
 							<option value="<%= formats[i].id %>" <%= formats[i].selected %>><%= formats[i].name_format %></option>
 						<% } %>
 					</select>
 				</form>
-				<form id="choosen_country_code_form" class="node_world_server_form" method="post" action="/">
+				<form id="choosen_country_code_form" class="node_world_server_form" method="post" action="/" data-toggle="tooltip" data-placement="top">
 					<input type="hidden" name="current_form" value="choosen_country_code_form">
 					<%= __('countrycode_timezone_choice')%> :
-					<select class="select_menu" id="choosen_country_code" name="choosen_country_code" data-toggle="tooltip" data-placement="top" title="===">
+					<select class="select_menu" id="choosen_country_code" name="choosen_country_code" title="===">
 						<% for(var countryCode in countryCodeHashTable){ %>
 							<option value="<%= countryCode %>" <%= countryCodeHashTable[countryCode] %>><%= __(countryCode)%> (<%= countryCode %>)</option>
 						<% } %>
 					</select>
 				</form>
-				<form id="choosen_temperature_unit_form" class="node_world_server_form" method="post" action="/">
+				<form id="choosen_temperature_unit_form" class="node_world_server_form" method="post" action="/" data-toggle="tooltip" data-placement="top">
 					<input type="hidden" name="current_form" value="choosen_temperature_unit_form">
 					<%= __('temperature_unit_choice')%> :
-					<select class="select_menu" id="choosen_temperature_unit" name="choosen_temperature_unit" data-toggle="tooltip" data-placement="top" title="===">
+					<select class="select_menu" id="choosen_temperature_unit" name="choosen_temperature_unit" title="===">
 						<% for(var i = 0; i < selectionnableTemperatureUnits.length; i++){ %>
 							<option value="<%= selectionnableTemperatureUnits[i].unit %>" <%= selectionnableTemperatureUnits[i].selected %>><%= selectionnableTemperatureUnits[i].unit %> (<%= selectionnableTemperatureUnits[i].symbol %>)</option>
 						<% } %>
 					</select>
 				</form>
-				<form id="choosen_pressure_unit_form" class="node_world_server_form" method="post" action="/">
+				<form id="choosen_pressure_unit_form" class="node_world_server_form" method="post" action="/" data-toggle="tooltip" data-placement="top">
 					<input type="hidden" name="current_form" value="choosen_pressure_unit_form">
 					<%= __('pressure_unit_choice')%> :
-					<select class="select_menu" id="choosen_pressure_unit" name="choosen_pressure_unit" data-toggle="tooltip" data-placement="top" title="===">
+					<select class="select_menu" id="choosen_pressure_unit" name="choosen_pressure_unit" title="===">
 						<% for(var i = 0; i < selectionnablePressureUnits.length; i++){ %>
 							<option value="<%= selectionnablePressureUnits[i].unit %>" <%= selectionnablePressureUnits[i].selected %>><%= selectionnablePressureUnits[i].unit %> (<%= selectionnablePressureUnits[i].symbol %>)</option>
 						<% } %>
 					</select>
 				</form>
-				<form id="choosen_time_format_form" class="node_world_server_form" method="post" action="/">
+				<form id="choosen_time_format_form" class="node_world_server_form" method="post" action="/" data-toggle="tooltip" data-placement="top">
 					<input type="hidden" name="current_form" value="choosen_time_format_form">
 					<%= __('time_format_choice')%> :
-					<select class="select_menu" id="choosen_time_format" name="choosen_time_format" data-toggle="tooltip" data-placement="top" title="===">
+					<select class="select_menu" id="choosen_time_format" name="choosen_time_format" title="===">
 						<% for(var i = 0; i < 10; i++){ %>
 							<option value="<%= i %>">?????</option>
 						<% } %>
@@ -229,10 +229,10 @@
   </div>
   <div id="github_view">
   	<p>
-  		<form id="second_choosen_language_form" method="post" action="/">
+  		<form id="second_choosen_language_form" method="post" action="/" data-toggle="tooltip" data-placement="top">
 					<input type="hidden" name="current_form" value="choosen_language_form">
 					<%= __('Language_choice')%> :
-					<select class="select_menu" id="second_choosen_language" name="choosen_language" data-toggle="tooltip" data-placement="top" title="===">
+					<select class="select_menu" id="second_choosen_language" name="choosen_language" title="===">
 						<% for(var i = 0; i < selectionnableLanguages.length; i++){ %>
 							<option value="<%= selectionnableLanguages[i].value %>" <%= selectionnableLanguages[i].selected %>><%= __(selectionnableLanguages[i].text)%></option>
 						<% } %>
@@ -245,5 +245,16 @@
     </p>
   </div>
 </div>
+
+	<!-- Link to access my GitHub profile -->
+	<!-- <a class="navbar-brand link_in_contact_me" href="https://github.com/Vicken-Ghoubiguian/node_world_server" target="_blank" data-toggle="tooltip" data-placement="top" title="See my work on GitHub">
+		<i class="fab fa-github fa-2x"></i>
+	</a> -->
+							
+	<!-- Link to access my Docker Hub profile -->
+	<!-- <a class="navbar-brand link_in_contact_me" href="" target="_blank" data-toggle="tooltip" data-placement="top" title="See my work on Docker Hub">
+		<i class="fab fa-docker fa-2x"></i>
+	</a> -->
+
 </body>
 </html>

@@ -8,6 +8,16 @@ body {
 	font-family: Sofia;
 }
 
+.fa-github {
+
+  color: #000000;
+}
+
+.fa-docker {
+
+  color: #0db7ed;
+}
+
 #displaying_flag_div {
 
 	text-align: center;
