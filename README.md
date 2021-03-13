@@ -98,6 +98,9 @@ For more informations, you can read the documentation still on the official webs
 <a name="from_the_Dockerfile"/></a>
 ### from the Dockerfile
 
+A Dockerfile is available in the project root, and you can consult it [here](https://github.com/Vicken-Ghoubiguian/node_world_server/blob/main/Dockerfile).
+To deploy this web app by the Dockerfile, please follow these commands in order:
+
 ```bash
 # Creating the Go_world_server Docker image with all the values ​​for the defined parameters "user_owm_api_key" (corresponding to the user's OpenWeatherMap API key) and "user_fa_kit" (corresponding to the user's Font Awesome kit)...
 docker build . -t node_world_server:latest --build-arg user_owm_api_key="<wished_openWeatherMap_API_key>" --build-arg user_fa_kit="<wished_font_awesome_kit>"
@@ -113,6 +116,9 @@ docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}
 ```
 <a name="from_Docker_Hub"/></a>
 ### from Docker Hub
+
+A Docker image is available on Docker hub just [here](https://hub.docker.com/r/wicken/node_world_server).
+To deploy this web app by the image on Docker hub, please follow these commands in order:
 
 ```bash
 
