@@ -3,7 +3,9 @@ var fontFamilies = [
 
 	{id: 0, font: "Anurati", url: "http://fonts.cdnfonts.com/css/anurati"},
 	{id: 1, font: "Sofia", url: "https://fonts.googleapis.com/css?family=Sofia"},
-	{id: 2, font: "Cursive", url: ""}
+	{id: 2, font: "Ranchers", url: "https://fonts.googleapis.com/css?family=Ranchers"},
+	{id: 3, font: "Redressed", url: "https://fonts.googleapis.com/css?family=Redressed"},
+	{id: 4, font: "Cursive", url: ""}
 ];
 
 // Definition of the 'getFontFamilyFromId' function to identify and return all informations about font family identified by its id...

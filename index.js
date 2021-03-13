@@ -26,7 +26,7 @@ var currentTemperatureUnit = "Kelvin";
 var currentTemperatureUnitSymbol = "";
 var currentPressureUnit = "hectoPascal";
 var currentPressureUnitSymbol = "hPa";
-var currentFontFamily = fontFamilies.getFontFamilyFromId(2);
+var currentFontFamily = fontFamilies.getFontFamilyFromId(4);
 
 // Catching, treating and getting passed arguments to the 'passedArguments' constant...
 const passedArguments = require('minimist')(process.argv.slice(2));
