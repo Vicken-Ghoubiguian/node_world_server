@@ -106,7 +106,7 @@ docker build . -t node_world_server:latest --build-arg user_owm_api_key="<wished
 docker image history node_world_server:latest
 
 # Running the Docker container node_world_server from the Docker image of the same name...
-docker container run -d --name node_world_server -p 80:8080 node_world_server:latest
+docker container run -d --name node_world_server -p 80:80 node_world_server:latest
 
 # Checking the IP address of the Docker container of the node_world_server application...
 docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' node_world_server
