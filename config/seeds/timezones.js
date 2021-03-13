@@ -12,6 +12,17 @@ var timezones = [
 	{timezone: "Africa/Abidjan", country_code: "CI", weather_reference: "Abidjan", moment: moment.tz("Africa/Abidjan"), color: "#ffdf00"},
 	{timezone: "Africa/Accra", country_code: "GH", weather_reference: "Accra", moment: moment.tz("Africa/Accra"), color: "#ffdf00"},
 	{timezone: "Africa/Addis_Ababa", country_code: "ET", weather_reference: "Addis Ababa", moment: moment.tz("Africa/Addis_Ababa"), color: "#ffdf00"},
+	{timezone: "Africa/Algiers", country_code: "DZ", weather_reference: "Algiers", moment: moment.tz("Africa/Algiers"), color: "#ffdf00"},
+	{timezone: "Africa/Asmara", country_code: "ER", weather_reference: "Asmara", moment: moment.tz("Africa/Asmara"), color: "#ffdf00"},
+
+	{timezone: "Africa/Niamey", country_code: "NE", weather_reference: "Niamey", moment: moment.tz("Africa/Niamey"), color: "#ffdf00"},
+	{timezone: "Africa/Nouakchott", country_code: "MR", weather_reference: "Nouakchott", moment: moment.tz("Africa/Nouakchott"), color: "#ffdf00"},
+	{timezone: "Africa/Ouagadougou", country_code: "BF", weather_reference: "Ouagadougou", moment: moment.tz("Africa/Ouagadougou"), color: "#ffdf00"},
+	{timezone: "Africa/Porto-Novo", country_code: "BJ", weather_reference: "Porto-Novo", moment: moment.tz("Africa/Porto-Novo"), color: "#ffdf00"},
+	{timezone: "Africa/Sao_Tome", country_code: "ST", weather_reference: "São Tomé", moment: moment.tz("Africa/Sao_Tome"), color: "#ffdf00"},
+	{timezone: "Africa/Tripoli", country_code: "LY", weather_reference: "Tripoli", moment: moment.tz("Africa/Tripoli"), color: "#ffdf00"},
+	{timezone: "Africa/Tunis", country_code: "TN", weather_reference: "Tunis", moment: moment.tz("Africa/Tunis"), color: "#ffdf00"},
+	{timezone: "Africa/Windhoek", country_code: "NA", weather_reference: "Windhoek", moment: moment.tz("Africa/Windhoek"), color: "#ffdf00"},
 
 	//Antarctican timezones...
 	{timezone: "Antarctica/Casey", country_code: "AQ", weather_reference: "Casey", moment: moment.tz("Antarctica/Casey"), color: "#FFC0CB"},
