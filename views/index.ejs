@@ -246,7 +246,7 @@
   		<form id="second_choosen_language_form" method="post" action="/" data-toggle="tooltip" data-placement="top">
 					<input type="hidden" name="current_form" value="choosen_language_form">
 					<%= __('Language_choice')%> :
-					<select class="select_menu" id="second_choosen_language" name="choosen_language" title="===">
+					<select class="select_menu" id="second_choosen_language" name="choosen_language" title="<%= __('Language_choice_tooltip')%>">
 						<% for(var i = 0; i < selectionnableLanguages.length; i++){ %>
 							<option value="<%= selectionnableLanguages[i].value %>" <%= selectionnableLanguages[i].selected %>><%= __(selectionnableLanguages[i].text)%></option>
 						<% } %>
