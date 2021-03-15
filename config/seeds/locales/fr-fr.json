@@ -114,6 +114,12 @@
 
 	"Flag_not_available": "Drapeau non disponible",
 
+	"Language_choice_tooltip": "Choisissez la langue que vous voulez",
+	"Date_and_time_format_choice_tooltip": "Choisissez le format que vous voulez pour la date et l'heure",
+	"Country_choice_tooltip": "Choisissez le pays que vous voulez",
+	"Temperature_unit_choice_tooltip": "Choisissez l'unité de temperature que vous voulez",
+	"Pressure_unit_choice_tooltip": "Choisissez l'unité de pression que vous voulez",
+
 	"NaNC": "Aucun pays",
 	"CI": "Côte d'Ivoire",
 	"GH": "Ghana",

@@ -114,6 +114,12 @@
 
 	"Flag_not_available": "Bandera no disponible",
 
+	"Language_choice_tooltip": "Elija el idioma que desee",
+	"Date_and_time_format_choice_tooltip": "Elija el formato que desee para la fecha y la hora",
+	"Country_choice_tooltip": "Elija el país que desee",
+	"Temperature_unit_choice_tooltip": "Elija la unidad de temperatura que desee",
+	"Pressure_unit_choice_tooltip": "Elija la unidad de presión que desee",
+
 	"NaNC": "Ningún país",
 	"CI": "Costa de Marfil",
 	"GH": "Ghana",

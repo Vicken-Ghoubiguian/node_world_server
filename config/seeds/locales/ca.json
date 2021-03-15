@@ -114,6 +114,12 @@
 
 	"Flag_not_available": "Bandera no disponible",
 
+	"Language_choice_tooltip": "Trieu l'idioma que vulgueu",
+	"Date_and_time_format_choice_tooltip": "Trieu el format que vulgueu per a la data i l'hora",
+	"Country_choice_tooltip": "Trieu el país que vulgueu",
+	"Temperature_unit_choice_tooltip": "Trieu la unitat de temperatura que vulgueu",
+	"Pressure_unit_choice_tooltip": "Trieu la unitat de pressió que vulgueu",
+
 	"NaNC": "Cap país",
 	"CI": "Costa d'Ivori",
 	"GH": "Ghana",
