@@ -49,8 +49,8 @@ $( function() {
 		$("#choosen_pressure_unit_form").submit();
 	}});
 
-	// Triggering an action when an element of the 'choosen_time_format' <select> is chosen...
-	$("#choosen_time_format").selectmenu({ change: function(event, ui){
+	// Triggering an action when an element of the 'choosen_font_family_format' <select> is chosen...
+	$("#choosen_font_family_format").selectmenu({ change: function(event, ui){
 
 		
 	}});
