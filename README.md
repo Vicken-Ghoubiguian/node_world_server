@@ -124,6 +124,7 @@ To deploy this web app by the image on Docker hub, please follow these commands 
 
 ```bash
 # Pulling the official Docker image from Docker Hub...
+docker pull wicken/node_world_server
 
 # Running the Docker container node_world_server from the Docker image of the same name...
 
