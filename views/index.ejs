@@ -81,7 +81,7 @@
 				<form id="choosen_font_family_form" class="node_world_server_form" method="post" action="/" data-toggle="tooltip" data-placement="top">
 					<input type="hidden" name="current_form" value="choosen_font_family_form">
 					<%= __('font_family_choice')%> :
-					<select class="select_menu" id="choosen_font_family_format" name="choosen_font_family_format" title="===">
+					<select class="select_menu" id="choosen_font_family_format" name="choosen_font_family_format" title="<%= __('Font_family_choice_tooltip')%>">
 						<% for(var i = 0; i < 10; i++){ %>
 							<option value="<%= i %>">?????</option>
 						<% } %>

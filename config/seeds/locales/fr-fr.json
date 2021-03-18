@@ -119,6 +119,7 @@
 	"Country_choice_tooltip": "Choisissez le pays que vous voulez",
 	"Temperature_unit_choice_tooltip": "Choisissez l'unité de temperature que vous voulez",
 	"Pressure_unit_choice_tooltip": "Choisissez l'unité de pression que vous voulez",
+	"Font_family_choice_tooltip": "",
 
 	"NaNC": "Aucun pays",
 	"CI": "Côte d'Ivoire",

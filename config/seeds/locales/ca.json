@@ -119,6 +119,7 @@
 	"Country_choice_tooltip": "Trieu el país que vulgueu",
 	"Temperature_unit_choice_tooltip": "Trieu la unitat de temperatura que vulgueu",
 	"Pressure_unit_choice_tooltip": "Trieu la unitat de pressió que vulgueu",
+	"Font_family_choice_tooltip": "",
 
 	"NaNC": "Cap país",
 	"CI": "Costa d'Ivori",
