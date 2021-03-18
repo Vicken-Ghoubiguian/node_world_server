@@ -7,7 +7,7 @@
 	"Language_choice": "Si us plau, trieu l'idioma que vulgueu",
 	"temperature_unit_choice": "Si us plau, trieu la unitat de temperatura que vulgueu",
 	"pressure_unit_choice": "Si us plau, trieu la unitat de pressió que vulgueu",
-	"font_family_choice": "Si us plau, seleccioneu la família de tipus de lletra que vulgueu",
+	"font_family_choice": "Si us plau, trieu la família de tipus de lletra que vulgueu",
 	"Date_and_time_format_choice": "Si us plau, trieu el format que vulgueu per a la data i l'hora",
 	"Hello": "Hola",
 	"countrycode_timezone_choice": "Si us plau, trieu el país que desitgeu",
@@ -119,7 +119,7 @@
 	"Country_choice_tooltip": "Trieu el país que vulgueu",
 	"Temperature_unit_choice_tooltip": "Trieu la unitat de temperatura que vulgueu",
 	"Pressure_unit_choice_tooltip": "Trieu la unitat de pressió que vulgueu",
-	"Font_family_choice_tooltip": "",
+	"Font_family_choice_tooltip": "Trieu la família de tipus de lletra que vulgueu",
 
 	"NaNC": "Cap país",
 	"CI": "Costa d'Ivori",
