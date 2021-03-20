@@ -28,6 +28,9 @@ var currentPressureUnit = "hectoPascal";
 var currentPressureUnitSymbol = "hPa";
 var currentFontFamily = fontFamilies.getFontFamilyFromId(10);
 
+// Retrieving the array of font families...
+var fontFamiliesArray = fontFamilies.fontFamilies;
+
 // Catching, treating and getting passed arguments to the 'passedArguments' constant...
 const passedArguments = require('minimist')(process.argv.slice(2));
 
@@ -349,7 +352,7 @@ app.get('/', function(req, res) {
       currentCountryFlagURL = "https://flagcdn.com/h40/" + currentCountryCode.toLowerCase() + ".png";
     }
 
-  	res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": isAvailableFlag, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "currentPressureUnitSymbol": currentPressureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "selectionnablePressureUnits": selectionnablePressureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results, "currentFontFamily": currentFontFamily});
+  	res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": isAvailableFlag, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "currentPressureUnitSymbol": currentPressureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "selectionnablePressureUnits": selectionnablePressureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "fontFamilies": fontFamiliesArray, "formats": formats, "weatherResults": results, "currentFontFamily": currentFontFamily});
     
   });
 });
@@ -536,7 +539,7 @@ app.post('/', function(req, res) {
       currentCountryFlagURL = "https://flagcdn.com/h40/" + currentCountryCode.toLowerCase() + ".png";
     }
 
-    res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": isAvailableFlag, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "currentPressureUnitSymbol": currentPressureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "selectionnablePressureUnits": selectionnablePressureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "formats": formats, "weatherResults": results, "currentFontFamily": currentFontFamily});
+    res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": isAvailableFlag, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "currentPressureUnitSymbol": currentPressureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "selectionnablePressureUnits": selectionnablePressureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "fontFamilies": fontFamiliesArray, "formats": formats, "weatherResults": results, "currentFontFamily": currentFontFamily});
 
   });
 });
