@@ -146,7 +146,7 @@ function updateFontFamily(wishedCurrentFontFamily) {
 
   for(var i = 0; i < fontFamiliesArray.length; i++){
 
-    if(fontFamiliesArray[i].unit === wishedCurrentFontFamily){
+    if(fontFamiliesArray[i].font === wishedCurrentFontFamily){
 
       fontFamiliesArray[i].selected = "selected";
     }
@@ -282,6 +282,9 @@ app.get('/', function(req, res) {
 
   // Updating the pressure unit 'select' for the corresponding form...
   updatePressureUnit(currentPressureUnit);
+
+  //
+  updateFontFamily(currentFontFamily[0]);
 
   // Defining the pressure unit symbol from the  'currentTemperatureUnit' variable...
   currentPressureUnitSymbol = getPressureUnitSymbol(currentPressureUnit);
@@ -558,6 +561,9 @@ app.post('/', function(req, res) {
       // Configuration of the 'currentCountryFlagURL' to get and display current country's flag...
       currentCountryFlagURL = "https://flagcdn.com/h40/" + currentCountryCode.toLowerCase() + ".png";
     }
+
+    //
+    updateFontFamily(currentFontFamily[0]);
 
     res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": isAvailableFlag, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "currentPressureUnitSymbol": currentPressureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "selectionnablePressureUnits": selectionnablePressureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "fontFamilies": fontFamiliesArray, "formats": formats, "weatherResults": results, "currentFontFamily": currentFontFamily});
 

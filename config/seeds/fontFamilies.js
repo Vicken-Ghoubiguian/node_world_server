@@ -11,7 +11,7 @@ var fontFamilies = [
 	{id: 7, font: "Rubik", url: "https://fonts.googleapis.com/css?family=Rubik", selected: ""},
 	{id: 8, font: "Lora", url: "https://fonts.googleapis.com/css?family=Lora", selected: ""},
 	{id: 9, font: "Mukta", url: "https://fonts.googleapis.com/css?family=Mukta", selected: ""},
-	{id: 10, font: "Cursive", url: ""}
+	{id: 10, font: "Cursive", url: "", selected: ""}
 ];
 
 // Definition of the 'getFontFamilyFromId' function to identify and return all informations about font family identified by its id...
