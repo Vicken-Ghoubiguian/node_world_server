@@ -1,16 +1,16 @@
 // Array containing all accepted fonts with their name and URL...
 var fontFamilies = [
 
-	{id: 0, font: "Anurati", url: "http://fonts.cdnfonts.com/css/anurati"},
-	{id: 1, font: "Sofia", url: "https://fonts.googleapis.com/css?family=Sofia"},
-	{id: 2, font: "Ranchers", url: "https://fonts.googleapis.com/css?family=Ranchers"},
-	{id: 3, font: "Redressed", url: "https://fonts.googleapis.com/css?family=Redressed"},
-	{id: 4, font: "Montserrat", url: "https://fonts.googleapis.com/css?family=Montserrat"},
-	{id: 5, font: "Poppins", url: "https://fonts.googleapis.com/css?family=Poppins"},
-	{id: 6, font: "Nunito", url: "https://fonts.googleapis.com/css?family=Nunito"},
-	{id: 7, font: "Rubik", url: "https://fonts.googleapis.com/css?family=Rubik"},
-	{id: 8, font: "Lora", url: "https://fonts.googleapis.com/css?family=Lora"},
-	{id: 9, font: "Mukta", url: "https://fonts.googleapis.com/css?family=Mukta"},
+	{id: 0, font: "Anurati", url: "http://fonts.cdnfonts.com/css/anurati", selected: ""},
+	{id: 1, font: "Sofia", url: "https://fonts.googleapis.com/css?family=Sofia", selected: ""},
+	{id: 2, font: "Ranchers", url: "https://fonts.googleapis.com/css?family=Ranchers", selected: ""},
+	{id: 3, font: "Redressed", url: "https://fonts.googleapis.com/css?family=Redressed", selected: ""},
+	{id: 4, font: "Montserrat", url: "https://fonts.googleapis.com/css?family=Montserrat", selected: ""},
+	{id: 5, font: "Poppins", url: "https://fonts.googleapis.com/css?family=Poppins", selected: ""},
+	{id: 6, font: "Nunito", url: "https://fonts.googleapis.com/css?family=Nunito", selected: ""},
+	{id: 7, font: "Rubik", url: "https://fonts.googleapis.com/css?family=Rubik", selected: ""},
+	{id: 8, font: "Lora", url: "https://fonts.googleapis.com/css?family=Lora", selected: ""},
+	{id: 9, font: "Mukta", url: "https://fonts.googleapis.com/css?family=Mukta", selected: ""},
 	{id: 10, font: "Cursive", url: ""}
 ];
 
