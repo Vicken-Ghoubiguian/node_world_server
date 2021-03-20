@@ -3,9 +3,9 @@
 <head>
 	<title>Node world server</title>
 
-	<% if(currentFontFamily[1] != "" ){ %>
+	<% if(currentFontFamilies[1] != "" ){ %>
 
-		<link href="<%= currentFontFamily[1] %>" rel="stylesheet">
+		<link href="<%= currentFontFamilies[1] %>" rel="stylesheet">
 
 	<% } %>
 
@@ -19,7 +19,7 @@
 
   		.ui-widget {
 
-			font-family: <%= currentFontFamily[0] %>;
+			font-family: <%= currentFontFamilies[0] %>;
 		}
 
   	</style>
@@ -82,8 +82,8 @@
 					<input type="hidden" name="current_form" value="choosen_font_family_form">
 					<%= __('font_family_choice')%> :
 					<select class="select_menu" id="choosen_font_family_format" name="choosen_font_family_format" title="<%= __('Font_family_choice_tooltip')%>">
-						<% for(var i = 0; i < currentFontFamily.length; i++){ %>
-							<option value="<%= i %>"><% currentFontFamily[i].font %></option>
+						<% for(var i = 0; i < currentFontFamilies.length; i++){ %>
+							<option value="<%= i %>"><% currentFontFamilies[i].font %></option>
 						<% } %>
 					</select>
 				</form>
