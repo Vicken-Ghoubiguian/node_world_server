@@ -133,6 +133,12 @@ function updatePressureUnit(wishedCurrentPressureUnit) {
   }
 }
 
+// Function to update the "selected" field of the corresponding font family's JSON depending on whether the current is selected or not...
+function updateFontFamily(wishedCurrentFontFamily) {
+
+
+}
+
 // Function to list all language locales ("value" field of each JSON) in a to-returned array...
 function listAllLocalesAsArray() {
 
