@@ -3,6 +3,11 @@ body {
 	font-size: 0.9em;
 }
 
+footer {
+
+	margin-top: 5px;
+}
+
 .foot-link {
 
   -webkit-transition: -webkit-transform 0.8s ease-in-out;
