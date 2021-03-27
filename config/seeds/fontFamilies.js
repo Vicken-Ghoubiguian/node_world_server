@@ -22,7 +22,10 @@ var fontFamilies = [
 	{id: 18, font: "Monaco", url: "", selected: ""},
 	{id: 19, font: "Copperplate", url: "", selected: ""},
 	{id: 20, font: "Papyrus", url: "", selected: ""},
-	{id: 21, font: "Impact", url: "", selected: ""}
+	{id: 21, font: "Impact", url: "", selected: ""},
+	{id: 22, font: "Comic Sans MS", url: "", selected: ""},
+	{id: 23, font: "Webdings", url: "", selected: ""},
+	{id: 24, font: "Wingdings", url: "", selected: ""}
 ];
 
 // Definition of the 'getFontFamilyFromId' function to identify and return all informations about font family identified by its id...
