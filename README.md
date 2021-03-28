@@ -54,6 +54,8 @@ It can be used in several cases:
 
 * many other things limited by our own imagination
 
+You can now access some examples in the 'projects_examples' folder, just [here](https://github.com/Vicken-Ghoubiguian/node_world_server/tree/main/projects_examples).
+
 <a name="how_to_use_it"/></a>
 ### How is it structured  ?
 
