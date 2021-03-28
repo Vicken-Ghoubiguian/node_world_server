@@ -37,6 +37,23 @@ This is a web application to display current time, date and weather around the w
 <a name="what_is_this_project"/></a>
 ## What is this project ?
 
+This project consists to develop a web application to .
+It can be used in several cases:
+
+* 
+
+* 
+
+* build our own alarm clock in a maker project,
+
+* 
+
+*
+
+*
+
+* many other things limited by our own imagination
+
 <a name="how_to_use_it"/></a>
 ### How is it structured  ?
 
