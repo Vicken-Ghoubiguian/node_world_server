@@ -40,17 +40,17 @@ This is a web application to display current time, date and weather around the w
 This project consists to develop a web application to .
 It can be used in several cases:
 
-* 
+* Create a desk clock or a nice gift during a maker project,
 
-* 
+* build your own alarm clock in a maker project,
 
-* build our own alarm clock in a maker project,
+* use it in many other maker projects limited by our own imagination,
 
-* 
+* learn much about using weather (via OpenWeatherMap API) and GitHub API to get informations and make some statistical calculus,
 
-*
+* learn NodeJS in details and use this technology to learn web development,
 
-*
+* use it in NodeJS and web development courses or tutorials,
 
 * many other things limited by our own imagination
 
