@@ -471,6 +471,13 @@ app.post('/', function(req, res) {
     updatePressureUnit(currentPressureUnit); 
 
     res.setLocale(currentLocale);
+
+  // If the submit form is the "choosen_font_family_form" one...
+  } else if(req.body.current_form === "choosen_font_family_form") {
+
+    console.log(req.body.value);
+
+    res.setLocale(currentLocale);
   }
 
   // Configuration of all tables and hash tables...
