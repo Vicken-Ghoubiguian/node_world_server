@@ -8,6 +8,17 @@ footer {
 	margin-top: 5px;
 }
 
+.github_icon_on_feets {
+
+	text-decoration: none;
+}
+
+.docker_icon_on_feets {
+
+	text-decoration: none;
+	margin-left: 10px;
+}
+
 .foot-link {
 
   -webkit-transition: -webkit-transform 0.8s ease-in-out;
