@@ -477,7 +477,8 @@ app.post('/', function(req, res) {
 
     var test = parseInt(req.body.choosen_font_family_format);
     var test2 = fontFamilies.getFontFamilyFromId(test);
-    console.log(test2);
+
+    currentFontFamily = test2;
 
     res.setLocale(currentLocale);
   }
