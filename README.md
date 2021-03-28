@@ -135,6 +135,11 @@ docker container run -d --name node_world_server -p 80:80 node_world_server:late
 # Checking the IP address of the Docker container of the node_world_server application...
 docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' node_world_server
 ```
+Congratulations, now the `node_world_server web` application is working.
+To access this application, type the following address in the bar of your browser: [`http://localhost/`](http://localhost/).
+
+It's now your turn to play. Now enjoy...
+
 <a name="from_Docker_Hub"/></a>
 ### from Docker Hub
 
@@ -151,6 +156,11 @@ docker container run -d --name node_world_server -p 80:80 wicken/node_world_serv
 # Checking the IP address of the Docker container of the node_world_server application...
 docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' node_world_server
 ```
+Congratulations, now the `node_world_server web` application is working.
+To access this application, type the following address in the bar of your browser: [`http://localhost/`](http://localhost/).
+
+It's now your turn to play. Now enjoy...
+
 <a name="with_Balena"/></a>
 ### with Balena...
 
