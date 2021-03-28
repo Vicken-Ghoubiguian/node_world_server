@@ -46,7 +46,7 @@ It can be used in several cases:
 
 * use it in many other maker projects limited by our own imagination,
 
-* learn much about using weather (via OpenWeatherMap API) and GitHub API to get informations and make some statistical calculus,
+* learn much about using weather (via [OpenWeatherMap API](https://openweathermap.org/api)) and [GitHub API](https://docs.github.com/en/rest) to get informations and make some statistical calculus,
 
 * learn NodeJS in details and use this technology to learn web development,
 
