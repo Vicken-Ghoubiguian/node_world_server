@@ -83,7 +83,7 @@
 					<%= __('font_family_choice')%> :
 					<select class="select_menu" id="choosen_font_family_format" name="choosen_font_family_format" title="<%= __('Font_family_choice_tooltip')%>">
 						<% for(var i = 0; i < fontFamilies.length; i++){ %>
-							<option value="<%= fontFamilies[i].font %>" <%= fontFamilies[i].selected %>><%= fontFamilies[i].font %></option>
+							<option value="<%= fontFamilies[i].id %>" <%= fontFamilies[i].selected %>><%= fontFamilies[i].font %></option>
 						<% } %>
 					</select>
 				</form>

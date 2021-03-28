@@ -475,7 +475,9 @@ app.post('/', function(req, res) {
   // If the submit form is the "choosen_font_family_form" one...
   } else if(req.body.current_form === "choosen_font_family_form") {
 
-    console.log(req.body.value);
+    var test = parseInt(req.body.choosen_font_family_format);
+    var test2 = fontFamilies.getFontFamilyFromId(test);
+    console.log(test2);
 
     res.setLocale(currentLocale);
   }

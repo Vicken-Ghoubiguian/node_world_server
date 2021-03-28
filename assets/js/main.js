@@ -50,7 +50,7 @@ $( function() {
 	}});
 
 	// Triggering an action when an element of the 'choosen_font_family_format' <select> is chosen...
-	$("#choosen_font_family_form").selectmenu({ change: function(event, ui){
+	$("#choosen_font_family_format").selectmenu({ change: function(event, ui){
 
 		// The form 'choosen_font_family_form' is then submitted with all of its datas...
 		$("#choosen_font_family_form").submit();
