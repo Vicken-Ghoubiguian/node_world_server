@@ -26,7 +26,7 @@ This is a web application to display current time, date and weather around the w
 
 		* [What is Balena ?](#what_is_balena)
 
-		* [Deployment procedure](#deployment_procedure)
+		* [Tutorial on Balena](#tutorial_balena)
 
 5. [A few usefull links](#a_few_usefull_links)
 
@@ -167,8 +167,8 @@ It's now your turn to play. Now enjoy...
 <a name="what_is_balena"/></a>
 ### What is Balena ?
 
-<a name="deployment_procedure"/></a>
-### Deployment procedure
+<a name="tutorial_balena"/></a>
+### Tutorial on Balena
 
 <a name="a_few_usefull_links"/></a>
 ### A few usefull links
