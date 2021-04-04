@@ -1,6 +1,6 @@
 # node_world_server
 
-This is a web application to display current time, date and weather around the world for every timezones in every countries and available in four languages (French, English, Spanish and Catalan).
+This is a web application to display current time, date and weather around the world for every timezones in every countries and many other things. This web application is available in four languages (French, English, Spanish and Catalan) which can be switched.
 
 ## Contents
 
