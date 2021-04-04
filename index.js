@@ -375,8 +375,25 @@ app.get('/', function(req, res) {
       currentCountryFlagURL = "https://flagcdn.com/h40/" + currentCountryCode.toLowerCase() + ".png";
     }
 
-  	res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": isAvailableFlag, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "currentPressureUnitSymbol": currentPressureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "selectionnablePressureUnits": selectionnablePressureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "fontFamilies": fontFamiliesArray, "formats": formats, "weatherResults": results, "currentFontFamily": currentFontFamily});
-    
+  	res.render('index.ejs', {
+
+                             "currentCountryFlagURL": currentCountryFlagURL, 
+                             "isAvailableFlag": isAvailableFlag, 
+                             "selectionnableLanguages": selectionnableLanguages, 
+                             "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, 
+                             "currentPressureUnitSymbol": currentPressureUnitSymbol, 
+                             "fontAwesomeKit": fontAwesomeKit, 
+                             "selectionnableTemperatureUnits": selectionnableTemperatureUnits, 
+                             "selectionnablePressureUnits": selectionnablePressureUnits, 
+                             "countryCodeHashTable": countryCodeHashTable, 
+                             "timezones": renderTimezonesArray, 
+                             "currentDateAndTimeFormat": currentDateAndTimeFormat, 
+                             "fontFamilies": fontFamiliesArray, 
+                             "formats": formats, 
+                             "weatherResults": results, 
+                             "currentFontFamily": currentFontFamily
+
+                          });
   });
 });
 
@@ -577,8 +594,25 @@ app.post('/', function(req, res) {
     //
     updateFontFamily(currentFontFamily[0]);
 
-    res.render('index.ejs', {"currentCountryFlagURL": currentCountryFlagURL, "isAvailableFlag": isAvailableFlag, "selectionnableLanguages": selectionnableLanguages, "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, "currentPressureUnitSymbol": currentPressureUnitSymbol, "fontAwesomeKit": fontAwesomeKit, "selectionnableTemperatureUnits": selectionnableTemperatureUnits, "selectionnablePressureUnits": selectionnablePressureUnits, "countryCodeHashTable": countryCodeHashTable, "timezones": renderTimezonesArray, "currentDateAndTimeFormat": currentDateAndTimeFormat, "fontFamilies": fontFamiliesArray, "formats": formats, "weatherResults": results, "currentFontFamily": currentFontFamily});
+    res.render('index.ejs', {
 
+                             "currentCountryFlagURL": currentCountryFlagURL, 
+                             "isAvailableFlag": isAvailableFlag, 
+                             "selectionnableLanguages": selectionnableLanguages, 
+                             "currentTemperatureUnitSymbol": currentTemperatureUnitSymbol, 
+                             "currentPressureUnitSymbol": currentPressureUnitSymbol, 
+                             "fontAwesomeKit": fontAwesomeKit, 
+                             "selectionnableTemperatureUnits": selectionnableTemperatureUnits, 
+                             "selectionnablePressureUnits": selectionnablePressureUnits, 
+                             "countryCodeHashTable": countryCodeHashTable, 
+                             "timezones": renderTimezonesArray, 
+                             "currentDateAndTimeFormat": currentDateAndTimeFormat, 
+                             "fontFamilies": fontFamiliesArray, 
+                             "formats": formats, 
+                             "weatherResults": results, 
+                             "currentFontFamily": currentFontFamily
+
+                           });
   });
 });
 
