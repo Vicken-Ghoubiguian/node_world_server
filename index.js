@@ -26,7 +26,7 @@ var currentTemperatureUnit = "Kelvin";
 var currentTemperatureUnitSymbol = "";
 var currentPressureUnit = "hectoPascal";
 var currentPressureUnitSymbol = "hPa";
-var currentFontFamily = fontFamilies.getFontFamilyFromId(16);
+var currentFontFamily = fontFamilies.getFontFamilyFromId(17);
 
 // Retrieving the array of font families...
 var fontFamiliesArray = fontFamilies.fontFamilies;
