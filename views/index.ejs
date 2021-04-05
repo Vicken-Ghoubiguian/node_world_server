@@ -34,7 +34,18 @@
 		<div id="forms_displayer">
 			<p>
 				<form id="choosen_language_form" class="first_node_world_server_form" method="post" action="/" data-toggle="tooltip" data-placement="top">
+
+					<!-- -->
 					<input type="hidden" name="current_form" value="choosen_language_form">
+
+					<!-- -->
+					<input type="hidden" name="current_date_and_time_format" value="">
+					<input type="hidden" name="current_country_code" value="">
+					<input type="hidden" name="current_temperature_unit" value="">
+					<input type="hidden" name="current_pressure_unit" value="">
+					<input type="hidden" name="current_font_family_format" value="">
+
+					<!-- -->
 					<%= __('Language_choice')%> :
 					<select class="select_menu" id="choosen_language" name="choosen_language" title="<%= __('Language_choice_tooltip')%>">
 						<% for(var i = 0; i < selectionnableLanguages.length; i++){ %>
@@ -43,7 +54,18 @@
 					</select>
 				</form>
 				<form id="choosen_format_form" class="node_world_server_form" method="post" action="/" data-toggle="tooltip" data-placement="top">
+
+					<!-- -->
 					<input type="hidden" name="current_form" value="choosen_format_form">
+
+					<!-- -->
+					<input type="hidden" name="current_language" value="">
+					<input type="hidden" name="current_country_code" value="">
+					<input type="hidden" name="current_temperature_unit" value="">
+					<input type="hidden" name="current_pressure_unit" value="">
+					<input type="hidden" name="current_font_family_format" value="">
+
+					<!-- -->
 					<%= __('Date_and_time_format_choice')%> :
 					<select class="select_menu" id="choosen_date_and_time_format" name="choosen_date_and_time_format" title="<%= __('Date_and_time_format_choice_tooltip')%>">
 						<% for(var i = 0; i < formats.length; i++){ %>
@@ -52,7 +74,18 @@
 					</select>
 				</form>
 				<form id="choosen_country_code_form" class="node_world_server_form" method="post" action="/" data-toggle="tooltip" data-placement="top">
+
+					<!-- -->
 					<input type="hidden" name="current_form" value="choosen_country_code_form">
+
+					<!-- -->
+					<input type="hidden" name="current_language" value="">
+					<input type="hidden" name="current_date_and_time_format" value="">
+					<input type="hidden" name="current_temperature_unit" value="">
+					<input type="hidden" name="current_pressure_unit" value="">
+					<input type="hidden" name="current_font_family_format" value="">
+
+					<!-- -->
 					<%= __('countrycode_timezone_choice')%> :
 					<select class="select_menu" id="choosen_country_code" name="choosen_country_code" title="<%= __('Country_choice_tooltip')%>">
 						<% for(var countryCode in countryCodeHashTable){ %>
@@ -61,7 +94,18 @@
 					</select>
 				</form>
 				<form id="choosen_temperature_unit_form" class="node_world_server_form" method="post" action="/" data-toggle="tooltip" data-placement="top">
+
+					<!-- -->
 					<input type="hidden" name="current_form" value="choosen_temperature_unit_form">
+
+					<!-- -->
+					<input type="hidden" name="current_language" value="">
+					<input type="hidden" name="current_date_and_time_format" value="">
+					<input type="hidden" name="current_country_code" value="">
+					<input type="hidden" name="current_pressure_unit" value="">
+					<input type="hidden" name="current_font_family_format" value="">
+
+					<!-- -->
 					<%= __('temperature_unit_choice')%> :
 					<select class="select_menu" id="choosen_temperature_unit" name="choosen_temperature_unit" title="<%= __('Temperature_unit_choice_tooltip')%>">
 						<% for(var i = 0; i < selectionnableTemperatureUnits.length; i++){ %>
@@ -70,7 +114,18 @@
 					</select>
 				</form>
 				<form id="choosen_pressure_unit_form" class="node_world_server_form" method="post" action="/" data-toggle="tooltip" data-placement="top">
+
+					<!-- -->
 					<input type="hidden" name="current_form" value="choosen_pressure_unit_form">
+
+					<!-- -->
+					<input type="hidden" name="current_language" value="">
+					<input type="hidden" name="current_date_and_time_format" value="">
+					<input type="hidden" name="current_country_code" value="">
+					<input type="hidden" name="current_temperature_unit" value="">
+					<input type="hidden" name="current_font_family_format" value="">
+
+					<!-- -->
 					<%= __('pressure_unit_choice')%> :
 					<select class="select_menu" id="choosen_pressure_unit" name="choosen_pressure_unit" title="<%= __('Pressure_unit_choice_tooltip')%>">
 						<% for(var i = 0; i < selectionnablePressureUnits.length; i++){ %>
@@ -79,7 +134,18 @@
 					</select>
 				</form>
 				<form id="choosen_font_family_form" class="node_world_server_form" method="post" action="/" data-toggle="tooltip" data-placement="top">
+
+					<!-- -->
 					<input type="hidden" name="current_form" value="choosen_font_family_form">
+
+					<!-- -->
+					<input type="hidden" name="current_language" value="">
+					<input type="hidden" name="current_date_and_time_format" value="">
+					<input type="hidden" name="current_country_code" value="">
+					<input type="hidden" name="current_temperature_unit" value="">
+					<input type="hidden" name="current_pressure_unit" value="">
+
+					<!-- -->
 					<%= __('font_family_choice')%> :
 					<select class="select_menu" id="choosen_font_family_format" name="choosen_font_family_format" title="<%= __('Font_family_choice_tooltip')%>">
 						<% for(var i = 0; i < fontFamilies.length; i++){ %>
