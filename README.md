@@ -28,6 +28,8 @@ This is a web application to display current time, date and weather around the w
 
 		* [Tutorial on Balena](#tutorial_balena)
 
+
+
 5. [A few usefull links](#a_few_usefull_links)
 
 6. [What is used in this project ?](#what_is_used_in_this_project)
@@ -169,6 +171,9 @@ It's now your turn to play. Now enjoy...
 
 <a name="tutorial_balena"/></a>
 ### Tutorial on Balena
+
+<a name="run_locally"></a>
+### How to run locally this web app ?
 
 <a name="a_few_usefull_links"/></a>
 ### A few usefull links
