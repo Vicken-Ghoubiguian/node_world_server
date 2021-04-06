@@ -30,6 +30,12 @@ This is a web application to display current time, date and weather around the w
 
 4. [How to run this web app locally only ?](#run_locally_only)
 
+	* [Why run this web app locally only ?](#why_run_it_locally_only)
+
+	* [How do it from source code ?](#how_do_it_from_source_code)
+	
+	* [How do it by Docker ?](#how_do_it_by_docker)
+
 5. [A few usefull links](#a_few_usefull_links)
 
 6. [What is used in this project ?](#what_is_used_in_this_project)
