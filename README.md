@@ -28,13 +28,13 @@ This is a web application to display current time, date and weather around the w
 
 		* [Tutorial on Balena](#tutorial_balena)
 
+5. [How to run locally this web app ?](#run_locally)
 
+6. [A few usefull links](#a_few_usefull_links)
 
-5. [A few usefull links](#a_few_usefull_links)
+7. [What is used in this project ?](#what_is_used_in_this_project)
 
-6. [What is used in this project ?](#what_is_used_in_this_project)
-
-7. [Conclusion](#conclusion)
+8. [Conclusion](#conclusion)
 
 <a name="what_is_this_project"></a>
 ## What is this project ?
