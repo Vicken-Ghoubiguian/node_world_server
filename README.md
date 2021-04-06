@@ -36,7 +36,7 @@ This is a web application to display current time, date and weather around the w
 
 7. [Conclusion](#conclusion)
 
-<a name="what_is_this_project"/></a>
+<a name="what_is_this_project"></a>
 ## What is this project ?
 
 This project consists to develop a web application to .
@@ -58,13 +58,13 @@ It can be used in several cases:
 
 You can now access some examples in the 'projects_examples' folder, just [here](https://github.com/Vicken-Ghoubiguian/node_world_server/tree/main/projects_examples).
 
-<a name="how_to_use_it"/></a>
+<a name="how_to_use_it"></a>
 ### How is it structured  ?
 
-<a name="how_to_run_this_app"/></a>
+<a name="how_to_run_this_app"></a>
 ## How to run this web app ?
 
-<a name="by_source_code"/></a>
+<a name="by_source_code"></a>
 ### by the source code...
 
 The source code of the [`node_world_server`](https://github.com/Vicken-Ghoubiguian/node_world_server) web app is available on `GitHub`.
@@ -89,7 +89,7 @@ To access this application, type the following address in the bar of your browse
 
 It's now your turn to play. Now enjoy...
 
-<a name="for_more_informations"/></a>
+<a name="for_more_informations"></a>
 #### For more informations
 
 * **How to get an OpenWeather API key ?**
@@ -113,12 +113,12 @@ For more informations, you can read the documentation still on the official webs
 <a name="by_docker"></a>
 ### by Docker...
 
-<a name="requirements"/></a>
+<a name="requirements"></a>
 ### requirements
 
 Docker...
 
-<a name="from_the_Dockerfile"/></a>
+<a name="from_the_Dockerfile"></a>
 ### from the Dockerfile
 
 A Dockerfile is available in the project root, and you can consult it [here](https://github.com/Vicken-Ghoubiguian/node_world_server/blob/main/Dockerfile).
@@ -142,7 +142,7 @@ To access this application, type the following address in the bar of your browse
 
 It's now your turn to play. Now enjoy...
 
-<a name="from_Docker_Hub"/></a>
+<a name="from_Docker_Hub"></a>
 ### from Docker Hub
 
 A Docker image is available on Docker hub just [here](https://hub.docker.com/r/wicken/node_world_server).
@@ -163,23 +163,23 @@ To access this application, type the following address in the bar of your browse
 
 It's now your turn to play. Now enjoy...
 
-<a name="with_Balena"/></a>
+<a name="with_Balena"></a>
 ### with Balena...
 
-<a name="what_is_balena"/></a>
+<a name="what_is_balena"></a>
 ### What is Balena ?
 
-<a name="tutorial_balena"/></a>
+<a name="tutorial_balena"></a>
 ### Tutorial on Balena
 
 <a name="run_locally"></a>
 ### How to run locally this web app ?
 
-<a name="a_few_usefull_links"/></a>
+<a name="a_few_usefull_links"></a>
 ### A few usefull links
 
-<a name="what_is_used_in_this_project"/></a>
+<a name="what_is_used_in_this_project"></a>
 ### What is used in this project ?
 
-<a name="conclusion"/></a>
+<a name="conclusion"></a>
 ### Conclusion
