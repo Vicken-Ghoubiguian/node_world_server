@@ -181,6 +181,15 @@ It's now your turn to play. Now enjoy...
 <a name="run_locally_only"></a>
 ## How to run this web app locally only ?
 
+<a name="why_run_it_locally_only"></a>
+### Why run this web app locally only ?
+
+<a name="how_do_it_from_source_code"></a>
+### How do it from source code ?
+
+<a name="how_do_it_by_docker"></a>
+### How do it by Docker ?
+
 <a name="a_few_usefull_links"></a>
 ## A few usefull links
 
