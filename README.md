@@ -28,7 +28,7 @@ This is a web application to display current time, date and weather around the w
 
 		* [Tutorial on Balena](#tutorial_balena)
 
-5. [How to run locally this web app ?](#run_locally_only)
+5. [How to run this web app locally only ?](#run_locally_only)
 
 6. [A few usefull links](#a_few_usefull_links)
 
