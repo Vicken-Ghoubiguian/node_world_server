@@ -59,7 +59,7 @@ It can be used in several cases:
 You can now access some examples in the 'projects_examples' folder, just [here](https://github.com/Vicken-Ghoubiguian/node_world_server/tree/main/projects_examples).
 
 <a name="how_to_use_it"></a>
-### How is it structured  ?
+## How is it structured  ?
 
 <a name="how_to_run_this_app"></a>
 ## How to run this web app ?
@@ -114,12 +114,12 @@ For more informations, you can read the documentation still on the official webs
 ### by Docker...
 
 <a name="requirements"></a>
-### requirements
+#### requirements
 
 Docker...
 
 <a name="from_the_Dockerfile"></a>
-### from the Dockerfile
+#### from the Dockerfile
 
 A Dockerfile is available in the project root, and you can consult it [here](https://github.com/Vicken-Ghoubiguian/node_world_server/blob/main/Dockerfile).
 To deploy this web app by the Dockerfile, please follow these commands in order:
@@ -143,7 +143,7 @@ To access this application, type the following address in the bar of your browse
 It's now your turn to play. Now enjoy...
 
 <a name="from_Docker_Hub"></a>
-### from Docker Hub
+#### from Docker Hub
 
 A Docker image is available on Docker hub just [here](https://hub.docker.com/r/wicken/node_world_server).
 To deploy this web app by the image on Docker hub, please follow these commands in order:
@@ -167,19 +167,19 @@ It's now your turn to play. Now enjoy...
 ### with Balena...
 
 <a name="what_is_balena"></a>
-### What is Balena ?
+#### What is Balena ?
 
 <a name="tutorial_balena"></a>
-### Tutorial on Balena
+#### Tutorial on Balena
 
 <a name="run_locally"></a>
-### How to run locally this web app ?
+## How to run locally this web app ?
 
 <a name="a_few_usefull_links"></a>
-### A few usefull links
+## A few usefull links
 
 <a name="what_is_used_in_this_project"></a>
-### What is used in this project ?
+## What is used in this project ?
 
 <a name="conclusion"></a>
-### Conclusion
+## Conclusion
