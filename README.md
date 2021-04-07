@@ -214,6 +214,8 @@ It is now time to get the web application running and it is this single command 
 # Running the Docker <'node_world_server' or 'wicken/node_world_server' in this explanation> container from the Docker image of the same name and which will run locally...
 docker container run -d --name <'node_world_server' or 'wicken/node_world_server' in this explanation> -p 127.0.0.1:80:80 node_world_server:latest
 ```
+**explanations**: 
+
 <a name="a_few_usefull_links"></a>
 ## A few usefull links
 
