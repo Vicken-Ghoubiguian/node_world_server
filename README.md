@@ -134,17 +134,18 @@ To deploy this web app by the Dockerfile, please follow these commands in order:
 # Creating the node_world_server Docker image with all the values ​​for the defined parameters "user_owm_api_key" (corresponding to the user's OpenWeatherMap API key) and "user_fa_kit" (corresponding to the user's Font Awesome kit)...
 docker build . -t node_world_server:latest --build-arg user_owm_api_key="<wished_openWeatherMap_API_key>" --build-arg user_fa_kit="<wished_font_awesome_kit>"
 
-# Seeing the list of all the executed instructions to create the node_world_server Docker image...
+# Seeing the list of all the executed instructions to create the node_world_server Docker image (optional)...
 docker image history node_world_server:latest
 
 # Running the Docker container node_world_server from the Docker image of the same name...
 docker container run -d --name node_world_server -p 80:80 node_world_server:latest
 
-# Checking the IP address of the Docker container of the node_world_server application...
+# Checking the IP address of the Docker container of the node_world_server application (optional)...
 docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' node_world_server
 ```
 Congratulations, now the `node_world_server web` application is working.
 To access this application, type the following address in the bar of your browser: [`http://localhost/`](http://localhost/).
+You can also type in the search bar in the browser of your choice from the device () of your choice the host's IP adress.
 
 It's now your turn to play. Now enjoy...
 
@@ -161,11 +162,12 @@ docker pull wicken/node_world_server
 # Running the Docker container node_world_server from the offical Docker image from Docker Hub...
 docker container run -d --name node_world_server -p 80:80 wicken/node_world_server
 
-# Checking the IP address of the Docker container of the node_world_server application...
+# Checking the IP address of the Docker container of the node_world_server application (optional)...
 docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' node_world_server
 ```
 Congratulations, now the `node_world_server web` application is working.
 To access this application, type the following address in the bar of your browser: [`http://localhost/`](http://localhost/).
+You can also type in the search bar in the browser of your choice from the device () of your choice the host's IP adress.
 
 It's now your turn to play. Now enjoy...
 
@@ -190,6 +192,26 @@ It's now your turn to play. Now enjoy...
 <a name="how_do_it_by_docker"></a>
 ### How do it by Docker ?
 
+Running the web app locally using Docker is very easy. All of the commands, except the last one, are similar to those discussed earlier [here](#from_the_Dockerfile) and [here](#from_Docker_Hub), whether you're using the project's Dockerfile or the image pulled from the Docker hub. First, let's start by seeing the procedure to follow when using the Dockerfile (you must follow all of these commands in order):
+
+```bash
+# Creating the node_world_server Docker image with all the values ​​for the defined parameters "user_owm_api_key" (corresponding to the user's OpenWeatherMap API key) and "user_fa_kit" (corresponding to the user's Font Awesome kit)...
+docker build . -t node_world_server:latest --build-arg user_owm_api_key="<wished_openWeatherMap_API_key>" --build-arg user_fa_kit="<wished_font_awesome_kit>"
+
+# Seeing the list of all the executed instructions to create the node_world_server Docker image (optional)...
+docker image history node_world_server:latest
+```
+Now in a second time, let's see the procedure by using the Docker image of the web app on Docker hub:
+
+```bash
+# Pulling the official Docker image from Docker Hub...
+docker pull wicken/node_world_server
+```
+It is now time to get the web application running and it is this single command (which is also the very last) that makes all the difference with the previous ones:
+
+```bash
+docker container run -d --name <'node_world_server' or 'wicken/node_world_server' in this explanation> -p 127.0.0.1:80:80 node_world_server:latest
+```
 <a name="a_few_usefull_links"></a>
 ## A few usefull links
 
