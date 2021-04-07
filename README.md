@@ -211,6 +211,7 @@ docker pull wicken/node_world_server
 It is now time to get the web application running and it is this single command (which is also the very last) that makes all the difference with the previous ones:
 
 ```bash
+# Running the Docker <'node_world_server' or 'wicken/node_world_server' in this explanation> container from the Docker image of the same name and which will run locally...
 docker container run -d --name <'node_world_server' or 'wicken/node_world_server' in this explanation> -p 127.0.0.1:80:80 node_world_server:latest
 ```
 <a name="a_few_usefull_links"></a>
