@@ -36,6 +36,8 @@ This is a web application to display current time, date and weather around the w
 	
 	* [How do it by Docker ?](#how_do_it_by_docker)
 
+	* [How do it with Balena ?](#how_do_it_with_balena)
+
 5. [A few usefull links](#a_few_usefull_links)
 
 6. [What is used in this project ?](#what_is_used_in_this_project)
