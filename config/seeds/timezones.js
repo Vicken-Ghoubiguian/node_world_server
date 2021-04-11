@@ -98,6 +98,13 @@ var timezones = [
 	{timezone: "Asia/Chita", country_code: "RU", weather_reference: "Chita", moment: moment.tz("Asia/Chita"), color: "##79F8F8"},
 	{timezone: "Asia/Choibalsan", country_code: "RU", weather_reference: "Choibalsan", moment: moment.tz("Asia/Choibalsan"), color: "##79F8F8"},
 	{timezone: "Asia/Colombo", country_code: "LK", weather_reference: "Colombo", moment: moment.tz("Asia/Colombo"), color: "##79F8F8"},
+	{timezone: "Asia/Damascus", country_code: "SY", weather_reference: "Damascus", moment: moment.tz("Asia/Damascus"), color: "##79F8F8"},
+	{timezone: "Asia/Dhaka", country_code: "BD", weather_reference: "Dhaka", moment: moment.tz("Asia/Dhaka"), color: "##79F8F8"},
+	{timezone: "Asia/Dili", country_code: "TL", weather_reference: "Dili", moment: moment.tz("Asia/Dili"), color: "##79F8F8"},
+	{timezone: "Asia/Dubai", country_code: "AE", weather_reference: "Dubai", moment: moment.tz("Asia/Dubai"), color: "##79F8F8"},
+	{timezone: "Asia/Dushanbe", country_code: "TJ", weather_reference: "Dushanbe", moment: moment.tz("Asia/Dushanbe"), color: "##79F8F8"},
+	{timezone: "Asia/Famagusta", country_code: "CY", weather_reference: "Famagusta", moment: moment.tz("Asia/Famagusta"), color: "##79F8F8"},
+	{timezone: "Asia/Gaza", country_code: "PS", weather_reference: "Gaza", moment: moment.tz("Asia/Gaza"), color: "##79F8F8"},
 
 	{timezone: "Asia/Pyongyang", country_code: "KP", weather_reference: "Pyongyang", moment: moment.tz("Asia/Pyongyang"), color: "#79F8F8"},
 	{timezone: "Asia/Qatar", country_code: "QA", weather_reference: "Qatar", moment: moment.tz("Asia/Qatar"), color: "#79F8F8"},
