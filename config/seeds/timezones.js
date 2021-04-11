@@ -62,6 +62,8 @@ var timezones = [
 	{timezone: "Africa/Tunis", country_code: "TN", weather_reference: "Tunis", moment: moment.tz("Africa/Tunis"), color: "#ffdf00"},
 	{timezone: "Africa/Windhoek", country_code: "NA", weather_reference: "Windhoek", moment: moment.tz("Africa/Windhoek"), color: "#ffdf00"},
 
+	//American timezones...
+
 	//Antarctican timezones...
 	{timezone: "Antarctica/Casey", country_code: "AQ", weather_reference: "Casey", moment: moment.tz("Antarctica/Casey"), color: "#FFC0CB"},
 	{timezone: "Antarctica/Davis", country_code: "AQ", weather_reference: "Davis", moment: moment.tz("Antarctica/Davis"), color: "#FFC0CB"},
