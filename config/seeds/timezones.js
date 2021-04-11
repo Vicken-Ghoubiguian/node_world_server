@@ -64,6 +64,8 @@ var timezones = [
 
 	//American timezones...
 
+	{timezone: "America/Santiago", country_code: "CL", weather_reference: "Santiago", moment: moment.tz("America/Santiago"), color: "#FFC0CB"},
+
 	//Antarctican timezones...
 	{timezone: "Antarctica/Casey", country_code: "AQ", weather_reference: "Casey", moment: moment.tz("Antarctica/Casey"), color: "#FFC0CB"},
 	{timezone: "Antarctica/Davis", country_code: "AQ", weather_reference: "Davis", moment: moment.tz("Antarctica/Davis"), color: "#FFC0CB"},
