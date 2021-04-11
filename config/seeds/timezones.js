@@ -87,6 +87,15 @@ var timezones = [
 	{timezone: "Asia/Ashgabat", country_code: "TM", weather_reference: "Ashgabat", moment: moment.tz("Asia/Ashgabat"), color: "#79F8F8"},
 	{timezone: "Asia/Atyrau", country_code: "KZ", weather_reference: "Atyrau", moment: moment.tz("Asia/Atyrau"), color: "#79F8F8"},
 
+	{timezone: "Asia/Urumqi", country_code: "CN", weather_reference: "Urumqi", moment: moment.tz("Asia/Urumqi"), color: "#79F8F8"},
+	{timezone: "Asia/Ust-Nera", country_code: "RU", weather_reference: "Ust-Nera", moment: moment.tz("Asia/Ust-Nera"), color: "#79F8F8"},
+	{timezone: "Asia/Vientiane", country_code: "LA", weather_reference: "Vientiane", moment: moment.tz("Asia/Vientiane"), color: "#79F8F8"},
+	{timezone: "Asia/Vladivostok", country_code: "RU", weather_reference: "Vladivostok", moment: moment.tz("Asia/Vladivostok"), color: "#79F8F8"},
+	{timezone: "Asia/Yakutsk", country_code: "RU", weather_reference: "Yakutsk", moment: moment.tz("Asia/Yakutsk"), color: "#79F8F8"},
+	{timezone: "Asia/Yangon", country_code: "MM", weather_reference: "Yangon", moment: moment.tz("Asia/Yangon"), color: "#79F8F8"},
+	{timezone: "Asia/Yekaterinburg", country_code: "RU", weather_reference: "Yekaterinburg", moment: moment.tz("Asia/Yekaterinburg"), color: "#79F8F8"},
+	{timezone: "Asia/Yerevan", country_code: "AM", weather_reference: "Yerevan", moment: moment.tz("Asia/Yerevan"), color: "#79F8F8"},
+
 	//Atlantic ocean's timezones...
 	{timezone: "Atlantic/Azores", country_code: "PT", weather_reference: "Azores", moment: moment.tz("Atlantic/Azores"), color: "#00FF00"},
 	{timezone: "Atlantic/Bermuda", country_code: "BM", weather_reference: "Bermuda", moment: moment.tz("Atlantic/Bermuda"), color: "#00FF00"},
