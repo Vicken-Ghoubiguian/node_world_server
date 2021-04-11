@@ -218,6 +218,9 @@ docker container run -d --name <'node_world_server' or 'wicken/node_world_server
 ```
 **explanations**: 
 
+<a name="how_do_it_with_balena"></a>
+### How do it with Balena ?
+
 <a name="a_few_usefull_links"></a>
 ## A few usefull links
 
