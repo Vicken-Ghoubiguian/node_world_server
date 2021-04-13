@@ -100,6 +100,7 @@ var timezones = [
 	{timezone: "America/Detroit", country_code: "US", weather_reference: "Detroit", moment: moment.tz("America/Detroit"), color: "#FFA500"},
 	{timezone: "America/Dominica", country_code: "DM", weather_reference: "Dominica", moment: moment.tz("America/Dominica"), color: "#FFA500"},
 
+	{timezone: "America/Phoenix", country_code: "US", weather_reference: "Phoenix", moment: moment.tz("America/Phoenix"), color: "#FFA500"},
 	{timezone: "America/Port-au-Prince", country_code: "HT", weather_reference: "Port-au-Prince", moment: moment.tz("America/Port-au-Prince"), color: "#FFA500"},
 	{timezone: "America/Port_of_Spain", country_code: "TT", weather_reference: "Port_of_Spain", moment: moment.tz("America/Port_of_Spain"), color: "#FFA500"},
 	{timezone: "America/Porto_Velho", country_code: "BR", weather_reference: "Porto_Velho", moment: moment.tz("America/Porto_Velho"), color: "#FFA500"},
@@ -116,6 +117,8 @@ var timezones = [
 	{timezone: "America/Santo_Domingo", country_code: "DO", weather_reference: "Santo_Domingo", moment: moment.tz("America/Santo_Domingo"), color: "#FFA500"},
 	{timezone: "America/Sao_Paulo", country_code: "BR", weather_reference: "Sao_Paulo", moment: moment.tz("America/Sao_Paulo"), color: "#FFA500"},
 	{timezone: "America/Scoresbysund", country_code: "GL", weather_reference: "Scoresbysund", moment: moment.tz("America/Scoresbysund"), color: "#FFA500"},
+	{timezone: "America/Sitka", country_code: "US", weather_reference: "Sitka", moment: moment.tz("America/Sitka"), color: "#FFA500"},
+	{timezone: "America/St_Barthelemy", country_code: "BL", weather_reference: "St_Barthelemy", moment: moment.tz("America/St_Barthelemy"), color: "#FFA500"},
 
 	//Antarctican timezones...
 	{timezone: "Antarctica/Casey", country_code: "AQ", weather_reference: "Casey", moment: moment.tz("Antarctica/Casey"), color: "#FFC0CB"},
