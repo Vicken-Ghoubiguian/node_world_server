@@ -120,6 +120,11 @@ var timezones = [
 	{timezone: "America/Lima", country_code: "PM", weather_reference: "Lima", moment: moment.tz("America/Lima"), color: "#FFA500"},
 	{timezone: "America/Los_Angeles", country_code: "US", weather_reference: "Los_Angeles", moment: moment.tz("America/Los_Angeles"), color: "#FFA500"},
 	{timezone: "America/Lower_Princes", country_code: "SX", weather_reference: "Lower_Princes", moment: moment.tz("America/Lower_Princes"), color: "#FFA500"},
+	{timezone: "America/Maceio", country_code: "BR", weather_reference: "Maceio", moment: moment.tz("America/Maceio"), color: "#FFA500"},
+	{timezone: "America/Managua", country_code: "NI", weather_reference: "Managua", moment: moment.tz("America/Managua"), color: "#FFA500"},
+	{timezone: "America/Manaus", country_code: "BR", weather_reference: "Manaus", moment: moment.tz("America/Manaus"), color: "#FFA500"},
+	{timezone: "America/Marigot", country_code: "MF", weather_reference: "Marigot", moment: moment.tz("America/Marigot"), color: "#FFA500"},
+	{timezone: "America/Martinique", country_code: "MQ", weather_reference: "Martinique", moment: moment.tz("America/Martinique"), color: "#FFA500"},
 
 	{timezone: "America/Mexico_City", country_code: "MX", weather_reference: "Mexico_City", moment: moment.tz("America/Mexico_City"), color: "#FFA500"},
 	{timezone: "America/Miquelon", country_code: "PM", weather_reference: "Miquelon", moment: moment.tz("America/Miquelon"), color: "#FFA500"},
