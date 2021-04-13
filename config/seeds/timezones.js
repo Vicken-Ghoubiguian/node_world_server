@@ -100,6 +100,11 @@ var timezones = [
 	{timezone: "America/Detroit", country_code: "US", weather_reference: "Detroit", moment: moment.tz("America/Detroit"), color: "#FFA500"},
 	{timezone: "America/Dominica", country_code: "DM", weather_reference: "Dominica", moment: moment.tz("America/Dominica"), color: "#FFA500"},
 
+	{timezone: "America/Nuuk", country_code: "GL", weather_reference: "Nuuk", moment: moment.tz("America/Nuuk"), color: "#FFA500"},
+	{timezone: "America/Ojinaga", country_code: "MX", weather_reference: "Ojinaga", moment: moment.tz("America/Ojinaga"), color: "#FFA500"},
+	{timezone: "America/Panama", country_code: "PA", weather_reference: "Panama", moment: moment.tz("America/Panama"), color: "#FFA500"},
+	{timezone: "America/Pangnirtung", country_code: "CA", weather_reference: "Pangnirtung", moment: moment.tz("America/Pangnirtung"), color: "#FFA500"},
+	{timezone: "America/Paramaribo", country_code: "SR", weather_reference: "Paramaribo", moment: moment.tz("America/Paramaribo"), color: "#FFA500"},
 	{timezone: "America/Phoenix", country_code: "US", weather_reference: "Phoenix", moment: moment.tz("America/Phoenix"), color: "#FFA500"},
 	{timezone: "America/Port-au-Prince", country_code: "HT", weather_reference: "Port-au-Prince", moment: moment.tz("America/Port-au-Prince"), color: "#FFA500"},
 	{timezone: "America/Port_of_Spain", country_code: "TT", weather_reference: "Port_of_Spain", moment: moment.tz("America/Port_of_Spain"), color: "#FFA500"},
