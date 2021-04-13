@@ -101,9 +101,19 @@ var timezones = [
 	{timezone: "America/Dominica", country_code: "DM", weather_reference: "Dominica", moment: moment.tz("America/Dominica"), color: "#FFA500"},
 	{timezone: "America/Edmonton", country_code: "CA", weather_reference: "Edmonton", moment: moment.tz("America/Edmonton"), color: "#FFA500"},
 
+	{timezone: "AAmerica/Indiana/Indianapolis", country_code: "US", weather_reference: "Indianapolis", moment: moment.tz("America/Indiana/Indianapolis"), color: "#FFA500"},
+	{timezone: "America/Indiana/Knox", country_code: "US", weather_reference: "Knox", moment: moment.tz("America/Indiana/Knox"), color: "#FFA500"},
+	{timezone: "America/Indiana/Marengo", country_code: "US", weather_reference: "Marengo", moment: moment.tz("America/Indiana/Marengo"), color: "#FFA500"},
+	{timezone: "America/Indiana/Petersburg", country_code: "US", weather_reference: "Petersburg", moment: moment.tz("America/Indiana/Petersburg"), color: "#FFA500"},
+	{timezone: "America/Indiana/Tell_City", country_code: "US", weather_reference: "Tell_City", moment: moment.tz("America/Indiana/Tell_City"), color: "#FFA500"},
+	{timezone: "America/Indiana/Vevay", country_code: "US", weather_reference: "Vevay", moment: moment.tz("America/Indiana/Vevay"), color: "#FFA500"},
+	{timezone: "America/Indiana/Vincennes", country_code: "US", weather_reference: "Vincennes", moment: moment.tz("America/Indiana/Vincennes"), color: "#FFA500"},
+	{timezone: "America/Indiana/Winamac", country_code: "US", weather_reference: "Winamac", moment: moment.tz("America/Indiana/Winamac"), color: "#FFA500"},
+
 	{timezone: "America/Juneau", country_code: "US", weather_reference: "Juneau", moment: moment.tz("America/Juneau"), color: "#FFA500"},
 	{timezone: "America/Kentucky/Louisville", country_code: "US", weather_reference: "Louisville", moment: moment.tz("America/Kentucky/Louisville"), color: "#FFA500"},
 	{timezone: "America/Kentucky/Monticello", country_code: "US", weather_reference: "Monticello", moment: moment.tz("America/Kentucky/Monticello"), color: "#FFA500"},
+
 	{timezone: "America/Los_Angeles", country_code: "US", weather_reference: "Los_Angeles", moment: moment.tz("America/Los_Angeles"), color: "#FFA500"},
 
 	{timezone: "America/Mexico_City", country_code: "MX", weather_reference: "Mexico_City", moment: moment.tz("America/Mexico_City"), color: "#FFA500"},
