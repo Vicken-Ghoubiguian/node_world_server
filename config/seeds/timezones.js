@@ -100,6 +100,7 @@ var timezones = [
 	{timezone: "America/Detroit", country_code: "US", weather_reference: "Detroit", moment: moment.tz("America/Detroit"), color: "#FFA500"},
 	{timezone: "America/Dominica", country_code: "DM", weather_reference: "Dominica", moment: moment.tz("America/Dominica"), color: "#FFA500"},
 	{timezone: "America/Edmonton", country_code: "CA", weather_reference: "Edmonton", moment: moment.tz("America/Edmonton"), color: "#FFA500"},
+	{timezone: "America/Eirunepe", country_code: "BR", weather_reference: "Eirunepe", moment: moment.tz("America/Eirunepe"), color: "#FFA500"},
 
 	{timezone: "America/Indiana/Indianapolis", country_code: "US", weather_reference: "Indianapolis", moment: moment.tz("America/Indiana/Indianapolis"), color: "#FFA500"},
 	{timezone: "America/Indiana/Knox", country_code: "US", weather_reference: "Knox", moment: moment.tz("America/Indiana/Knox"), color: "#FFA500"},
