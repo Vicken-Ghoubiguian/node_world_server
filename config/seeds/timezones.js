@@ -99,6 +99,7 @@ var timezones = [
 	{timezone: "America/Denver", country_code: "US", weather_reference: "Denver", moment: moment.tz("America/Denver"), color: "#FFA500"},
 	{timezone: "America/Detroit", country_code: "US", weather_reference: "Detroit", moment: moment.tz("America/Detroit"), color: "#FFA500"},
 	{timezone: "America/Dominica", country_code: "DM", weather_reference: "Dominica", moment: moment.tz("America/Dominica"), color: "#FFA500"},
+	{timezone: "America/Edmonton", country_code: "CA", weather_reference: "Edmonton", moment: moment.tz("America/Edmonton"), color: "#FFA500"},
 
 	{timezone: "America/Juneau", country_code: "US", weather_reference: "Juneau", moment: moment.tz("America/Juneau"), color: "#FFA500"},
 	{timezone: "America/Kentucky/Louisville", country_code: "US", weather_reference: "Louisville", moment: moment.tz("America/Kentucky/Louisville"), color: "#FFA500"},
