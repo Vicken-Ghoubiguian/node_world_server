@@ -90,6 +90,18 @@ var timezones = [
 	{timezone: "America/Chicago", country_code: "US", weather_reference: "Chicago", moment: moment.tz("America/Chicago"), color: "#FFA500"},
 	{timezone: "America/Chihuahua", country_code: "MX", weather_reference: "Chihuahua", moment: moment.tz("America/Chihuahua"), color: "#FFA500"},
 	{timezone: "America/Costa_Rica", country_code: "CR", weather_reference: "Costa_Rica", moment: moment.tz("America/Costa_Rica"), color: "#FFA500"},
+	{timezone: "America/Creston", country_code: "CA", weather_reference: "Creston", moment: moment.tz("America/Creston"), color: "#FFA500"},
+	{timezone: "America/Cuiaba", country_code: "BR", weather_reference: "Cuiaba", moment: moment.tz("America/Cuiaba"), color: "#FFA500"},
+	{timezone: "America/Curacao", country_code: "CW", weather_reference: "Curacao", moment: moment.tz("America/Curacao"), color: "#FFA500"},
+	{timezone: "America/Danmarkshavn", country_code: "GL", weather_reference: "Danmarkshavn", moment: moment.tz("America/Danmarkshavn"), color: "#FFA500"},
+	{timezone: "America/Dawson", country_code: "CA", weather_reference: "Dawson", moment: moment.tz("America/Dawson"), color: "#FFA500"},
+	{timezone: "America/Dawson_Creek", country_code: "CA", weather_reference: "Dawson_Creek", moment: moment.tz("America/Dawson_Creek"), color: "#FFA500"},
+	{timezone: "America/Denver", country_code: "US", weather_reference: "Denver", moment: moment.tz("America/Denver"), color: "#FFA500"},
+	{timezone: "America/Detroit", country_code: "US", weather_reference: "Detroit", moment: moment.tz("America/Detroit"), color: "#FFA500"},
+	{timezone: "America/Dominica", country_code: "DM", weather_reference: "Dominica", moment: moment.tz("America/Dominica"), color: "#FFA500"},
+
+	{timezone: "America/Port-au-Prince", country_code: "HT", weather_reference: "Port-au-Prince", moment: moment.tz("America/Port-au-Prince"), color: "#FFA500"},
+	{timezone: "America/Port_of_Spain", country_code: "TT", weather_reference: "Port_of_Spain", moment: moment.tz("America/Port_of_Spain"), color: "#FFA500"},
 
 	{timezone: "America/Santiago", country_code: "CL", weather_reference: "Santiago", moment: moment.tz("America/Santiago"), color: "#FFA500"},
 
