@@ -109,12 +109,17 @@ var timezones = [
 	{timezone: "America/Indiana/Vevay", country_code: "US", weather_reference: "Vevay", moment: moment.tz("America/Indiana/Vevay"), color: "#FFA500"},
 	{timezone: "America/Indiana/Vincennes", country_code: "US", weather_reference: "Vincennes", moment: moment.tz("America/Indiana/Vincennes"), color: "#FFA500"},
 	{timezone: "America/Indiana/Winamac", country_code: "US", weather_reference: "Winamac", moment: moment.tz("America/Indiana/Winamac"), color: "#FFA500"},
-
+	{timezone: "America/Inuvik", country_code: "CA", weather_reference: "Inuvik", moment: moment.tz("America/Inuvik"), color: "#FFA500"},
+	{timezone: "America/Iqaluit", country_code: "CA", weather_reference: "Iqaluit", moment: moment.tz("America/Iqaluit"), color: "#FFA500"},
+	{timezone: "America/Jamaica", country_code: "JM", weather_reference: "Jamaica", moment: moment.tz("America/Jamaica"), color: "#FFA500"},
 	{timezone: "America/Juneau", country_code: "US", weather_reference: "Juneau", moment: moment.tz("America/Juneau"), color: "#FFA500"},
 	{timezone: "America/Kentucky/Louisville", country_code: "US", weather_reference: "Louisville", moment: moment.tz("America/Kentucky/Louisville"), color: "#FFA500"},
 	{timezone: "America/Kentucky/Monticello", country_code: "US", weather_reference: "Monticello", moment: moment.tz("America/Kentucky/Monticello"), color: "#FFA500"},
-
+	{timezone: "America/Kralendijk", country_code: "BQ", weather_reference: "Kralendijk", moment: moment.tz("America/Kralendijk"), color: "#FFA500"},
+	{timezone: "America/La_Paz", country_code: "BO", weather_reference: "La_Paz", moment: moment.tz("America/La_Paz"), color: "#FFA500"},
+	{timezone: "America/Lima", country_code: "PM", weather_reference: "Lima", moment: moment.tz("America/Lima"), color: "#FFA500"},
 	{timezone: "America/Los_Angeles", country_code: "US", weather_reference: "Los_Angeles", moment: moment.tz("America/Los_Angeles"), color: "#FFA500"},
+	{timezone: "America/Lower_Princes", country_code: "SX", weather_reference: "Lower_Princes", moment: moment.tz("America/Lower_Princes"), color: "#FFA500"},
 
 	{timezone: "America/Mexico_City", country_code: "MX", weather_reference: "Mexico_City", moment: moment.tz("America/Mexico_City"), color: "#FFA500"},
 	{timezone: "America/Miquelon", country_code: "PM", weather_reference: "Miquelon", moment: moment.tz("America/Miquelon"), color: "#FFA500"},
