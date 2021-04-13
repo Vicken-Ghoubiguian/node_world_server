@@ -63,6 +63,13 @@ var timezones = [
 	{timezone: "Africa/Windhoek", country_code: "NA", weather_reference: "Windhoek", moment: moment.tz("Africa/Windhoek"), color: "#ffdf00"},
 
 	//American timezones...
+	{timezone: "America/Adak", country_code: "US", weather_reference: "Adak", moment: moment.tz("America/Adak"), color: "#FFC0CB"},
+	{timezone: "America/Anchorage", country_code: "US", weather_reference: "Anchorage", moment: moment.tz("America/Anchorage"), color: "#FFC0CB"},
+	{timezone: "America/Anguilla", country_code: "AI", weather_reference: "Anguilla", moment: moment.tz("America/Anguilla"), color: "#FFC0CB"},
+	{timezone: "America/Antigua", country_code: "AG", weather_reference: "Antigua", moment: moment.tz("America/Antigua"), color: "#FFC0CB"},
+	{timezone: "America/Araguaina", country_code: "BR", weather_reference: "Araguaina", moment: moment.tz("America/Araguaina"), color: "#FFC0CB"},
+
+	{timezone: "America/Aruba", country_code: "AW", weather_reference: "Aruba", moment: moment.tz("America/Aruba"), color: "#FFC0CB"},
 
 	{timezone: "America/Santiago", country_code: "CL", weather_reference: "Santiago", moment: moment.tz("America/Santiago"), color: "#FFC0CB"},
 
