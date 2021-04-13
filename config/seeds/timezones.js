@@ -102,8 +102,20 @@ var timezones = [
 
 	{timezone: "America/Port-au-Prince", country_code: "HT", weather_reference: "Port-au-Prince", moment: moment.tz("America/Port-au-Prince"), color: "#FFA500"},
 	{timezone: "America/Port_of_Spain", country_code: "TT", weather_reference: "Port_of_Spain", moment: moment.tz("America/Port_of_Spain"), color: "#FFA500"},
-
+	{timezone: "America/Porto_Velho", country_code: "BR", weather_reference: "Porto_Velho", moment: moment.tz("America/Porto_Velho"), color: "#FFA500"},
+	{timezone: "America/Puerto_Rico", country_code: "PR", weather_reference: "Puerto_Rico", moment: moment.tz("America/Puerto_Rico"), color: "#FFA500"},
+	{timezone: "America/Punta_Arenas", country_code: "CL", weather_reference: "Punta_Arenas", moment: moment.tz("America/Punta_Arenas"), color: "#FFA500"},
+	{timezone: "America/Rainy_River", country_code: "CA", weather_reference: "Rainy_River", moment: moment.tz("America/Rainy_River"), color: "#FFA500"},
+	{timezone: "America/Rankin_Inlet", country_code: "CA", weather_reference: "Rankin_Inlet", moment: moment.tz("America/Rankin_Inlet"), color: "#FFA500"},
+	{timezone: "America/Recife", country_code: "BR", weather_reference: "Recife", moment: moment.tz("America/Recife"), color: "#FFA500"},
+	{timezone: "America/Regina", country_code: "CA", weather_reference: "Regina", moment: moment.tz("America/Regina"), color: "#FFA500"},
+	{timezone: "America/Resolute", country_code: "CA", weather_reference: "Resolute", moment: moment.tz("America/Resolute"), color: "#FFA500"},
+	{timezone: "America/Rio_Branco", country_code: "BR", weather_reference: "Rio_Branco", moment: moment.tz("America/Rio_Branco"), color: "#FFA500"},
+	{timezone: "America/Santarem", country_code: "BR", weather_reference: "Santarem", moment: moment.tz("America/Santarem"), color: "#FFA500"},
 	{timezone: "America/Santiago", country_code: "CL", weather_reference: "Santiago", moment: moment.tz("America/Santiago"), color: "#FFA500"},
+	{timezone: "America/Santo_Domingo", country_code: "DO", weather_reference: "Santo_Domingo", moment: moment.tz("America/Santo_Domingo"), color: "#FFA500"},
+	{timezone: "America/Sao_Paulo", country_code: "BR", weather_reference: "Sao_Paulo", moment: moment.tz("America/Sao_Paulo"), color: "#FFA500"},
+	{timezone: "America/Scoresbysund", country_code: "GL", weather_reference: "Scoresbysund", moment: moment.tz("America/Scoresbysund"), color: "#FFA500"},
 
 	//Antarctican timezones...
 	{timezone: "Antarctica/Casey", country_code: "AQ", weather_reference: "Casey", moment: moment.tz("Antarctica/Casey"), color: "#FFC0CB"},
