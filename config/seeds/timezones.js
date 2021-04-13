@@ -89,6 +89,7 @@ var timezones = [
 	{timezone: "America/Cayman", country_code: "KY", weather_reference: "Cayman", moment: moment.tz("America/Cayman"), color: "#FFA500"},
 	{timezone: "America/Chicago", country_code: "US", weather_reference: "Chicago", moment: moment.tz("America/Chicago"), color: "#FFA500"},
 	{timezone: "America/Chihuahua", country_code: "MX", weather_reference: "Chihuahua", moment: moment.tz("America/Chihuahua"), color: "#FFA500"},
+	{timezone: "America/Costa_Rica", country_code: "CR", weather_reference: "Costa_Rica", moment: moment.tz("America/Costa_Rica"), color: "#FFA500"},
 
 	{timezone: "America/Santiago", country_code: "CL", weather_reference: "Santiago", moment: moment.tz("America/Santiago"), color: "#FFA500"},
 
