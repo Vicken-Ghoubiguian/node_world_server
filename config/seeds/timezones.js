@@ -100,6 +100,8 @@ var timezones = [
 	{timezone: "America/Detroit", country_code: "US", weather_reference: "Detroit", moment: moment.tz("America/Detroit"), color: "#FFA500"},
 	{timezone: "America/Dominica", country_code: "DM", weather_reference: "Dominica", moment: moment.tz("America/Dominica"), color: "#FFA500"},
 
+	{timezone: "America/Los_Angeles", country_code: "US", weather_reference: "Los_Angeles", moment: moment.tz("America/Los_Angeles"), color: "#FFA500"},
+
 	{timezone: "America/Mexico_City", country_code: "MX", weather_reference: "Mexico_City", moment: moment.tz("America/Mexico_City"), color: "#FFA500"},
 	{timezone: "America/Miquelon", country_code: "PM", weather_reference: "Miquelon", moment: moment.tz("America/Miquelon"), color: "#FFA500"},
 	{timezone: "America/Moncton", country_code: "CA", weather_reference: "Moncton", moment: moment.tz("America/Moncton"), color: "#FFA500"},
