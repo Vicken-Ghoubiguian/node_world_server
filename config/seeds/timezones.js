@@ -113,7 +113,12 @@ var timezones = [
 	{timezone: "America/Edmonton", country_code: "CA", weather_reference: "Edmonton", moment: moment.tz("America/Edmonton"), color: "#FFA500"},
 	{timezone: "America/Eirunepe", country_code: "BR", weather_reference: "Eirunepe", moment: moment.tz("America/Eirunepe"), color: "#FFA500"},
 	{timezone: "America/El_Salvador", country_code: "SV", weather_reference: "El_Salvador", moment: moment.tz("America/El_Salvador"), color: "#FFA500"},
+	{timezone: "America/Fort_Nelson", country_code: "CA", weather_reference: "Fort Nelson", moment: moment.tz("America/Fort_Nelson"), color: "#FFA500"},
+	{timezone: "America/Fortaleza", country_code: "CA", weather_reference: "Fortaleza", moment: moment.tz("America/Fortaleza"), color: "#FFA500"},
+	{timezone: "America/Glace_Bay", country_code: "CA", weather_reference: "Glace Bay", moment: moment.tz("America/Glace_Bay"), color: "#FFA500"},
 
+	{timezone: "America/Havana", country_code: "CU", weather_reference: "Havana", moment: moment.tz("America/Havana"), color: "#FFA500"},
+	{timezone: "America/Hermosillo", country_code: "MX", weather_reference: "Hermosillo", moment: moment.tz("America/Hermosillo"), color: "#FFA500"},
 	{timezone: "America/Indiana/Indianapolis", country_code: "US", weather_reference: "Indianapolis", moment: moment.tz("America/Indiana/Indianapolis"), color: "#FFA500"},
 	{timezone: "America/Indiana/Knox", country_code: "US", weather_reference: "Knox", moment: moment.tz("America/Indiana/Knox"), color: "#FFA500"},
 	{timezone: "America/Indiana/Marengo", country_code: "US", weather_reference: "Marengo", moment: moment.tz("America/Indiana/Marengo"), color: "#FFA500"},
