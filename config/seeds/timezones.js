@@ -127,7 +127,11 @@ var timezones = [
 	{timezone: "America/Manaus", country_code: "BR", weather_reference: "Manaus", moment: moment.tz("America/Manaus"), color: "#FFA500"},
 	{timezone: "America/Marigot", country_code: "MF", weather_reference: "Marigot", moment: moment.tz("America/Marigot"), color: "#FFA500"},
 	{timezone: "America/Martinique", country_code: "MQ", weather_reference: "Martinique", moment: moment.tz("America/Martinique"), color: "#FFA500"},
-
+	{timezone: "America/Matamoros", country_code: "MX", weather_reference: "Matamoros", moment: moment.tz("America/Matamoros"), color: "#FFA500"},
+	{timezone: "America/Mazatlan", country_code: "MX", weather_reference: "Mazatlan", moment: moment.tz("America/Mazatlan"), color: "#FFA500"},
+	{timezone: "America/Menominee", country_code: "US", weather_reference: "Menominee", moment: moment.tz("America/Menominee"), color: "#FFA500"},
+	{timezone: "America/Merida", country_code: "MX", weather_reference: "Merida", moment: moment.tz("America/Merida"), color: "#FFA500"},
+	{timezone: "America/Metlakatla", country_code: "US", weather_reference: "Metlakatla", moment: moment.tz("America/Metlakatla"), color: "#FFA500"},
 	{timezone: "America/Mexico_City", country_code: "MX", weather_reference: "Mexico_City", moment: moment.tz("America/Mexico_City"), color: "#FFA500"},
 	{timezone: "America/Miquelon", country_code: "PM", weather_reference: "Miquelon", moment: moment.tz("America/Miquelon"), color: "#FFA500"},
 	{timezone: "America/Moncton", country_code: "CA", weather_reference: "Moncton", moment: moment.tz("America/Moncton"), color: "#FFA500"},
