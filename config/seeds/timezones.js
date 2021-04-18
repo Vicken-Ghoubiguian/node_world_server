@@ -117,6 +117,9 @@ var timezones = [
 	{timezone: "America/Fortaleza", country_code: "CA", weather_reference: "Fortaleza", moment: moment.tz("America/Fortaleza"), color: "#FFA500"},
 	{timezone: "America/Glace_Bay", country_code: "CA", weather_reference: "Glace Bay", moment: moment.tz("America/Glace_Bay"), color: "#FFA500"},
 
+	{timezone: "America/Guayaquil", country_code: "EC", weather_reference: "Guayaquil", moment: moment.tz("America/Guayaquil"), color: "#FFA500"},
+	{timezone: "America/Guyana", country_code: "GY", weather_reference: "Guyana", moment: moment.tz("America/Guyana"), color: "#FFA500"},
+	{timezone: "America/Halifax", country_code: "CA", weather_reference: "Halifax", moment: moment.tz("America/Halifax"), color: "#FFA500"},
 	{timezone: "America/Havana", country_code: "CU", weather_reference: "Havana", moment: moment.tz("America/Havana"), color: "#FFA500"},
 	{timezone: "America/Hermosillo", country_code: "MX", weather_reference: "Hermosillo", moment: moment.tz("America/Hermosillo"), color: "#FFA500"},
 	{timezone: "America/Indiana/Indianapolis", country_code: "US", weather_reference: "Indianapolis", moment: moment.tz("America/Indiana/Indianapolis"), color: "#FFA500"},
