@@ -117,6 +117,8 @@ var timezones = [
 	{timezone: "America/Fortaleza", country_code: "CA", weather_reference: "Fortaleza", moment: moment.tz("America/Fortaleza"), color: "#FFA500"},
 	{timezone: "America/Glace_Bay", country_code: "CA", weather_reference: "Glace Bay", moment: moment.tz("America/Glace_Bay"), color: "#FFA500"},
 
+	{timezone: "America/Guadeloupe", country_code: "GP", weather_reference: "Guadeloupe", moment: moment.tz("America/Guadeloupe"), color: "#FFA500"},
+	{timezone: "America/Guyana", country_code: "GY", weather_reference: "Guyana", moment: moment.tz("America/Guyana"), color: "#FFA500"},
 	{timezone: "America/Guayaquil", country_code: "EC", weather_reference: "Guayaquil", moment: moment.tz("America/Guayaquil"), color: "#FFA500"},
 	{timezone: "America/Guyana", country_code: "GY", weather_reference: "Guyana", moment: moment.tz("America/Guyana"), color: "#FFA500"},
 	{timezone: "America/Halifax", country_code: "CA", weather_reference: "Halifax", moment: moment.tz("America/Halifax"), color: "#FFA500"},
