@@ -116,7 +116,9 @@ var timezones = [
 	{timezone: "America/Fort_Nelson", country_code: "CA", weather_reference: "Fort Nelson", moment: moment.tz("America/Fort_Nelson"), color: "#FFA500"},
 	{timezone: "America/Fortaleza", country_code: "CA", weather_reference: "Fortaleza", moment: moment.tz("America/Fortaleza"), color: "#FFA500"},
 	{timezone: "America/Glace_Bay", country_code: "CA", weather_reference: "Glace Bay", moment: moment.tz("America/Glace_Bay"), color: "#FFA500"},
-
+	{timezone: "America/Goose_Bay", country_code: "CA", weather_reference: "Goose_Bay", moment: moment.tz("America/Goose_Bay"), color: "#FFA500"},
+	{timezone: "America/Grand_Turk", country_code: "TC", weather_reference: "Grand_Turk", moment: moment.tz("America/Grand_Turk"), color: "#FFA500"},
+	{timezone: "America/Grenada", country_code: "GD", weather_reference: "Grenada", moment: moment.tz("America/Grenada"), color: "#FFA500"},
 	{timezone: "America/Guadeloupe", country_code: "GP", weather_reference: "Guadeloupe", moment: moment.tz("America/Guadeloupe"), color: "#FFA500"},
 	{timezone: "America/Guyana", country_code: "GY", weather_reference: "Guyana", moment: moment.tz("America/Guyana"), color: "#FFA500"},
 	{timezone: "America/Guayaquil", country_code: "EC", weather_reference: "Guayaquil", moment: moment.tz("America/Guayaquil"), color: "#FFA500"},
