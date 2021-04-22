@@ -197,7 +197,7 @@ var timezones = [
 	{timezone: "America/St_Johns", country_code: "CA", weather_reference: "St Johns", moment: moment.tz("America/St_Johns"), color: "#FFA500"},
 	{timezone: "America/St_Kitts", country_code: "KN", weather_reference: "Saint Kitts", moment: moment.tz("America/St_Kitts"), color: "#FFA500"},
 	{timezone: "America/St_Lucia", country_code: "LC", weather_reference: "Saint Lucia", moment: moment.tz("America/St_Lucia"), color: "#FFA500"},
-	{timezone: "America/St_Thomas", country_code: "VI", weather_reference: "Saint-Thomas", moment: moment.tz("America/St_Thomas"), color: "#FFA500"},
+	{timezone: "America/St_Thomas", country_code: "VI", weather_reference: "Charlotte Amalie", moment: moment.tz("America/St_Thomas"), color: "#FFA500"},
 	{timezone: "America/St_Vincent", country_code: "VC", weather_reference: "Kingstown", moment: moment.tz("America/St_Vincent"), color: "#FFA500"},
 	{timezone: "America/Swift_Current", country_code: "CA", weather_reference: "Swift Current", moment: moment.tz("America/Swift_Current"), color: "#FFA500"},
 	{timezone: "America/Tegucigalpa", country_code: "HN", weather_reference: "Tegucigalpa", moment: moment.tz("America/Tegucigalpa"), color: "#FFA500"},
