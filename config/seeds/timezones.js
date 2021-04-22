@@ -66,7 +66,7 @@ var timezones = [
 	{timezone: "America/Adak", country_code: "US", weather_reference: "Adak", moment: moment.tz("America/Adak"), color: "#FFA500"},
 	{timezone: "America/Anchorage", country_code: "US", weather_reference: "Anchorage", moment: moment.tz("America/Anchorage"), color: "#FFA500"},
 	{timezone: "America/Anguilla", country_code: "AI", weather_reference: "Anguilla", moment: moment.tz("America/Anguilla"), color: "#FFA500"},
-	{timezone: "America/Antigua", country_code: "AG", weather_reference: "Antigua", moment: moment.tz("America/Antigua"), color: "#FFA500"},
+	{timezone: "America/Antigua", country_code: "AG", weather_reference: "Saint John's", moment: moment.tz("America/Antigua"), color: "#FFA500"},
 	{timezone: "America/Araguaina", country_code: "BR", weather_reference: "Araguaina", moment: moment.tz("America/Araguaina"), color: "#FFA500"},
 	{timezone: "America/Argentina/Buenos_Aires", country_code: "AR", weather_reference: "Buenos Aires", moment: moment.tz("America/Argentina/Buenos_Aires"), color: "#FFA500"},
 	{timezone: "America/Argentina/Catamarca", country_code: "AR", weather_reference: "Catamarca", moment: moment.tz("America/Argentina/Catamarca"), color: "#FFA500"},
