@@ -35,7 +35,10 @@ var fontFamilies = [
 	{id: 31, font: "Wingdings", url: "", selected: ""},
 	{id: 32, font: "Tahoma", url: "", selected: ""},
 	{id: 33, font: "Brush Script MT", url: "", selected: ""},
-	{id: 34, font: "Lucida Handwriting", url: "", selected: ""}
+	{id: 34, font: "Lucida Handwriting", url: "", selected: ""},
+	{id: 35, font: "Courier", url: "", selected: ""},
+	{id: 36, font: "Arial Narrow", url: "", selected: ""},
+	{id: 37, font: "Candara", url: "", selected: ""}
 ];
 
 // Definition of the 'getFontFamilyFromId' function to identify and return all informations about font family identified by its id...
