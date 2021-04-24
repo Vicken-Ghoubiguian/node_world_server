@@ -20,6 +20,8 @@ var fontFamilies = [
 	{id: 16, font: "Impact Label Reversed", url: "http://fonts.cdnfonts.com/css/impact-label-reversed", selected: ""},
 	{id: 17, font: "vSGeometrica", url: "http://fonts.cdnfonts.com/css/vsgeometrica", selected: ""},
 	{id: 18, font: "Rune", url: "http://fonts.cdnfonts.com/css/rune", selected: ""},
+
+
 	{id: 19, font: "Optima", url: "", selected: ""},
 	{id: 20, font: "Cursive", url: "", selected: ""},
 	{id: 21, font: "Arial", url: "", selected: ""},
@@ -40,6 +42,8 @@ var fontFamilies = [
 	{id: 36, font: "Courier", url: "", selected: ""},
 	{id: 37, font: "Arial Narrow", url: "", selected: ""},
 	{id: 38, font: "Candara", url: "", selected: ""}
+
+
 ];
 
 // Definition of the 'getFontFamilyFromId' function to identify and return all informations about font family identified by its id...
