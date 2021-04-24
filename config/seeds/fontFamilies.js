@@ -42,8 +42,8 @@ var fontFamilies = [
 	{id: 38, font: "Courier", url: "", selected: ""},
 	{id: 39, font: "Arial Narrow", url: "", selected: ""},
 	{id: 40, font: "Candara", url: "", selected: ""},
-	{id: 40, font: "Rockwell", url: "", selected: ""},
-	{id: 40, font: "Baskerville", url: "", selected: ""}
+	{id: 41, font: "Rockwell", url: "", selected: ""},
+	{id: 42, font: "Baskerville", url: "", selected: ""}
 ];
 
 // Definition of the 'getFontFamilyFromId' function to identify and return all informations about font family identified by its id...
