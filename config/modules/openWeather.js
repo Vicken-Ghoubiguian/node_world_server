@@ -631,7 +631,7 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
 }
 
 // Definition of the 'dateAndTimeFormatConversionFunction' function to convert and return dateAndTime from a timestamp to a wished 'wishedDateAndTimeFormat' format...
-function dateAndTimeFormatConversionFunction(dateAndTime, wishedSeparator = " ", wishedDateAndTimeFormat = "timestamp") {
+function dateAndTimeFormatConversionFunction(dateAndTime, wishedDateAndTimeFormat = "timestamp") {
 
     var convertedDateAndTime;
 
@@ -641,39 +641,14 @@ function dateAndTimeFormatConversionFunction(dateAndTime, wishedSeparator = " ",
         // Conversion of 'dateAndTime' timestamp as a JS Date object...
         var dateAndTimeASJSDate = new Date(dateAndTime);
 
-        // 'switch' instruction to treat all cases about 'wishedDateAndTimeFormat' value...
-        switch(wishedDateAndTimeFormat) {
+        //
 
-            //
-            case "DMYHMS":
+        //
 
-                
+        //
 
-                break;
-
-            //
-            case "YMDHMS":
-
-
-
-                break;
-
-            //
-            case "MDYHMS":
-
-
-
-                break;    
-
-            // In the case where anything else is passed as 'wishedDateAndTimeFormat' value...
-            default:
-
-                console.log("\x1b[31m" + "Unknown current date and time format..." + "\x1b[0m");
-
-                convertedDateAndTime = dateAndTime;
-
-                break;
-        }
+        // Affectation of 'dateAndTime''s time to 'convertedDateAndTime'...
+        convertedDateAndTime = dateAndTimeASJSDate.getHours() + ":" + dateAndTimeASJSDate.getMinutes() +  ":" + dateAndTimeASJSDate.getSeconds();
 
     // Else...
     } else {
