@@ -657,13 +657,15 @@ function dateAndTimeFormatConversionFunction(dateAndTime, wishedSeparator = " ",
 
                 console.log("\x1b[31m" + "Unknown current date and time format..." + "\x1b[0m");
 
+                convertedDateAndTime = dateAndTime;
+
                 break;
         }
 
     // Else...
     } else {
 
-        //
+        // Affectation of 'dateAndTime' to 'convertedDateAndTime'...
         convertedDateAndTime = dateAndTime;
     }
 
