@@ -641,7 +641,7 @@ function dateAndTimeFormatConversionFunction(dateAndTime, wishedSeparator = " ",
         // Conversion of 'dateAndTime' timestamp as a JS Date object...
         var dateAndTimeASJSDate = new Date(dateAndTime);
 
-        //
+        // 'switch' instruction to treat all cases about 'wishedDateAndTimeFormat' value...
         switch(wishedDateAndTimeFormat) {
 
             //
@@ -652,7 +652,7 @@ function dateAndTimeFormatConversionFunction(dateAndTime, wishedSeparator = " ",
             case "":
                 break;
 
-            //
+            // In the case where anything else is passed as 'wishedDateAndTimeFormat' value...
             default:
 
                 console.log("\x1b[31m" + "Unknown current date and time format..." + "\x1b[0m");
