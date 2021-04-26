@@ -641,41 +641,42 @@ function dateAndTimeFormatConversionFunction(dateAndTime, wishedDateAndTimeForma
         // Conversion of 'dateAndTime' timestamp as a JS Date object...
         var dateAndTimeASJSDate = new Date(dateAndTime);
 
-        //
-        if(dateAndTimeASJSDate.getHours() < 9) {
+        // If the number of hours is less than 9 or equal to 9, so...
+        if(dateAndTimeASJSDate.getHours() <= 9) {
 
-            //
+            // A '0' is added to the final value of hours...
             hours = "0" + dateAndTimeASJSDate.getHours();
 
         // Else...
         } else {
 
-            //
+            // The final value of hours is ready...
             hours = dateAndTimeASJSDate.getHours();
         }
 
-        //
-        if(dateAndTimeASJSDate.getMinutes() < 9) {
+        // If the number of minutes is less than 9 or equal to 9, so...
+        if(dateAndTimeASJSDate.getMinutes() <= 9) {
 
-            //
+            // A '0' is added to the final value of minutes...
             minutes = "0" + dateAndTimeASJSDate.getMinutes();
 
         // Else...
         } else {
 
-            //
+            // The final value of minutes is ready...
             minutes = dateAndTimeASJSDate.getMinutes();
         }
 
-        //
-        if(dateAndTimeASJSDate.getSeconds() < 9) {
+        // If the number of seconds is less than 9 or equal to 9, so...
+        if(dateAndTimeASJSDate.getSeconds() <= 9) {
 
-            //
+            // A '0' is added to the final value of seconds...
             secondes = "0" + dateAndTimeASJSDate.getSeconds();
 
+        // Else...
         } else {
 
-            //
+            // The final value of seconds is ready...
             secondes = dateAndTimeASJSDate.getSeconds();
         }
 
