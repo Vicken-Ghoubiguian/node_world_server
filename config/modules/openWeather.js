@@ -631,7 +631,7 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
 }
 
 //
-function dateAndTimeFormatConversionFunction(dateAndTime, wishedDateAndTimeFormat = "timestamp") {
+function dateAndTimeFormatConversionFunction(dateAndTime, wishedSeparator = " ", wishedDateAndTimeFormat = "timestamp") {
 
 
 }
