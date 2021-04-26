@@ -642,10 +642,42 @@ function dateAndTimeFormatConversionFunction(dateAndTime, wishedDateAndTimeForma
         var dateAndTimeASJSDate = new Date(dateAndTime);
 
         //
+        if(dateAndTimeASJSDate.getHours() < 9) {
+
+            //
+            hours = "0" + dateAndTimeASJSDate.getHours();
+
+        // Else...
+        } else {
+
+            //
+            hours = dateAndTimeASJSDate.getHours();
+        }
 
         //
+        if(dateAndTimeASJSDate.getMinutes() < 9) {
+
+            //
+            minutes = "0" + dateAndTimeASJSDate.getMinutes();
+
+        // Else...
+        } else {
+
+            //
+            minutes = dateAndTimeASJSDate.getMinutes();
+        }
 
         //
+        if(dateAndTimeASJSDate.getSeconds() < 9) {
+
+            //
+            secondes = "0" + dateAndTimeASJSDate.getSeconds();
+
+        } else {
+
+            //
+            secondes = dateAndTimeASJSDate.getSeconds();
+        }
 
         // Affectation of 'dateAndTime''s time to 'convertedDateAndTime'...
         convertedDateAndTime = dateAndTimeASJSDate.getHours() + ":" + dateAndTimeASJSDate.getMinutes() +  ":" + dateAndTimeASJSDate.getSeconds();
