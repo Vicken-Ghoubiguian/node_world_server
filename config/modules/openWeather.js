@@ -645,12 +645,16 @@ function dateAndTimeFormatConversionFunction(dateAndTime, wishedSeparator = " ",
         switch(wishedDateAndTimeFormat) {
 
             //
-            case "":
+            case "DMYHMS":
                 break;
 
             //
-            case "":
+            case "YMDHMS":
                 break;
+
+            //
+            case "MDYHMS":
+                break;    
 
             // In the case where anything else is passed as 'wishedDateAndTimeFormat' value...
             default:
