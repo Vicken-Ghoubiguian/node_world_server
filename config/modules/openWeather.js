@@ -646,14 +646,23 @@ function dateAndTimeFormatConversionFunction(dateAndTime, wishedSeparator = " ",
 
             //
             case "DMYHMS":
+
+                
+
                 break;
 
             //
             case "YMDHMS":
+
+
+
                 break;
 
             //
             case "MDYHMS":
+
+
+
                 break;    
 
             // In the case where anything else is passed as 'wishedDateAndTimeFormat' value...
@@ -668,6 +677,9 @@ function dateAndTimeFormatConversionFunction(dateAndTime, wishedSeparator = " ",
 
     // Else...
     } else {
+
+        // Message to tell some things in the console...
+        console.log("\x1b[31m" + "Date and time already in timestamp..." + "\x1b[0m");
 
         // Affectation of 'dateAndTime' to 'convertedDateAndTime'...
         convertedDateAndTime = dateAndTime;
