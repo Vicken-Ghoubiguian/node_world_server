@@ -630,10 +630,45 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
     return convertedPressureValue;
 }
 
-//
+// Definition of the 'dateAndTimeFormatConversionFunction' function to convert and return dateAndTime from a timestamp to a wished 'wishedDateAndTimeFormat' format...
 function dateAndTimeFormatConversionFunction(dateAndTime, wishedSeparator = " ", wishedDateAndTimeFormat = "timestamp") {
 
+    var convertedDateAndTime;
 
+    // If the wished date and time is "timestamp"... 
+    if(wishedDateAndTimeFormat != "timestamp") {
+
+        // Conversion of 'dateAndTime' timestamp as a JS Date object...
+        var dateAndTimeASJSDate = new Date(dateAndTime);
+
+        //
+        switch(wishedDateAndTimeFormat) {
+
+            //
+            case "":
+                break;
+
+            //
+            case "":
+                break;
+
+            //
+            default:
+
+                console.log("\x1b[31m" + "Unknown current date and time format..." + "\x1b[0m");
+
+                break;
+        }
+
+    // Else...
+    } else {
+
+        //
+        convertedDateAndTime = dateAndTime;
+    }
+
+    // Returning the converted date and time (datetime)...
+    return convertedDateAndTime;
 }
 
 // Definition of the 'getUVRisk' function to determine and return the UV risk from the 'uvValue' value...
