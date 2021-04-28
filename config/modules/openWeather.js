@@ -631,15 +631,47 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
 }
 
 // Definition of the 'dateAndTimeFormatConversionFunction' function to convert and return dateAndTime from a timestamp to a wished 'wishedDateAndTimeFormat' format...
-function dateAndTimeFormatConversionFunction(dateAndTime, wishedDateAndTimeFormat = "timestamp") {
+function dateAndTimeFormatConversionFunction(dateAndTime, timezone, wishedDateAndTimeFormat = "timestamp") {
 
     var convertedDateAndTime;
+
+    //
+    dateAndTime = (dateAndTime + timezone) * 1000;
 
     // If the wished date and time is "timestamp"... 
     if(wishedDateAndTimeFormat != "timestamp") {
 
         // Conversion of 'dateAndTime' timestamp as a JS Date object...
         var dateAndTimeASJSDate = new Date(dateAndTime);
+
+        // If the number of day is less than 9 or equal to 9, so...
+        if(dateAndTimeASJSDate.getDay() <= 9) {
+
+            // A '0' is added to the final value of day...
+            day = "0" + dateAndTimeASJSDate.getDay();
+
+        // Else...
+        } else {
+
+            // The final value of day is ready...
+            day = dateAndTimeASJSDate.getDay();
+        }
+
+        // If the number of month is less than 9 or equal to 9, so...
+        if(dateAndTimeASJSDate.getMonth() <= 9) {
+
+            // A '0' is added to the final value of month...
+            month = "0" + dateAndTimeASJSDate.getMonth();
+
+        // Else...
+        } else {
+
+            // The final value of month is ready...
+            month = dateAndTimeASJSDate.getMonth();
+        }
+
+        // The final value of year is ready...
+        year = dateAndTimeASJSDate.getFullYear();
 
         // If the number of hours is less than 9 or equal to 9, so...
         if(dateAndTimeASJSDate.getHours() <= 9) {
@@ -680,8 +712,33 @@ function dateAndTimeFormatConversionFunction(dateAndTime, wishedDateAndTimeForma
             secondes = dateAndTimeASJSDate.getSeconds();
         }
 
-        // Affectation of 'dateAndTime''s time to 'convertedDateAndTime'...
-        convertedDateAndTime = dateAndTimeASJSDate.getHours() + ":" + dateAndTimeASJSDate.getMinutes() +  ":" + dateAndTimeASJSDate.getSeconds();
+        // In the case "DMYHMS" is choosen as wished date and time format...
+        if(wishedDateAndTimeFormat === "DMYHMS") {
+
+            // Affectation of 'dateAndTime''s time to 'convertedDateAndTime'...
+            convertedDateAndTime = day + "/" + month + "/" + year + " " + hours + ":" + minutes +  ":" + secondes;
+
+        // In the case "YMDHMS" is choosen as wished date and time format...
+        } else if(wishedDateAndTimeFormat === "YMDHMS") {
+
+            // Affectation of 'dateAndTime''s time to 'convertedDateAndTime'...
+            convertedDateAndTime = year + "/" + month + "/" + day + " " + hours + ":" + minutes +  ":" + secondes;
+
+        // In the case "MDYHMS" is choosen as wished date and time format...
+        } else if(wishedDateAndTimeFormat === "MDYHMS") {
+
+            // Affectation of 'dateAndTime''s time to 'convertedDateAndTime'...
+            convertedDateAndTime = month + "/" + day + "/" + year + " " + hours + ":" + minutes +  ":" + secondes;
+
+        // Else...
+        } else {
+
+            // Message to tell some things in the console...
+            console.log("\x1b[31m" + "Unknown format, so the date and the time are kept as timestamp..." + "\x1b[0m");
+
+            // Affectation of 'dateAndTime' to 'convertedDateAndTime'...
+            convertedDateAndTime = dateAndTime;
+        }
 
     // Else...
     } else {
