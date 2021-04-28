@@ -644,91 +644,94 @@ function dateAndTimeFormatConversionFunction(dateAndTime, timezone, wishedDateAn
         // Conversion of 'dateAndTime' timestamp as a JS Date object...
         var dateAndTimeASJSDate = new Date(dateAndTime);
 
-        // If the number of day is less than 9 or equal to 9, so...
-        if(dateAndTimeASJSDate.getDay() <= 9) {
+        // If the number of date is less than 9 or equal to 9, so...
+        if(dateAndTimeASJSDate.getUTCDate() <= 9) {
 
-            // A '0' is added to the final value of day...
-            day = "0" + dateAndTimeASJSDate.getDay();
+            // A '0' is added to the final value of date...
+            var date = "0" + dateAndTimeASJSDate.getUTCDate();
 
         // Else...
         } else {
 
-            // The final value of day is ready...
-            day = dateAndTimeASJSDate.getDay();
+            // The final value of date is ready...
+            var date = dateAndTimeASJSDate.getUTCDate();
         }
 
+        //
+        var month = dateAndTimeASJSDate.getUTCMonth() + 1;
+
         // If the number of month is less than 9 or equal to 9, so...
-        if(dateAndTimeASJSDate.getMonth() <= 9) {
+        if(month <= 9) {
 
             // A '0' is added to the final value of month...
-            month = "0" + dateAndTimeASJSDate.getMonth();
+            month = "0" + month;
 
         // Else...
         } else {
 
             // The final value of month is ready...
-            month = dateAndTimeASJSDate.getMonth();
+            month = (dateAndTimeASJSDate.getUTCMonth() + 1);
         }
 
         // The final value of year is ready...
-        year = dateAndTimeASJSDate.getFullYear();
+        var year = dateAndTimeASJSDate.getUTCFullYear();
 
         // If the number of hours is less than 9 or equal to 9, so...
-        if(dateAndTimeASJSDate.getHours() <= 9) {
+        if(dateAndTimeASJSDate.getUTCHours() <= 9) {
 
             // A '0' is added to the final value of hours...
-            hours = "0" + dateAndTimeASJSDate.getHours();
+            var hours = "0" + dateAndTimeASJSDate.getUTCHours();
 
         // Else...
         } else {
 
             // The final value of hours is ready...
-            hours = dateAndTimeASJSDate.getHours();
+            var hours = dateAndTimeASJSDate.getUTCHours();
         }
 
         // If the number of minutes is less than 9 or equal to 9, so...
-        if(dateAndTimeASJSDate.getMinutes() <= 9) {
+        if(dateAndTimeASJSDate.getUTCMinutes() <= 9) {
 
             // A '0' is added to the final value of minutes...
-            minutes = "0" + dateAndTimeASJSDate.getMinutes();
+            var minutes = "0" + dateAndTimeASJSDate.getUTCMinutes();
 
         // Else...
         } else {
 
             // The final value of minutes is ready...
-            minutes = dateAndTimeASJSDate.getMinutes();
+            var minutes = dateAndTimeASJSDate.getUTCMinutes();
         }
 
         // If the number of seconds is less than 9 or equal to 9, so...
-        if(dateAndTimeASJSDate.getSeconds() <= 9) {
+        if(dateAndTimeASJSDate.getUTCSeconds() <= 9) {
 
             // A '0' is added to the final value of seconds...
-            secondes = "0" + dateAndTimeASJSDate.getSeconds();
+            var secondes = "0" + dateAndTimeASJSDate.getUTCSeconds();
 
         // Else...
         } else {
 
             // The final value of seconds is ready...
-            secondes = dateAndTimeASJSDate.getSeconds();
+            var secondes = dateAndTimeASJSDate.getUTCSeconds();
         }
 
         // In the case "DMYHMS" is choosen as wished date and time format...
         if(wishedDateAndTimeFormat === "DMYHMS") {
 
             // Affectation of 'dateAndTime''s time to 'convertedDateAndTime'...
-            convertedDateAndTime = day + "/" + month + "/" + year + " " + hours + ":" + minutes +  ":" + secondes;
+            convertedDateAndTime = date + "/" + month + "/" + year + " " + hours + ":" + minutes +  ":" + secondes;
 
         // In the case "YMDHMS" is choosen as wished date and time format...
         } else if(wishedDateAndTimeFormat === "YMDHMS") {
 
             // Affectation of 'dateAndTime''s time to 'convertedDateAndTime'...
-            convertedDateAndTime = year + "/" + month + "/" + day + " " + hours + ":" + minutes +  ":" + secondes;
+            convertedDateAndTime = year + "/" + month + "/" + date + " " + hours + ":" + minutes +  ":" + secondes;
 
         // In the case "MDYHMS" is choosen as wished date and time format...
         } else if(wishedDateAndTimeFormat === "MDYHMS") {
 
             // Affectation of 'dateAndTime''s time to 'convertedDateAndTime'...
-            convertedDateAndTime = month + "/" + day + "/" + year + " " + hours + ":" + minutes +  ":" + secondes;
+            convertedDateAndTime = month + "/" + date + "/" + year + " " + hours + ":" + minutes +  ":" + secondes;
 
         // Else...
         } else {
