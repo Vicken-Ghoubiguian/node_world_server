@@ -245,7 +245,7 @@ var timezones = [
 	{timezone: "Asia/Bishkek", country_code: "KG", weather_reference: "Bishkek", moment: moment.tz("Asia/Bishkek"), color: "#79F8F8"},
 	{timezone: "Asia/Brunei", country_code: "BN", weather_reference: "Brunei", moment: moment.tz("Asia/Brunei"), color: "#79F8F8"},
 	{timezone: "Asia/Chita", country_code: "RU", weather_reference: "Chita", moment: moment.tz("Asia/Chita"), color: "##79F8F8"},
-	{timezone: "Asia/Choibalsan", country_code: "RU", weather_reference: "Choibalsan", moment: moment.tz("Asia/Choibalsan"), color: "##79F8F8"},
+	{timezone: "Asia/Choibalsan", country_code: "MN", weather_reference: "Choibalsan", moment: moment.tz("Asia/Choibalsan"), color: "##79F8F8"},
 	{timezone: "Asia/Colombo", country_code: "LK", weather_reference: "Colombo", moment: moment.tz("Asia/Colombo"), color: "##79F8F8"},
 	{timezone: "Asia/Damascus", country_code: "SY", weather_reference: "Damascus", moment: moment.tz("Asia/Damascus"), color: "##79F8F8"},
 	{timezone: "Asia/Dhaka", country_code: "BD", weather_reference: "Dhaka", moment: moment.tz("Asia/Dhaka"), color: "##79F8F8"},
