@@ -291,7 +291,7 @@ var timezones = [
 	{timezone: "Asia/Qostanay", country_code: "KZ", weather_reference: "Qostanay", moment: moment.tz("Asia/Qostanay"), color: "#79F8F8"},
 	{timezone: "Asia/Qyzylorda", country_code: "KZ", weather_reference: "Qyzylorda", moment: moment.tz("Asia/Qyzylorda"), color: "#79F8F8"},
 	{timezone: "Asia/Riyadh", country_code: "SA", weather_reference: "Riyadh", moment: moment.tz("Asia/Riyadh"), color: "#79F8F8"},
-	{timezone: "Asia/Sakhalin", country_code: "RU", weather_reference: "Sakhalin", moment: moment.tz("Asia/Sakhalin"), color: "#79F8F8"},
+	{timezone: "Asia/Sakhalin", country_code: "RU", weather_reference: "Yuzhno-Sakhalinsk", moment: moment.tz("Asia/Sakhalin"), color: "#79F8F8"},
 	{timezone: "Asia/Samarkand", country_code: "UZ", weather_reference: "Samarkand", moment: moment.tz("Asia/Samarkand"), color: "#79F8F8"},
 	{timezone: "Asia/Seoul", country_code: "KR", weather_reference: "Seoul", moment: moment.tz("Asia/Seoul"), color: "#79F8F8"},
 	{timezone: "Asia/Shanghai", country_code: "CN", weather_reference: "Shanghai", moment: moment.tz("Asia/Shanghai"), color: "#79F8F8"},
