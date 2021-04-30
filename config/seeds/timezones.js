@@ -425,7 +425,7 @@ var timezones = [
 	{timezone: "Pacific/Easter", country_code: "CL", weather_reference: "Hanga Roa", moment: moment.tz("Pacific/Easter"), color: "#4B0082"},
 	{timezone: "Pacific/Efate", country_code: "VU", weather_reference: "Port-Vila", moment: moment.tz("Pacific/Efate"), color: "#4B0082"},
 	{timezone: "Pacific/Enderbury", country_code: "KI", weather_reference: "Port-Vila", moment: moment.tz("Pacific/Enderbury"), color: "#4B0082"},
-	{timezone: "Pacific/Fakaofo", country_code: "TK", weather_reference: "Fakaofo", moment: moment.tz("Pacific/Fakaofo"), color: "#4B0082"},
+	{timezone: "Pacific/Fakaofo", country_code: "TK", weather_reference: "Fale Old Settlement", moment: moment.tz("Pacific/Fakaofo"), color: "#4B0082"},
 	{timezone: "Pacific/Fiji", country_code: "FJ", weather_reference: "Suva", moment: moment.tz("Pacific/Fiji"), color: "#4B0082"},
 	{timezone: "Pacific/Funafuti", country_code: "TV", weather_reference: "Funafuti", moment: moment.tz("Pacific/Funafuti"), color: "#4B0082"},
 	{timezone: "Pacific/Galapagos", country_code: "EC", weather_reference: "Puerto Baquerizo Moreno", moment: moment.tz("Pacific/Galapagos"), color: "#4B0082"},
