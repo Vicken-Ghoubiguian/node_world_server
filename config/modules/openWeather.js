@@ -877,8 +877,8 @@ async function getWeather(citiesAndCountries, apiKey) {
             // In the other case...
             } else {
 
-                // The 'weatherProcessError' raised error is returned...
-                return weatherProcessError;
+                // The 'weatherProcessError' raised error is thrown...
+                throw weatherProcessError;
             }
         }
     }
