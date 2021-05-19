@@ -864,11 +864,17 @@ async function getWeather(citiesAndCountries, apiKey) {
             // In the case where there are a 'response' field in the error body (so the HTTPS request send a response which basses the current error), so...
             if(weatherProcessError.response) {
 
-                    // Implementation of the 'openWeatherAsJSON' structure which contains all the data concerning the occured error from openWeather...
+                    // Implementation of the 'openWeatherAsJSON' structure which contains all datas concerning the occured error from openWeather...
                     var openWeatherAsJSON = {
 
                         cod: weatherProcessError.response.data.cod,
                         message: weatherProcessError.response.data.message,
+                        server: weatherProcessError.response.headers.server,
+                        host: weatherProcessError.response.request.host,
+                        protocol: weatherProcessError.response.request.protocol,
+                        method: weatherProcessError.response.config.method,
+                        url: weatherProcessError.response.config.url,
+                        date: weatherProcessError.response.headers.date,
                     };
 
                     //Push in the array...
