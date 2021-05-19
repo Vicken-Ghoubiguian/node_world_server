@@ -862,7 +862,7 @@ async function getWeather(citiesAndCountries, apiKey) {
         } catch(weatherProcessError) {
 
             // In the case there are a 'data' filed in the 'response' field in the 'weatherProcessError' raised error, so...
-            if('data' in weatherProcessError.response) {
+            if(typeof weatherProcessError.response !== "undefined") {
 
                 // Implementation of the 'openWeatherAsJSON' structure which contains all the data concerning the occured error from openWeather...
                 var openWeatherAsJSON = {
