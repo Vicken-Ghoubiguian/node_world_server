@@ -189,12 +189,27 @@
 									        <tr>
 									        	<td><%= __('Country')%>: <%= weatherResults[i].sys_country %></td>
 									        </tr>
-									        <tr>
-									            <td><%= __('Sunrise')%> (timestamp): <%= weatherResults[i].sys_sunrise %></td>
-									        </tr>
-									        <tr>
-									        	<td><%= __('Sunset')%> (timestamp): <%= weatherResults[i].sys_sunset %></td>
-									        </tr>
+
+									        <% if(currentDateAndTimeFormat === "X") { %>
+
+										        <tr>
+										            <td><%= __('Sunrise')%> (timestamp): <%= weatherResults[i].sys_sunrise %></td>
+										        </tr>
+										        <tr>
+										        	<td><%= __('Sunset')%> (timestamp): <%= weatherResults[i].sys_sunset %></td>
+										        </tr>
+
+										    <% } else { %>
+
+										    	<tr>
+										            <td><%= __('Sunrise')%> (<%= currentDateAndTimeFormat %>): <%= weatherResults[i].sys_sunrise %></td>
+										        </tr>
+										        <tr>
+										        	<td><%= __('Sunset')%> (<%= currentDateAndTimeFormat %>): <%= weatherResults[i].sys_sunset %></td>
+										        </tr>
+
+										    <% } %>
+
 									    </tbody>
 									</table>
 								</div>
