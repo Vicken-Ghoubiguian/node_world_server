@@ -709,8 +709,8 @@ function dateAndTimeFormatConversionFunction(dateAndTime, timezone, wishedDateAn
             var secondes = dateAndTimeASJSDate.getUTCSeconds();
         }
 
-        // In the case "DMYHMS" is choosen as wished date and time format...
-        if(wishedDateAndTimeFormat === "DMYHMS") {
+        // In the case "DD/MM/YYYY HH:mm:ss" is choosen as wished date and time format...
+        if(wishedDateAndTimeFormat === "DD/MM/YYYY HH:mm:ss") {
 
             // Affectation of 'dateAndTime''s time to 'convertedDateAndTime'...
             convertedDateAndTime = date + "/" + month + "/" + year + " " + hours + ":" + minutes +  ":" + secondes;
