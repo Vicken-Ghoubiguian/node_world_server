@@ -716,7 +716,7 @@ function dateAndTimeFormatConversionFunction(dateAndTime, timezone, wishedDateAn
             convertedDateAndTime = date + "/" + month + "/" + year + " " + hours + ":" + minutes +  ":" + secondes;
 
         // In the case "YMDHMS" is choosen as wished date and time format...
-        } else if(wishedDateAndTimeFormat === "YMDHMS") {
+        } else if(wishedDateAndTimeFormat === "YYYY/MM/DD HH:mm:ss") {
 
             // Affectation of 'dateAndTime''s time to 'convertedDateAndTime'...
             convertedDateAndTime = year + "/" + month + "/" + date + " " + hours + ":" + minutes +  ":" + secondes;
