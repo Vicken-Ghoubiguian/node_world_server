@@ -557,17 +557,17 @@ app.post('/', function(req, res) {
         results[i].main_temp_min = openWeather.temperatureConversionFunction(results[i].main_temp_min, currentTemperatureUnit);
         results[i].main_temp_max = openWeather.temperatureConversionFunction(results[i].main_temp_max, currentTemperatureUnit);
 
-        // 
+        // In the case where the current format for dates and times is "timestamp"...
         if(currentDateAndTimeFormat === "X") {
 
-          // Treatment for sunrise and sunset dates and times...
+          // Treatment for sunrise and sunset dates and times without any argument for the format for dates and times...
           results[i].sys_sunrise = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunrise, results[i].timezone);
           results[i].sys_sunset = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunset, results[i].timezone);
 
         // In other cases...
         } else {
 
-          // Treatment for sunrise and sunset dates and times...
+          // Treatment for sunrise and sunset dates and times in the newly whished format for dates and times...
           results[i].sys_sunrise = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunrise, results[i].timezone);
           results[i].sys_sunset = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunset, results[i].timezone);
         }
