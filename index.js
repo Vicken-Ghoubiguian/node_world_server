@@ -568,8 +568,8 @@ app.post('/', function(req, res) {
         } else {
 
           // Treatment for sunrise and sunset dates and times in the newly whished format for dates and times...
-          results[i].sys_sunrise = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunrise, results[i].timezone);
-          results[i].sys_sunset = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunset, results[i].timezone);
+          results[i].sys_sunrise = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunrise, results[i].timezone, currentDateAndTimeFormat);
+          results[i].sys_sunset = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunset, results[i].timezone, currentDateAndTimeFormat);
         }
 
         //Treatment for the pressure...
