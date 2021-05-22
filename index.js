@@ -557,9 +557,20 @@ app.post('/', function(req, res) {
         results[i].main_temp_min = openWeather.temperatureConversionFunction(results[i].main_temp_min, currentTemperatureUnit);
         results[i].main_temp_max = openWeather.temperatureConversionFunction(results[i].main_temp_max, currentTemperatureUnit);
 
-        // Treatment for sunrise and sunset dates and times...
-        results[i].sys_sunrise = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunrise, results[i].timezone);
-        results[i].sys_sunset = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunset, results[i].timezone);
+        // 
+        if(currentDateAndTimeFormat === "X") {
+
+          // Treatment for sunrise and sunset dates and times...
+          results[i].sys_sunrise = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunrise, results[i].timezone);
+          results[i].sys_sunset = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunset, results[i].timezone);
+
+        // In other cases...
+        } else {
+
+          // Treatment for sunrise and sunset dates and times...
+          results[i].sys_sunrise = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunrise, results[i].timezone);
+          results[i].sys_sunset = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunset, results[i].timezone);
+        }
 
         //Treatment for the pressure...
         results[i].main_pressure = openWeather.pressureConversionFunction(results[i].main_pressure, currentPressureUnit);
