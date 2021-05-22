@@ -344,6 +344,21 @@ app.get('/', function(req, res) {
         results[i].weather_description = results[i].weather_description.charAt(0).toUpperCase() + results[i].weather_description.slice(1);
         results[i].weather_description = results[i].weather_description.split(' ').join('_');
 
+        // In the case where the current format for dates and times is "timestamp"...
+        if(currentDateAndTimeFormat === "X") {
+
+          // Treatment for sunrise and sunset dates and times without any argument for the format for dates and times...
+          results[i].sys_sunrise = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunrise, results[i].timezone);
+          results[i].sys_sunset = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunset, results[i].timezone);
+
+        // In other cases...
+        } else {
+
+          // Treatment for sunrise and sunset dates and times in the newly whished format for dates and times...
+          results[i].sys_sunrise = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunrise, results[i].timezone, currentDateAndTimeFormat);
+          results[i].sys_sunset = openWeather.dateAndTimeFormatConversionFunction(results[i].sys_sunset, results[i].timezone, currentDateAndTimeFormat);
+        }
+
         // Treatment of 'uv_risk' field for translation...
         results[i].uv_risk = results[i].uv_risk.charAt(0).toUpperCase() + results[i].uv_risk.slice(1);
         results[i].uv_risk = results[i].uv_risk.split(' ').join('_');
