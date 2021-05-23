@@ -193,10 +193,10 @@
 									        <% if(currentDateAndTimeFormat === "X") { %>
 
 										        <tr>
-										            <td><%= __('Sunrise')%> (timestamp): <%= weatherResults[i].sys_sunrise %></td>
+										            <td><%= __('Sunrise')%> (<%= currentDateAndTimeFormat %>): <%= weatherResults[i].sys_sunrise %></td>
 										        </tr>
 										        <tr>
-										        	<td><%= __('Sunset')%> (timestamp): <%= weatherResults[i].sys_sunset %></td>
+										        	<td><%= __('Sunset')%> (<%= currentDateAndTimeFormat %>): <%= weatherResults[i].sys_sunset %></td>
 										        </tr>
 
 										    <% } else { %>
