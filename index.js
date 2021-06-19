@@ -134,6 +134,12 @@ function updatePressureUnit(wishedCurrentPressureUnit) {
   }
 }
 
+//
+function updateWindSpeedUnit(wishedCurrentWindSpeedUnit) {
+
+
+}
+
 // Function to update the "selected" field of the corresponding font family's JSON depending on whether the current is selected or not...
 function updateFontFamily(wishedCurrentFontFamily) {
 
@@ -219,6 +225,12 @@ function getPressureUnitSymbol(wishedPressureUnit) {
   }
 
   return pressureUnitSymbol;
+}
+
+//
+function getWindSpeedUnitSymbol(wishedWindSpeedUnit) {
+
+
 }
 
 // 
