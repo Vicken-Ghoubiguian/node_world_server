@@ -137,19 +137,19 @@ function updatePressureUnit(wishedCurrentPressureUnit) {
 // Function to update the "selected" field of the corresponding wind speed unit's JSON depending on whether the current is selected or not...
 function updateWindSpeedUnit(wishedCurrentWindSpeedUnit) {
 
-  /*for(var i = 0; i < selectionnablePressureUnits.length; i++){
+  /*for(var i = 0; i < selectionnableWindSpeedUnits.length; i++){
 
-    if(selectionnablePressureUnits[i].selected === "selected"){
+    if(selectionnableWindSpeedUnits[i].selected === "selected"){
 
-      selectionnablePressureUnits[i].selected = "";
+      selectionnableWindSpeedUnits[i].selected = "";
     }
   }
 
-  for(var i = 0; i < selectionnablePressureUnits.length; i++){
+  for(var i = 0; i < selectionnableWindSpeedUnits.length; i++){
 
-    if(selectionnablePressureUnits[i].unit === wishedCurrentPressureUnit){
+    if(selectionnableWindSpeedUnits[i].unit === wishedCurrentWindSpeedUnit){
 
-      selectionnablePressureUnits[i].selected = "selected";
+      selectionnableWindSpeedUnits[i].selected = "selected";
     }
   }*/
 }
