@@ -134,7 +134,7 @@ function updatePressureUnit(wishedCurrentPressureUnit) {
   }
 }
 
-//
+// Function to update the "selected" field of the corresponding wind speed unit's JSON depending on whether the current is selected or not...
 function updateWindSpeedUnit(wishedCurrentWindSpeedUnit) {
 
 
@@ -227,7 +227,7 @@ function getPressureUnitSymbol(wishedPressureUnit) {
   return pressureUnitSymbol;
 }
 
-//
+// Function to identify the wind speed unit symbol of the 'wishedWindSpeedUnit' wind speed unit passed in parameter...
 function getWindSpeedUnitSymbol(wishedWindSpeedUnit) {
 
 
