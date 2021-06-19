@@ -12,6 +12,7 @@ var openWeather = require('./config/modules/openWeather');
 var selectionnableLanguages = require('./config/seeds/selectionnableLanguages');
 var selectionnableTemperatureUnits = require('./config/seeds/temperatureUnits');
 var selectionnablePressureUnits = require('./config/seeds/pressureUnits');
+var selectionnableWindSpeedUnits = require('./config/seeds/windSpeedUnits');
 var formats = require('./config/seeds/formats');
 var timezones = require('./config/seeds/timezones');
 var fontFamilies = require('./config/seeds/fontFamilies');
