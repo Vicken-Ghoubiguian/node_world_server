@@ -49,6 +49,11 @@ $( function() {
 		$("#choosen_pressure_unit_form").submit();
 	}});
 
+	//
+	$("#choosen_wind_speed_unit").selectmenu({ change: function(event, ui){
+
+	}});
+
 	// Triggering an action when an element of the 'choosen_font_family_format' <select> is chosen...
 	$("#choosen_font_family_format").selectmenu({ change: function(event, ui){
 
