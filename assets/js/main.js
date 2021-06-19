@@ -49,7 +49,7 @@ $( function() {
 		$("#choosen_pressure_unit_form").submit();
 	}});
 
-	//
+	// Triggering an action when an element of the 'choosen_wind_speed_unit' <select> is chosen...
 	$("#choosen_wind_speed_unit").selectmenu({ change: function(event, ui){
 
 	}});
