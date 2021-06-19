@@ -63,6 +63,7 @@
 					<input type="hidden" name="current_country_code" value="">
 					<input type="hidden" name="current_temperature_unit" value="">
 					<input type="hidden" name="current_pressure_unit" value="">
+					<input type="hidden" name="current_wind_speed_unit" value="">
 					<input type="hidden" name="current_font_family_format" value="">
 
 					<!-- Definition of the form body for the corresponding data: here the date and time format -->
@@ -83,6 +84,7 @@
 					<input type="hidden" name="current_date_and_time_format" value="">
 					<input type="hidden" name="current_temperature_unit" value="">
 					<input type="hidden" name="current_pressure_unit" value="">
+					<input type="hidden" name="current_wind_speed_unit" value="">
 					<input type="hidden" name="current_font_family_format" value="">
 
 					<!-- Definition of the form body for the corresponding data: here the country code -->
@@ -103,6 +105,7 @@
 					<input type="hidden" name="current_date_and_time_format" value="">
 					<input type="hidden" name="current_country_code" value="">
 					<input type="hidden" name="current_pressure_unit" value="">
+					<input type="hidden" name="current_wind_speed_unit" value="">
 					<input type="hidden" name="current_font_family_format" value="">
 
 					<!-- Definition of the form body for the corresponding data: here the temperature unit -->
@@ -123,6 +126,7 @@
 					<input type="hidden" name="current_date_and_time_format" value="">
 					<input type="hidden" name="current_country_code" value="">
 					<input type="hidden" name="current_temperature_unit" value="">
+					<input type="hidden" name="current_wind_speed_unit" value="">
 					<input type="hidden" name="current_font_family_format" value="">
 
 					<!-- Definition of the form body for the corresponding data: here the pressure unit -->
@@ -132,6 +136,22 @@
 							<option value="<%= selectionnablePressureUnits[i].unit %>" <%= selectionnablePressureUnits[i].selected %>><%= selectionnablePressureUnits[i].unit %> (<%= selectionnablePressureUnits[i].symbol %>)</option>
 						<% } %>
 					</select>
+				</form>
+				<form>
+
+					<!-- Definition of the form name -->
+					<input type="hidden" name="current_form" value="choosen_wind_speed_unit_form">
+
+					<!-- Definition of the fields to keep current datas values -->
+					<input type="hidden" name="current_language" value="">
+					<input type="hidden" name="current_date_and_time_format" value="">
+					<input type="hidden" name="current_country_code" value="">
+					<input type="hidden" name="current_temperature_unit" value="">
+					<input type="hidden" name="current_pressure_unit" value="">
+					<input type="hidden" name="current_font_family_format" value="">
+
+					<!-- Definition of the form body for the corresponding data: here the wind speed unit -->
+
 				</form>
 				<form id="choosen_font_family_form" class="node_world_server_form" method="post" action="/" data-toggle="tooltip" data-placement="top">
 
@@ -144,6 +164,7 @@
 					<input type="hidden" name="current_country_code" value="">
 					<input type="hidden" name="current_temperature_unit" value="">
 					<input type="hidden" name="current_pressure_unit" value="">
+					<input type="hidden" name="current_wind_speed_unit" value="">
 
 					<!-- Definition of the form body for the corresponding data: here the font family -->
 					<%= __('font_family_choice')%> :
