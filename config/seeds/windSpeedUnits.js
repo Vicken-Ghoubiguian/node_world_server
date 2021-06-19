@@ -1,7 +1,7 @@
 //
-var pressureUnits = [
+var windSpeedUnits = [
 
 ];
 
 //
-module.exports = pressureUnits;
+module.exports = windSpeedUnits;
