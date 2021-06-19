@@ -120,6 +120,7 @@
 	"Country_choice_tooltip": "Choisissez le pays que vous voulez",
 	"Temperature_unit_choice_tooltip": "Choisissez l'unité de temperature que vous voulez",
 	"Pressure_unit_choice_tooltip": "Choisissez l'unité de pression que vous voulez",
+	"Wind_speed_unit_choice_tooltip": "Choisissez l'unité de la vitesse du vent que vous voulez",
 	"Font_family_choice_tooltip": "Choisissez la famille de police que vous voulez",
 
 	"NaNC": "Aucun pays",

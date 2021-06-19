@@ -120,6 +120,7 @@
 	"Country_choice_tooltip": "Trieu el país que vulgueu",
 	"Temperature_unit_choice_tooltip": "Trieu la unitat de temperatura que vulgueu",
 	"Pressure_unit_choice_tooltip": "Trieu la unitat de pressió que vulgueu",
+	"Wind_speed_unit_choice_tooltip": "Trieu la unitat de velocitat del vent que vulgueu",
 	"Font_family_choice_tooltip": "Trieu la família de tipus de lletra que vulgueu",
 
 	"NaNC": "Cap país",
