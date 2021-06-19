@@ -137,7 +137,7 @@ function updatePressureUnit(wishedCurrentPressureUnit) {
 // Function to update the "selected" field of the corresponding wind speed unit's JSON depending on whether the current is selected or not...
 function updateWindSpeedUnit(wishedCurrentWindSpeedUnit) {
 
-  /*for(var i = 0; i < selectionnableWindSpeedUnits.length; i++){
+  for(var i = 0; i < selectionnableWindSpeedUnits.length; i++){
 
     if(selectionnableWindSpeedUnits[i].selected === "selected"){
 
@@ -151,7 +151,7 @@ function updateWindSpeedUnit(wishedCurrentWindSpeedUnit) {
 
       selectionnableWindSpeedUnits[i].selected = "selected";
     }
-  }*/
+  }
 }
 
 // Function to update the "selected" field of the corresponding font family's JSON depending on whether the current is selected or not...
