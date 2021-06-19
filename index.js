@@ -312,7 +312,7 @@ app.get('/', function(req, res) {
   // Updating the pressure unit 'select' for the corresponding form...
   updatePressureUnit(currentPressureUnit);
 
-  //
+  // Updating the familly font 'select' for the corresponding form...
   updateFontFamily(currentFontFamily[0]);
 
   // Defining the pressure unit symbol from the  'currentTemperatureUnit' variable...
@@ -651,7 +651,7 @@ app.post('/', function(req, res) {
       currentCountryFlagURL = "https://flagcdn.com/h40/" + currentCountryCode.toLowerCase() + ".png";
     }
 
-    //
+    // Updating the familly font 'select' for the corresponding form...
     updateFontFamily(currentFontFamily[0]);
 
     res.render('index.ejs', {
