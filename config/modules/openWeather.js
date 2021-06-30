@@ -841,6 +841,7 @@ async function getWeather(citiesAndCountries, apiKey) {
                 sys_sunrise: response_body.data.sys.sunrise,
                 sys_sunset: response_body.data.sys.sunset,
                 timezone: response_body.data.timezone,
+                utc_offset: response_body.data.timezone/3600,
                 city: response_body.data.name,
                 id: response_body.data.id,
                 cod: response_body.data.cod,
