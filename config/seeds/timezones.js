@@ -29,7 +29,7 @@ var timezones = [
 	{timezone: "Africa/Dar_es_Salaam", country_code: "TZ", weather_reference: "Dar_es_Salaam", moment: moment.tz("Africa/Dar_es_Salaam"), color: "#ffdf00"},
 	{timezone: "Africa/Djibouti", country_code: "DJ", weather_reference: "Djibouti", moment: moment.tz("Africa/Djibouti"), color: "#ffdf00"},
 	{timezone: "Africa/Douala", country_code: "CM", weather_reference: "Douala", moment: moment.tz("Africa/Douala"), color: "#ffdf00"},
-	{timezone: "Africa/El_Aaiun", country_code: "EH", weather_reference: "El_Aaiun", moment: moment.tz("Africa/El_Aaiun"), color: "#ffdf00"},
+	{timezone: "Africa/El_Aaiun", country_code: "EH", weather_reference: "Laayoune", moment: moment.tz("Africa/El_Aaiun"), color: "#ffdf00"},
 	{timezone: "Africa/Freetown", country_code: "SL", weather_reference: "Freetown", moment: moment.tz("Africa/Freetown"), color: "#ffdf00"},
 	{timezone: "Africa/Gaborone", country_code: "BW", weather_reference: "Gaborone", moment: moment.tz("Africa/Gaborone"), color: "#ffdf00"},
 	{timezone: "Africa/Harare", country_code: "ZW", weather_reference: "Harare", moment: moment.tz("Africa/Harare"), color: "#ffdf00"},
