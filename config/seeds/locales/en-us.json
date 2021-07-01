@@ -39,10 +39,6 @@
 	"Country": "Country",
 
 	"Clear_sky": "Clear sky",
-	"Few_clouds": "Few clouds",
-	"Scattered_clouds": "Scattered clouds",
-	"Broken_clouds": "Broken clouds",
-	"Shower_rain": "Shower rain",
 	"Rain": "Rain",
 	"Thunderstorm": "Thunderstorm",
 	"Snow": "Snow",
@@ -348,7 +344,6 @@
 	"TK": "Tokelau",
 	"FJ": "Fiji",
 	"TV": "Tuvalu",
-	"EC": "Ecuador",
 	"PF": "French Polynesia",
 	"SB": "Solomon Islands",
 	"GU": "Guam",
