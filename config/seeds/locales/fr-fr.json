@@ -34,7 +34,7 @@
 	"Wind_speed": "Vitesse du vent",
 	"Wind_deg": "Degré du vent",
 	"Offset_from_UTC": "Décalage par rapport à UTC",
-	"In_seconds": "en secondes",
+	"Seconds": "secondes",
 	"Humidity": "Humidité",
 	"Country": "Pays",
 
