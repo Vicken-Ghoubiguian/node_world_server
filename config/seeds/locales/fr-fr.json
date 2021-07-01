@@ -3,7 +3,6 @@
 	"English": "Anglais",
 	"Spanish": "Espagnol",
 	"Catalan": "Catalan",
-	
 	"Language_choice": "S'il vous plait, choisissez la langue que vous voulez",
 	"Date_and_time_format_choice": "S'il vous plait, choisissez le format que vous voulez pour la date et l'heure",
 	"temperature_unit_choice": "S'il vous plait, choisissez l'unité de température que vous voulez",
@@ -15,10 +14,8 @@
 	"Ragnarok": "Ici le temps vous attend comme Ragnarök...",
 	"City_not_found": "Ville introuvable",
 	"Invalid_api_key": "Clé API non valide. Veuillez consulter http://openweathermap.org/faq#error401 pour plus d'informations",
-	
 	"Timezones_visualization": "Visualisation des fuseaux horaires",
 	"GitHub_visualization": "Visualisation de GitHub",
-
 	"Description": "Description",
 	"Localisation": "Localisation",
 	"UV_index": "Indice UV",
@@ -37,13 +34,11 @@
 	"In_seconds": "en secondes",
 	"Humidity": "Humidité",
 	"Country": "Pays",
-
 	"Clear_sky": "Ciel clair",
 	"Rain": "Pluie",
 	"Thunderstorm": "Orage",
 	"Snow": "Neige",
 	"Mist": "Brouillard",
-
 	"Drizzle": "Bruine",
 	"Light_intensity_drizzle": "Bruine de faible intensité",
 	"Heavy_intensity_drizzle": "Bruine de forte intensité",
@@ -53,7 +48,6 @@
 	"Heavy_intensity_drizzle_rain": "Pluie torrentielle de forte intensité",
 	"Shower_rain_and_drizzle": "Averse de pluie et de bruine",
 	"Heavy_shower_rain_and_drizzle": "Forte averse de pluie et de bruine",
-
 	"Thunderstorm_with_light_rain": "Orage avec pluie légère",
 	"Thunderstorm_with_rain": "Orage avec pluie",
 	"Thunderstorm_with_heavy_rain": "Orage avec de fortes pluies",
@@ -63,7 +57,6 @@
 	"Thunderstorm with light drizzle": "Orage avec légère bruine",
 	"Thunderstorm_with_drizzle": "Orage avec bruine",
 	"Thunderstorm_with_heavy_drizzle": "Orage avec de fortes bruines",
-
 	"Smoke": "Fumée",
 	"Haze": "Brume",
 	"Fog": "Brouillard",
@@ -75,12 +68,10 @@
 	"Ash": "Cendre",
 	"Volcanic_ash": "Cendre volcanique",
 	"Tornado": "Tornade",
-
 	"Few_clouds": "Quelques nuages",
 	"Scattered_clouds": "Nuages ​​dispersés",
 	"Broken_clouds": "Nuages ​​brisés",
 	"Overcast_clouds": "Ciel couvert",
-
 	"Light_rain": "Pluie faible",
 	"Moderate_rain": "Pluie modérée",
 	"Heavy_intensity_rain": "Pluie de forte intensité",
@@ -91,7 +82,6 @@
 	"Shower_rain": "Averse de pluie",
 	"Heavy_intensity_shower_rain": "Averse de pluie de forte intensité",
 	"Ragged_shower_rain": "Averse de pluie déchiquetée",
-
 	"Light_snow": "Neige de faible intensité",
 	"Heavy_snow": "Neige de lourde intensité",
 	"Sleet": "Neige fondue",
@@ -102,15 +92,12 @@
 	"Light_shower_snow": "Faible averse de neige",
 	"Shower_snow": "Averse de neige",
 	"Heavy_shower_snow": "Forte averse de neige",
-
 	"Low": "faible",
 	"Moderate": "modéré",
 	"High": "élevé",
 	"Very_high": "très élevé",
 	"Extreme": "extrême",
-
 	"Flag_not_available": "Drapeau non disponible",
-
 	"Language_choice_tooltip": "Choisissez la langue que vous voulez",
 	"Date_and_time_format_choice_tooltip": "Choisissez le format que vous voulez pour la date et l'heure",
 	"Country_choice_tooltip": "Choisissez le pays que vous voulez",
@@ -118,7 +105,6 @@
 	"Pressure_unit_choice_tooltip": "Choisissez l'unité de pression que vous voulez",
 	"Wind_speed_unit_choice_tooltip": "Choisissez l'unité de la vitesse du vent que vous voulez",
 	"Font_family_choice_tooltip": "Choisissez la famille de police que vous voulez",
-
 	"NaNC": "Aucun pays",
 	"CI": "Côte d'Ivoire",
 	"GH": "Ghana",
@@ -363,5 +349,6 @@
 	"TO": "Tonga",
 	"UM": "Îles mineures éloignées des États-Unis",
 	"WF": "Wallis et Futuna",
-	"YT": "Mayotte"
+	"YT": "Mayotte",
+	"Seconds": "Seconds"
 }
