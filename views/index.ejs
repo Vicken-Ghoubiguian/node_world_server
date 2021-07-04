@@ -254,6 +254,7 @@
 									        <tr>
 									        	<td><%= __('Wind_deg')%>: <%= weatherResults[i].wind_deg %></td>
 									        </tr>
+											<!--<tr>-->
 											<% if(weatherResults[i].utc_offset > 0) { %>
 												<% if(weatherResults[i].utc_offset < 10) { %>
 													<% if(Number.isInteger(weatherResults[i].utc_offset)) { %>
@@ -303,6 +304,7 @@
 													<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC±00:00)</td>
 												</tr>
 											<% } %>
+											<!--</tr>-->
 									        <tr>
 									        	<td><%= __('Humidity')%> (%): <%= weatherResults[i].main_humidity %></td>
 									        </tr>
