@@ -255,37 +255,37 @@
 									        	<td><%= __('Wind_deg')%>: <%= weatherResults[i].wind_deg %></td>
 									        </tr>
 											<tr>
-											<% if(weatherResults[i].utc_offset > 0) { %>
-												<% if(weatherResults[i].utc_offset < 10) { %>
-													<% if(Number.isInteger(weatherResults[i].utc_offset)) { %>
-														<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC+0<%= weatherResults[i].utc_offset %>:00)</td>
-													<% } else { %>
-														<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC+0<%= weatherResults[i].utc_offset %>:00)</td>
-													<% } %>	
-												<% } else { %>
-													<% if(Number.isInteger(weatherResults[i].utc_offset)) { %>
-														<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC+<%= weatherResults[i].utc_offset %>:00)</td>
-													<% } else { %>
-														<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC+0<%= weatherResults[i].utc_offset %>:00)</td>
-													<% } %>	
-												<% } %>
-											<% } else if(weatherResults[i].utc_offset < 0) { %>
-												<% if(weatherResults[i].utc_offset < 10) { %>
-													<% if(Number.isInteger(weatherResults[i].utc_offset)) { %>
-														<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC-0<%= -weatherResults[i].utc_offset %>:00)</td>
-													<% } else { %>
-														<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC+0<%= weatherResults[i].utc_offset %>:00)</td>
+												<% if(weatherResults[i].utc_offset > 0) { %>
+													<% if(weatherResults[i].utc_offset < 10) { %>
+														<% if(Number.isInteger(weatherResults[i].utc_offset)) { %>
+															<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC+0<%= weatherResults[i].utc_offset %>:00)</td>
+														<% } else { %>
+															<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC+0<%= weatherResults[i].utc_offset %>:00)</td>
+														<% } %>	
+													<% } else { %>
+														<% if(Number.isInteger(weatherResults[i].utc_offset)) { %>
+															<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC+<%= weatherResults[i].utc_offset %>:00)</td>
+														<% } else { %>
+															<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC+0<%= weatherResults[i].utc_offset %>:00)</td>
+														<% } %>	
+													<% } %>
+												<% } else if(weatherResults[i].utc_offset < 0) { %>
+													<% if(weatherResults[i].utc_offset < 10) { %>
+														<% if(Number.isInteger(weatherResults[i].utc_offset)) { %>
+															<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC-0<%= -weatherResults[i].utc_offset %>:00)</td>
+														<% } else { %>
+															<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC+0<%= weatherResults[i].utc_offset %>:00)</td>
+														<% } %>
+													<% } else { %>
+														<% if(Number.isInteger(weatherResults[i].utc_offset)) { %>
+															<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC<%= weatherResults[i].utc_offset %>:00)</td>
+														<% } else { %>
+															<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC+0<%= weatherResults[i].utc_offset %>:00)</td>
+														<% } %>
 													<% } %>
 												<% } else { %>
-													<% if(Number.isInteger(weatherResults[i].utc_offset)) { %>
-														<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC<%= weatherResults[i].utc_offset %>:00)</td>
-													<% } else { %>
-														<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC+0<%= weatherResults[i].utc_offset %>:00)</td>
-													<% } %>
+													<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC±00:00)</td>
 												<% } %>
-											<% } else { %>
-												<td><%= __('Offset_from_UTC')%>: <%= weatherResults[i].timezone %> <%= __('Seconds')%> (UTC±00:00)</td>
-											<% } %>
 											</tr>
 									        <tr>
 									        	<td><%= __('Humidity')%> (%): <%= weatherResults[i].main_humidity %></td>
