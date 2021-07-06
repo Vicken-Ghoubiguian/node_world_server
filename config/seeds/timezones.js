@@ -318,7 +318,7 @@ var timezones = [
 	{timezone: "Atlantic/Bermuda", country_code: "BM", weather_reference: "Bermuda", moment: moment.tz("Atlantic/Bermuda"), color: "#00FF00"},
 	{timezone: "Atlantic/Canary", country_code: "ES", weather_reference: "Canary", moment: moment.tz("Atlantic/Canary"), color: "#00FF00"},
 	{timezone: "Atlantic/Cape_Verde", country_code: "CV", weather_reference: "Praia", moment: moment.tz("Atlantic/Cape_Verde"), color: "#00FF00"},
-	{timezone: "Atlantic/Faroe", country_code: "FO", weather_reference: "Tórshavn", moment: moment.tz("Atlantic/Faroe"), color: "#00FF00"},
+	{timezone: "Atlantic/Faroe", country_code: "FO", weather_reference: "Torshavn", moment: moment.tz("Atlantic/Faroe"), color: "#00FF00"},
 	{timezone: "Atlantic/Madeira", country_code: "PT", weather_reference: "Madeira", moment: moment.tz("Atlantic/Madeira"), color: "#00FF00"},
 	{timezone: "Atlantic/Reykjavik", country_code: "IS", weather_reference: "Reykjavik", moment: moment.tz("Atlantic/Reykjavik"), color: "#00FF00"},
 	{timezone: "Atlantic/South_Georgia", country_code: "GS", weather_reference: "Grytviken", moment: moment.tz("Atlantic/South_Georgia"), color: "#00FF00"},
