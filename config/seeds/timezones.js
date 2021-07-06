@@ -191,7 +191,7 @@ var timezones = [
 	{timezone: "America/Santiago", country_code: "CL", weather_reference: "Santiago", moment: moment.tz("America/Santiago"), color: "#FFA500"},
 	{timezone: "America/Santo_Domingo", country_code: "DO", weather_reference: "Santo Domingo", moment: moment.tz("America/Santo_Domingo"), color: "#FFA500"},
 	{timezone: "America/Sao_Paulo", country_code: "BR", weather_reference: "Sao Paulo", moment: moment.tz("America/Sao_Paulo"), color: "#FFA500"},
-	{timezone: "America/Scoresbysund", country_code: "GL", weather_reference: "Scoresbysund", moment: moment.tz("America/Scoresbysund"), color: "#FFA500"},
+	{timezone: "America/Scoresbysund", country_code: "GL", weather_reference: "Ittoqqortoormiit", moment: moment.tz("America/Scoresbysund"), color: "#FFA500"},
 	{timezone: "America/Sitka", country_code: "US", weather_reference: "Sitka", moment: moment.tz("America/Sitka"), color: "#FFA500"},
 	{timezone: "America/St_Barthelemy", country_code: "BL", weather_reference: "Saint Barthelemy", moment: moment.tz("America/St_Barthelemy"), color: "#FFA500"},
 	{timezone: "America/St_Johns", country_code: "CA", weather_reference: "Saint John's", moment: moment.tz("America/St_Johns"), color: "#FFA500"},
