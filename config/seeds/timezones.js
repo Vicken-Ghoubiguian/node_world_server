@@ -449,7 +449,7 @@ var timezones = [
 	{timezone: "Pacific/Port_Moresby", country_code: "PG", weather_reference: "Port Moresby", moment: moment.tz("Pacific/Port_Moresby"), color: "#4B0082"},
 	{timezone: "Pacific/Rarotonga", country_code: "CK", weather_reference: "Avarua", moment: moment.tz("Pacific/Rarotonga"), color: "#4B0082"},
 	{timezone: "Pacific/Saipan", country_code: "MP", weather_reference: "Saipan", moment: moment.tz("Pacific/Saipan"), color: "#4B0082"},
-	{timezone: "Pacific/Tahiti", country_code: "PF", weather_reference: "Tarawa", moment: moment.tz("Pacific/Tahiti"), color: "#4B0082"},
+	{timezone: "Pacific/Tahiti", country_code: "PF", weather_reference: "Papeete", moment: moment.tz("Pacific/Tahiti"), color: "#4B0082"},
 	{timezone: "Pacific/Tarawa", country_code: "KI", weather_reference: "Tarawa", moment: moment.tz("Pacific/Tarawa"), color: "#4B0082"},
 	{timezone: "Pacific/Tongatapu", country_code: "TO", weather_reference: "Tongatapu", moment: moment.tz("Pacific/Tongatapu"), color: "#4B0082"},
 	{timezone: "Pacific/Wake", country_code: "UM", weather_reference: "Wake", moment: moment.tz("Pacific/Wake"), color: "#4B0082"},
