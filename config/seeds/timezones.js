@@ -430,7 +430,7 @@ var timezones = [
 	{timezone: "Pacific/Galapagos", country_code: "EC", weather_reference: "Puerto Baquerizo Moreno", moment: moment.tz("Pacific/Galapagos"), color: "#4B0082"},
 	{timezone: "Pacific/Gambier", country_code: "PF", weather_reference: "Rikitea", moment: moment.tz("Pacific/Gambier"), color: "#4B0082"},
 	{timezone: "Pacific/Guadalcanal", country_code: "SB", weather_reference: "Honiara", moment: moment.tz("Pacific/Guadalcanal"), color: "#4B0082"},
-	{timezone: "Pacific/Guam", country_code: "GU", weather_reference: "Hagåtña", moment: moment.tz("Pacific/Guam"), color: "#4B0082"},
+	{timezone: "Pacific/Guam", country_code: "GU", weather_reference: "Hagatna", moment: moment.tz("Pacific/Guam"), color: "#4B0082"},
 	{timezone: "Pacific/Honolulu", country_code: "US", weather_reference: "Honolulu", moment: moment.tz("Pacific/Honolulu"), color: "#4B0082"},
 	{timezone: "Pacific/Kiritimati", country_code: "KI", weather_reference: "Kiritimati", moment: moment.tz("Pacific/Kiritimati"), color: "#4B0082"},
 	{timezone: "Pacific/Kosrae", country_code: "FM", weather_reference: "Kosrae", moment: moment.tz("Pacific/Kosrae"), color: "#4B0082"},
