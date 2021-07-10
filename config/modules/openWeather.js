@@ -1,7 +1,7 @@
 // Importation of NPM module 'axios'...
 var axios = require('axios');
 
-//
+// // Definition of the 'utcOffsetDefinitionFunction' function to define the UTC offset from the 'currentUtcOffset' in hours (result of dividing the number of seconds - 'timezone' field of the openWeather HTTP request result - by 3600 - number of seconds in an hour -)...
 function utcOffsetDefinitionFunction(currentUtcOffset) {
 
 
