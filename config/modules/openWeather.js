@@ -638,6 +638,9 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
     return convertedPressureValue;
 }
 
+//
+function windSpeedConversionFunction(windSpeedValue, wishedWindSpeedUnit, currentwindSpeedUnit = "Meter_per_second") {}
+
 // Definition of the 'dateAndTimeFormatConversionFunction' function to convert and return dateAndTime from a timestamp to a wished 'wishedDateAndTimeFormat' format...
 function dateAndTimeFormatConversionFunction(dateAndTime, timezone, wishedDateAndTimeFormat = "timestamp") {
 
@@ -915,6 +918,7 @@ module.exports = {
         'getWeather': getWeather,
         'dateAndTimeFormatConversionFunction': dateAndTimeFormatConversionFunction,
         'pressureConversionFunction': pressureConversionFunction,
+        'windSpeedConversionFunction': windSpeedConversionFunction,
         'temperatureConversionFunction': temperatureConversionFunction,
         'utcOffsetDefinitionFunction': utcOffsetDefinitionFunction
 }
