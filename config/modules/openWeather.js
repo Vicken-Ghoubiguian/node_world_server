@@ -644,10 +644,10 @@ function windSpeedConversionFunction(windSpeedValue, wishedWindSpeedUnit, curren
 // Definition of the 'dateAndTimeFormatConversionFunction' function to convert and return dateAndTime from a timestamp to a wished 'wishedDateAndTimeFormat' format...
 function dateAndTimeFormatConversionFunction(dateAndTime, timezone, wishedDateAndTimeFormat = "timestamp") {
 
-    //
+    // Declaration of the 'convertedDateAndTime' variable which will contain the date and time (datetime) converted in the wished format...
     var convertedDateAndTime;
 
-    //
+    // Adding the number of seconds contained in the 'timezone' variable (which corresponds to the indicated timezone) to the 'dateAndTime' variable...
     dateAndTime = (dateAndTime + timezone) * 1000;
 
     // If the wished date and time is "timestamp"... 
@@ -669,7 +669,7 @@ function dateAndTimeFormatConversionFunction(dateAndTime, timezone, wishedDateAn
             var date = dateAndTimeASJSDate.getUTCDate();
         }
 
-        //
+        // Getting the exactly issue of month...
         var month = dateAndTimeASJSDate.getUTCMonth() + 1;
 
         // If the number of month is less than 9 or equal to 9, so...
