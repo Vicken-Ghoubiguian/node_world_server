@@ -639,10 +639,7 @@ function pressureConversionFunction(pressureValue, wishedPressureUnit, currentPr
 }
 
 // Definition of the 'windSpeedConversionFunction' function to convert and return the 'windSpeedValue' wind speed value in a 'currentwindSpeedUnit' current unit to a 'wishedWindSpeedUnit' wished unit...
-function windSpeedConversionFunction(windSpeedValue, wishedWindSpeedUnit, currentwindSpeedUnit = "Meter_per_second") {
-    
-    
-}
+function windSpeedConversionFunction(windSpeedValue, wishedWindSpeedUnit, currentwindSpeedUnit = "Meter_per_second") {}
 
 // Definition of the 'dateAndTimeFormatConversionFunction' function to convert and return dateAndTime from a timestamp to a wished 'wishedDateAndTimeFormat' format...
 function dateAndTimeFormatConversionFunction(dateAndTime, timezone, wishedDateAndTimeFormat = "timestamp") {
