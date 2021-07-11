@@ -376,7 +376,7 @@ app.get('/', function(req, res) {
         results[i].weather_description = results[i].weather_description.charAt(0).toUpperCase() + results[i].weather_description.slice(1);
         results[i].weather_description = results[i].weather_description.split(' ').join('_');
 
-        //
+        // Treatment of 'utc_offset' field to define all UTC offset...
         // ===> For UTC offset
 
         // In the case where the current format for dates and times is "timestamp"...
@@ -610,7 +610,7 @@ app.post('/', function(req, res) {
         results[i].main_temp_min = openWeather.temperatureConversionFunction(results[i].main_temp_min, currentTemperatureUnit);
         results[i].main_temp_max = openWeather.temperatureConversionFunction(results[i].main_temp_max, currentTemperatureUnit);
 
-        //
+        // Treatment of 'utc_offset' field to define all UTC offset...
         // ===> For UTC offset
 
         // In the case where the current format for dates and times is "timestamp"...
