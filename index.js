@@ -438,7 +438,6 @@ app.get('/', function(req, res) {
                              "formats": formats, 
                              "weatherResults": results, 
                              "currentFontFamily": currentFontFamily
-
                           });
   });
 });
@@ -674,7 +673,6 @@ app.post('/', function(req, res) {
                              "formats": formats, 
                              "weatherResults": results, 
                              "currentFontFamily": currentFontFamily
-
                            });
   });
 });
