@@ -277,6 +277,9 @@ app.get('/', function(req, res) {
   	timezones.moment.locale(currentLocale);
   }
 
+  //
+  var utcOffsetArray = [];
+
   setInterval(updateDateAndTime, 1000);
 
   // Listing all locales and put all of them in the 'listOfAllLocales' array...
@@ -436,7 +439,8 @@ app.get('/', function(req, res) {
                              "currentDateAndTimeFormat": currentDateAndTimeFormat, 
                              "fontFamilies": fontFamiliesArray, 
                              "formats": formats, 
-                             "weatherResults": results, 
+                             "weatherResults": results,
+                             "utcOffsetArray": utcOffsetArray,  
                              "currentFontFamily": currentFontFamily
                           });
   });
@@ -450,6 +454,7 @@ app.post('/', function(req, res) {
   var countryCodeHashTable = new Object();
   var renderTimezonesArray = [];
   var listOfAllLocales = [];
+  var utcOffsetArray = [];
 
   // Definition of the array 'keysOfCountryCodeHashTable' which will contain all the keys used in the associative array 'countryCodeHashTable'...
   var keysOfCountryCodeHashTable = [];
@@ -671,7 +676,8 @@ app.post('/', function(req, res) {
                              "currentDateAndTimeFormat": currentDateAndTimeFormat, 
                              "fontFamilies": fontFamiliesArray, 
                              "formats": formats, 
-                             "weatherResults": results, 
+                             "weatherResults": results,
+                             "utcOffsetArray": utcOffsetArray, 
                              "currentFontFamily": currentFontFamily
                            });
   });
