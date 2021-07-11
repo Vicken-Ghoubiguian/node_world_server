@@ -4,7 +4,117 @@ var axios = require('axios');
 // // Definition of the 'utcOffsetDefinitionFunction' function to define the UTC offset from the 'currentUtcOffset' in hours (result of dividing the number of seconds - 'timezone' field of the openWeather HTTP request result - by 3600 - number of seconds in an hour -)...
 function utcOffsetDefinitionFunction(currentUtcOffset) {
 
+    // if the UTC offset is a positive number...
+    if(currentUtcOffset > 0) {
+            
+        // Check if the calculated offset from UTC is an integer ('Number.isInteger' will return 'true') or a float ('Number.isInteger' will return 'false')...
+        if(Number.isInteger(currentUtcOffset)) {
 
+            // Extraction of the whole part in hours decimal part...
+            var wholePart = (currentUtcOffset+"").split(".")[0];
+
+            // In the case where the 'wholePart' value has a value inferior to 10, so...
+            if(wholePart < 10) {
+
+                wholePart = "0" + wholePart;
+            }
+
+            return "UTC+" + wholePart + ":" + "00";
+
+        // In the other hand...
+        } else {
+
+            // Extraction of the whole part in hours decimal part...
+            var wholePart = (currentUtcOffset+"").split(".")[0];
+
+            // Extraction of the calculation of the offset from UTC in hours decimal part...
+            var decimalPart = (currentUtcOffset+"").split(".")[1];
+
+            // Conversion of the 'decimalPart' value from string to int...
+            decimalPart = parseInt(decimalPart);
+
+            // In the case where the 'decimalPart' value has a value inferior to 10, so...
+            if(decimalPart < 10) {
+
+                decimalPart = decimalPart * 10;
+            }
+
+            // Calculating the number of seconds in current time...
+            decimalPart = (decimalPart*60)/100;
+
+            // In the case where the 'wholePart' value has a value inferior to 10, so...
+            if(wholePart < 10) {
+
+                wholePart = "0" + wholePart;
+            }
+
+            // In the case where the 'decimalPart' value has a value inferior to 10, so...
+            if(decimalPart < 10) {
+
+                decimalPart = "0" + decimalPart;
+            }
+
+            return "UTC+" + wholePart + ":" + decimalPart;
+        }
+
+    // else if the UTC offset is a negative number...
+    } else if(currentUtcOffset < 0) {
+
+        // Check if the calculated offset from UTC is an integer ('Number.isInteger' will return 'true') or a float ('Number.isInteger' will return 'false')...
+        if(Number.isInteger(currentUtcOffset)) {
+
+            // Extraction of the whole part in hours decimal part...
+            var wholePart = (currentUtcOffset+"").split(".")[0];
+
+            // In the case where the 'wholePart' value has a value superior to -10, so...
+            if(wholePart > -10) {
+
+                wholePart = "-0" + Math.abs(wholePart);
+            }
+
+            return "UTC" + wholePart + ":" + "00";
+
+        // In the other hand (the calculated offset from UTC is a float)...
+        } else {
+
+            // Extraction of the whole part in hours decimal part...
+            var wholePart = (currentUtcOffset+"").split(".")[0];
+
+            // Extraction of the calculation of the offset from UTC in hours decimal part...
+            var decimalPart = (currentUtcOffset+"").split(".")[1];
+
+            // Conversion of the 'decimalPart' value from string to int...
+            decimalPart = parseInt(decimalPart);
+
+            // In the case where the 'decimalPart' value has a value inferior to 10, so...
+            if(decimalPart < 10) {
+
+                decimalPart = decimalPart * 10;
+            }
+
+            // Calculating the number of seconds in current time...
+            decimalPart = (decimalPart*60)/100;
+
+            // In the case where the 'wholePart' value has a value superior to -10, so...
+            if(wholePart > -10) {
+
+                wholePart = "-0" + Math.abs(wholePart);
+            }
+
+            // In the case where the 'decimalPart' value has a value inferior to 10, so...
+            if(decimalPart < 10) {
+
+                decimalPart = "0" + decimalPart;
+            }
+
+            return "UTC" + wholePart + ":" + decimalPart;
+        }
+
+    // In other cases (UTC offset is equal to 0)...   
+    } else {
+
+        return "UTC±00:00";
+    }
 }
 
 // Definition of the 'temperatureConversionFunction' function to convert the 'temperatureValue' temperature value in a current 'currentTemperatureUnit' unit in the wished 'wishedTemperatureUnit' unit...
