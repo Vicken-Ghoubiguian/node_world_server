@@ -377,7 +377,7 @@ app.get('/', function(req, res) {
         results[i].weather_description = results[i].weather_description.split(' ').join('_');
 
         // Treatment of 'utc_offset' field to define all UTC offset...
-        utcOffsetArray.push(weather.utcOffsetDefinitionFunction(results[i].utc_offset));
+        utcOffsetArray.push(openWeather.utcOffsetDefinitionFunction(results[i].utc_offset));
 
         // In the case where the current format for dates and times is "timestamp"...
         if(currentDateAndTimeFormat === "X") {
@@ -611,7 +611,7 @@ app.post('/', function(req, res) {
         results[i].main_temp_max = openWeather.temperatureConversionFunction(results[i].main_temp_max, currentTemperatureUnit);
 
         // Treatment of 'utc_offset' field to define all UTC offset...
-        utcOffsetArray.push(weather.utcOffsetDefinitionFunction(results[i].utc_offset));
+        utcOffsetArray.push(openWeather.utcOffsetDefinitionFunction(results[i].utc_offset));
 
         // In the case where the current format for dates and times is "timestamp"...
         if(currentDateAndTimeFormat === "X") {
