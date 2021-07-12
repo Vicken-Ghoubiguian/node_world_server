@@ -397,6 +397,12 @@ app.get('/', function(req, res) {
         // Treatment of 'uv_risk' field for translation...
         results[i].uv_risk = results[i].uv_risk.charAt(0).toUpperCase() + results[i].uv_risk.slice(1);
         results[i].uv_risk = results[i].uv_risk.split(' ').join('_');
+
+      //  
+      } else {
+
+        //
+        utcOffsetArray.push("");
       }
     }
 
@@ -634,6 +640,12 @@ app.post('/', function(req, res) {
         // Treatment of 'uv_risk' field for translation...
         results[i].uv_risk = results[i].uv_risk.charAt(0).toUpperCase() + results[i].uv_risk.slice(1);
         results[i].uv_risk = results[i].uv_risk.split(' ').join('_');
+
+      //
+      } else {
+
+        //
+        utcOffsetArray.push("");
       }
     }
 
