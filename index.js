@@ -398,7 +398,7 @@ app.get('/', function(req, res) {
         results[i].uv_risk = results[i].uv_risk.charAt(0).toUpperCase() + results[i].uv_risk.slice(1);
         results[i].uv_risk = results[i].uv_risk.split(' ').join('_');
 
-      //  
+      //  In the contrary case ("else")...
       } else {
 
         //
@@ -641,7 +641,7 @@ app.post('/', function(req, res) {
         results[i].uv_risk = results[i].uv_risk.charAt(0).toUpperCase() + results[i].uv_risk.slice(1);
         results[i].uv_risk = results[i].uv_risk.split(' ').join('_');
 
-      //
+      // In the contrary case ("else")...
       } else {
 
         //
