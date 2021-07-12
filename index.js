@@ -644,7 +644,7 @@ app.post('/', function(req, res) {
       // In the contrary case ("else")...
       } else {
 
-        // 
+        // Adding an empty element in the 'utcOffsetArray' array...
         utcOffsetArray.push("");
       }
     }
