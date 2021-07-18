@@ -13,12 +13,12 @@
 	"Hello": "Salut",
 	"countrycode_timezone_choice": "S'il vous plait, choisissez le pays que vous souhaitez",
 	"Ragnarok": "Ici le temps vous attend comme Ragnarök...",
-
 	"City_not_found": "Météo non disponible, malheureusement",
 	"Invalid_api_key": "Clé API non valide. Veuillez consulter http://openweathermap.org/faq#error401 pour plus d'informations",
 
 	"Timezones_visualization": "Visualisation des fuseaux horaires",
 	"GitHub_visualization": "Visualisation de GitHub",
+	
 	"Description": "Description",
 	"Localisation": "Localisation",
 	"UV_index": "Indice UV",
@@ -53,7 +53,7 @@
 	"Heavy_intensity_drizzle_rain": "Pluie torrentielle de forte intensité",
 	"Shower_rain_and_drizzle": "Averse de pluie et de bruine",
 	"Heavy_shower_rain_and_drizzle": "Forte averse de pluie et de bruine",
-	
+
 	"Thunderstorm_with_light_rain": "Orage avec pluie légère",
 	"Thunderstorm_with_rain": "Orage avec pluie",
 	"Thunderstorm_with_heavy_rain": "Orage avec de fortes pluies",
