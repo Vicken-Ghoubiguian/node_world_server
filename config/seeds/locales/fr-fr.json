@@ -12,7 +12,7 @@
 	"Hello": "Salut",
 	"countrycode_timezone_choice": "S'il vous plait, choisissez le pays que vous souhaitez",
 	"Ragnarok": "Ici le temps vous attend comme Ragnarök...",
-	"City_not_found": "Ville introuvable",
+	"City_not_found": "Météo non disponible, malheureusement",
 	"Invalid_api_key": "Clé API non valide. Veuillez consulter http://openweathermap.org/faq#error401 pour plus d'informations",
 	"Timezones_visualization": "Visualisation des fuseaux horaires",
 	"GitHub_visualization": "Visualisation de GitHub",
