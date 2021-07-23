@@ -224,6 +224,8 @@ docker container run -d --name <'node_world_server' or 'wicken/node_world_server
 <a name="a_few_usefull_links"></a>
 ## A few usefull links
 
+* [Node world server on Docker hub](https://hub.docker.com/r/wicken/node_world_server)
+
 <a name="what_is_used_in_this_project"></a>
 ## What is used in this project ?
 
