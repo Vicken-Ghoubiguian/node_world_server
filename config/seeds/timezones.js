@@ -436,7 +436,7 @@ var timezones = [
 	{timezone: "Pacific/Kosrae", country_code: "FM", weather_reference: "Kosrae", moment: moment.tz("Pacific/Kosrae"), color: "#4B0082"},
 	{timezone: "Pacific/Kwajalein", country_code: "MH", weather_reference: "Kwajalein", moment: moment.tz("Pacific/Kwajalein"), color: "#4B0082"},
 	{timezone: "Pacific/Majuro", country_code: "MH", weather_reference: "Majuro", moment: moment.tz("Pacific/Majuro"), color: "#4B0082"},
-	{timezone: "Pacific/Marquesas", country_code: "PF", weather_reference: "Taiohae", moment: moment.tz("Pacific/Marquesas"), color: "#4B0082"},
+	{timezone: "Pacific/Marquesas", country_code: "PF", weather_reference: "Atuona", moment: moment.tz("Pacific/Marquesas"), color: "#4B0082"},
 	{timezone: "Pacific/Midway", country_code: "US", weather_reference: "Midway", moment: moment.tz("Pacific/Midway"), color: "#4B0082"},
 	{timezone: "Pacific/Nauru", country_code: "NR", weather_reference: "Nauru", moment: moment.tz("Pacific/Nauru"), color: "#4B0082"},
 	{timezone: "Pacific/Niue", country_code: "NU", weather_reference: "Niue", moment: moment.tz("Pacific/Niue"), color: "#4B0082"},
