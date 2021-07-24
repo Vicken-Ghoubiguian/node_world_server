@@ -408,7 +408,7 @@ var timezones = [
 	{timezone: "Indian/Christmas", country_code: "CX", weather_reference: "Flying Fish Cove", moment: moment.tz("Indian/Christmas"), color: "#33FFA2"},
 	{timezone: "Indian/Cocos", country_code: "CC", weather_reference: "West Island", moment: moment.tz("Indian/Cocos"), color: "#33FFA2"},
 	{timezone: "Indian/Comoro", country_code: "KM", weather_reference: "Moroni", moment: moment.tz("Indian/Comoro"), color: "#33FFA2"},
-	{timezone: "Indian/Kerguelen", country_code: "TF", weather_reference: "Kerguelen", moment: moment.tz("Indian/Kerguelen"), color: "#33FFA2"},
+	{timezone: "Indian/Kerguelen", country_code: "TF", weather_reference: "Port-aux-Français", moment: moment.tz("Indian/Kerguelen"), color: "#33FFA2"},
 	{timezone: "Indian/Mahe", country_code: "SC", weather_reference: "Victoria", moment: moment.tz("Indian/Mahe"), color: "#33FFA2"},
 	{timezone: "Indian/Maldives", country_code: "MV", weather_reference: "Male", moment: moment.tz("Indian/Maldives"), color: "#33FFA2"},
 	{timezone: "Indian/Mauritius", country_code: "MU", weather_reference: "Port Louis", moment: moment.tz("Indian/Mauritius"), color: "#33FFA2"},
