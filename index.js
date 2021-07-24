@@ -677,8 +677,6 @@ app.post('/', function(req, res) {
     // Updating the familly font 'select' for the corresponding form...
     updateFontFamily(currentFontFamily[0]);
 
-    console.log(results);
-
     res.render('index.ejs', {
 
                              "currentCountryFlagURL": currentCountryFlagURL, 
