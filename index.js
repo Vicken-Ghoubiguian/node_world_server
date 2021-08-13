@@ -431,6 +431,7 @@ app.get('/', function(req, res) {
       currentCountryFlagURL = "https://flagcdn.com/h40/" + currentCountryCode.toLowerCase() + ".png";
     }
 
+	// Configuration of the response to be rendered with the parameters for rendering on the web page ('index.ejs' file)...
   	res.render('index.ejs', {
 
                              "currentCountryFlagURL": currentCountryFlagURL, 
@@ -677,6 +678,7 @@ app.post('/', function(req, res) {
     // Updating the familly font 'select' for the corresponding form...
     updateFontFamily(currentFontFamily[0]);
 
+    // Configuration of the response to be rendered with the parameters for rendering on the web page ('index.ejs' file)...
     res.render('index.ejs', {
 
                              "currentCountryFlagURL": currentCountryFlagURL, 
