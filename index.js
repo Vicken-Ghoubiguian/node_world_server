@@ -259,7 +259,7 @@ app.set('views', __dirname + '/views');
 // Declaration of using 'i18n' module...
 app.use(i18n);
 
-// 
+// Definition of the 'GET' method which is called when an HTTP request with a 'GET' method is received by the current application...
 app.get('/', function(req, res) {
 
   // Defining the current locale at the call the 'node_world_server' application in your browser ...
@@ -455,7 +455,7 @@ app.get('/', function(req, res) {
   });
 });
 
-// 
+// Definition of the 'POST' method which is called when an HTTP request with a 'POST' method is received by the current application...
 app.post('/', function(req, res) {
 
   // Defining a series of array and hash table for treatments in templates...
